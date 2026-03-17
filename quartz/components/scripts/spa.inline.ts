@@ -108,7 +108,7 @@ async function _navigate(url: URL, isBack: boolean = false) {
   if (!isBack) {
     if (url.hash) {
       const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
-      el?.scrollIntoView()
+      el?.scrollIntoView({ behavior: "instant", block: "center" })
     } else {
       window.scrollTo({ top: 0 })
     }
@@ -155,7 +155,7 @@ function createRouter() {
 
       if (isSamePage(url) && url.hash) {
         const el = document.getElementById(decodeURIComponent(url.hash.substring(1)))
-        el?.scrollIntoView()
+        el?.scrollIntoView({ behavior: "instant", block: "center" })
         history.pushState({}, "", url)
         return
       }
