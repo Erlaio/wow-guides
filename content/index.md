@@ -18,3 +18,7 @@ title: WoW Guides — Midnight 12.0.1
 - [[Druid/Guardian/guardian-tank-guide|Guardian Tank Guide]]
 - [[Druid/Restoration/resto-healing-guide|Restoration Healing Guide]]
 - [[Druid/druid-glossary|Druid Glossary]]
+
+### Paladin
+- [[Paladin/Retribution/retribution-guide|Retribution Paladin Guide]]
+- [[Paladin/paladin-glossary|Paladin Glossary]]
