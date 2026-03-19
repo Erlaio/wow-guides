@@ -10,7 +10,7 @@ created: 2026-03-17
 
 Термины и сокращения → [[evoker-glossary|Глоссарий]]
 
-> **Patch:** 12.0.1 (Midnight Season 1) | **Дата:** 2026-03-17
+> **Patch:** 12.0.1 (Midnight Season 1)
 
 ---
 
