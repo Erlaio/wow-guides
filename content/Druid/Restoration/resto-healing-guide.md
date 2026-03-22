@@ -300,11 +300,11 @@ CkGAAAAAAAAAAAAAAAAAAAAAAMMmxYGzMjZbmZYYhZx2MAAAAAAAAAAYbQzmhpZMzYMLmZmZWmhxAAAA
 
 **Throughput (рейд + M+):**
 
-| Тринкет | Источник | Описание |
-|---|---|---|
-| Gaze of the Alnseer | Chimaerus (рейд) | Лучший пассивный тринкет в игре |
-| Locus-Walker's Ribbon | Crown of the Cosmos (рейд) | Топ-тир альтернатива |
-| Crucible of Erratic Energies | данж | Самый популярный в M+ (37 из 50 топов) |
+| Тринкет                      | Источник                   | Описание                               |
+| ---------------------------- | -------------------------- | -------------------------------------- |
+| Gaze of the Alnseer          | Chimaerus (рейд)           | Лучший пассивный тринкет в игре        |
+| Locus-Walker's Ribbon        | Crown of the Cosmos (рейд) | Топ-тир альтернатива                   |
+| Crucible of Erratic Energies | данж                       | Самый популярный в M+ (37 из 50 топов) |
 
 **Ситуативные:**
 
