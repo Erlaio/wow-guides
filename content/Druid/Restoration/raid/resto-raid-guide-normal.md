@@ -51,7 +51,7 @@ Swiftmend → Wild Growth → Rejuvenation (SotF) → Regrowth spam
 
 | Кулдаун | Когда жать |
 |---|---|
-| **Convoke** | Когда рейд просел. Каждые ~60 сек |
+| **Convoke** | Когда рейд просел. CD ~60 сек (с Cenarius' Guidance) |
 | **Tranquility** | Когда Convoke на CD и рейд в серьёзной опасности |
 | **Innervate** | Когда мана ниже 50% |
 

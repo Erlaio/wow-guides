@@ -20,7 +20,8 @@ created: 2026-03-15
 > Спек стал проще: меньше кнопок, меньше активных [[druid-glossary#^cd|КД]], фокус на [[druid-glossary#^hot|HoT]]-менеджменте и [[druid-glossary#^ramp|рампах]].
 
 ### Удалённые способности
-- Cenarion Ward, Overgrowth, Spring Blossoms, Nourish, Skull Bash, Renewal, Nature's Vigil, Flash of Clarity
+- Cenarion Ward, Overgrowth, Spring Blossoms, Skull Bash, Renewal, Nature's Vigil, Flash of Clarity
+- **Nourish** — возвращён в переработанном виде (талант, ~4-5% хила в M+ у топ-игроков)
 
 ### Переработанные механики
 - **[[druid-glossary#^flourish|Flourish]]** — слит в [[druid-glossary#^tranquility|Tranquility]] (пассивный эффект, продлевает все [[druid-glossary#^hot|HoT]] на 10 сек при касте Tranquility). Мощнее, но реже доступен.
@@ -55,7 +56,7 @@ created: 2026-03-15
 ### Слабые стороны
 - Требует точного тайминга [[druid-glossary#^cd|КД]] и подготовки [[druid-glossary#^ramp|рампов]]
 - Слабый реактивный хил на непредсказуемый [[druid-glossary#^burst|бёрст]]-урон
-- Сравнительно низкий урон в рейде (компенсируется в M+ через [[druid-glossary#^catweaving|cat-weaving]])
+- Сравнительно низкий урон в рейде (в M+ компенсируется мощным [[druid-glossary#^catweaving|cat-weaving]] — топ-друиды делают конкурентный DPS)
 - [[druid-glossary#^mana|Мана]]-зависимость — неэффективный спам быстро опустошает ману
 
 ---
@@ -65,7 +66,8 @@ created: 2026-03-15
 ### Hero Talent
 
 - **Рейд: [[druid-glossary#^keeper-of-the-grove-resto|Keeper of the Grove]]** — [[druid-glossary#^grove-guardians|Grove Guardians]] спавнятся пассивно при касте [[druid-glossary#^swiftmend|Swiftmend]] и [[druid-glossary#^wild-growth|Wild Growth]], дают [[druid-glossary#^burst|бёрст]]-хил и дефенсив [[druid-glossary#^protective-growth|Protective Growth]] (−8% урона при активном [[druid-glossary#^regrowth|Regrowth]]). Лучший выбор для рейдового контента.
-- **M+: [[druid-glossary#^wildstalker-resto|Wildstalker]]** — [[druid-glossary#^symbiotic-bloom|Symbiotic Bloom]] (уникальный [[druid-glossary#^hot|HoT]]) усиливает хил на цели и добавляет стак [[druid-glossary#^mastery-resto|Mastery]]. Доминирует в M+ (48 из 50 топ-хилеров по данным Murlok.io). Поддерживает [[druid-glossary#^catweaving|cat-weaving]] для дополнительного урона, но не обязателен.
+- **M+: [[druid-glossary#^wildstalker-resto|Wildstalker]]** — [[druid-glossary#^symbiotic-bloom|Symbiotic Bloom]] (уникальный [[druid-glossary#^hot|HoT]]) усиливает хил на цели и добавляет стак [[druid-glossary#^mastery-resto|Mastery]]. Абсолютно доминирует в M+: **93.5%** топ-100 на высоких ключах, **90.3%** на ключах 11-13 (WCL, апрель 2026). Синергия с [[druid-glossary#^catweaving|cat-weaving]]: Bloodseeker Vines и Bursting Growth дают значительный пассивный урон.
+- **M+ альтернатива: [[druid-glossary#^keeper-of-the-grove-resto|Keeper of the Grove]]** — играбелен на ключах 11-13 (~10% топ-100). Больше Caster DPS (Moonfire/Wrath) вместо catweaving. DPS-профиль: Moonfire ~50%, Feral Frenzy ~20%, Wrath ~18%. Проще в исполнении, но потолок урона ниже.
 
 ### Apex-талант
 
@@ -96,7 +98,14 @@ created: 2026-03-15
 M+ ([[druid-glossary#^wildstalker-resto|Wildstalker]]):
 - **[[druid-glossary#^convoke|Convoke the Spirits]]** — [[druid-glossary#^burst|бёрст]]-хил (~1 мин [[druid-glossary#^cd|КД]]), кастует 12-16 случайных способностей друида, ~50% шанс мини-Flourish, можно кастовать в Cat Form
 - **[[druid-glossary#^symbiotic-relationship|Symbiotic Relationship]]** — ставить на танка перед пулом
-- **[[druid-glossary#^catweaving|Cat-weaving]] таланты** — [[druid-glossary#^moonfire|Moonfire]], [[druid-glossary#^sunfire|Sunfire]], переход в Cat Form для дополнительного DPS между хилом (опционально, но сильно повышает урон)
+- **Nourish** — талант, ~4-5% общего хила, заметный вклад в M+
+- **[[druid-glossary#^catweaving|Cat-weaving]]** — **ключевая** часть геймплея M+, не опциональная. Топ-игроки проводят значительное время в Cat Form:
+  - **Feral Frenzy** — главный DPS-кулдаун (17-25% общего урона)
+  - **Rip** — основной DoT (12-19% урона)
+  - **Rake** — DoT + opener (8-14% урона)
+  - **Shred** — филлер в Cat Form
+  - **Sunfire/Moonfire/Thrash** — AoE DoT-ы (на больших пулах)
+  - **Bloodseeker Vines** — пассивный урон Wildstalker (5-8%)
 - **[[druid-glossary#^ursols-vortex|Ursol's Vortex]] / [[druid-glossary#^typhoon|Typhoon]] / [[druid-glossary#^incapacitating-roar|Incapacitating Roar]]** — утилити для контроля без потери хила
 
 ---
@@ -118,11 +127,12 @@ CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGzywDMmxmxCzAAAAAAAAAAgtBNbMmmhxMmlZmZmhhZGAA
 ### M+ (Wildstalker)
 
 ```
-CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsN8AMzsMjNbzAAAAAAAAAAglBNbw0MMjxsYmZmZZGegZAAAAAAAwAAQAAAz2MbNLzsYjxMDMzCoZAAmZAYA
+CkGA8cL7tpvige+kkmGM9zUPWPMmZZMjZmxsNMMmFmNbzAAAAAAAAAAglBNbzw0MjhHwsYmZGmhHYGAAAAADAwMALjFMNzsAAwsNzWzyML2YMDMzsYQzAAzMzAwA
 ```
 
-> [!note] Cat-weaving не обязателен
-> [[druid-glossary#^wildstalker-resto|Wildstalker]] не требует играть в Cat Form, но дефолтный билд включает [[druid-glossary#^catweaving|cat-weaving]] т.к. значительно повышает [[druid-glossary#^st|ST]] урон.
+> [!important] Cat-weaving — неотъемлемая часть M+ меты
+> Билд включает полную [[druid-glossary#^catweaving|cat-weaving]] ротацию (Feral Frenzy, Rip, Rake, Shred). Топ-игроки тратят значительное время в Cat Form между хилом. Это **не опционально** для высоких ключей — catweaving даёт 40-60% общего урона друида.
+> Импорт от Lota (#1 мира, WCL All Stars, апрель 2026).
 
 ### Delves (Wildstalker)
 
@@ -208,14 +218,54 @@ CkGAAAAAAAAAAAAAAAAAAAAAAMMmxYGzMjZbmZYYhZx2MAAAAAAAAAAYbQzmhpZMzYMLmZmZWmhxAAAA
 ### Поддержание
 
 1. **[[druid-glossary#^lifebloom|Lifebloom]]** — постоянно на танке (рефреш в последние 4.5 сек)
-2. **[[druid-glossary#^efflorescence|Efflorescence]]** — 100% [[druid-glossary#^uptime|аптайм]] (через Lifetreading привязывается к [[druid-glossary#^lifebloom|Lifebloom]])
+2. **[[druid-glossary#^efflorescence|Efflorescence]]** — 100% [[druid-glossary#^uptime|аптайм]] (через Lifetreading привязывается к [[druid-glossary#^lifebloom|Lifebloom]]; +Verdancy ~3-5% хила)
 3. **[[druid-glossary#^swiftmend|Swiftmend]]** и **[[druid-glossary#^wild-growth|Wild Growth]]** — юзать по [[druid-glossary#^cd|КД]]
 4. **[[druid-glossary#^rejuvenation|Rejuvenation]]** — на целях с [[druid-glossary#^symbiotic-bloom|Symbiotic Bloom]] (триггерит Bursting Growth)
 
-### DPS-фаза ([[druid-glossary#^catweaving|cat-weaving]], опционально)
+### Healing Breakdown (данные WCL, ключи 17-18, апрель 2026)
 
-- Между хилами: [[druid-glossary#^moonfire|Moonfire]]/[[druid-glossary#^sunfire|Sunfire]] → Cat Form → урон → обратно в Caster Form
-- Не обязательно, но значительно повышает общий урон группы
+> [!note] Реальное распределение хила топ-друидов M+ (Wildstalker)
+
+| Способность | Доля хила | Заметки |
+|---|---|---|
+| **Regrowth** | 16-23% | Основной прямой хил |
+| **Rejuvenation** (total) | 10-17% | Включая Germination и Thriving Vegetation |
+| **Lifebloom** (total) | 10-13% | Тики + блумы + Everbloom splash |
+| **Wild Growth** | 7-9% | AoE HoT |
+| **Efflorescence** + Verdancy | 7-9% | Пассивный AoE хил |
+| **Everbloom** | 6-8% | Splash от Lifebloom |
+| **Grove Guardians** | 5-7% | Пассивные от Swiftmend/WG |
+| **Symbiotic Blooms** | 5-6% | Wildstalker HoT |
+| **Swiftmend** | 5-7% | Прямой хил + триггер SotF |
+| **Nourish** | 4-5% | Талант, заметный вклад |
+| **Tranquility** | 2-4% | Бёрст-КД |
+| **Symbiotic Relationship** | 3-4% | Хил на привязанной цели |
+| **Bursting Growth** | 2-3% | Пассивный хил Wildstalker |
+| **Nature's Bounty** | 2-3% | Splash от Regrowth |
+
+### DPS-фаза ([[druid-glossary#^catweaving|cat-weaving]])
+
+> [!important] Cat-weaving — ключевая механика M+ друида
+> По данным логов топ-игроков, catweaving даёт 40-60% общего урона друида. Это не опциональное дополнение, а основная DPS-ротация между хилом.
+
+**Приоритет урона (данные WCL, апрель 2026):**
+
+1. **[[druid-glossary#^sunfire|Sunfire]]** / **[[druid-glossary#^moonfire|Moonfire]]** — поддерживать DoT-ы на мобах из Caster Form
+2. → переход в **Cat Form**
+3. **Feral Frenzy** — по [[druid-glossary#^cd|КД]], главный DPS-кулдаун (17-25% общего урона)
+4. **Rake** — DoT на основную цель
+5. **Rip** — DoT на основную цель (12-19% урона)
+6. **Thrash** — AoE на больших пулах
+7. **Shred** — филлер для генерации комбо-поинтов
+8. **Ferocious Bite** — при 5 комбо-поинтах и активных DoT-ах
+9. → обратно в **Caster Form** когда нужен хил
+
+**Пассивный урон (Wildstalker):**
+- **Bloodseeker Vines** — 5-8% урона, срабатывает от [[druid-glossary#^hot|HoT]]-ов
+- **Bursting Growth** — 9-19% урона, срабатывает при истечении [[druid-glossary#^symbiotic-bloom|Symbiotic Blooms]]
+
+> [!note] Реальный healing/damage split
+> Топ-друиды на ключах 17-18: ~50% хила группы + значительный DPS. Ключ к успеху — минимизация простоя: всегда либо хилишь, либо наносишь урон.
 
 ---
 
@@ -266,12 +316,6 @@ CkGAAAAAAAAAAAAAAAAAAAAAAMMmxYGzMjZbmZYYhZx2MAAAAAAAAAAYbQzmhpZMzYMLmZmZWmhxAAAA
 | **Versatility** | В M+ ценнее крита: бонус к урону + **снижение входящего урона**. |
 | **Crit** | Наименее ценный стат — **Regrowth** уже получает ~100% крита через **Abundance**. |
 
-### Статы топ-игроков M+ (Murlok.io)
-- Mastery: ~21% (+498)
-- Crit: ~13% (+348)
-- Haste: ~11% (+487)
-- Versatility: ~5% (+276)
-
 ---
 
 ## Гир и тринкеты
@@ -306,19 +350,26 @@ CkGAAAAAAAAAAAAAAAAAAAAAAMMmxYGzMjZbmZYYhZx2MAAAAAAAAAAYbQzmhpZMzYMLmZmZWmhxAAAA
 | Locus-Walker's Ribbon        | Crown of the Cosmos (рейд) | Топ-тир альтернатива                   |
 | Crucible of Erratic Energies | данж                       | Самый популярный в M+ (37 из 50 топов) |
 
+**Тринкеты #1 мира (Lota, WCL апрель 2026):**
+
+| Тринкет | Источник | Описание |
+|---|---|---|
+| **Emberwing Feather** | данж | Используется Lota (#1) — 266 ilvl |
+| **Heart of Wind** | Windrunner Spire (данж) | Используется Lota (#1) — 266 ilvl |
+
 **Ситуативные:**
 
 | Тринкет | Источник | Описание |
 |---|---|---|
-| Heart of Wind | Windrunner Spire (данж) | Отличный данж-тринкет, стоит фармить |
-| Emberwing Feather | данж | Хороший вариант для M+ |
+| Crucible of Erratic Energies | данж | Популярен среди топ-100 |
 | Gift of Light | данж | Альтернатива |
 
 ### Оружие
 
 | Оружие | Источник |
 |---|---|
-| Nibbles' Training Rod | данж — самое популярное среди M+ топов |
+| **Aln'hara Cane** | крафт (Inscription) — стафф, доминирует среди топов (42 из 50, Murlok.io) |
+| Magister's Valediction | крафт (Blacksmithing) — 2H мейс, альтернатива |
 
 > [!note] Проверяйте актуальные рейтинги
 > Тринкеты и оружие могут меняться с хотфиксами. Используйте QE Live для точного сравнения.

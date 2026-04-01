@@ -13,38 +13,40 @@ created: 2026-03-22
 
 ~0:30 | ~1:00 | ~1:45 | ~2:15 | ~3:00 | ~3:30 | ~4:15 | ~5:00 | ~5:30 | ~6:15 | ~7:00 | ~7:30 | ~8:00-9:00
 
-### CD Plan — Convoke-билд (Aldur, Heroic Kill 9:11)
+### CD Plan — Convoke-билд (Heroic Kill 9:11, CD 60 сек)
 
 | Время | CD | Notes |
 |---|---|---|
-| 0:32 | **Convoke #1** | Первый пик ~0:30 |
-| 0:58 | NS | Экстренный хил |
-| 1:17 | **Convoke #2** | Пик ~1:00 |
-| 1:23 | **Tranquility #1** | Сразу после Convoke |
-| 1:36 | Ironbark | Танкбастер |
-| 1:46 | Barkskin | AoE |
-| 2:25 | **Convoke #3** | Пик ~2:15 |
-| 3:22 | Innervate | Мана |
-| 3:31 | **Convoke #4** | Пик ~3:30 |
-| 4:18 | **Convoke #5** | Пик ~4:15 |
-| 4:45 | Ironbark #2 | Танкбастер |
-| 5:14 | **Tranquility #2** | Пик ~5:00 |
-| 5:28 | **Convoke #6** + NS + Stampeding | Пик ~5:30 (burst!) |
-| 5:30 | Barkskin | AoE |
-| 6:18 | **Convoke #7** | Пик ~6:15 |
-| 6:29 | Ironbark #3 | Танкбастер |
-| 6:41 | Innervate #2 | Мана на финал |
-| 7:11 | Barkskin | AoE |
-| 7:19 | **Convoke #8** | Пик ~7:00-7:30 |
+| 0:00 | Innervate | Мана на opener |
+| 0:32 | **Convoke #1** | Пик ~0:30 |
+| 1:00 | **Tranquility #1** | Пик ~1:00 (не покрыт Convoke) |
+| 1:36 | Ironbark | Пик ~1:45 (expires 1:48) |
+| 1:45 | **Convoke #2** | Пик ~1:45 |
+| 2:05 | Barkskin | Пик ~2:15 (expires 2:17) |
+| 3:00 | **Convoke #3** | Пик ~3:00 |
+| 3:10 | Innervate #2 | Мана |
+| 3:30 | Barkskin | Пик ~3:30 (expires 3:42) |
+| 4:15 | **Convoke #4** | Пик ~4:15 |
+| 4:50 | Ironbark #2 | Пик ~5:00 (expires 5:02) |
+| 5:00 | **Tranquility #2** | Пик ~5:00 (не покрыт Convoke) |
+| 5:20 | Barkskin | Пик ~5:30 (expires 5:32) |
+| 5:30 | **Convoke #5 BURST** + NS + Stampeding | Пик ~5:30 |
+| 6:15 | Innervate #3 | Мана на финал |
+| 6:30 | **Convoke #6** | Близко к пику ~6:15 |
+| 6:50 | Ironbark #3 | Пик ~7:00 (expires 7:02) |
+| 7:00 | Barkskin | Пик ~7:00 (expires 7:12) |
+| 7:30 | **Convoke #7** | Пик ~7:30 |
+| 8:10 | Barkskin | Пик ~8:00+ (expires 8:22) |
+| 8:30 | **Convoke #8** | Пик ~8:00-9:00 |
 
 ### Особенности Chimaerus
 
 - **Очень длинный бой** (9:11) — 8 Convoke, 2 Tranquility
-- **Convoke каждые ~50-70 сек** — практически по CD
-- **Tranquility** после 2-й и 5-й Convoke
-- **Moment at 5:28** — Tranq + Convoke + NS + Stampeding одновременно (максимальный burst)
+- **Convoke каждые 60-75 сек** — по CD или с небольшой задержкой на пик
+- **Tranquility** на пики 1:00 и 5:00 — не покрытые Convoke
+- **Moment at 5:30** — Convoke #5 BURST + NS + Stampeding (максимальный burst)
 - Ironbark 3 раза — ~каждые 2:30
-- Barkskin 3 раза
+- Barkskin 5 раз
 - **8 Convoke за бой** — максимальное использование CD
 
 ### Сравнение с Pyrró (Normal kill)

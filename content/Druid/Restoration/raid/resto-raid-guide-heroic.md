@@ -61,28 +61,30 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 
 ### Билд 2: Convoke the Spirits
 
-**Когда брать:** боссы с частыми пиками дамага каждые ~60 сек.
+**Когда брать:** боссы с частыми пиками дамага каждые ~30-45 сек.
 **Боссы:** Fallen-King Salhadaar, Lightblinded Vanguard, Chimaerus
+
+> С талантом **Cenarius' Guidance** CD Convoke = **60 сек** (вместо 120), но длительность и кол-во спеллов снижены на 25%. Чаще, но короче.
 
 #### Рамп-последовательность
 
 ```
 1. Rejuvenation blanket (3-5 целей)
 2. Swiftmend → Wild Growth
-3. Nature's Swiftness (опционально, для инстант-Regrowth перед Convoke)
-4. Convoke the Spirits (4 сек ченнел)
+3. Nature's Swiftness (опционально)
+4. Convoke the Spirits (~3 сек ченнел, укороченный)
 5. Regrowth spam
 ```
 
 #### Cooldown Map
 
-| CD | Интервал | За 5-мин бой | За 9-мин бой |
+| CD | Реальный CD | За 5-мин бой | За 9-мин бой |
 |---|---|---|---|
-| Convoke | ~60 сек | 4-5 | 8 |
+| Convoke (Cenarius' Guidance) | **~60 сек** | 4-5 | 7-8 |
 | Tranquility | ~3 мин | 2 | 2-3 |
 | Innervate | ~3 мин | 2 | 2-3 |
 
-**Паттерн:** `Convoke каждые 60 сек по CD` + `Tranquility после 1-го и каждого 3-го Convoke`
+**Паттерн:** `Convoke каждые ~60-75 сек` + `Tranquility на непокрытые пики`
 
 **Комбо:** NS + Convoke (Nature's Swiftness перед ченнелом для макс burst)
 

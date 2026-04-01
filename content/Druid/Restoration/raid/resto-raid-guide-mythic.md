@@ -17,14 +17,14 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 |---|---|---|
 | Imperator Averzian | **Incarnation** | Предсказуемые фазы ~90 сек |
 | Vorasius | **Incarnation** | Длинные окна дамага |
-| Fallen-King Salhadaar | **Convoke** | Частые пики ~60 сек |
+| Fallen-King Salhadaar | **Convoke** | Частые пики ~30-45 сек |
 | Vaelgor & Ezzorak | **Incarnation** | Длинный бой, фазы |
 | Lightblinded Vanguard | **Convoke** | Частые пики, тяжёлый финал |
 | Crown of the Cosmos | **Incarnation** | Очень длинный бой |
 | Chimaerus | **Convoke** | Постоянные частые пики |
 
 **Правило выбора:**
-- Пики каждые ~60 сек или чаще → **Convoke**
+- Пики каждые ~30-45 сек → **Convoke** (с Cenarius' Guidance CD = 60 сек)
 - Пики каждые ~90 сек, длинные фазы дамага → **Incarnation**
 
 ---
@@ -81,25 +81,27 @@ T+24   Swiftmend → Wild Growth
 
 ### Билд 2: Convoke the Spirits — детали
 
+> **Cenarius' Guidance** снижает CD Convoke на 50% (= **60 сек**), но укорачивает длительность и кол-во спеллов на 25%. Частый короткий burst.
+
 #### Рамп-последовательность (точная)
 
 ```
 T-3.0  Rejuvenation blanket (3-5 целей)
 T-1.0  Swiftmend → Wild Growth
 T-0.5  Nature's Swiftness (опционально)
-T-0.0  Convoke the Spirits [ДАМАГ]
-T+4.0  Regrowth spam
+T-0.0  Convoke the Spirits (~3 сек ченнел, укороченный) [ДАМАГ]
+T+3.0  Regrowth spam
 ```
 
 #### CD расписание
 
-| Длина боя | Convoke | Tranquility | Innervate |
+| Длина боя | Convoke (CD 60 сек) | Tranquility | Innervate |
 |---|---|---|---|
 | ~5:00 | 4-5 | 2 | 2 |
 | ~6:00 | 5-6 | 2 | 2 |
-| ~9:00 | 8 | 2-3 | 2-3 |
+| ~9:00 | 7-8 | 2-3 | 2-3 |
 
-**Паттерн:** `Convoke каждые ~60 сек по CD` + `Tranquility после каждого 2-3-го Convoke`
+**Паттерн:** `Convoke каждые ~30-45 сек` + `Tranquility после каждого 3-4-го Convoke`
 
 **Комбо:** NS + Convoke — Nature's Swiftness даёт инстант-Regrowth перед ченнелом
 
@@ -186,3 +188,12 @@ SM жми каждые 12 сек без пропусков.
 - [[resto-raid-guide-heroic]] — героик гайд
 - [[resto-raid-guide-normal]] — нормал гайд
 - [[resto-healing-guide]] — подробный гайд по способностям
+
+
+
+
+у нас такая задача, нужно проанализировать логи 
+https://www.warcraftlogs.com/zone/rankings/47?leaderboards=1&class=Paladin&spec=Retribution&region=-1 - мы ищем        
+retribution паладинов, нужны логи из высоких ключей, анализируем ветки талантов, как они наносят урон, опенер, что за чем нажимают, на босса/паки  
+по приоритету урон - ветка талантов. Нам нужно понять как сейчас играет и дамажит паладин изучив как играют топовые 
+ игроки. У нас уже есть retribution-guide нужно будет исправить то что в нем неправильно относительно меты. Используй плагин superpower и давай устроим брейншторм

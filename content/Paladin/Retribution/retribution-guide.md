@@ -39,6 +39,13 @@ created: 2026-03-18
 
 *Источник: [Blizzard Hotfixes — March 17, 2026](https://news.blizzard.com/en-us/article/24266320/hotfixes-march-17-2026)*
 
+## Hotfix — 26 марта 2026
+
+**Багфикс:**
+- [[paladin-glossary#^hammer-of-light|Hammer of Light]] — исправлено взаимодействие с Judgment при наличии Undisputed Ruling: теперь корректно получает бонус от Judgment-дебаффа на целях без стаков
+
+*Источник: [WoW Hotfixes — March 26, 2026](https://www.mmo-champion.com/content/14132-WoW-Hotfixes-March-26-2026)*
+
 ---
 
 ## Что изменилось в Midnight (12.0)
@@ -65,7 +72,7 @@ created: 2026-03-18
 ## Сильные и слабые стороны
 
 **Сильные:**
-- Частые бёрст-окна: с [[paladin-glossary#^radiant-glory|Radiant Glory]] мини-[[paladin-glossary#^avenging-wrath|AW]] каждые 30 сек (через [[paladin-glossary#^wake-of-ashes|Wake of Ashes]]), полный бёрст с [[paladin-glossary#^divine-toll|Divine Toll]] каждые 60 сек
+- Частые бёрст-окна: ручной [[paladin-glossary#^avenging-wrath|AW]] каждые 60 сек, [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] + [[paladin-glossary#^hammer-of-light|HoL]] каждые 30 сек, полный бёрст с [[paladin-glossary#^divine-toll|Divine Toll]] каждые 60 сек
 - Сильный funnel-урон (концентрация урона на приоритетную цель через [[paladin-glossary#^execution-sentence|Execution Sentence]] + клив на остальных через [[paladin-glossary#^divine-storm|DS]] / [[paladin-glossary#^hammer-of-light|HoL]])
 - Лучшая утилити среди всех DPS: [[paladin-glossary#^lay-on-hands|LoH]], [[paladin-glossary#^bop|BoP]], [[paladin-glossary#^bos|BoS]], [[paladin-glossary#^bof|BoF]], [[paladin-glossary#^divine-shield|Divine Shield]], боевой рез (Intercession)
 - Сильные дефенсивы ([[paladin-glossary#^divine-shield|Divine Shield]], Divine Protection/Shield of Vengeance)
@@ -87,7 +94,7 @@ created: 2026-03-18
 
 ### Hero Talent: Templar (основной)
 
-[[paladin-glossary#^hammer-of-light|Templar]] — доминирующий выбор во **всём контенте** (93%+ использования по данным Archon.gg).
+[[paladin-glossary#^hammer-of-light|Templar]] — доминирующий выбор во **всём контенте**. В топе М+ рейтинга — **100%** использования; в общей выборке Archon.gg — 93%+.
 
 Ключевые механики:
 - После каста [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] она заменяется на [[paladin-glossary#^hammer-of-light|Hammer of Light]] на 20 сек
@@ -97,8 +104,8 @@ created: 2026-03-18
 - [[paladin-glossary#^divine-hammer|Divine Hammer]] — после [[paladin-glossary#^divine-toll|Divine Toll]] призываются вращающиеся молоты вокруг вас
 - [[paladin-glossary#^lights-deliverance|Light's Deliverance]] — [[paladin-glossary#^hammer-of-light|HoL]] дополнительно хилит группу
 
-> [!note] Консенсус гайдов
-> Templar оптимален во всех аспектах игры — 93.6% в рейде, 93.0% в М+ (Archon.gg). Method: "Templar is the optimal choice in every aspect of the game, slightly edging out Herald of the Sun."
+> [!note] Консенсус гайдов + логи
+> Templar оптимален во всех аспектах игры — 93.6% в рейде, 93.0% в М+ (Archon.gg), **100% в топе М+ рейтинга** (WCL, апрель 2026). Method: "Templar is the optimal choice in every aspect of the game, slightly edging out Herald of the Sun."
 
 ### Hero Talent: Herald of the Sun (альтернатива)
 
@@ -129,7 +136,7 @@ created: 2026-03-18
 ### Ключевые таланты (общие)
 
 - **[[paladin-glossary#^execution-sentence|Execution Sentence]]** — дебафф на цель, накапливает урон и взрывается. 1 мин КД. Работает и в ST, и в AoE (бывший Final Reckoning встроен)
-- **[[paladin-glossary#^radiant-glory|Radiant Glory]]** — [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] автоматически активирует [[paladin-glossary#^avenging-wrath|AW]] на несколько секунд. Не нужно жать AW вручную
+- **[[paladin-glossary#^radiant-glory|Radiant Glory]]** — [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] автоматически активирует [[paladin-glossary#^avenging-wrath|AW]] на несколько секунд. **Не используется в М+ мете** — ручной AW даёт лучший контроль тайминга бёрста
 - **[[paladin-glossary#^expurgation|Expurgation]]** — [[paladin-glossary#^blade-of-justice|Blade of Justice]] оставляет DoT. Усилен тир-сетом (+20% урона)
 - **[[paladin-glossary#^art-of-war|Art of War]]** — автоатаки имеют 15% шанс сбросить КД [[paladin-glossary#^blade-of-justice|BoJ]]; криты дают +10% (итого 25%)
 - **[[paladin-glossary#^divine-toll|Divine Toll]]** — кастует [[paladin-glossary#^judgment|Judgment]] по 5 целям. 1 мин КД
@@ -163,11 +170,12 @@ CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAgRz22MzsMMzYAAAAAAGlZxwMjthZbYmtZMGzMMjN2GGAAyMTb
 ### Templar — М+ (AoE)
 
 ```
-CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAAa22mZmlxMzMDAAAAAwMlZxwMjthZbYmtZMGjhZsxGGAAyMTbzMbzAA2AMAYMDDMjZshlZwwYYwA
+CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMGzMAAAAAAmpMLzwMjthZbYmtZMGjhZsxGAAAzMtNzsNDAYDwAYMmZDYmZmZDLzghxwgB
 ```
 
 > [!note] Фокус
-> AoE-билд для М+. Blade of Vengeance, Blessed Champion и Tempest of the Lightbringer для максимального клива. Используйте [[paladin-glossary#^divine-storm|Divine Storm]] как основной спендер.
+> AoE-билд для М+. Ручной AW (без Radiant Glory). Используйте [[paladin-glossary#^divine-storm|Divine Storm]] как основной спендер.
+> *Экспорт из топового лога: Melee, Algeth'ar Academy +17, April 2026 ([[log-analysis-2026-04-02|источник]])*
 
 ### Herald of the Sun — Рейд
 
@@ -188,8 +196,8 @@ CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAAa22mZmlxMzMDAAAAAwMlZxwMjthZbYmtZMGjhZsxGGAAyMTb
 3. **[[paladin-glossary#^art-of-war|Art of War]] прок = немедленный [[paladin-glossary#^blade-of-justice|Blade of Justice]]** — с [[paladin-glossary#^light-within|Light Within]] Rank 1 это +150% урона, с Rank 4 ещё и AoE-конус. Не тратьте прок
 4. **Держите [[paladin-glossary#^expurgation|Expurgation]] на цели** — [[paladin-glossary#^blade-of-justice|Blade of Justice]] накладывает DoT, тир-сет усиливает его на 20%. Обновляйте через BoJ
 5. **[[paladin-glossary#^judgment|Judgment]] дебафф перед спендером** — спендер по цели с Judgment-дебаффом наносит значительно больше урона
-6. **Не сидите на [[paladin-glossary#^wake-of-ashes|Wake of Ashes]]** — 30 сек КД, генерирует 3 [[paladin-glossary#^holy-power|HoPo]], триггерит [[paladin-glossary#^radiant-glory|Radiant Glory]] (авто-[[paladin-glossary#^avenging-wrath|AW]]). Каждая секунда задержки = потеря DPS
-7. **[[paladin-glossary#^execution-sentence|Execution Sentence]] до бёрста** — накладывайте до [[paladin-glossary#^avenging-wrath|AW]], чтобы весь урон в бёрст-окне аккумулировался. Держите 3 [[paladin-glossary#^holy-power|HoPo]] перед кастом
+6. **Не сидите на [[paladin-glossary#^wake-of-ashes|Wake of Ashes]]** — 30 сек КД, генерирует 3 [[paladin-glossary#^holy-power|HoPo]], активирует [[paladin-glossary#^hammer-of-light|Hammer of Light]]. Каждая секунда задержки = потеря DPS. В М+ используйте WoA → HoL по КД, даже без [[paladin-glossary#^avenging-wrath|AW]]
+7. **[[paladin-glossary#^avenging-wrath|AW]] + [[paladin-glossary#^execution-sentence|Execution Sentence]] рядом** — активируйте обе способности в начале бёрст-окна. Порядок гибкий (2 из 3 топовых игроков ставят AW до ES, 1 из 3 — ES до AW). Держите 3 [[paladin-glossary#^holy-power|HoPo]] перед ES
 8. **[[paladin-glossary#^crusading-strikes|Crusading Strikes]]** — заменяет автоатаки на Crusader Strike (больше урона, но на 20% медленнее). Не генерирует [[paladin-glossary#^holy-power|HoPo]] — весь HoPo идёт от билдеров
 9. **В AoE: [[paladin-glossary#^divine-storm|Divine Storm]] вместо [[paladin-glossary#^final-verdict|Final Verdict]]** при 2+ целях. 4-Set тир-сета накладывает [[paladin-glossary#^expurgation|Expurgation]] на все цели (50% эффективности)
 10. **Утилити = DPS.** Мёртвый хилер/танк = вайп. Используйте [[paladin-glossary#^lay-on-hands|LoH]], [[paladin-glossary#^bop|BoP]], [[paladin-glossary#^wog|WoG]] проактивно — это ваше конкурентное преимущество
@@ -198,21 +206,33 @@ CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAAa22mZmlxMzMDAAAAAwMlZxwMjthZbYmtZMGjhZsxGGAAyMTb
 
 ## Ротация / приоритет
 
-### Opener — Templar
+### Opener — Templar (босс с бёрстом)
+
+AW + ES доступны. Используется когда КД не были потрачены на предыдущий треш.
 
 1. Prepot (**Potion of Recklessness** / Light's Potential)
 2. [[paladin-glossary#^blade-of-justice|Blade of Justice]] (apply [[paladin-glossary#^expurgation|Expurgation]])
-3. [[paladin-glossary#^judgment|Judgment]]
-4. [[paladin-glossary#^avenging-wrath|Avenging Wrath]] (пропустить если играете [[paladin-glossary#^radiant-glory|Radiant Glory]])
-5. Тринкеты
-6. [[paladin-glossary#^divine-toll|Divine Toll]]
-7. [[paladin-glossary#^execution-sentence|Execution Sentence]]
-8. [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] → получаем [[paladin-glossary#^hammer-of-light|Hammer of Light]]
-9. [[paladin-glossary#^hammer-of-light|Hammer of Light]] (5 [[paladin-glossary#^holy-power|HoPo]])
-10. Продолжить по приоритету ST
+3. *(опционально)* [[paladin-glossary#^judgment|Judgment]]
+4. [[paladin-glossary#^avenging-wrath|Avenging Wrath]] + [[paladin-glossary#^execution-sentence|Execution Sentence]] (порядок гибкий)
+5. [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] → получаем [[paladin-glossary#^hammer-of-light|Hammer of Light]]
+6. [[paladin-glossary#^hammer-of-light|Hammer of Light]] (5 [[paladin-glossary#^holy-power|HoPo]])
+7. Продолжить по приоритету ST
 
-> [!important] Radiant Glory
-> Если играете [[paladin-glossary#^radiant-glory|Radiant Glory]] — НЕ жмите [[paladin-glossary#^avenging-wrath|AW]] вручную. [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] автоматически активирует его.
+> [!important] Divine Toll в опенере
+> [[paladin-glossary#^divine-toll|Divine Toll]] **не используется** в боссовом опенере — сохраняется для AoE-ситуаций или следующего бёрст-окна. Данные: 0 из 3 топовых игроков используют DT в боссовом опенере ([[log-analysis-2026-04-02|анализ логов]]).
+
+### Opener — Templar (босс без бёрста)
+
+AW и/или ES на КД. **Доминирующий сценарий в М+** — AW чаще потрачен на предыдущий треш-пак.
+
+1. [[paladin-glossary#^blade-of-justice|Blade of Justice]]
+2. [[paladin-glossary#^judgment|Judgment]]
+3. [[paladin-glossary#^final-verdict|Final Verdict]] / [[paladin-glossary#^divine-storm|Divine Storm]] (по кол-ву целей)
+4. Цикл: билдеры → спендеры по приоритету
+5. [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] → [[paladin-glossary#^hammer-of-light|Hammer of Light]] по КД, даже без [[paladin-glossary#^avenging-wrath|AW]]
+
+> [!note] М+ реальность
+> В М+ **большинство боссов начинаются без бёрста**. Из 8 проверенных боссовых пулов только 3 имели AW в опенере. Топовые игроки не копят КД для босса — AW тратится на треш ([[log-analysis-2026-04-02|анализ логов]]).
 
 ### Opener — Herald of the Sun
 
@@ -281,6 +301,28 @@ CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAAa22mZmlxMzMDAAAAAwMlZxwMjthZbYmtZMGjhZsxGGAAyMTb
 
 ---
 
+## Распределение урона (М+ топ-10)
+
+Средний % от общего урона за весь данж. Данные: 10 логов, ключи +15–+18, Season 1 ([[log-analysis-2026-04-02|анализ логов]]).
+
+| # | Способность | Avg % | Комментарий |
+|---|-------------|-------|-------------|
+| 1 | [[paladin-glossary#^blade-of-justice\|Blade of Justice]] | **18.5%** | #1 благодаря [[paladin-glossary#^light-within\|Light Within]] + [[paladin-glossary#^expurgation\|Expurgation]] |
+| 2 | [[paladin-glossary#^divine-storm\|Divine Storm]] | **12.2%** | Основной AoE-спендер |
+| 3 | [[paladin-glossary#^hammer-of-light\|Hammer of Light]] | **11.5%** | Стабильный AoE+ST |
+| 4 | [[paladin-glossary#^divine-hammer\|Divine Hammer]] | **9.7%** | Пассивный AoE от [[paladin-glossary#^divine-toll\|Divine Toll]] |
+| 5 | [[paladin-glossary#^crusading-strikes\|Crusading Strikes]] | **9.1%** | Пассивные автоатаки |
+| 6 | [[paladin-glossary#^empyrean-hammer\|Empyrean Hammer]] | **8.3%** | Пассивные молоты (Templar) |
+| 7 | [[paladin-glossary#^execution-sentence\|Execution Sentence]] | **7.6%** | Накопленный урон + DoT |
+| 8 | [[paladin-glossary#^wake-of-ashes\|Wake of Ashes]] | **6.8%** | AoE + триггер [[paladin-glossary#^hammer-of-light\|HoL]] |
+| 9 | [[paladin-glossary#^final-verdict\|Final Verdict]] | **3.8%** | ST-спендер на боссах |
+| 10 | [[paladin-glossary#^hammer-of-wrath\|Hammer of Wrath]] | **2.8%** | Экзекьют + доступен при [[paladin-glossary#^avenging-wrath\|AW]] |
+
+> [!note] Босс vs паки
+> На боссах [[paladin-glossary#^final-verdict\|FV]] поднимается до ~5-6%, [[paladin-glossary#^divine-storm\|DS]] падает. На треше [[paladin-glossary#^divine-storm\|DS]] доминирует (до 15%), [[paladin-glossary#^divine-hammer\|Divine Hammer]] и [[paladin-glossary#^hammer-of-light\|HoL]] также выше. [[paladin-glossary#^blade-of-justice\|BoJ]] стабильно #1 в обоих сценариях.
+
+---
+
 ## Дефенсивы и утилити
 
 ### Таблица дефенсивов
@@ -322,14 +364,22 @@ CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAAa22mZmlxMzMDAAAAAwMlZxwMjthZbYmtZMGjhZsxGGAAyMTb
 
 ### Бёрст-окна на паках
 
-1. На пулле набейте 3 [[paladin-glossary#^holy-power|HoPo]] через [[paladin-glossary#^blade-of-justice|BoJ]] + [[paladin-glossary#^judgment|Judgment]]
-2. [[paladin-glossary#^execution-sentence|Execution Sentence]] → [[paladin-glossary#^avenging-wrath|AW]] (или [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] с [[paladin-glossary#^radiant-glory|Radiant Glory]])
-3. [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] → [[paladin-glossary#^hammer-of-light|Hammer of Light]] (Templar)
-4. [[paladin-glossary#^divine-toll|Divine Toll]] → спам [[paladin-glossary#^divine-storm|Divine Storm]]
-5. Во время [[paladin-glossary#^avenging-wrath|AW]]: максимизируйте количество спендеров
+1. Divine Protection на входе в пак (стандарт у топовых игроков)
+2. Строить [[paladin-glossary#^holy-power|HoPo]] через [[paladin-glossary#^judgment|Judgment]] + [[paladin-glossary#^blade-of-justice|BoJ]] — 2-3 GCD
+3. [[paladin-glossary#^avenging-wrath|AW]] + [[paladin-glossary#^execution-sentence|Execution Sentence]] (порядок гибкий)
+4. [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] → [[paladin-glossary#^hammer-of-light|Hammer of Light]] (Templar)
+5. [[paladin-glossary#^divine-toll|Divine Toll]] → спам [[paladin-glossary#^divine-storm|Divine Storm]]
+6. Во время [[paladin-glossary#^avenging-wrath|AW]]: максимизируйте количество спендеров
 
 > [!important] Бёрст-цикл
 > Основные КД: [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] (30 сек) и [[paladin-glossary#^divine-toll|Divine Toll]] (1 мин, 30 сек с талантом). Без [[paladin-glossary#^execution-sentence|Execution Sentence]] цикл = 30 сек, с ним — 1 мин (подстраивайте бёрст под ES). Старайтесь выстраивать КД вместе на каждом паке. Никогда не сидите на [[paladin-glossary#^wake-of-ashes|Wake of Ashes]] — каждая задержка = потеря бёрста.
+
+### КД-менеджмент в М+
+
+> [!important] Не копите КД для босса
+> Топовые игроки **тратят AW на треш**, не копят для босса. Бой с боссом чаще начинается без бёрста — и это нормально. [[paladin-glossary#^wake-of-ashes|WoA]] → [[paladin-glossary#^hammer-of-light|HoL]] используется по КД даже без AW. Основной бёрст-цикл: AW (60 сек) + ES (60 сек) + WoA (30 сек) — выстраивать вместе на каждом крупном паке.
+>
+> Данные: из 8 проверенных боссовых пулов только 3 имели AW в опенере ([[log-analysis-2026-04-02|анализ логов]]).
 
 ### Приоритет целей
 
@@ -506,3 +556,4 @@ CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAAa22mZmlxMzMDAAAAAwMlZxwMjthZbYmtZMGjhZsxGGAAyMTb
 | 16 | Wowhead — Ret Paladin Overview | Гайд | https://www.wowhead.com/guide/classes/paladin/retribution/overview-pve-dps |
 | 17 | WarcraftLogs — DPS Rankings | Данные | https://www.warcraftlogs.com/zone/rankings/49/?class=DPS |
 | 18 | Noxxic — Rotation & Cooldowns | Гайд | https://www.noxxic.com/wow/guide/retribution-paladin/dps-rotation-and-cooldowns |
+| 19 | Анализ топовых M+ логов (02.04.2026) | Данные | [[log-analysis-2026-04-02]] |

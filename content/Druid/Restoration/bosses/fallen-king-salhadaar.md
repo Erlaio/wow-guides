@@ -16,34 +16,34 @@ created: 2026-03-22
 Периодические пики каждые ~30-40 сек:
 ~0:30 | ~1:00 | ~1:45 | ~2:15 | ~2:50 | ~3:20 | ~3:50 | ~4:15 | ~5:00 | ~5:30 | ~6:00
 
-### CD Plan — Convoke-билд (Kaelayze, Heroic Kill 6:13)
+### CD Plan — Convoke-билд (Heroic Kill 6:13, CD 60 сек)
 
 | Время | CD | Notes |
 |---|---|---|
 | 0:04 | Innervate | Мана на opener |
-| 0:22 | **Convoke #1** + NS | Первый burst |
-| 0:31 | **Tranquility #1** | Сразу после Convoke |
-| 0:46 | Barkskin | AoE |
-| 1:07 | **Convoke #2** | Второй пик ~1:00 |
-| 1:56 | Barkskin | AoE ~1:45 |
-| 2:29 | **Convoke #3** + NS | Пик ~2:15 |
-| 2:53 | Ironbark | Танкбастер |
-| 3:04 | Innervate #2 | Мана на рамп |
-| 3:17 | **Convoke #4** | Пик ~3:20 |
-| 3:34 | **Tranquility #2** | Сразу после Convoke |
-| 3:49 | Barkskin | AoE |
-| 4:29 | **Convoke #5** + NS | Пик ~4:15 |
-| 4:40 | Ironbark | Танкбастер |
-| 5:19 | **Convoke #6** + NS | Пик ~5:00-5:30 |
-| 5:28 | Barkskin | Финальный AoE |
+| 0:22 | **Convoke #1** | Пик ~0:30 |
+| 0:50 | Barkskin | Пик ~1:00 (expires 1:02) |
+| 1:00 | **Tranquility #1** | Пик ~1:00 (не покрыт Convoke) |
+| 1:45 | **Convoke #2** | Пик ~1:45 |
+| 2:05 | Barkskin | Пик ~2:15 (expires 2:17) |
+| 2:10 | Ironbark | Пик ~2:15 (expires 2:22) |
+| 2:50 | **Convoke #3** | Пик ~2:50 |
+| 3:04 | Innervate #2 | Мана |
+| 3:10 | Barkskin | Пик ~3:20 (expires 3:22) |
+| 3:50 | **Convoke #4** | Пик ~3:50 |
+| 4:10 | Barkskin | Пик ~4:15 (expires 4:22) |
+| 4:15 | **Tranquility #2** | Пик ~4:15 (не покрыт Convoke) |
+| 4:50 | Ironbark #2 | Пик ~5:00 (expires 5:02) |
+| 5:00 | **Convoke #5** | Пик ~5:00 |
+| 5:20 | Barkskin | Пик ~5:30 (expires 5:32) |
+| 6:00 | **Convoke #6** | Пик ~6:00 |
 | 6:05 | Innervate #3 | Мана на финал |
 
 ### Особенности Fallen-King Salhadaar
 
 - **Длинный бой** (6:13) — 6 Convoke, 2 Tranquility, 3 Innervate
-- **Convoke каждые ~55-70 сек** — практически по кулдауну
-- **Паттерн:** NS + Convoke одновременно (инстант NS перед ченнелом)
-- **Tranquility** после 1-го и 4-го Convoke
+- **Convoke каждые 60-70 сек** — по кулдауну с привязкой к пикам
+- **Tranquility** на пики 1:00 и 4:15 — не покрытые Convoke
 - **Периодические пики** — Convoke хорошо ложится на ритм босса
 - **Convoke-билд может быть лучше на этом боссе** — частые CD windows
 
