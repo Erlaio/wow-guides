@@ -21,6 +21,7 @@ title: WoW Guides — Midnight 12.0.5
 
 ### Death Knight
 - [[DeathKnight/Blood/blood-guide|Blood Death Knight Guide]]
+- [[DeathKnight/Unholy/unholy-guide|Unholy Death Knight Guide]]
 - [[DeathKnight/deathknight-glossary|Death Knight Glossary]]
 
 ### Monk
