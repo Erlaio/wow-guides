@@ -19,6 +19,10 @@ title: WoW Guides — Midnight 12.0.5
 - [[Druid/Restoration/resto-healing-guide|Restoration Healing Guide]]
 - [[Druid/druid-glossary|Druid Glossary]]
 
+### Death Knight
+- [[DeathKnight/Blood/blood-guide|Blood Death Knight Guide]]
+- [[DeathKnight/deathknight-glossary|Death Knight Glossary]]
+
 ### Monk
 - [[Monk/Mistweaver/mistweaver-guide|Mistweaver Monk Guide]]
 - [[Monk/monk-glossary|Monk Glossary]]
