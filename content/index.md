@@ -19,6 +19,10 @@ title: WoW Guides — Midnight 12.0.5
 - [[Druid/Restoration/resto-healing-guide|Restoration Healing Guide]]
 - [[Druid/druid-glossary|Druid Glossary]]
 
+### Monk
+- [[Monk/Mistweaver/mistweaver-guide|Mistweaver Monk Guide]]
+- [[Monk/monk-glossary|Monk Glossary]]
+
 ### Paladin
 - [[Paladin/Retribution/retribution-guide|Retribution Paladin Guide]]
 - [[Paladin/paladin-glossary|Paladin Glossary]]
