@@ -192,7 +192,7 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 - **[[deathknight-glossary#^dancing-rune-weapon|Танцующее руническое оружие]]** - урон + защита (парирование); в M+ хорошо работает и как дефенсив.
 - **[[deathknight-glossary#^anti-magic-shell|Антимагический панцирь]]** - под магический урон, заодно генерит руническую силу.
 - **[[deathknight-glossary#^icebound-fortitude|Незыблемость льда]]** - универсальные -30% урона; не накладывай поверх других дефенсивов.
-- **[[deathknight-glossary#^rune-tap|Захват рун]]** / **[[deathknight-glossary#^consumption|Поглощение]]** - короткие сглаживатели.
+- **[[deathknight-glossary#^consumption|Поглощение]]** - короткий сглаживатель (урон по площади + самолечение).
 - **[[deathknight-glossary#^lichborne|Перерождение]]** - буст самохила в тяжёлые периоды (+иммун к страху/подчинению/сну).
 - **[[deathknight-glossary#^purgatory|Чистилище]]** - страховка от смертельного удара (раз в 4 мин).
 
