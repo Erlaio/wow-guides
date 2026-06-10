@@ -1,5 +1,5 @@
 ---
-title: WoW Guides — Midnight 12.0.1
+title: WoW Guides — Midnight 12.0.5
 ---
 
 ## Классы
