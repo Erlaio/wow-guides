@@ -22,3 +22,7 @@ title: WoW Guides — Midnight 12.0.1
 ### Paladin
 - [[Paladin/Retribution/retribution-guide|Retribution Paladin Guide]]
 - [[Paladin/paladin-glossary|Paladin Glossary]]
+
+### Warlock
+- [[Warlock/Demonology/demonology-guide|Demonology Warlock Guide]]
+- [[Warlock/warlock-glossary|Warlock Glossary]]
