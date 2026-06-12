@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, raid, boss, vs-dr-mqd]
 created: 2026-03-22
 ---
 
-## Imperator Averzian — Resto Druid CD Plan
+## Imperator Averzian - Resto Druid CD Plan
 
 Рейд: VS / DR / MQD | Patch 12.0.1 Midnight | Билд: Incarnation: Tree of Life
 
@@ -40,5 +40,5 @@ created: 2026-03-22
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — общий героик гайд
-- [[resto-raid-guide-mythic]] — мифик гайд
+- [[resto-raid-guide-heroic]] - общий героик гайд
+- [[resto-raid-guide-mythic]] - мифик гайд

@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, raid, boss, vs-dr-mqd]
 created: 2026-03-22
 ---
 
-## Vorasius — Resto Druid CD Plan
+## Vorasius - Resto Druid CD Plan
 
 Рейд: VS / DR / MQD | Patch 12.0.1 Midnight | Билд: Incarnation: Tree of Life
 
@@ -32,9 +32,9 @@ created: 2026-03-22
 ### Особенности Vorasius
 
 - **4 Incarnation** за бой (длинный бой ~4:44)
-- **2 Tranquility** — после 1-й и после 3-й Incarnation
-- **3 Barkskin** — перед каждым крупным AoE
-- **Incarnation #1 в opener** (0:09) — сразу начинает с рампа
+- **2 Tranquility** - после 1-й и после 3-й Incarnation
+- **3 Barkskin** - перед каждым крупным AoE
+- **Incarnation #1 в opener** (0:09) - сразу начинает с рампа
 - Innervate #1 ПОСЛЕ Incarnation (0:17), #2 перед финалом (3:31)
 
 ### Ротация между CD
@@ -45,5 +45,5 @@ created: 2026-03-22
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — общий героик гайд
-- [[imperator-averzian]] — предыдущий босс
+- [[resto-raid-guide-heroic]] - общий героик гайд
+- [[imperator-averzian]] - предыдущий босс

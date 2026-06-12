@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, encounter-planner, boss]
 created: 2026-03-23
 ---
 
-## Vorasius — Encounter Planner
+## Vorasius - Encounter Planner
 
 **Билд:** Incarnation: Tree of Life | **Бой:** ~4:44 | **Сложность:** Heroic
 

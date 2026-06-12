@@ -3,19 +3,19 @@ tags: [wow, druid, restoration, raid, guide, normal]
 created: 2026-03-22
 ---
 
-## Resto Druid Raid Healing Guide — Normal
+## Resto Druid Raid Healing Guide - Normal
 
 Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализа топовых логов
 
-> **Два билда:** Incarnation: Tree of Life или Convoke the Spirits — оба работают. На нормале разницы почти нет, бери что нравится.
+> **Два билда:** Incarnation: Tree of Life или Convoke the Spirits - оба работают. На нормале разницы почти нет, бери что нравится.
 
 ---
 
 ### Три главных правила
 
-1. **Всегда кастуй** — не стой без дела, 50+ кастов в минуту
-2. **Lifebloom на танке** — не давай упасть
-3. **Swiftmend → Wild Growth** каждые 12 сек — основа всего хила
+1. **Всегда кастуй** - не стой без дела, 50+ кастов в минуту
+2. **Lifebloom на танке** - не давай упасть
+3. **Swiftmend → Wild Growth** каждые 12 сек - основа всего хила
 
 ---
 
@@ -35,7 +35,7 @@ Swiftmend → Wild Growth → Rejuvenation (SotF) → Regrowth spam
 
 ---
 
-### Кулдауны — простая схема
+### Кулдауны - простая схема
 
 #### Если играешь Incarnation: Tree of Life
 
@@ -73,15 +73,15 @@ Swiftmend → Wild Growth → Rejuvenation (SotF) → Regrowth spam
 
 ### Частые ошибки
 
-1. **Забываешь Lifebloom** — ставь WeakAura
-2. **Не используешь SM → WG** — это ОСНОВА, каждые 12 сек
-3. **Не жмёшь кулдауны** — лучше "не идеально" чем вообще не нажать
-4. **Стоишь без дела** — ВСЕГДА кастуй
-5. **Тратишь CD на полном ХП** — дождись дамага
+1. **Забываешь Lifebloom** - ставь WeakAura
+2. **Не используешь SM → WG** - это ОСНОВА, каждые 12 сек
+3. **Не жмёшь кулдауны** - лучше "не идеально" чем вообще не нажать
+4. **Стоишь без дела** - ВСЕГДА кастуй
+5. **Тратишь CD на полном ХП** - дождись дамага
 
 ---
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — подробный гайд с обоими билдами
-- [[resto-raid-guide-mythic]] — детальный гайд для мифика
+- [[resto-raid-guide-heroic]] - подробный гайд с обоими билдами
+- [[resto-raid-guide-mythic]] - детальный гайд для мифика

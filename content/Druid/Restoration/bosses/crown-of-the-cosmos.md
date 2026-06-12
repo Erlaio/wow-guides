@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, raid, boss, vs-dr-mqd]
 created: 2026-03-22
 ---
 
-## Crown of the Cosmos — Resto Druid CD Plan
+## Crown of the Cosmos - Resto Druid CD Plan
 
 Рейд: VS / DR / MQD | Patch 12.0.1 Midnight | Билд: Incarnation: Tree of Life
 
@@ -37,13 +37,13 @@ created: 2026-03-22
 
 ### Особенности Crown of the Cosmos
 
-- **Самый длинный бой** (9:14) — 5 Incarnation, 3 Tranquility, 3 Innervate, 3 Ironbark
+- **Самый длинный бой** (9:14) - 5 Incarnation, 3 Tranquility, 3 Innervate, 3 Ironbark
 - **Incarnation каждые ~90 сек** по CD
 - **Tranquility** после 1-й, 3-й и 5-й Incarnation
 - **Innervate** ~каждые 3 мин (0:62, 4:22, 7:28)
-- **Ironbark каждые ~2 мин** — частые танкбастеры
-- **Провал дамага ~6:00-6:30** — можно DPS-ить или экономить ману
-- Nature's Swiftness 5 раз — активное использование
+- **Ironbark каждые ~2 мин** - частые танкбастеры
+- **Провал дамага ~6:00-6:30** - можно DPS-ить или экономить ману
+- Nature's Swiftness 5 раз - активное использование
 
 ### Ротация между CD
 
@@ -53,5 +53,5 @@ created: 2026-03-22
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — общий гайд
-- [[lightblinded-vanguard]] — предыдущий босс
+- [[resto-raid-guide-heroic]] - общий гайд
+- [[lightblinded-vanguard]] - предыдущий босс

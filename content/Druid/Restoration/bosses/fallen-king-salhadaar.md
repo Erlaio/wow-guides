@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, raid, boss, vs-dr-mqd]
 created: 2026-03-22
 ---
 
-## Fallen-King Salhadaar — Resto Druid CD Plan
+## Fallen-King Salhadaar - Resto Druid CD Plan
 
 Рейд: VS / DR / MQD | Patch 12.0.1 Midnight
 
@@ -16,7 +16,7 @@ created: 2026-03-22
 Периодические пики каждые ~30-40 сек:
 ~0:30 | ~1:00 | ~1:45 | ~2:15 | ~2:50 | ~3:20 | ~3:50 | ~4:15 | ~5:00 | ~5:30 | ~6:00
 
-### CD Plan — Convoke-билд (Heroic Kill 6:13, CD 60 сек)
+### CD Plan - Convoke-билд (Heroic Kill 6:13, CD 60 сек)
 
 | Время | CD | Notes |
 |---|---|---|
@@ -41,11 +41,11 @@ created: 2026-03-22
 
 ### Особенности Fallen-King Salhadaar
 
-- **Длинный бой** (6:13) — 6 Convoke, 2 Tranquility, 3 Innervate
-- **Convoke каждые 60-70 сек** — по кулдауну с привязкой к пикам
-- **Tranquility** на пики 1:00 и 4:15 — не покрытые Convoke
-- **Периодические пики** — Convoke хорошо ложится на ритм босса
-- **Convoke-билд может быть лучше на этом боссе** — частые CD windows
+- **Длинный бой** (6:13) - 6 Convoke, 2 Tranquility, 3 Innervate
+- **Convoke каждые 60-70 сек** - по кулдауну с привязкой к пикам
+- **Tranquility** на пики 1:00 и 4:15 - не покрытые Convoke
+- **Периодические пики** - Convoke хорошо ложится на ритм босса
+- **Convoke-билд может быть лучше на этом боссе** - частые CD windows
 
 ### Ротация между CD
 
@@ -55,5 +55,5 @@ created: 2026-03-22
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — общий гайд
-- [[vorasius]] — предыдущий босс
+- [[resto-raid-guide-heroic]] - общий гайд
+- [[vorasius]] - предыдущий босс

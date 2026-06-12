@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, encounter-planner, boss]
 created: 2026-03-23
 ---
 
-## Fallen-King Salhadaar — Encounter Planner
+## Fallen-King Salhadaar - Encounter Planner
 
 **Билд:** Convoke the Spirits (Cenarius' Guidance, CD 60 сек) | **Бой:** ~6:13 | **Сложность:** Heroic
 

@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, encounter-planner, boss]
 created: 2026-03-23
 ---
 
-## Chimaerus, the Undreamt God — Encounter Planner
+## Chimaerus, the Undreamt God - Encounter Planner
 
 **Билд:** Convoke the Spirits (Cenarius' Guidance, CD 60 сек) | **Бой:** ~9:11 | **Сложность:** Heroic
 

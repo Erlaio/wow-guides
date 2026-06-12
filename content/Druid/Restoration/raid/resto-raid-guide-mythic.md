@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, raid, guide, mythic]
 created: 2026-03-22
 ---
 
-## Resto Druid Raid Healing Guide — Mythic
+## Resto Druid Raid Healing Guide - Mythic
 
 Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализа топовых логов (99+ парсы)
 
@@ -50,7 +50,7 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 
 ---
 
-### Билд 1: Incarnation: Tree of Life — детали
+### Билд 1: Incarnation: Tree of Life - детали
 
 #### Рамп-последовательность (точная)
 
@@ -75,11 +75,11 @@ T+24   Swiftmend → Wild Growth
 
 **Паттерн:** `Innervate → Incarnation → Regrowth spam → 30 сек → Tranquility`
 
-**НЕ стакать** Incarnation + Tranquility одновременно — разнести на 30+ сек
+**НЕ стакать** Incarnation + Tranquility одновременно - разнести на 30+ сек
 
 ---
 
-### Билд 2: Convoke the Spirits — детали
+### Билд 2: Convoke the Spirits - детали
 
 > **Cenarius' Guidance** снижает CD Convoke на 50% (= **60 сек**), но укорачивает длительность и кол-во спеллов на 25%. Частый короткий burst.
 
@@ -103,7 +103,7 @@ T+3.0  Regrowth spam
 
 **Паттерн:** `Convoke каждые ~30-45 сек` + `Tranquility после каждого 3-4-го Convoke`
 
-**Комбо:** NS + Convoke — Nature's Swiftness даёт инстант-Regrowth перед ченнелом
+**Комбо:** NS + Convoke - Nature's Swiftness даёт инстант-Regrowth перед ченнелом
 
 ---
 
@@ -185,9 +185,9 @@ SM жми каждые 12 сек без пропусков.
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — героик гайд
-- [[resto-raid-guide-normal]] — нормал гайд
-- [[resto-healing-guide]] — подробный гайд по способностям
+- [[resto-raid-guide-heroic]] - героик гайд
+- [[resto-raid-guide-normal]] - нормал гайд
+- [[resto-healing-guide]] - подробный гайд по способностям
 
 
 

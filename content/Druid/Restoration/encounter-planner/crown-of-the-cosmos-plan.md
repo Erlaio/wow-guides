@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, encounter-planner, boss]
 created: 2026-03-23
 ---
 
-## Crown of the Cosmos — Encounter Planner
+## Crown of the Cosmos - Encounter Planner
 
 **Билд:** Incarnation: Tree of Life | **Бой:** ~9:14 | **Сложность:** Heroic
 

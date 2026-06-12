@@ -3,11 +3,11 @@ tags: [wow, druid, restoration, raid, boss, vs-dr-mqd]
 created: 2026-03-22
 ---
 
-## Lightblinded Vanguard — Resto Druid CD Plan
+## Lightblinded Vanguard - Resto Druid CD Plan
 
 Рейд: VS / DR / MQD | Patch 12.0.1 Midnight | Билд: Convoke the Spirits
 
-> **Заметка:** Naeniaqt (топ-1) играет Incarnation на Vorasius, но **Convoke на Vanguard** — меняет билд под босса!
+> **Заметка:** Naeniaqt (топ-1) играет Incarnation на Vorasius, но **Convoke на Vanguard** - меняет билд под босса!
 
 ---
 
@@ -15,7 +15,7 @@ created: 2026-03-22
 
 ~0:30 (большой) | ~1:15 | ~1:45 | ~2:30 | ~2:50 | ~3:15 | ~3:30 | ~4:00 | **~4:30 (огромный финальный)**
 
-### CD Plan — Convoke-билд (Naeniaqt, Heroic Kill 4:54)
+### CD Plan - Convoke-билд (Naeniaqt, Heroic Kill 4:54)
 
 | Время | CD | Notes |
 |---|---|---|
@@ -35,11 +35,11 @@ created: 2026-03-22
 
 ### Особенности Lightblinded Vanguard
 
-- **Convoke-билд** — 4 Convoke за бой (~каждые 70 сек)
-- **Tranquility** после 1-го и 4-го Convoke — привязаны к крупнейшим пикам
-- **Финальная фаза (4:00+) — самая тяжёлая**: Convoke #4 + NS + Tranquility #2 подряд
-- Barkskin 4 раза — перед каждым крупным AoE
-- Ironbark 1 раз — на танка в финале
+- **Convoke-билд** - 4 Convoke за бой (~каждые 70 сек)
+- **Tranquility** после 1-го и 4-го Convoke - привязаны к крупнейшим пикам
+- **Финальная фаза (4:00+) - самая тяжёлая**: Convoke #4 + NS + Tranquility #2 подряд
+- Barkskin 4 раза - перед каждым крупным AoE
+- Ironbark 1 раз - на танка в финале
 - **Топ-1 меняет билд** между боссами: Incarnation на Vorasius, Convoke на Vanguard
 
 ### Ротация между CD
@@ -50,5 +50,5 @@ created: 2026-03-22
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — общий гайд
-- [[vaelgor-ezzorak]] — предыдущий босс
+- [[resto-raid-guide-heroic]] - общий гайд
+- [[vaelgor-ezzorak]] - предыдущий босс

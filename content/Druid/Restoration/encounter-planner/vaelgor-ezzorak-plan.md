@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, encounter-planner, boss]
 created: 2026-03-23
 ---
 
-## Vaelgor & Ezzorak — Encounter Planner
+## Vaelgor & Ezzorak - Encounter Planner
 
 **Билд:** Incarnation: Tree of Life | **Бой:** ~8:50 | **Сложность:** Heroic
 

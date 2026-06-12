@@ -3,28 +3,28 @@ tags: [wow, druid, restoration, raid, guide, heroic]
 created: 2026-03-22
 ---
 
-## Resto Druid Raid Healing Guide — Heroic
+## Resto Druid Raid Healing Guide - Heroic
 
 Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализа топовых логов (99+ парсы)
 
 > **Оба билда жизнеспособны!** Топ-1 игроки меняют билд в зависимости от босса.
-> - **Incarnation: Tree of Life** — Imperator Averzian, Vorasius, Vaelgor & Ezzorak, Crown of the Cosmos
-> - **Convoke the Spirits** — Fallen-King Salhadaar, Lightblinded Vanguard, Chimaerus
+> - **Incarnation: Tree of Life** - Imperator Averzian, Vorasius, Vaelgor & Ezzorak, Crown of the Cosmos
+> - **Convoke the Spirits** - Fallen-King Salhadaar, Lightblinded Vanguard, Chimaerus
 
 ---
 
 ### Общая ротация (одинаковая для обоих билдов)
 
 **Приоритет кастов:**
-1. **Lifebloom** — на танке ВСЕГДА (целевой аптайм 95%+)
-2. **Efflorescence** — под мили-стаком
-3. **Swiftmend** — по кулдауну (~каждые 12 сек), триггерит Soul of the Forest
-4. **Wild Growth** — сразу после Swiftmend
-5. **Rejuvenation** — раскидывать на просевших / перед дамагом
-6. **Regrowth** — спамить при активном дамаге (97%+ крит с Abundance стаками)
-7. **DPS** (Wrath/Starsurge/Moonfire) — когда рейд на полном ХП
+1. **Lifebloom** - на танке ВСЕГДА (целевой аптайм 95%+)
+2. **Efflorescence** - под мили-стаком
+3. **Swiftmend** - по кулдауну (~каждые 12 сек), триггерит Soul of the Forest
+4. **Wild Growth** - сразу после Swiftmend
+5. **Rejuvenation** - раскидывать на просевших / перед дамагом
+6. **Regrowth** - спамить при активном дамаге (97%+ крит с Abundance стаками)
+7. **DPS** (Wrath/Starsurge/Moonfire) - когда рейд на полном ХП
 
-**Ключевая связка:** `Swiftmend → Wild Growth` — каждые 12 сек, как часы. Топы делают это 20-40 раз за бой.
+**Ключевая связка:** `Swiftmend → Wild Growth` - каждые 12 сек, как часы. Топы делают это 20-40 раз за бой.
 
 ---
 
@@ -55,7 +55,7 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 **Паттерн:** `Innervate → Incarnation → Regrowth spam → 30 сек → Tranquility`
 
 **Стакать:** Incarnation + Innervate
-**НЕ стакать:** Incarnation + Tranquility одновременно — разноси на 30+ сек
+**НЕ стакать:** Incarnation + Tranquility одновременно - разноси на 30+ сек
 
 ---
 
@@ -94,8 +94,8 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 
 **Баф после Swiftmend**, усиливает следующий Rejuvenation (+100%) или Regrowth (+150%).
 
-- SotF → **Rejuvenation** в ~70-92% — стандарт
-- SotF → **Regrowth** в ~8-31% — когда цель в опасности
+- SotF → **Rejuvenation** в ~70-92% - стандарт
+- SotF → **Regrowth** в ~8-31% - когда цель в опасности
 
 ---
 
@@ -132,7 +132,7 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 
 ### Боссы Heroic: CD тайминги
 
-Каждый босс — отдельная заметка с детальным CD планом:
+Каждый босс - отдельная заметка с детальным CD планом:
 
 | Босс | Билд | Длительность | Заметка |
 |---|---|---|---|
@@ -148,6 +148,6 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 
 ### Ссылки
 
-- [[resto-raid-guide-normal]] — упрощённый гайд для нормала
-- [[resto-raid-guide-mythic]] — детальный гайд для мифика
-- [[resto-healing-guide]] — подробный гайд по способностям
+- [[resto-raid-guide-normal]] - упрощённый гайд для нормала
+- [[resto-raid-guide-mythic]] - детальный гайд для мифика
+- [[resto-healing-guide]] - подробный гайд по способностям

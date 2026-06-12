@@ -3,7 +3,7 @@ tags: [wow, druid, restoration, raid, boss, vs-dr-mqd]
 created: 2026-03-22
 ---
 
-## Chimaerus, the Undreamt God — Resto Druid CD Plan
+## Chimaerus, the Undreamt God - Resto Druid CD Plan
 
 Рейд: VS / DR / MQD | Patch 12.0.1 Midnight | Билд: Convoke the Spirits
 
@@ -13,7 +13,7 @@ created: 2026-03-22
 
 ~0:30 | ~1:00 | ~1:45 | ~2:15 | ~3:00 | ~3:30 | ~4:15 | ~5:00 | ~5:30 | ~6:15 | ~7:00 | ~7:30 | ~8:00-9:00
 
-### CD Plan — Convoke-билд (Heroic Kill 9:11, CD 60 сек)
+### CD Plan - Convoke-билд (Heroic Kill 9:11, CD 60 сек)
 
 | Время | CD | Notes |
 |---|---|---|
@@ -41,13 +41,13 @@ created: 2026-03-22
 
 ### Особенности Chimaerus
 
-- **Очень длинный бой** (9:11) — 8 Convoke, 2 Tranquility
-- **Convoke каждые 60-75 сек** — по CD или с небольшой задержкой на пик
-- **Tranquility** на пики 1:00 и 5:00 — не покрытые Convoke
-- **Moment at 5:30** — Convoke #5 BURST + NS + Stampeding (максимальный burst)
-- Ironbark 3 раза — ~каждые 2:30
+- **Очень длинный бой** (9:11) - 8 Convoke, 2 Tranquility
+- **Convoke каждые 60-75 сек** - по CD или с небольшой задержкой на пик
+- **Tranquility** на пики 1:00 и 5:00 - не покрытые Convoke
+- **Moment at 5:30** - Convoke #5 BURST + NS + Stampeding (максимальный burst)
+- Ironbark 3 раза - ~каждые 2:30
 - Barkskin 5 раз
-- **8 Convoke за бой** — максимальное использование CD
+- **8 Convoke за бой** - максимальное использование CD
 
 ### Сравнение с Pyrró (Normal kill)
 
@@ -61,6 +61,6 @@ Pyrró (Normal, Convoke-билд тоже) использовал Convoke 5 ра
 
 ### Ссылки
 
-- [[resto-raid-guide-heroic]] — общий гайд
-- [[crown-of-the-cosmos]] — предыдущий босс
-- [[pyrro-chimaerus-log-analysis]] — разбор Pyrró (Normal)
+- [[resto-raid-guide-heroic]] - общий гайд
+- [[crown-of-the-cosmos]] - предыдущий босс
+- [[pyrro-chimaerus-log-analysis]] - разбор Pyrró (Normal)
