@@ -6,7 +6,7 @@ tags:
 created: 2026-06-10
 ---
 
-> Описания - по официальным тултипам ru.wowhead.com (retail, патч 12.0.5), переписаны для читаемости. Приоритеты и связки - в гайдах: [[blood-guide|Blood]], [[unholy-guide|Unholy]]. Ниже сначала общие/Blood-термины, затем секции Unholy.
+> Приоритеты и связки - в гайдах: [[blood-guide|Blood]], [[unholy-guide|Unholy]]. Ниже сначала общие/Blood-термины, затем секции Unholy.
 
 ## Ресурсы
 

@@ -12,11 +12,15 @@ title: WoW Guides - Midnight 12.0.5
 - [[Evoker/Devastation/devastation-guide|Devastation Evoker Guide]]
 - [[Evoker/evoker-glossary|Evoker Glossary]]
 
+### Hunter
+- [[Hunter/Survival/survival-guide|Survival Hunter Guide]]
+- [[Hunter/hunter-glossary|Hunter Glossary]]
+
 ### Druid
-- [[Druid/Feral/feral-rotation|Feral Rotation]]
-- [[Druid/Balance/balance-rotation|Balance Rotation]]
-- [[Druid/Guardian/guardian-tank-guide|Guardian Tank Guide]]
-- [[Druid/Restoration/resto-healing-guide|Restoration Healing Guide]]
+- [[Druid/Feral/feral-guide|Feral Druid Guide]]
+- [[Druid/Balance/balance-guide|Balance Druid Guide]]
+- [[Druid/Guardian/guardian-guide|Guardian Druid Guide]]
+- [[Druid/Restoration/resto-guide|Restoration Druid Guide]]
 - [[Druid/druid-glossary|Druid Glossary]]
 
 ### Death Knight

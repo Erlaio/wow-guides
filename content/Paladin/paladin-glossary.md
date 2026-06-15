@@ -6,165 +6,167 @@ tags:
 created: 2026-03-18
 ---
 
+> Приоритеты и связки - в гайде: [[retribution-guide|Retribution]]. Глоссарий покрывает все три спека (Holy, Protection, Retribution).
+
 ## Ресурсы
 
-- **Holy Power (HoPo)** - основной ресурс паладина. Генерируется билдерами, тратится спендерами. Максимум 5 ^holy-power
-- **Mana** - ресурс Holy. Тратится на хилы, восстанавливается пассивно и через способности ^mana
+- **Энергия Света** (Holy Power, HoPo) - основной ресурс паладина. Генерируется билдерами, тратится спендерами. Максимум 5 ^holy-power
+- **Мана** (Mana) - ресурс Holy. Тратится на хилы, восстанавливается пассивно и через способности ^mana
 
 ## Типы способностей
 
-- **Билдер (Builder/Generator)** - способность, генерирующая Holy Power. Примеры: Crusader Strike, Judgment, Blade of Justice, Holy Shock ^builder
-- **Спендер (Spender)** - способность, тратящая Holy Power. Примеры: Templar's Verdict, Shield of the Righteous, Word of Glory ^spender
-- **Филлер (Filler)** - способность-заполнитель, когда билдеры на КД. Примеры: Consecration, Hammer of Wrath ^filler
-- **КД (Cooldown)** - способность с перезарядкой. Также "кулдаун" как время перезарядки ^cd
-- **GCD (Global Cooldown)** - глобальная перезарядка (~1.5 сек). Снижается Haste. Некоторые способности off-GCD (Divine Shield, SotR) ^gcd
+- **Билдер** (Builder/Generator) - способность, генерирующая Энергию Света. Примеры: Удар воина Света, Правосудие, Клинок справедливости, Шок небес ^builder
+- **Спендер** (Spender) - способность, тратящая Энергию Света. Примеры: Вердикт храмовника, Щит праведника, Торжество ^spender
+- **Филлер** (Filler) - способность-заполнитель, когда билдеры на КД. Примеры: Освящение, Молот гнева ^filler
+- **КД** (Cooldown) - способность с перезарядкой. Также "кулдаун" как время перезарядки ^cd
+- **GCD** (Global Cooldown) - глобальная перезарядка (~1.5 сек). Снижается Haste. Некоторые способности off-GCD (Божественный щит, Щит праведника) ^gcd
 
 ## Общие механики
 
-- **Judgment debuff** - Judgment навешивает дебафф на цель, усиливающий следующий спендер по ней. Ключевое окно для урона/хила ^judgment-debuff
-- **Consecration** - AoE-зона на земле. Наносит урон, у Prot даёт бонус к блоку при стоянии в зоне ^consecration-mechanic
-- **Ауры (Auras)** - пассивные эффекты на группу. Только одна аура может быть активна ^auras
-- **Blessing of Dawn / Dusk** - пассивные защитные ноды класса. Dawn: при высоком HP часть урона союзников перенаправляется на вас. Dusk: пассивная DR, усиливается при низком HP ^dawn-dusk
-- **Divine Purpose** - талант: спендеры имеют шанс прокнуть бесплатный спендер ^divine-purpose
-- **Active Mitigation** - защитные способности, которые нужно жать вручную (SotR). Обязательна для танков ^active-mitigation
+- **Дебафф от Правосудия** (Judgment debuff) - Правосудие навешивает дебафф на цель, усиливающий следующий спендер по ней. Ключевое окно для урона/хила ^judgment-debuff
+- **Освящение** (Consecration) - AoE-зона на земле. Наносит урон, у Prot даёт бонус к блоку при стоянии в зоне ^consecration-mechanic
+- **Ауры** (Auras) - пассивные эффекты на группу. Только одна аура может быть активна ^auras
+- **Благословение зари / сумерек** (Blessing of Dawn / Dusk) - пассивные защитные ноды класса. Заря: при высоком HP часть урона союзников перенаправляется на вас. Сумерки: пассивная DR, усиливается при низком HP ^dawn-dusk
+- **Божественный замысел** (Divine Purpose) - талант: спендеры имеют шанс прокнуть бесплатный спендер ^divine-purpose
+- **Активная митигация** (Active Mitigation) - защитные способности, которые нужно жать вручную (Щит праведника). Обязательна для танков ^active-mitigation
 
 ## Общие способности класса
 
-- **Divine Shield (Бабл)** - полная иммунность на 8 сек. Визитная карточка паладина. 5 мин КД ^divine-shield
-- **Blessing of Protection (BoP)** - иммунность к физическому урону на союзника, 5 мин КД. Снимает физические дебаффы ^bop
-- **Blessing of Freedom (BoF)** - снимает и предотвращает замедления и руты на 8 сек ^bof
-- **Blessing of Sacrifice (BoS)** - перенаправляет 30% урона союзника на паладина на 12 сек ^bos
-- **Lay on Hands (LoH)** - мгновенное лечение цели на 100% HP. 10 мин КД (7 мин с Tirion's Devotion) ^lay-on-hands
-- **Word of Glory (WoG)** - базовый спендер-хил за 3 HoPo. Доступен всем спекам ^wog
-- **Flash of Light (FoL)** - быстрый хил с кастом. Мана-затратный ^flash-of-light
-- **Hammer of Justice (HoJ)** - стан на 6 сек. 45 сек КД (30 сек с талантом Fist of Justice) ^hoj
-- **Blinding Light** - AoE дизориент на 6 сек. Талант ^blinding-light
-- **Divine Steed** - рывок на ~3 сек, увеличивает скорость на 100%. 45 сек КД, может иметь 2 заряда ^divine-steed
-- **Avenging Wrath (AW)** - основной бёрст-КД: +20% урона и хила на 24 сек. 1 мин КД ^avenging-wrath
-- **Crusade** - талантовый выбор вместо AW: при касте спендеров стакает хасту (2% за стак, макс 10 стаков = 20%). Нарастает от спендеров ^crusade
-- **Consecration** - AoE-зона урона под ногами. 9 сек длительность ^consecration
-- **Judgment** - рейнж-атака, генерирует 1 HoPo, навешивает дебафф на цель ^judgment
-- **Divine Toll** - кастует Judgment по 5 целям (или Holy Shock для Holy). 1 мин КД (30 сек с талантом) ^divine-toll
-- **Aura Mastery** - усиливает текущую ауру на 6 сек. Devotion Aura с AM = 30% DR рейду ^aura-mastery
-- **Devotion Aura** - пассивное снижение урона группе на 3%. Стандартная аура ^devotion-aura
-- **Retribution Aura** - при гибели союзника - бёрст для группы на 10 сек ^retribution-aura
-- **Hammer of Wrath (HoW)** - экзекьют ниже 20% HP или во время AW/Crusade. Генерирует HoPo ^hammer-of-wrath
-- **Turn Evil** - фир на нежить/демонов ^turn-evil
-- **Cleanse Toxins** - диспел яда и болезни (Ret/Prot). Holy версия - Cleanse - снимает ещё и магию ^cleanse
+- **Божественный щит** (Divine Shield, Бабл) - полная иммунность на 8 сек. Визитная карточка паладина. 5 мин КД ^divine-shield
+- **Благословение защиты** (Blessing of Protection, BoP) - иммунность к физическому урону на союзника, 5 мин КД. Снимает физические дебаффы ^bop
+- **Благословенная свобода** (Blessing of Freedom, BoF) - снимает и предотвращает замедления и руты на 8 сек ^bof
+- **Жертвенное благословение** (Blessing of Sacrifice, BoS) - перенаправляет 30% урона союзника на паладина на 12 сек ^bos
+- **Возложение рук** (Lay on Hands, LoH) - мгновенное лечение цели на 100% HP. 10 мин КД (7 мин с Tirion's Devotion) ^lay-on-hands
+- **Торжество** (Word of Glory, WoG) - базовый спендер-хил за 3 Энергии Света. Доступен всем спекам ^wog
+- **Вспышка Света** (Flash of Light, FoL) - быстрый хил с кастом. Мана-затратный ^flash-of-light
+- **Молот правосудия** (Hammer of Justice, HoJ) - стан на 6 сек. 45 сек КД (30 сек с талантом Кулак правосудия) ^hoj
+- **Слепящий свет** (Blinding Light) - AoE дизориент на 6 сек. Талант ^blinding-light
+- **Божественный скакун** (Divine Steed) - рывок на ~3 сек, увеличивает скорость на 100%. 45 сек КД, может иметь 2 заряда ^divine-steed
+- **Гнев карателя** (Avenging Wrath, AW) - основной бёрст-КД: +20% урона и хила на 24 сек. 1 мин КД ^avenging-wrath
+- **Священная война** (Crusade) - талантовый выбор вместо Гнева карателя: при касте спендеров стакает хасту (2% за стак, макс 10 стаков = 20%). Нарастает от спендеров ^crusade
+- **Освящение** (Consecration) - AoE-зона урона под ногами. 9 сек длительность ^consecration
+- **Правосудие** (Judgment) - рейнж-атака, генерирует 1 Энергию Света, навешивает дебафф на цель ^judgment
+- **Божественный благовест** (Divine Toll) - кастует Правосудие по 5 целям (или Шок небес для Holy). 1 мин КД (30 сек с талантом) ^divine-toll
+- **Владение аурами** (Aura Mastery, AM) - усиливает текущую ауру на 6 сек. Аура благочестия с AM = 30% DR рейду ^aura-mastery
+- **Аура благочестия** (Devotion Aura) - пассивное снижение урона группе на 3%. Стандартная аура ^devotion-aura
+- **Аура воздаяния** (Retribution Aura) - при гибели союзника - бёрст для группы на 10 сек ^retribution-aura
+- **Молот гнева** (Hammer of Wrath, HoW) - экзекьют ниже 20% HP или во время Гнева карателя/Священной войны. Генерирует Энергию Света ^hammer-of-wrath
+- **Изгнание зла** (Turn Evil) - фир на нежить/демонов ^turn-evil
+- **Очищение от токсинов** (Cleanse Toxins) - диспел яда и болезни (Ret/Prot). Holy версия - Очищение (Cleanse) - снимает ещё и магию ^cleanse
 
 ## Protection
 
-- **Shield of the Righteous (SotR)** - основной спендер Prot, активная митигация. Увеличивает армор на 4.5 сек. Off-GCD. Держать 100% аптайм ^sotr
-- **Avenger's Shield (AS)** - рейнж-билдер, прерывает касты, баунсится на 3 цели. Генерирует 1 HoPo ^avengers-shield
-- **Hammer of the Righteous (HotR)** - мили-билдер, AoE. Генерирует 1 HoPo ^hotr
-- **Blessed Hammer** - альтернатива HotR: вращающиеся молотки, наносят урон и снижают урон атак врагов ^blessed-hammer
-- **Guardian of Ancient Kings (GoAK)** - мощный дефенсив: 50% DR на 8 сек. 3 мин КД ^goak
-- **Ardent Defender (AD)** - 20% DR на 8 сек + если HP дропнется до 0, восстанавливает 20% HP. 90 сек КД ^ardent-defender
-- **Sentinel** - альтернатива AW для Prot: стакающийся бафф DR и урона. Нарастает от атак ^sentinel
-- **Righteous Protector** - спендеры снижают КД AW/Sentinel и GoAK ^righteous-protector
-- **Empyrean Authority** - Avenger's Shield баунсится на доп. цели и генерирует больше HoPo ^empyrean-authority
-- **Shining Light** - 3 каста SotR = бесплатный WoG ^shining-light
-- **Bulwark of Order** - Avenger's Shield дополнительно вешает на вас щит на 8 сек, поглощающий до 50% макс. HP. Защитный талант Prot ^bulwark-of-order
-- **Tyr's Enforcer** - Avenger's Shield наносит дополнительный Holy-урон по всем врагам в 5 ярдах вокруг каждой задетой цели ^tyrs-enforcer
-- **Grand Crusader** - прок: сброс КД Avenger's Shield от автоатак или HotR ^grand-crusader
-- **Block** - механика щита: шанс заблокировать часть физического урона. Зависит от Mastery ^block
-- **Parry** - шанс парировать атаку, полностью избегая урона ^parry
-- **Spell Block** - талантовая механика: возможность блокировать магические атаки щитом ^spell-block
-- **Mastery: Divine Bulwark** - увеличивает шанс блока и силу блока. Также увеличивает урон при стоянии в Consecration ^mastery-prot
+- **Щит праведника** (Shield of the Righteous, SotR) - основной спендер Prot, активная митигация. Увеличивает армор на 4.5 сек. Off-GCD. Держать 100% аптайм ^sotr
+- **Щит мстителя** (Avenger's Shield, AS) - рейнж-билдер, прерывает касты, баунсится на 3 цели. Генерирует 1 Энергию Света ^avengers-shield
+- **Молот праведника** (Hammer of the Righteous, HotR) - мили-билдер, AoE. Генерирует 1 Энергию Света ^hotr
+- **Благословенный молот** (Blessed Hammer) - альтернатива Молоту праведника: вращающиеся молотки, наносят урон и снижают урон атак врагов ^blessed-hammer
+- **Защитник древних королей** (Guardian of Ancient Kings, GoAK) - мощный дефенсив: 50% DR на 8 сек. 3 мин КД ^goak
+- **Ревностный защитник** (Ardent Defender, AD) - 20% DR на 8 сек + если HP дропнется до 0, восстанавливает 20% HP. 90 сек КД ^ardent-defender
+- **Часовой** (Sentinel) - альтернатива Гневу карателя для Prot: стакающийся бафф DR и урона. Нарастает от атак ^sentinel
+- **Праведный защитник** (Righteous Protector) - спендеры снижают КД Гнева карателя/Часового и Защитника древних королей ^righteous-protector
+- **Высшая власть** (Empyrean Authority) - Щит мстителя баунсится на доп. цели и генерирует больше Энергии Света ^empyrean-authority
+- **Яркий Свет** (Shining Light) - 3 каста Щита праведника = бесплатное Торжество ^shining-light
+- **Оплот порядка** (Bulwark of Order) - Щит мстителя дополнительно вешает на вас щит на 8 сек, поглощающий до 50% макс. HP. Защитный талант Prot ^bulwark-of-order
+- **Каратель Тира** (Tyr's Enforcer) - Щит мстителя наносит дополнительный Holy-урон по всем врагам в 5 ярдах вокруг каждой задетой цели ^tyrs-enforcer
+- **Великий воин Света** (Grand Crusader) - прок: сброс КД Щита мстителя от автоатак или Молота праведника ^grand-crusader
+- **Блок** (Block) - механика щита: шанс заблокировать часть физического урона. Зависит от Mastery ^block
+- **Парирование** (Parry) - шанс парировать атаку, полностью избегая урона ^parry
+- **Блок заклинаний** (Spell Block) - талантовая механика: возможность блокировать магические атаки щитом ^spell-block
+- **Искусность: священный оплот** (Mastery: Divine Bulwark) - увеличивает шанс блока и силу блока. Также увеличивает урон при стоянии в Освящении ^mastery-prot
 
 ## Retribution
 
-- **Templar's Verdict (TV)** - основной ST-спендер за 3 HoPo. Мощный мили-удар ^templar-verdict
-- **Final Verdict** - усиленная версия TV, доступна через таланты. Наносит Holy урон ^final-verdict
-- **Divine Storm (DS)** - AoE-спендер за 3 HoPo. Основной расход HoPo в AoE ^divine-storm
-- **Blade of Justice (BoJ)** - основной ST-билдер, генерирует 1 HoPo (2 с талантом Improved Blade of Justice). Короткий КД ^blade-of-justice
-- **Crusading Strikes** - пассив: Crusader Strike заменяет автоатаки, наносит физ. урон, но автоатаки на 20% медленнее. Не генерирует HoPo ^crusading-strikes
-- **Templar Strikes** - альтернатива Crusading Strikes: двухфазный комбо (Templar Slash → Templar Strike), генерирует 2 HoPo за полный цикл ^templar-strikes
-- **Wake of Ashes** - AoE-атака, генерирует 3 HoPo. 30 сек КД. Ключевая для бёрста ^wake-of-ashes
-- **Execution Sentence** - дебафф на цель, накапливает урон и взрывается через 10 сек. 1 мин КД. Сильный ST-КД ^execution-sentence
-- **Expurgation** - пассив: Blade of Justice оставляет DoT на цели ^expurgation
-- **Radiant Glory** - альтернатива Crusade: AW автоматически активируется на 12 сек при Wake of Ashes. Не требует ручного нажатия ^radiant-glory
-- **Art of War** - прок: автоатаки имеют 15% шанс сбросить КД Blade of Justice; криты дают +10% (итого 25%) ^art-of-war
-- **Divine Resonance** - после Divine Toll: автоматически кастует Judgment каждые 5 сек в течение 15 сек ^divine-resonance
-- **Бёрст-окно (Burst Window)** - период максимального урона: AW/Crusade + Wake of Ashes + спендеры. Правильное выстраивание бёрста - ключ к высокому DPS ^burst-window
-- **Mastery: Highlord's Judgment** - увеличивает Holy-урон всех способностей + Judgment имеет шанс прокнуть дополнительный Holy-урон ^mastery-ret
+- **Вердикт храмовника** (Templar's Verdict, TV) - основной ST-спендер за 3 Энергии Света. Мощный мили-удар ^templar-verdict
+- **Окончательный приговор** (Final Verdict) - усиленная версия Вердикта храмовника, доступна через таланты. Наносит Holy урон ^final-verdict
+- **Божественная буря** (Divine Storm, DS) - AoE-спендер за 3 Энергии Света. Основной расход Энергии Света в AoE ^divine-storm
+- **Клинок справедливости** (Blade of Justice, BoJ) - основной ST-билдер, генерирует 1 Энергию Света (2 с талантом Улучшенный клинок справедливости). Короткий КД ^blade-of-justice
+- **Удары Света** (Crusading Strikes) - пассив: Удар воина Света заменяет автоатаки, наносит физ. урон, но автоатаки на 20% медленнее. Не генерирует Энергию Света ^crusading-strikes
+- **Удары храмовника** (Templar Strikes) - альтернатива Ударам Света: двухфазный комбо (Резкий удар храмовника → Удар храмовника), генерирует 2 Энергии Света за полный цикл ^templar-strikes
+- **Испепеляющий след** (Wake of Ashes) - AoE-атака, генерирует 3 Энергии Света. 30 сек КД. Ключевая для бёрста ^wake-of-ashes
+- **Смертный приговор** (Execution Sentence) - дебафф на цель, накапливает урон и взрывается через 10 сек. 1 мин КД. Сильный ST-КД ^execution-sentence
+- **Огонь очищения** (Expurgation) - пассив: Клинок справедливости оставляет DoT на цели ^expurgation
+- **Блистательная слава** (Radiant Glory) - альтернатива Священной войне: Гнев карателя автоматически активируется на 12 сек при Испепеляющем следе. Не требует ручного нажатия ^radiant-glory
+- **Искусство войны** (Art of War) - прок: автоатаки имеют 15% шанс сбросить КД Клинка справедливости; криты дают +10% (итого 25%) ^art-of-war
+- **Божественный резонанс** (Divine Resonance) - после Божественного благовеста: автоматически кастует Правосудие каждые 5 сек в течение 15 сек ^divine-resonance
+- **Бёрст-окно** (Burst Window) - период максимального урона: Гнев карателя/Священная война + Испепеляющий след + спендеры. Правильное выстраивание бёрста - ключ к высокому DPS ^burst-window
+- **Искусность: вердикт верховного лорда** (Mastery: Highlord's Judgment) - увеличивает Holy-урон всех способностей + Правосудие имеет шанс прокнуть дополнительный Holy-урон ^mastery-ret
 
 ## Holy
 
-- **Holy Shock (HS)** - основной билдер Holy: мгновенный хил или урон. Генерирует 1 HoPo. 6 сек КД, может критовать с усиленным бонусом ^holy-shock
-- **Holy Light** - медленный, но эффективный хил. Используется при Infusion of Light проке ^holy-light
-- **Light of Dawn (LoD)** - AoE-хил-спендер за 3 HoPo. Конусный хил на 5 союзников перед паладином ^light-of-dawn
-- **Beacon of Light** - ставится на танка. 50% всего хила дублируется на цель с Beacon ^beacon-of-light
-- **Holy Prism** - урон по врагу → хил ближайшим союзникам, или хил по союзнику → урон ближайшим врагам ^holy-prism
-- **Divine Favor** - следующий Holy Light или Flash of Light: +60% хила, мгновенный каст. 30 сек КД ^divine-favor
-- **Infusion of Light** - прок от крита Holy Shock: ускоряет каст Holy Light или Flash of Light ^infusion-of-light
-- **Light's Conviction** - Holy Shock получает доп. заряды или сниженный КД ^lights-conviction
-- **Ringing of the Heavens** - каждый спендер генерирует стак, при 5 стаках - мощный AoE-хил ^ringing-of-the-heavens
-- **Liberation** - Word of Glory освобождает от движения-ограничивающих эффектов ^liberation
-- **Seraphic Barrier** - Barrier of Faith: абсорб-щит на союзника ^seraphic-barrier
-- **Beacon Healing** - стиль хила Holy: весь прямой хил дублируется на Beacon-цель. Позволяет хилить рейд, пока танк получает пассивный хил ^beacon-healing
-- **Рамп (Ramp)** - подготовка к входящему урону: расставить Beacon, подготовить КД, копить HoPo для быстрых LoD/WoG ^ramp
-- **Mastery: Lightbringer** - хил усиливается на основе расстояния до цели - чем ближе, тем сильнее. До +24% на макс. Mastery ^mastery-holy
+- **Шок небес** (Holy Shock, HS) - основной билдер Holy: мгновенный хил или урон. Генерирует 1 Энергию Света. 6 сек КД, может критовать с усиленным бонусом ^holy-shock
+- **Свет небес** (Holy Light) - медленный, но эффективный хил. Используется при проке Прилива Света ^holy-light
+- **Свет зари** (Light of Dawn, LoD) - AoE-хил-спендер за 3 Энергии Света. Конусный хил на 5 союзников перед паладином ^light-of-dawn
+- **Частица Света** (Beacon of Light) - ставится на танка. 50% всего хила дублируется на цель с Частицей Света ^beacon-of-light
+- **Божественная призма** (Holy Prism) - урон по врагу → хил ближайшим союзникам, или хил по союзнику → урон ближайшим врагам ^holy-prism
+- **Божественное одобрение** (Divine Favor) - следующий Свет небес или Вспышка Света: +60% хила, мгновенный каст. 30 сек КД ^divine-favor
+- **Прилив Света** (Infusion of Light) - прок от крита Шока небес: ускоряет каст Света небес или Вспышки Света ^infusion-of-light
+- **Убежденность Света** (Light's Conviction) - Шок небес получает доп. заряды или сниженный КД ^lights-conviction
+- **Небесный звон** (Ringing of the Heavens) - каждый спендер генерирует стак, при 5 стаках - мощный AoE-хил ^ringing-of-the-heavens
+- **Освобождение** (Liberation) - Торжество освобождает от движения-ограничивающих эффектов ^liberation
+- **Неземная преграда** (Seraphic Barrier) - Барьер веры (Barrier of Faith): абсорб-щит на союзника ^seraphic-barrier
+- **Хил через Частицу Света** (Beacon Healing) - стиль хила Holy: весь прямой хил дублируется на цель с Частицей Света. Позволяет хилить рейд, пока танк получает пассивный хил ^beacon-healing
+- **Рамп** (Ramp) - подготовка к входящему урону: расставить Частицу Света, подготовить КД, копить Энергию Света для быстрых Света зари/Торжества ^ramp
+- **Искусность: Светоносный** (Mastery: Lightbringer) - хил усиливается на основе расстояния до цели - чем ближе, тем сильнее. До +24% на макс. Mastery ^mastery-holy
 
 ## Hero Talents
 
 ### Lightsmith (Holy + Prot)
 
-- **Holy Armaments** - генерирует Sacred Weapon или Holy Bulwark для союзников. Выбор зависит от ситуации ^holy-armaments
-- **Holy Bulwark** - армамент: абсорб-щит + бонус армора. Для танков и в тяжёлом урон-окне ^holy-bulwark
-- **Sacred Weapon** - армамент: бонус урона/хила. Для DPS-фазы и офф-хила ^sacred-weapon
-- **Blessing of the Forge** - усиленное благословение, привязанное к армаментам ^blessing-of-the-forge
-- **Blessed Assurance** - спендеры усиливают армаменты ^blessed-assurance
-- **Hammer and Anvil** - взаимодействие армаментов с Judgment ^hammer-and-anvil
+- **Святой оплот** (Holy Armaments) - генерирует Святое оружие (Sacred Weapon) или Святое оружие-щит (Holy Bulwark) для союзников. Выбор зависит от ситуации ^holy-armaments
+- **Святое оружие-щит** (Holy Bulwark) - армамент: абсорб-щит + бонус армора. Для танков и в тяжёлом урон-окне ^holy-bulwark
+- **Святое оружие** (Sacred Weapon) - армамент: бонус урона/хила. Для DPS-фазы и офф-хила ^sacred-weapon
+- **Благословение горна** (Blessing of the Forge) - усиленное благословение, привязанное к армаментам ^blessing-of-the-forge
+- **Благословенное обещание** (Blessed Assurance) - спендеры усиливают армаменты ^blessed-assurance
+- **Молот и наковальня** (Hammer and Anvil) - взаимодействие армаментов с Правосудием ^hammer-and-anvil
 
 ### Herald of the Sun (Holy + Ret)
 
-- **Dawnlight** - основной эффект: Holy Shock / Wake of Ashes оставляют Dawnlight HoT/DoT на цели ^dawnlight
-- **Sun's Avatar** - бёрст-КД: усиленная версия AW, взаимодействует с Dawnlight ^suns-avatar
-- **Eternal Flame** - Word of Glory оставляет HoT на цели ^eternal-flame
-- **Solar Grace** - получение хила от Dawnlight даёт бафф хасты ^solar-grace
-- **Luminosity** - усиливает критический хил Holy Shock ^luminosity
-- **Walk Into Light** - бонус скорости при Sun's Avatar ^walk-into-light
-- **Second Sunrise** - шанс повторить Holy Shock / Light of Dawn ^second-sunrise
+- **Светозар** (Dawnlight) - основной эффект: Шок небес / Испепеляющий след оставляют Dawnlight HoT/DoT на цели ^dawnlight
+- **Аватара солнца** (Sun's Avatar) - бёрст-КД: усиленная версия Гнева карателя, взаимодействует со Светозаром ^suns-avatar
+- **Вечное пламя** (Eternal Flame) - Торжество оставляет HoT на цели ^eternal-flame
+- **Милость Солнца** (Solar Grace) - получение хила от Светозара даёт бафф хасты ^solar-grace
+- **Свечение** (Luminosity) - усиливает критический хил Шока небес ^luminosity
+- **Выйти на свет** (Walk Into Light) - бонус скорости при Аватаре солнца ^walk-into-light
+- **Второй рассвет** (Second Sunrise) - шанс повторить Шок небес / Свет зари ^second-sunrise
 
 ### Templar (Ret + Prot)
 
-- **Hammer of Light** - мощный финишер за 5 HoPo. Наносит огромный AoE-урон и хилит. Основная механика Темплара ^hammer-of-light
-- **Shake the Heavens** - касты билдеров генерируют стаки для активации Hammer of Light ^shake-the-heavens
-- **Empyrean Hammer** - автоматические молоты с неба при использовании основных способностей ^empyrean-hammer
-- **Wrathful Descent** - Divine Storm усилен при активном Hammer of Light ^wrathful-descent
-- **Divine Hammer** - Consecration заменяется вращающимися молотами ^divine-hammer
-- **Light's Deliverance** - Hammer of Light дополнительно хилит группу ^lights-deliverance
-- **Seal of the Templar** - Hammer of Light усиливается от потраченных HoPo ^seal-of-the-templar
+- **Молот Света** (Hammer of Light) - мощный финишер за 5 Энергии Света. Наносит огромный AoE-урон и хилит. Основная механика Темплара ^hammer-of-light
+- **Сотрясение небес** (Shake the Heavens) - касты билдеров генерируют стаки для активации Молота Света ^shake-the-heavens
+- **Небесный молот** (Empyrean Hammer) - автоматические молоты с неба при использовании основных способностей ^empyrean-hammer
+- **Гневное падение** (Wrathful Descent) - Божественная буря усилена при активном Молоте Света ^wrathful-descent
+- **Божественный молот** (Divine Hammer) - Освящение заменяется вращающимися молотами ^divine-hammer
+- **Избавление Света** (Light's Deliverance) - Молот Света дополнительно хилит группу ^lights-deliverance
+- **Печать храмовника** (Seal of the Templar) - Молот Света усиливается от потраченной Энергии Света ^seal-of-the-templar
 
 ## Apex Talents
 
-- **Light Within (Ret)** - 4 ранга. Усиливает взаимодействие Dawn/Dusk с бёрст-окном. Каждый ранг добавляет новый эффект: увеличение урона, доп. HoPo, продление AW ^light-within
-- **Glory of the Vanguard (Prot)** - 4 ранга. Усиливает танковую устойчивость: каждый ранг добавляет бонус к SotR, GoAK, блоку или хилу от WoG ^glory-of-the-vanguard
-- **Beacon of the Savior (Holy)** - 3 ранга. Усиливает Beacon-механику: больше хила через Beacon, доп. эффекты от Beacon-переключения, усиленный AoE-хил ^beacon-of-the-savior
+- **Свет в душе** (Light Within, Ret) - 4 ранга. Усиливает взаимодействие Благословения зари/сумерек с бёрст-окном. Каждый ранг добавляет новый эффект: увеличение урона, доп. Энергия Света, продление Гнева карателя ^light-within
+- **Слава авангарда** (Glory of the Vanguard, Prot) - 4 ранга. Усиливает танковую устойчивость: каждый ранг добавляет бонус к Щиту праведника, Защитнику древних королей, блоку или хилу от Торжества ^glory-of-the-vanguard
+- **Маяк спасителя** (Beacon of the Savior, Holy) - 3 ранга. Усиливает механику Частицы Света: больше хила через Частицу Света, доп. эффекты от переключения Частицы Света, усиленный AoE-хил ^beacon-of-the-savior
 
 ## Сокращения
 
-- **BoP** - Blessing of Protection ^abbr-bop
-- **BoF** - Blessing of Freedom ^abbr-bof
-- **BoS** - Blessing of Sacrifice ^abbr-bos
-- **WoG** - Word of Glory ^abbr-wog
-- **SotR** - Shield of the Righteous ^abbr-sotr
-- **TV** - Templar's Verdict ^abbr-tv
-- **DS** - Divine Storm ^abbr-ds
-- **AS** - Avenger's Shield ^abbr-as
-- **HoPo** - Holy Power ^abbr-hopo
-- **HoJ** - Hammer of Justice ^abbr-hoj
-- **HoW** - Hammer of Wrath ^abbr-how
-- **GoAK** - Guardian of Ancient Kings ^abbr-goak
-- **AD** - Ardent Defender ^abbr-ad
-- **LoH** - Lay on Hands ^abbr-loh
-- **HS** - Holy Shock ^abbr-hs
-- **LoD** - Light of Dawn ^abbr-lod
-- **DP** - Divine Purpose ^abbr-dp
-- **AW** - Avenging Wrath ^abbr-aw
-- **FoL** - Flash of Light ^abbr-fol
-- **BoJ** - Blade of Justice ^abbr-boj
-- **HotR** - Hammer of the Righteous ^abbr-hotr
-- **AM** - Aura Mastery ^abbr-am
-- **HoL** - Hammer of Light ^abbr-hol
+- **BoP** - Благословение защиты (Blessing of Protection) ^abbr-bop
+- **BoF** - Благословенная свобода (Blessing of Freedom) ^abbr-bof
+- **BoS** - Жертвенное благословение (Blessing of Sacrifice) ^abbr-bos
+- **WoG** - Торжество (Word of Glory) ^abbr-wog
+- **SotR** - Щит праведника (Shield of the Righteous) ^abbr-sotr
+- **TV** - Вердикт храмовника (Templar's Verdict) ^abbr-tv
+- **DS** - Божественная буря (Divine Storm) ^abbr-ds
+- **AS** - Щит мстителя (Avenger's Shield) ^abbr-as
+- **HoPo** - Энергия Света (Holy Power) ^abbr-hopo
+- **HoJ** - Молот правосудия (Hammer of Justice) ^abbr-hoj
+- **HoW** - Молот гнева (Hammer of Wrath) ^abbr-how
+- **GoAK** - Защитник древних королей (Guardian of Ancient Kings) ^abbr-goak
+- **AD** - Ревностный защитник (Ardent Defender) ^abbr-ad
+- **LoH** - Возложение рук (Lay on Hands) ^abbr-loh
+- **HS** - Шок небес (Holy Shock) ^abbr-hs
+- **LoD** - Свет зари (Light of Dawn) ^abbr-lod
+- **DP** - Божественный замысел (Divine Purpose) ^abbr-dp
+- **AW** - Гнев карателя (Avenging Wrath) ^abbr-aw
+- **FoL** - Вспышка Света (Flash of Light) ^abbr-fol
+- **BoJ** - Клинок справедливости (Blade of Justice) ^abbr-boj
+- **HotR** - Молот праведника (Hammer of the Righteous) ^abbr-hotr
+- **AM** - Владение аурами (Aura Mastery) ^abbr-am
+- **HoL** - Молот Света (Hammer of Light) ^abbr-hol

@@ -187,7 +187,7 @@ SM жми каждые 12 сек без пропусков.
 
 - [[resto-raid-guide-heroic]] - героик гайд
 - [[resto-raid-guide-normal]] - нормал гайд
-- [[resto-healing-guide]] - подробный гайд по способностям
+- [[resto-guide]] - подробный гайд по способностям
 
 
 

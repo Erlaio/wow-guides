@@ -150,4 +150,4 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 
 - [[resto-raid-guide-normal]] - упрощённый гайд для нормала
 - [[resto-raid-guide-mythic]] - детальный гайд для мифика
-- [[resto-healing-guide]] - подробный гайд по способностям
+- [[resto-guide]] - подробный гайд по способностям
