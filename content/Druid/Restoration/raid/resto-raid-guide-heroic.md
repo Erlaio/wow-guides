@@ -5,9 +5,9 @@ created: 2026-03-22
 
 ## Resto Druid Raid Healing Guide - Heroic
 
-Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализа топовых логов (99+ парсы)
+Patch 12.0.5 Midnight | Рейд: VS / DR / MQD
 
-> **Оба билда жизнеспособны!** Топ-1 игроки меняют билд в зависимости от босса.
+> **Оба билда жизнеспособны!** Билд меняют в зависимости от босса.
 > - **Incarnation: Tree of Life** - Imperator Averzian, Vorasius, Vaelgor & Ezzorak, Crown of the Cosmos
 > - **Convoke the Spirits** - Fallen-King Salhadaar, Lightblinded Vanguard, Chimaerus
 
@@ -132,17 +132,17 @@ Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализ
 
 ### Боссы Heroic: CD тайминги
 
-Каждый босс - отдельная заметка с детальным CD планом:
+Боссы рейда и рекомендуемый билд:
 
-| Босс | Билд | Длительность | Заметка |
-|---|---|---|---|
-| Imperator Averzian | Incarnation | ~4:35 | [[imperator-averzian]] |
-| Vorasius | Incarnation | ~4:44 | [[vorasius]] |
-| Fallen-King Salhadaar | Convoke | ~6:13 | [[fallen-king-salhadaar]] |
-| Vaelgor & Ezzorak | Incarnation | ~8:50 | [[vaelgor-ezzorak]] |
-| Lightblinded Vanguard | Convoke | ~4:54 | [[lightblinded-vanguard]] |
-| Crown of the Cosmos | Incarnation | ~9:14 | [[crown-of-the-cosmos]] |
-| Chimaerus, the Undreamt God | Convoke | ~9:11 | [[chimaerus-the-undreamt-god]] |
+| Босс | Билд | Длительность |
+|---|---|---|
+| Imperator Averzian | Incarnation | ~4:35 |
+| Vorasius | Incarnation | ~4:44 |
+| Fallen-King Salhadaar | Convoke | ~6:13 |
+| Vaelgor & Ezzorak | Incarnation | ~8:50 |
+| Lightblinded Vanguard | Convoke | ~4:54 |
+| Crown of the Cosmos | Incarnation | ~9:14 |
+| Chimaerus, the Undreamt God | Convoke | ~9:11 |
 
 ---
 

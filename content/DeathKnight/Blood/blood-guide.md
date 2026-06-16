@@ -10,10 +10,10 @@ created: 2026-06-10
 
 Термины и сокращения → [[deathknight-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
 
 > [!note] Про названия
-> Способности названы по-русски (как в игре), в скобках - оригинал на английском (для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы и расходники - в формате `Русское (English)`; статы (Strength/Haste/Crit/Vers/Mastery) оставлены на английском.
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
 
 ---
 
@@ -85,7 +85,7 @@ Blood - это **танк, который лечит сам себя**. Идея
 
 Таланты - это твоя "сборка". Не вникай в каждую кнопку сразу: ниже есть готовые сборки для копирования.
 
-### Hero Talent (главная развилка)
+### Героическое древо (главная развилка)
 
 > [!note] Итог: San'layn в рейд, Deathbringer в M+
 > **[[deathknight-glossary#^sanlayn|Сан'лейн]]** (San'layn) даёт больше урона и лучше в рейде. **[[deathknight-glossary#^deathbringer|Вестник Смерти]]** (Deathbringer) проще и танковее - выбор для M+. Оба полностью рабочие.
@@ -100,9 +100,9 @@ Blood - это **танк, который лечит сам себя**. Идея
 ### Гибкие узлы (утилити под контент)
 
 Класс-дерево очень гибкое. Под данж/рейд варьируй:
-- **[[deathknight-glossary#^gorefiends-grasp|Хватка Кровожада]]** (собрать пак) или Abomination Limb (если адды появляются с задержкой).
+- **[[deathknight-glossary#^gorefiends-grasp|Хватка Кровожада]]** (собрать пак) или Рука поганища (Abomination Limb), если адды появляются с задержкой.
 - **[[deathknight-glossary#^anti-magic-zone|Зона антимагии]]** - под магические КД-планы.
-- Grip of the Dead - очень полезен в M+ для кайтинга.
+- Хватка мертвых (Grip of the Dead) - очень полезен в M+ для кайтинга.
 
 ---
 
@@ -183,10 +183,10 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 **Как работает связка:**
 
 - **Жми [[deathknight-glossary#^reapers-mark|Метку жнеца]] по кулдауну** на главную цель - это твой основной урон-кулдаун, не копи её "на потом".
-- Пока метка висит, её стаки копит **любой твой Shadowfrost-урон**, и у Blood это происходит само собой: с талантом Bind in Darkness **[[deathknight-glossary#^blood-boil|Вскипание крови]]** становится Shadowfrost и вешает по 2 стака за каст, а с Dark Talons **[[deathknight-glossary#^marrowrend|Дробление хребта]]** и **[[deathknight-glossary#^heart-strike|Удар в сердце]]** тоже считаются Shadowfrost. Вывод: **не простаивай, пока метка активна** - чем больше бьёшь, тем раньше и сильнее взрыв (40 стаков = досрочная детонация).
-- **Взрыв** наносит крупный Shadowfrost-урон (тем больше, чем больше стаков), задевает соседей (Soul Rupture) и сильнее бьёт по целям с низким HP (Grim Reaper). Умерла цель - метка прыгает на другого врага.
+- Пока метка висит, её стаки копит **любой твой Shadowfrost-урон**, и у Blood это происходит само собой: с талантом Путы тьмы (Bind in Darkness) **[[deathknight-glossary#^blood-boil|Вскипание крови]]** становится Shadowfrost и вешает по 2 стака за каст, а с Тёмными когтями (Dark Talons) **[[deathknight-glossary#^marrowrend|Дробление хребта]]** и **[[deathknight-glossary#^heart-strike|Удар в сердце]]** тоже считаются Shadowfrost. Вывод: **не простаивай, пока метка активна** - чем больше бьёшь, тем раньше и сильнее взрыв (40 стаков = досрочная детонация).
+- **Взрыв** наносит крупный Shadowfrost-урон (тем больше, чем больше стаков), задевает соседей (Разрушение души, Soul Rupture) и сильнее бьёт по целям с низким HP (Угрюмый жнец, Grim Reaper). Умерла цель - метка прыгает на другого врага.
 - После взрыва ты получаешь **[[deathknight-glossary#^exterminate|Истребление]] (Exterminate)**: следующие **2 Дробления хребта** стоят 1 руну и призывают косы - сильный удар по цели + Shadowfrost по площади. **Не теряй это окно**: сразу после детонации слей оба усиленных Дробления хребта (заодно подровняешь Костяной щит).
-- **[[deathknight-glossary#^dancing-rune-weapon|Танцующее руническое оружие]]** через Echoing Fury даёт ещё один заряд Истребления - удобно совмещать с окном Метки жнеца для пика урона.
+- **[[deathknight-glossary#^dancing-rune-weapon|Танцующее руническое оружие]]** через Отголосок ярости (Echoing Fury) даёт ещё один заряд Истребления - удобно совмещать с окном Метки жнеца для пика урона.
 
 > [!tip] Коротко
 > Метка жнеца - по кулдауну → пока висит, дави обычную ротацию (особенно Вскипание крови) → на взрыве сразу слей 2 усиленных Дробления хребта (Истребление). Это даёт основную долю твоего урона и не мешает выживанию.
@@ -225,7 +225,7 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 - **Угроза:** на заходе в пак [[deathknight-glossary#^death-and-decay|Смерть и разложение]] + [[deathknight-glossary#^blood-boil|Вскипание крови]] (вешает Кровавую чуму на всех) - так враги быстро прилипают к тебе.
 - **[[deathknight-glossary#^gorefiends-grasp|Хватка Кровожада]]** - стянуть разбежавшийся пак в кучу под АоЕ.
 - **[[deathknight-glossary#^death-grip|Хватка смерти]]** - подтянуть отбежавшего/опасного врага (это ещё и таунт).
-- **Кайтинг:** с Grip of the Dead и [[deathknight-glossary#^deaths-advance|Поступью смерти]] можно отступать, замедляя врагов и избегая лишних ударов на сложных пулах.
+- **Кайтинг:** с Хваткой мертвых (Grip of the Dead) и [[deathknight-glossary#^deaths-advance|Поступью смерти]] можно отступать, замедляя врагов и избегая лишних ударов на сложных пулах.
 
 ---
 
@@ -234,7 +234,7 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 Хороший комплект собирается не за один вечер - это долгий фарм. Вот короткая шпаргалка, таблицы ниже - на потом.
 
 > [!tip] Кратко про шмот
-> - **Главный стат - Strength** (он же даёт парирование). Из вторичных: у San'layn - **Haste**, у Deathbringer - **Crit/Vers/Mastery**.
+> - **Главный стат - Сила** (он же даёт парирование). Из вторичных: у San'layn - **Скорость**, у Deathbringer - **Крит/Универсальность/Искусность**.
 > - **Тринкеты:** Взор ясновидца Альн (Gaze of the Alnseer) + Стяг отряда Света (Light Company Guidon).
 > - **Уровень предмета (ilvl) важнее всего остального.**
 
@@ -280,14 +280,14 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 
 > [!note] Опционально (эндгейм): крафт, эмбелишменты и Voidcores - поздний фарм; на старте можно пропустить и вернуться позже.
 
-- Если нет mythic-оружия и есть 4 спарка - скрафти **Blood Knight's Warblade** с **Darkmoon Sigil: Void / Hunt**.
-- Иначе - **Наручи разрушителя чар** (Spellbreaker's Bracers) и пояс с **Devouring Banding** (ST) или **Arcanoweave Lining** (AoE, больше пользы группе). Носить можно только 2 эмбелишмент-предмета.
+- Если нет mythic-оружия и есть 4 спарка - скрафти **Боевой меч рыцаря крови** (Blood Knight's Warblade) с эмбелишментом **Символ Новолуния «Бездна» / «Охота»** (Darkmoon Sigil: Void / Hunt).
+- Иначе - **Наручи разрушителя чар** (Spellbreaker's Bracers) и пояс с эмбелишментом **Пожирающая окантовка** (Devouring Banding, ST) или **Подкладка из тайной ткани** (Arcanoweave Lining, AoE, больше пользы группе). Носить можно только 2 эмбелишмент-предмета.
 
 ### Расходники
 
 | Тип | Название |
 |---|---|
-| Фласк | San'layn - Настой рыцарей крови (Flask of the Blood Knights); Deathbringer - Настой Расколотого Солнца (Flask of the Shattered Sun) |
+| Фласка | San'layn - Настой рыцарей крови (Flask of the Blood Knights); Deathbringer - Настой Расколотого Солнца (Flask of the Shattered Sun) |
 | Еда | Празднество Харандара (Harandar Celebration) |
 | Зелье | Зелье безрассудства (Potion of Recklessness) / Потенциал Света (Light's Potential) |
 | Хил-зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
@@ -298,19 +298,19 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 
 ## Статы
 
-Зависит от hero-таланта:
+Зависит от Героического древа:
 
-- **San'layn:** Strength > **Haste** > Crit = Versatility = Mastery
-- **Deathbringer:** Strength > **Crit = Versatility = Mastery** > Haste
+- **San'layn:** Сила > **Скорость** > Крит = Универсальность = Искусность
+- **Deathbringer:** Сила > **Крит = Универсальность = Искусность** > Скорость
 
 > [!tip] Кратко
-> Гонись за **Strength** (главный стат, ещё и даёт парирование). Дальше: San'layn любит Haste, Deathbringer - ровный набор Crit/Vers/Mastery. Точный набор под свой шмот узнаешь через [Raidbots](https://www.raidbots.com).
+> Гонись за **Силой** (главный стат, ещё и даёт парирование). Дальше: San'layn любит Скорость, Deathbringer - ровный набор Крит/Универсальность/Искусность. Точный набор под свой шмот узнаешь через [Raidbots](https://www.raidbots.com).
 
-- **Strength** - сила атаки + парирование; всегда на первом месте.
-- **Crit** - не только урон: каждый пункт даёт парирование (ценная защита против физических врагов).
-- **Versatility** - +урон и -получаемый урон; стабильный, но дорогой стат.
-- **Haste** - больше глобалов и реген рун; особенно ценен для San'layn.
-- **Mastery** - усиливает [[deathknight-glossary#^mastery-blood-shield|Щит крови]] (хорош против физ. урона), но при сильном уроне упирается в кап.
+- **Сила** (Strength) - сила атаки + парирование; всегда на первом месте.
+- **Критический удар** (Critical Strike) - не только урон: каждый пункт даёт парирование (ценная защита против физических врагов).
+- **Универсальность** (Versatility) - +урон и -получаемый урон; стабильный, но дорогой стат.
+- **Скорость** (Haste) - больше глобалов и реген рун; особенно ценна для San'layn.
+- **Искусность** (Mastery) - усиливает [[deathknight-glossary#^mastery-blood-shield|Щит крови]] (хорош против физ. урона), но при сильном уроне упирается в кап.
 
 ### Раса
 
@@ -319,7 +319,7 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 ### Энчанты и гемы
 
 - **Гемы:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond) + Безупречный гранат скорости (Flawless Quick Garnet, San'layn) / Безупречный гранат искусности (Flawless Masterful Garnet, Deathbringer).
-- **Энчанты:** Rune of Avoidance (голова), Amirdrassil's Grace (плечи), Mark of the Worldsoul (грудь), Lynx's Dexterity (ботинки), Forest Hunter's Armor Kit (ноги), Nature's Fury (кольца), Rune of Sanguination (оружие; Rune of the Fallen Crusader - для Deathbringer / много целей).
+- **Энчанты:** Руна избежания (Rune of Avoidance, голова), Милость Амирдрассила (Amirdrassil's Grace, плечи), Метка души мира (Mark of the Worldsoul, грудь), Рысья стремительность (Lynx's Dexterity, ботинки), Накладки для доспехов лесного охотника (Forest Hunter's Armor Kit, ноги), Гнев природы (Nature's Fury, кольца), Руна полнокровия (Rune of Sanguination, оружие; Руна павшего рыцаря (Rune of the Fallen Crusader) - для Deathbringer / много целей).
 
 ---
 
@@ -332,7 +332,7 @@ CoPAAAAAAAAAAAAAAAAAAAAAAwYWGzMmxMzMMLzMz0MLGzMmxAAAAAzMzMzMzMDzYMAgZmZGAAgxsNwA
 - **Копишь руническую силу под потолок.** Лишняя сгорает = недополученный хил. Трать Ударом смерти.
 - **Жмёшь Кровь вампира уже получив по лицу.** Дефенсивы ставь до урона.
 - **Используешь все дефенсивы разом.** Разноси их - так покрываешь больше опасных моментов.
-- **Берёшь "защитные" таланты вслепую.** Многие из них слабее, чем кажется (Improved Vampiric Blood не поднимает кап Щита крови) - сверяйся с билдами.
+- **Берёшь "защитные" таланты вслепую.** Многие из них слабее, чем кажется (Улучшенная кровь вампира (Improved Vampiric Blood) не поднимает кап Щита крови) - сверяйся с билдами.
 
 ---
 

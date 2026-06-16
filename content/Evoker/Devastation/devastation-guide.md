@@ -10,313 +10,351 @@ created: 2026-03-17
 
 Термины и сокращения → [[evoker-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
+
+> [!note] Про названия
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (он нужен для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
+
+---
+
+*Минуту ты обычный дракон, а раз в две - расправляешь крылья, и всё вокруг горит.*
+
+## Главное за минуту
+
+Минимум, чтобы сразу выдавать урон - тонкости потом:
+
+1. **Раз в 2 минуты жми [[evoker-glossary#^dragonrage|Ярость дракона]]** - это твоё окно максимального урона, как "ульта". Прямо под него уходят тринкет, зелье и [[evoker-glossary#^tip-the-scales|Смещение равновесия]]. Весь геймплей крутится вокруг этого окна.
+2. **[[evoker-glossary#^fire-breath|Огненное дыхание]] и [[evoker-glossary#^eternity-surge|Всплеск вечности]] кастуй на Rank 1** (минимальное зажатие). Чем чаще жмёшь Empower-кнопки, тем дольше держится Ярость дракона.
+3. **Не давай [[evoker-glossary#^essence|Сущности]] и [[evoker-glossary#^essence-burst|Взрывной сущности]] переполниться.** Дошёл до потолка - трать через [[evoker-glossary#^disintegrate|Дезинтеграцию]] или [[evoker-glossary#^pyre|Погребальный костер]].
+4. **[[evoker-glossary#^disintegrate|Дезинтеграцию]] ченнель до конца** - обрывать каст невыгодно.
+5. **Стой и кастуй, когда можешь.** У Пробудителя короткий рейнж (25 м) и Empower-касты с места - держись поближе и лови спокойные секунды.
+
+
+## Как играть за Опустошителя (в двух словах)
+
+Ты дракон-маг: копишь [[evoker-glossary#^essence|Сущность]] и сливаешь её в урон, а раз в 2 минуты расправляешь крылья в [[evoker-glossary#^dragonrage|Ярости дракона]] - своём окне всплеска. Не вникай в каждую кнопку сразу, сначала поймай общий ритм.
+
+Мысленная модель простая:
+
+- **Копишь [[evoker-glossary#^essence|Сущность]]** - думай о ней как о патронах (максимум 5).
+- **Тратишь её на спендер** - [[evoker-glossary#^disintegrate|Дезинтеграцию]] по одной цели или [[evoker-glossary#^pyre|Погребальный костер]] по толпе. Бесплатные касты дают проки [[evoker-glossary#^essence-burst|Взрывной сущности]].
+- **Раз в 2 минуты включаешь [[evoker-glossary#^dragonrage|Ярость дракона]]** и зажимаешь Empower-кнопки ([[evoker-glossary#^fire-breath|Огненное дыхание]], [[evoker-glossary#^eternity-surge|Всплеск вечности]]) на Rank 1 - каждый каст продлевает окно.
+
+Всё остальное в ротации - подготовка к следующему окну Ярости дракона. Держишь это в голове - считай, костяк собран.
+
+> [!info] Словарик терминов
+> - **ДД** - наносящий урон (твоя роль). **ST** - урон по одной цели, **AoE** (или **клив**) - по нескольким сразу.
+> - **КД** - кулдаун, перезарядка способности. **Опенер** - заученное начало боя.
+> - **Кастовать** - применять заклинание, которое требует времени на произнесение.
+> - **Эмпавер (Empower)** - фирменная механика Пробудителя: кнопку **зажимаешь**, и чем дольше держишь, тем выше ранг (1/2/3) и сильнее эффект. В стандартной ротации жмёшь на Rank 1 (отпускаешь сразу) ради скорости.
+> - **Ченнел** - заклинание, которое "льётся" несколько секунд, пока держишь кнопку (как Дезинтеграция).
+> - **Прок** - случайное срабатывание бонуса ("прокнуло"). **Бёрст** - всплеск урона в короткое окно.
+> - **Стак** - накопленный заряд эффекта (напр. 5 стаков Вскипающей ярости).
+> - **Оверкап** - переполнить ресурс, когда он уже на максимуме. Лишнее теряется впустую.
+> - **Симить** - прогнать своего персонажа в [Raidbots](https://www.raidbots.com), чтобы узнать, что лучше **именно для твоего** комплекта шмота.
+> - **BiS** - best in slot, лучший предмет в слот. **ilvl** - уровень предмета (чем выше, тем сильнее).
+> - **Тринкет** - предмет в особом слоте, даёт бонус. Бывает **on-use** (активируемый - жмёшь кнопкой ради всплеска, пускаешь в окно Ярости дракона) и **passive** (работает сам).
+> - **M+ / ключи** - Mythic+, сложные подземелья на 5 человек.
 
 ---
 
 ## Что изменилось в Midnight (12.0)
 
-**Удалено / объединено:**
-- **Engulf** - удалён (переработка [[evoker-glossary#^flameshaper|Ваятеля огня]])
-- **Arcane Vigor, Dense Energy, Snapfire** - удалены/конвертированы в пассивы
-- **Shattering Star** - интегрирован в [[evoker-glossary#^eternity-surge|Всплеск вечности]] (пассивный эффект)
-- **Firestorm** - интегрирован в [[evoker-glossary#^pyre|Погребальный костер]] пассивно
-- **[[evoker-glossary#^renewing-blaze|Обновляющее пламя]]** - поглощён [[evoker-glossary#^obsidian-scales|Обсидиановой чешуёй]] (пассивная активация)
-- **Unravel** - стал пассивным эффектом [[evoker-glossary#^fire-breath|Огненного дыхания]]
+> Можно пропустить, если не играл в прошлых аддонах - этот раздел про изменения.
 
-**Добавлено:**
-- **Strafing Run** - двойной [[evoker-glossary#^deep-breath|Глубокий вдох]] в 18-сек окне
-- **[[evoker-glossary#^azure-sweep|Лазурный взмах]]** - усиленный [[evoker-glossary#^azure-strike|Лазурный удар]], ключевой с тир-сетом
-- **Star Salvo** - +35% урона Shattering Star
-- **Strike From Above** - улучшенная мобильность [[evoker-glossary#^glide|Планирования]]
-- **[[evoker-glossary#^stretch-time|Растяжение времени]]** - перенесён из Augmentation, приостанавливает урон
-- **Apex-таланты** - [[evoker-glossary#^rising-fury|Вскипающая ярость]] (4 ранга, усиливает [[evoker-glossary#^dragonrage|Ярость дракона]])
+Ядро геймплея осталось прежним - Ярость дракона по-прежнему центр всего, - но набор кнопок почистили, а часть способностей превратили в пассивы.
 
-**Переработано:**
-- **[[evoker-glossary#^flameshaper|Ваятель огня]]** - полная переработка: 2 заряда [[evoker-glossary#^fire-breath|Огненного дыхания]], Поглощение пламени вместо Engulf
-- **Imminent Destruction** - [[evoker-glossary#^deep-breath|Глубокий вдох]] снижает стоимость [[evoker-glossary#^essence|Сущности]] (до 8 стаков)
-- **[[evoker-glossary#^scorching-embers|Обжигающие угли]]** - враги с DoT [[evoker-glossary#^fire-breath|Огненного дыхания]] получают +25% Red-урона
-- **[[evoker-glossary#^hover|Бреющий полет]]** - теперь можно активировать во время каста (новое в Midnight)
-- **[[evoker-glossary#^animosity|Враждебность]]** - продления больше без верхнего лимита (каждое слабее предыдущего)
-- **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** - теперь поражает цели в радиусе 25 ярдов вокруг Пробудителя (было 12 ярдов вокруг цели)
+**Убрано / свёрнуто в пассивы:**
+- **Поглощение** (Engulf) удалено, [[evoker-glossary#^flameshaper|Ваятель огня]] полностью переработан под **[[evoker-glossary#^consume-flame|Поглощение пламени]]** (Consume Flame).
+- **Сокрушающая звезда** (Shattering Star) и **Огненная буря** (Firestorm) больше не отдельные кнопки - их эффекты ушли в пассивы и таланты.
+- **[[evoker-glossary#^unravel|Раскрытие]]** (Unravel) теперь завязано на [[evoker-glossary#^fire-breath|Огненное дыхание]].
 
-**Баффы:** все способности +5%, [[evoker-glossary#^pyre|Погребальный костер]] +20%, [[evoker-glossary#^azure-strike|Лазурный удар]] +50%, Firestorm +25%
+**Добавлено / переработано:**
+- **[[evoker-glossary#^azure-sweep|Лазурный взмах]]** (Azure Sweep) - [[evoker-glossary#^eternity-surge|Всплеск вечности]] усиливает следующий [[evoker-glossary#^azure-strike|Лазурный удар]] до взмаха по площади. Связка с тир-сетом.
+- **[[evoker-glossary#^strafing-run|Авиаудар]]** (Strafing Run) - [[evoker-glossary#^deep-breath|Глубокий вдох]] можно использовать дважды в окне 18 сек.
+- **[[evoker-glossary#^hover|Бреющий полет]]** теперь можно активировать прямо во время каста.
+- **[[evoker-glossary#^renewing-blaze|Обновляющее пламя]]** свёрнуто в [[evoker-glossary#^obsidian-scales|Обсидиановую чешую]] (активируется вместе с ней, отдельно жать не надо).
+- **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** теперь бьёт цели в радиусе 25 м вокруг тебя (раньше - вокруг цели).
+- **[[evoker-glossary#^rising-fury|Вскипающая ярость]]** (Rising Fury) - новый Apex-талант: стаки Скорости и урона во время Ярости дракона.
 
 ---
 
 ## Сильные и слабые стороны
 
-**Сильные:**
-- Мощный бёрст с [[evoker-glossary#^dragonrage|Яростью дракона]] (один из лучших 2-мин окон в игре)
-- Отличный AoE и клив ([[evoker-glossary#^deep-breath|Глубокий вдох]], [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]], [[evoker-glossary#^pyre|Погребальный костер]])
-- Уникальная утилити ([[evoker-glossary#^rescue|Спасение]], [[evoker-glossary#^cauterizing-flame|Прижигающее пламя]], [[evoker-glossary#^zephyr|Южный ветер]])
-- Высокая мобильность ([[evoker-glossary#^hover|Бреющий полет]], [[evoker-glossary#^deep-breath|Глубокий вдох]], [[evoker-glossary#^glide|Планирование]])
+Полезно знать сильные стороны спека и его слабые места - так понятнее, где играть в удовольствие, а где просто быть внимательнее.
 
-**Слабые:**
-- Урон вне [[evoker-glossary#^dragonrage|Ярости дракона]] значительно ниже ([[evoker-glossary#^rising-fury|Вскипающая ярость]] сглаживает, но не решает полностью)
-- Короткий рейнж (25 ярдов вместо стандартных 40) - ближе к механикам
-- [[evoker-glossary#^empower|Усиление]] (Empower)-система требует стоять для каста
-- Ограниченный рейнж [[evoker-glossary#^eternity-surge|Всплеска вечности]] (25 ярдов вокруг Пробудителя)
+**В чём Опустошитель хорош:**
+- **Мощнейший бёрст** в окне [[evoker-glossary#^dragonrage|Ярости дракона]] - одно из лучших 2-минутных окон в игре.
+- **Отличный AoE и клив** - [[evoker-glossary#^deep-breath|Глубокий вдох]], [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]], [[evoker-glossary#^pyre|Погребальный костер]].
+- **Богатая утилити** - [[evoker-glossary#^rescue|Спасение]], [[evoker-glossary#^cauterizing-flame|Прижигающее пламя]] (диспел 4-в-1), [[evoker-glossary#^zephyr|Южный ветер]].
+- **Высокая мобильность** - [[evoker-glossary#^hover|Бреющий полет]], [[evoker-glossary#^deep-breath|Глубокий вдох]], [[evoker-glossary#^glide|Планирование]].
+
+**Слабые места спека:**
+- **Урон вне Ярости дракона заметно ниже.** [[evoker-glossary#^rising-fury|Вскипающая ярость]] сглаживает провал после окна, но полностью не убирает.
+- **Короткий рейнж (25 м вместо обычных 40).** Приходится стоять ближе к боссу и механикам.
+- **Empower требует стоять.** Чтобы зажать [[evoker-glossary#^fire-breath|Огненное дыхание]] или [[evoker-glossary#^eternity-surge|Всплеск вечности]], нужны спокойные секунды - беготня бьёт по урону. Лечится опытом: учишься заранее ловить окна и юзать [[evoker-glossary#^hover|Бреющий полет]] для каста в движении.
 
 ---
 
 ## Таланты
 
-### Hero Talent
+Таланты - это твоя "сборка" (какие способности и бонусы прокачаны). Не вникай в каждую кнопку сразу: ниже есть готовые сборки, которые можно просто скопировать в игру.
 
-- **[[evoker-glossary#^scalecommander|Дракомандир]]** - основной выбор для M+ и рейда
-  - [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]] - клив на 3-4 цели, приоритет над [[evoker-glossary#^pyre|Погребальным костром]]
-  - Melt Armor - [[evoker-glossary#^deep-breath|Глубокий вдох]] накладывает +20% получаемого урона
-  - Strafing Run - 2 заряда [[evoker-glossary#^deep-breath|Глубокого вдоха]] в 18-сек окне
-  - Maneuverability - управляемый [[evoker-glossary#^deep-breath|Глубокий вдох]] + продлённый DoT
-  - Wingleader - снижает КД [[evoker-glossary#^deep-breath|Глубокого вдоха]]
-  - Slipstream - заряд [[evoker-glossary#^hover|Бреющего полета]] за каждый [[evoker-glossary#^deep-breath|Глубокий вдох]]
+### Героическое древо (главная развилка сборки)
 
-- **[[evoker-glossary#^flameshaper|Ваятель огня]]** - альтернатива для длительного AoE
-  - 2 заряда [[evoker-glossary#^fire-breath|Огненного дыхания]] (переработан в Midnight)
-  - Поглощение пламени (Consume Flame) - спендеры поглощают DoT [[evoker-glossary#^fire-breath|Огненного дыхания]] для доп. урона
-  - Проще в освоении
+> [!note] Итог: бери Дракомандира
+> У Опустошителя два героических древа - **[[evoker-glossary#^scalecommander|Дракомандир]]** (Scalecommander) и **[[evoker-glossary#^flameshaper|Ваятель огня]]** (Flameshaper). Бери **Дракомандира** - он оптимален и в подземельях, и в рейде. Ваятель огня проще в освоении и неплох на длинных AoE-фазах, но по урону уступает.
 
-> [!note] Что брать
-> **[[evoker-glossary#^scalecommander|Дракомандир]] - лучший выбор для обоих типов контента.** [[evoker-glossary#^flameshaper|Ваятель огня]] - если хочется проще или чистый AoE; в рейде его ещё заметно играют, но Дракомандир оптимальнее.
+- **[[evoker-glossary#^scalecommander|Дракомандир]]** (Scalecommander) - строится вокруг [[evoker-glossary#^deep-breath|Глубокого вдоха]] и [[evoker-glossary#^mass-disintegrate|Массовой дезинтеграции]].
+  - Как это работает: [[evoker-glossary#^deep-breath|Глубокий вдох]] вешает на врагов [[evoker-glossary#^melt-armor|Расплавленную броню]] (+20% получаемого урона), а [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]] бьёт твоей Дезинтеграцией по нескольким целям сразу. Получается ровный, предсказуемый клив с сильным бёрстом.
+- **[[evoker-glossary#^flameshaper|Ваятель огня]]** (Flameshaper) - 2 заряда [[evoker-glossary#^fire-breath|Огненного дыхания]] и [[evoker-glossary#^consume-flame|Поглощение пламени]]: спендеры съедают DoT Огненного дыхания ради доп. урона. Проще, но слабее.
 
-### Apex-талант
+### Apex талант
 
-- **[[evoker-glossary#^rising-fury|Вскипающая ярость]]** - единственный Apex для Опустошителя
-  - **Rank 1:** +4% Haste каждые 6 сек во время [[evoker-glossary#^dragonrage|Ярости дракона]] (до 5 стаков)
-  - **Rank 2:** при 5 стаках - +8%/+15% ко всему урону (два подранга)
-  - **Rank 3:** после окончания [[evoker-glossary#^dragonrage|Ярости дракона]] - Risen Fury (4 сек за стак): сохраняет бонусы Haste/урона + генерирует [[evoker-glossary#^essence-burst|Взрывную сущность]]
-  - **Берём всегда, все 4 очка.** Сглаживает провал DPS после окончания [[evoker-glossary#^dragonrage|Ярости дракона]]
+- **[[evoker-glossary#^rising-fury|Вскипающая ярость]]** (Rising Fury) - единственный Apex, бери все 4 очка. Простыми словами: во время [[evoker-glossary#^dragonrage|Ярости дракона]] ты копишь стаки Скорости и урона (до 5), а после окончания окна они какое-то время держатся и подкидывают [[evoker-glossary#^essence-burst|Взрывную сущность]]. Сам ничего жать не надо - просто продолжай ротацию, провал после Ярости дракона становится мягче.
 
-### Ключевые таланты
+### Провальные таланты
 
-Всегда берём:
-- **[[evoker-glossary#^dragonrage|Ярость дракона]]** - 2-мин бёрст-КД, основа геймплея
-- **[[evoker-glossary#^animosity|Враждебность]]** - Empower-касты продлевают [[evoker-glossary#^dragonrage|Ярость дракона]]
-- **[[evoker-glossary#^tyranny|Тирания]]** - Искусность на полную мощность во время [[evoker-glossary#^dragonrage|Ярости дракона]]
-- **[[evoker-glossary#^causality|Причина и следствие]]** - [[evoker-glossary#^disintegrate|Дезинтеграция]]/[[evoker-glossary#^pyre|Погребальный костер]] снижают КД Empower-заклинаний
-- **[[evoker-glossary#^burnout|Выгорание]]** - [[evoker-glossary#^living-flame|Живой жар]] мгновенный (прок)
-- **[[evoker-glossary#^essence-burst|Взрывная сущность]]** (Ruby + Azure) - генерация ресурсов
-- **Essence Attunement** - доп. стаки [[evoker-glossary#^essence-burst|Взрывной сущности]]
-- **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** - ключевой Empower
-- **[[evoker-glossary#^pyre|Погребальный костер]]** - AoE-спендер
-- **[[evoker-glossary#^spellweavers-dominance|Превосходство чароплета]]** - +230% крит-бонус для Empower
-- **Azure Celerity** - [[evoker-glossary#^disintegrate|Дезинтеграция]] тикает 1 доп. раз
-- **[[evoker-glossary#^tip-the-scales|Смещение равновесия]]** - мгновенный макс-ранк Empower
+> [!warning] Не бери это
+> **[[evoker-glossary#^stretch-time|Растяжение времени]]** (Stretch Time) с Дракомандиром - это потеря урона: способность приостанавливает урон и задерживает возврат к ротации. В стандартной DPS-сборке её нет.
 
-M+ ([[evoker-glossary#^scalecommander|Дракомандир]]):
-- **Strafing Run** - двойной [[evoker-glossary#^deep-breath|Глубокий вдох]]
-- **Lay Waste** - усиливает урон [[evoker-glossary#^deep-breath|Глубокого вдоха]]
-- **[[evoker-glossary#^azure-sweep|Лазурный взмах]]** - ключевой с тир-сетом
-- **Shattering Stars**
-- **Leaping Flames** - бонус [[evoker-glossary#^living-flame|Живого жара]] для клива
+### Нишевое (необязательно)
 
-Рейд:
-- **Charged Blast** - AoE-синергия в бёрст-окно
-- **Star Salvo** - +35% урона Shattering Star
+- **[[evoker-glossary#^flameshaper|Ваятель огня]]** целиком - не провал, но узкий вариант под очень длинные AoE-фазы. По умолчанию бери Дракомандира; на Ваятеля переходи осознанно, под конкретный контент.
 
 ---
 
 ## Готовые билды (импорт)
 
-> В игре: открыть таланты (N) → Loadouts → Import Loadout → вставить строку → Import
+> Не хочешь разбираться в талантах - просто скопируй строку и вставь в игре: открой таланты (**N**) → Loadouts → Import Loadout → вставь → Import. ST-строка для боссов, M+/AoE - для пачек врагов.
 
-### ST / Рейд / M+ боссы (Дракомандир)
+### Дракомандир (Scalecommander) - ST / Рейд / M+ боссы
 
 ```
 CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMDMDzYmBMYMTzMzMNjx2MmZmZmHYmZGwMmxYmZZmZgBGDWglxox2AyMIYDDMzghB
 ```
 
-### M+ / AoE (Дракомандир)
+### Дракомандир (Scalecommander) - M+ / AoE
 
 ```
 CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZgZ8AzgBGGjZaMzMNjx2MmZmZGzMzAmZmxYmZZmZgBGDWglxox2AyMIYDzgZGMMA
 ```
 
+> Под свой контент и свежие правки патча таланты можно сверить на [Wowhead](https://www.wowhead.com/guide/classes/evoker/devastation/talent-builds-pve-dps).
+
 ---
 
 ## Ключевые правила
 
-1. **[[evoker-glossary#^empower|Усиление]] на Rank 1** в стандартной ротации - чем быстрее кастуешь Empower, тем чаще срабатывает [[evoker-glossary#^animosity|Враждебность]] (продлевает [[evoker-glossary#^dragonrage|Ярость дракона]] за каждый Empower-каст)
-2. **[[evoker-glossary#^dragonrage|Ярость дракона]] = основной бёрст.** Синхронить тринкеты, зелья, [[evoker-glossary#^tip-the-scales|Смещение равновесия]] с ней
-3. **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]] > [[evoker-glossary#^pyre|Погребальный костер]]** на любом количестве целей ([[evoker-glossary#^scalecommander|Дракомандир]])
-4. **[[evoker-glossary#^deep-breath|Глубокий вдох]] по КД** для Melt Armor дебаффа
-5. **Тратить [[evoker-glossary#^essence-burst|Взрывную сущность]] немедленно** - не допускать оверкап
-6. **[[evoker-glossary#^disintegrate|Дезинтеграцию]] ченнелить до конца** для максимизации [[evoker-glossary#^causality|Причины и следствия]] CDR
-7. **[[evoker-glossary#^hover|Бреющий полет]] заранее** - держать заряды для механик, но не оверкапить
-8. **[[evoker-glossary#^pyre|Погребальный костер]] на 3+ целях** - до этого [[evoker-glossary#^disintegrate|Дезинтеграция]] эффективнее
+Это то, что превращает хаотичное нажатие кнопок в стабильный урон. Каждое правило - с объяснением, **почему** так; освоишь их - сам почувствуешь разницу.
 
-### Когда переключаться на AoE
-
-- **1-2 цели** - ST ротация: [[evoker-glossary#^disintegrate|Дезинтеграция]] как основной спендер, [[evoker-glossary#^fire-breath|Огненное дыхание]] / [[evoker-glossary#^eternity-surge|Всплеск вечности]] по КД
-- **3+ целей** - [[evoker-glossary#^pyre|Погребальный костер]] заменяет [[evoker-glossary#^disintegrate|Дезинтеграцию]] как спендер (больше суммарного урона)
-- **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]** ([[evoker-glossary#^scalecommander|Дракомандир]]) - приоритетнее [[evoker-glossary#^pyre|Погребального костра]] на **любом** количестве целей. [[evoker-glossary#^pyre|Погребальный костер]] кастуется между [[evoker-glossary#^mass-disintegrate|Массовыми дезинтеграциями]]
-- **Важно:** при 2 целях [[evoker-glossary#^pyre|Погребальный костер]] ещё не выгоден. [[evoker-glossary#^disintegrate|Дезинтеграция]] + клив от [[evoker-glossary#^mass-disintegrate|Массовой дезинтеграции]] эффективнее
+1. **[[evoker-glossary#^fire-breath|Огненное дыхание]] и [[evoker-glossary#^eternity-surge|Всплеск вечности]] - на Rank 1.** Чем быстрее кастуешь Empower, тем чаще срабатывает [[evoker-glossary#^animosity|Враждебность]] и тем дольше держится [[evoker-glossary#^dragonrage|Ярость дракона]]. Зажимать до Rank 3 в стандартной ротации не нужно.
+2. **[[evoker-glossary#^dragonrage|Ярость дракона]] - твой главный бёрст.** Синхронь с ней тринкеты, зелье и [[evoker-glossary#^tip-the-scales|Смещение равновесия]]. Окно без этих усилителей = половина пользы зря.
+3. **Не давай [[evoker-glossary#^essence-burst|Взрывной сущности]] переполниться.** Это бесплатные усиленные спендеры - трать их сразу, не копи в никуда.
+4. **[[evoker-glossary#^disintegrate|Дезинтеграцию]] ченнель до конца.** Полный каст максимизирует снижение КД Empower через [[evoker-glossary#^causality|Причину и следствие]]. Обрывать ради другой кнопки почти всегда невыгодно.
+5. **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]] важнее [[evoker-glossary#^pyre|Погребального костра]]** на любом количестве целей (у Дракомандира). Костер вставляй между Массовыми дезинтеграциями.
+6. **[[evoker-glossary#^hover|Бреющий полет]] держи заранее.** Заряды нужны, чтобы кастовать в движении на механиках, но не оверкапь - копить впрок без дела бессмысленно.
 
 ---
 
-## Opener
+## Опенер (как начинать бой)
 
-### ST Opener (рейд / M+ боссы) - Дракомандир
+"Опенер" - это заученная последовательность первых кнопок на пулле. Выучи её один раз, и старт боя будет на автомате.
 
-1. Pre-cast 2x **[[evoker-glossary#^hover|Бреющий полет]]** перед пуллом
-2. Pre-cast **[[evoker-glossary#^living-flame|Живой жар]]**
-3. **[[evoker-glossary#^dragonrage|Ярость дракона]]** (зелье во время GCD)
-4. **[[evoker-glossary#^tip-the-scales|Смещение равновесия]]** + on-use тринкет
-5. **[[evoker-glossary#^fire-breath|Огненное дыхание]]** (Rank 1)
-6. **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** (Rank 1)
-7. **[[evoker-glossary#^deep-breath|Глубокий вдох]]** x2 (Strafing Run)
-8. **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]**
-9. Спам **[[evoker-glossary#^disintegrate|Дезинтеграции]]** до исчерпания [[evoker-glossary#^essence|Сущности]]
+### ST опенер (рейд / M+ боссы) - Дракомандир
 
-### ST Opener - Ваятель огня (вариант)
+> Перед боем (pre-pull): прокастуй 2x [[evoker-glossary#^hover|Бреющий полет]] и один [[evoker-glossary#^living-flame|Живой жар]].
 
-1. Pre-cast **[[evoker-glossary#^living-flame|Живой жар]]**
-2. **[[evoker-glossary#^dragonrage|Ярость дракона]]** (зелье + тринкет во время GCD)
-3. **[[evoker-glossary#^fire-breath|Огненное дыхание]]** Rank 1
-4. **[[evoker-glossary#^tip-the-scales|Смещение равновесия]]**
-5. **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** Rank 1
-6. Спам **[[evoker-glossary#^disintegrate|Дезинтеграции]]**
-7. **[[evoker-glossary#^fire-breath|Огненное дыхание]]** (2-й заряд)
-8. Продолжать **[[evoker-glossary#^disintegrate|Дезинтеграцию]]**
+1. [[evoker-glossary#^dragonrage|Ярость дракона]] (зелье во время GCD)
+2. [[evoker-glossary#^tip-the-scales|Смещение равновесия]] + активируемый (on-use) тринкет
+3. [[evoker-glossary#^fire-breath|Огненное дыхание]] (Rank 1)
+4. [[evoker-glossary#^eternity-surge|Всплеск вечности]] (Rank 1)
+5. [[evoker-glossary#^deep-breath|Глубокий вдох]] x2 ([[evoker-glossary#^strafing-run|Авиаудар]])
+6. [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]
+7. Спам [[evoker-glossary#^disintegrate|Дезинтеграции]], пока есть [[evoker-glossary#^essence|Сущность]]
+8. Дальше - обычный приоритет (см. ниже)
 
-### AoE Opener (M+ треш) - Дракомандир
+### AoE опенер (M+ треш) - Дракомандир
 
-1. **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** Rank 1
-2. **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]**
-3. **[[evoker-glossary#^deep-breath|Глубокий вдох]]** x2
-4. Зелье + тринкет + **[[evoker-glossary#^tip-the-scales|Смещение равновесия]]**
-5. **[[evoker-glossary#^dragonrage|Ярость дракона]]**
-6. **[[evoker-glossary#^fire-breath|Огненное дыхание]]**
-7. **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]**
-8. Спам **[[evoker-glossary#^pyre|Погребального костра]]**
+1. [[evoker-glossary#^eternity-surge|Всплеск вечности]] (Rank 1)
+2. [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]
+3. [[evoker-glossary#^deep-breath|Глубокий вдох]] x2
+4. Зелье + тринкет + [[evoker-glossary#^tip-the-scales|Смещение равновесия]]
+5. [[evoker-glossary#^dragonrage|Ярость дракона]]
+6. [[evoker-glossary#^fire-breath|Огненное дыхание]]
+7. [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]] → спам [[evoker-glossary#^pyre|Погребального костра]] между ней
+
+> [!tip] Главное про опенер
+> Тринкет, зелье и Смещение равновесия уходят строго в окно Ярости дракона, а не "когда вспомнил". Всё, что бьёт больно, ты копишь к этому окну.
 
 ---
 
-## ST приоритет (рейды)
+## ST приоритет (бой по одной цели)
 
-1. **[[evoker-glossary#^dragonrage|Ярость дракона]]** - по КД
-2. **[[evoker-glossary#^fire-breath|Огненное дыхание]]** (Rank 1) - по КД, синхронить с [[evoker-glossary#^dragonrage|Яростью дракона]] когда возможно
-3. **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** (Rank 1) - по КД
-4. **[[evoker-glossary#^deep-breath|Глубокий вдох]]** - по КД ([[evoker-glossary#^scalecommander|Дракомандир]])
-5. **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]** - приоритет над обычной [[evoker-glossary#^disintegrate|Дезинтеграцией]] ([[evoker-glossary#^scalecommander|Дракомандир]])
-6. **[[evoker-glossary#^disintegrate|Дезинтеграция]]** - тратить [[evoker-glossary#^essence|Сущность]] (или бесплатно по проку [[evoker-glossary#^essence-burst|Взрывной сущности]]), ченнелить до конца для максимизации [[evoker-glossary#^causality|Причины и следствия]] CDR
-7. **[[evoker-glossary#^azure-sweep|Лазурный взмах]]** - по прокам тир-сета
-8. **[[evoker-glossary#^living-flame|Живой жар]]** - филлер (или [[evoker-glossary#^azure-strike|Лазурный удар]] если нужно двигаться без [[evoker-glossary#^hover|Бреющего полета]])
+"Приоритет" - это список "что жать в первую очередь". Идёшь сверху вниз: если верхнее доступно - жмёшь его, нет - спускаешься ниже.
+
+1. **[[evoker-glossary#^dragonrage|Ярость дракона]]** - по КД (со всеми усилителями).
+2. **[[evoker-glossary#^fire-breath|Огненное дыхание]]** (Rank 1) - по КД, по возможности под Яростью дракона.
+3. **[[evoker-glossary#^eternity-surge|Всплеск вечности]]** (Rank 1) - по КД.
+4. **[[evoker-glossary#^deep-breath|Глубокий вдох]]** - по КД (у Дракомандира, ради [[evoker-glossary#^melt-armor|Расплавленной брони]]).
+5. **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]** - приоритетнее обычной [[evoker-glossary#^disintegrate|Дезинтеграции]].
+6. **[[evoker-glossary#^disintegrate|Дезинтеграция]]** - основной спендер. Ченнель до конца ради [[evoker-glossary#^causality|Причины и следствия]].
+7. **[[evoker-glossary#^azure-sweep|Лазурный взмах]]** - по прокам тир-сета.
+8. **[[evoker-glossary#^living-flame|Живой жар]]** - филлер (или [[evoker-glossary#^azure-strike|Лазурный удар]], если надо двигаться без [[evoker-glossary#^hover|Бреющего полета]]).
 
 > [!important] Ключевое правило
-> [[evoker-glossary#^fire-breath|Огненное дыхание]] и [[evoker-glossary#^eternity-surge|Всплеск вечности]] кастуются на **Rank 1** (минимальный [[evoker-glossary#^empower|Empower]]) в стандартной ротации. Это максимизирует количество кастов в минуту и продление [[evoker-glossary#^dragonrage|Ярости дракона]] через [[evoker-glossary#^animosity|Враждебность]].
+> [[evoker-glossary#^fire-breath|Огненное дыхание]] и [[evoker-glossary#^eternity-surge|Всплеск вечности]] кастуются на **Rank 1** (минимальный Empower). Это максимизирует число кастов в минуту и продление [[evoker-glossary#^dragonrage|Ярости дракона]] через [[evoker-glossary#^animosity|Враждебность]].
 
 ---
 
-## AoE приоритет (M+)
+## AoE / по нескольким целям
 
-**1-3 цели:**
-- Спендить [[evoker-glossary#^essence|Сущность]] на **[[evoker-glossary#^disintegrate|Дезинтеграцию]]** ([[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]] приоритетнее)
-- [[evoker-glossary#^fire-breath|Огненное дыхание]] / [[evoker-glossary#^eternity-surge|Всплеск вечности]] по КД
+- **1-2 цели** - играешь как ST: [[evoker-glossary#^disintegrate|Дезинтеграция]] (или [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]) как спендер, Empower по КД. На 2 целях [[evoker-glossary#^pyre|Погребальный костер]] ещё не выгоден.
+- **3+ целей** - спендер меняется на [[evoker-glossary#^pyre|Погребальный костер]] (с 3 целей он обгоняет Дезинтеграцию по суммарному урону).
+- **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]** приоритетнее Погребального костра **на любом** количестве целей. Схема: Массовая дезинтеграция по КД → Погребальный костер → снова Массовая дезинтеграция.
+- **[[evoker-glossary#^deep-breath|Глубокий вдох]]** по КД ради [[evoker-glossary#^melt-armor|Расплавленной брони]], **[[evoker-glossary#^fire-breath|Огненное дыхание]]** держи на нескольких целях.
 
-**3+ целей:**
-- Спендить [[evoker-glossary#^essence|Сущность]] на **[[evoker-glossary#^pyre|Погребальный костер]]** (с 3 целей Погребальный костер обгоняет Дезинтеграцию по суммарному урону)
-- **[[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]]** приоритетнее [[evoker-glossary#^pyre|Погребального костра]] на любом количестве целей
-- **[[evoker-glossary#^pyre|Погребальный костер]]** вставлять между кастами [[evoker-glossary#^mass-disintegrate|Массовой дезинтеграции]] ([[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]] на КД → [[evoker-glossary#^pyre|Погребальный костер]] → [[evoker-glossary#^mass-disintegrate|Массовая дезинтеграция]])
-- **[[evoker-glossary#^deep-breath|Глубокий вдох]]** по КД для Melt Armor дебаффа
-- Поддерживать **[[evoker-glossary#^fire-breath|Огненное дыхание]]** DoT на нескольких целях
+---
+
+## Окно Ярости дракона
+
+[[evoker-glossary#^dragonrage|Ярость дракона]] раз в 2 минуты - твой определяющий момент: всё, что бьёт больно, ты копишь к этому окну. Это твоя "ульта", и от того, насколько чисто ты её отыграешь, зависит большая часть урона.
+
+- **По умолчанию - жми, как только откатилось** (со всеми усилителями: тринкет, зелье, [[evoker-glossary#^tip-the-scales|Смещение равновесия]]). Простаивающий кулдаун = потерянный урон.
+- **Держи темп Empower-кастов.** Каждое [[evoker-glossary#^fire-breath|Огненное дыхание]] и [[evoker-glossary#^eternity-surge|Всплеск вечности]] через [[evoker-glossary#^animosity|Враждебность]] продлевает окно. Чем больше кастов влезет, тем дольше длится Ярость дракона.
+- **Во время окна работает [[evoker-glossary#^tyranny|Тирания]]:** [[evoker-glossary#^mastery-giantkiller|Искусность]] бьёт на полную мощность независимо от HP цели. Поэтому именно сюда сливаешь весь бёрст.
+- **Найди спокойные секунды.** Empower требует стоять. Запустить Ярость дракона и убежать от механик = слить половину пользы.
 
 ---
 
 ## Дефенсивы и утилити
 
-### Дефенсивы
+Опустошитель не самый живучий, но дефенсивов хватает - научишься ими пользоваться, и хилер тебя полюбит.
 
-| Способность | Эффект | Примечание |
+> [!tip] Главное про выживание
+> 1. **[[evoker-glossary#^obsidian-scales|Обсидиановую чешую]] жми ДО урона.** Это твой основной деф, и заодно он включает [[evoker-glossary#^renewing-blaze|Обновляющее пламя]] (хил), отдельно жать ничего не надо.
+> 2. **[[evoker-glossary#^zephyr|Южный ветер]] - на групповой урон.** Снижает урон всей группе - не копи "на потом", жми на замесах.
+
+### Дефенсивы (таблица для справки)
+
+| Способность | Что делает | Когда жать |
 |---|---|---|
-| **[[evoker-glossary#^obsidian-scales\|Обсидиановая чешуя]]** | Основной [[evoker-glossary#^damage-reduction\|DR]] кулдаун, плоское снижение урона | Первый дефенсив в ротации |
-| **[[evoker-glossary#^renewing-blaze\|Обновляющее пламя]]** | Пассивный в Midnight - активируется через [[evoker-glossary#^obsidian-scales\|Обсидиановую чешую]], накапливает и конвертирует урон в хил | Не нужно жать отдельно |
-| **[[evoker-glossary#^zephyr\|Южный ветер]]** | AoE [[evoker-glossary#^damage-reduction\|DR]] + скорость для группы | Использовать при групповом уроне |
-| **[[evoker-glossary#^hover\|Бреющий полет]]** | Каст в движении + доп. мобильность | Можно активировать во время каста (новое в Midnight) |
-| **[[evoker-glossary#^cauterize\|Прижигание]]** | Предотвращение смерти (Cheat Death) | Пассив |
-| **[[evoker-glossary#^glide\|Планирование]]** | Отменяет нокбэки в воздухе | Спасает от механик |
+| **[[evoker-glossary#^obsidian-scales\|Обсидиановая чешуя]]** | Плоское снижение урона + включает [[evoker-glossary#^renewing-blaze\|Обновляющее пламя]] (хил) | Первая линия. **ДО** удара |
+| **[[evoker-glossary#^zephyr\|Южный ветер]]** | AoE снижение урона + скорость для группы | На групповом уроне |
+| **[[evoker-glossary#^renewing-blaze\|Обновляющее пламя]]** | Накапливает урон и возвращает его лечением | Пассив, активируется через Обсидиановую чешую |
+| **[[evoker-glossary#^cauterize\|Прижигание]]** | Предотвращает смерть (Cheat Death) | Пассив, ничего жать не надо |
+| **[[evoker-glossary#^glide\|Планирование]]** | Отменяет нокбэки в воздухе | Спасает от механик с отбросом |
 
-### Утилити
+### Утилити (полезности для группы)
 
-- **[[evoker-glossary#^rescue|Спасение]]** - перемещает союзника к себе. "Может спасти весь данж"
-- **[[evoker-glossary#^cauterizing-flame|Прижигающее пламя]]** - 4-в-1 диспел: кровотечения, яды, проклятия, болезни. Уникальный и крайне ценный
-- **[[evoker-glossary#^oppressing-roar|Угнетающий рык]]** - продлевает CC
-- **[[evoker-glossary#^wing-buffet|Взмах крыльями]] / Удар хвостом** - нокбэк / нокап для кайтинга
-- **[[evoker-glossary#^stretch-time|Растяжение времени]]** - приостанавливает урон на 10 сек после [[evoker-glossary#^deep-breath|Глубокого вдоха]]. **Осторожно с [[evoker-glossary#^scalecommander|Дракомандиром]]** - потеря DPS, т.к. задерживает возврат к ротации
+- **[[evoker-glossary#^rescue|Спасение]]** - рывком перетаскивает союзника к себе. Грамотное использование может спасти весь пулл или данж.
+- **[[evoker-glossary#^cauterizing-flame|Прижигающее пламя]]** - диспел 4-в-1: снимает кровотечения, яды, проклятия и болезни. Уникальная и очень ценная утилити.
+- **[[evoker-glossary#^oppressing-roar|Угнетающий рык]]** - продлевает контроль на врагах.
+- **[[evoker-glossary#^wing-buffet|Взмах крыльями]] / [[evoker-glossary#^tail-swipe|Удар хвостом]]** - нокбэк / нокап для кайтинга.
+- **[[evoker-glossary#^hover|Бреющий полет]]** - не только мобильность: позволяет кастовать в движении (а в Midnight - даже включаться во время каста).
 
 ---
 
 ## Гир и тринкеты
 
-### Тир-сет: Black Talon
+Хороший комплект собирается не за один вечер - это долгий фарм по чуть-чуть. Вот короткая шпаргалка на старт, а таблицы ниже пригодятся, когда будешь добивать конкретные слоты.
 
-- **2-Set:** [[evoker-glossary#^azure-sweep|Лазурный взмах]] урон +50%, урон по основной цели +100% дополнительно
-- **4-Set:** [[evoker-glossary#^eternity-surge|Всплеск вечности]] даёт 1 доп. заряд [[evoker-glossary#^azure-sweep|Лазурного взмаха]]. [[evoker-glossary#^azure-sweep|Лазурный взмах]] снижает КД [[evoker-glossary#^eternity-surge|Всплеска вечности]] на 2 сек
+> [!tip] Кратко про шмот
+> - **Тринкеты в рейде:** Последний взор Ваэлгора (Vaelgor's Final Stare) + Тень небесного реквиема (Shadow of the Empyrean Requiem), или Взор ясновидца Альн (Gaze of the Alnseer). В M+ хорош Тигель беспорядочной энергии (Crucible of Erratic Energies).
+> - **Из статов гонись за Скоростью и Критом** (они близки, подробнее в разделе "Статы").
+> - **Уровень предмета (ilvl) важнее всего остального** - предмет повыше почти всегда лучше, даже если статы "не те".
 
-**Влияние:** [[evoker-glossary#^azure-sweep|Лазурный взмах]] становится ключевой ротационной способностью в любом контенте.
+### Тир-сет (комплектный бонус, Midnight Season 1)
 
-Приоритет частей: Шлем, Плечи, Грудь, Ноги (избегать Перчатки - слишком много Vers).
+- **2 части:** урон [[evoker-glossary#^azure-sweep|Лазурного взмаха]] +50%, по основной цели - ещё +100%.
+- **4 части:** [[evoker-glossary#^eternity-surge|Всплеск вечности]] даёт доп. заряд [[evoker-glossary#^azure-sweep|Лазурного взмаха]], а тот снижает КД Всплеска вечности на 2 сек.
 
-### BiS тринкеты
+> Тир-сет делает [[evoker-glossary#^azure-sweep|Лазурный взмах]] полноценной ротационной кнопкой. Приоритет частей: Шлем, Плечи, Грудь, Ноги (Перчатки лучше избегать - там много Универсальности).
 
-| Тринкет | Тип | Рейтинг | Примечание |
-|---|---|---|---|
-| **Vaelgor's Final Stare** | On-use Mastery | S | Рейд, синхронить с [[evoker-glossary#^dragonrage\|Яростью дракона]] |
-| **Gaze of the Alnseer** | Passive Int стак | S | Рейд |
-| **Shadow of the Empyrean Requiem** | Passive (execute scaling) | S | "by far our best trinket" |
-| **Emberwing Feather** | On-use Haste | A | Данж |
-| **Crucible of Erratic Energies** | Passive | A | M+ популярный |
-| **Vessel of Tortured Souls** | Passive Int стак | A | Данж |
+### Тринкеты
 
-> [!note] Рейд vs M+
-> Для рейда: Vaelgor's Final Stare + Shadow of the Empyrean Requiem (или Gaze of the Alnseer)
-> Для M+: Crucible of Erratic Energies - топовый выбор
+Правило: 1 on-use (с активацией, под окно Ярости дракона) + 1 passive (работает сам). Если хочешь оптимум под свой шмот - **сделай сим** (см. словарик).
+
+| Тринкет | Тип | Рейтинг |
+|---|---|---|
+| **Тень небесного реквиема** (Shadow of the Empyrean Requiem) | Passive (скейл на добивании) | BiS в рейде |
+| **Последний взор Ваэлгора** (Vaelgor's Final Stare) | On-use Искусность | BiS в рейде (под Ярость дракона) |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive Интеллект-стак | Сильная альтернатива в рейде |
+| **Тигель беспорядочной энергии** (Crucible of Erratic Energies) | Passive | Топ в M+ |
+| **Перо Алозар** (Emberwing Feather) | On-use Скорость | Вариант из подземелий |
+| **Сосуд замученных душ** (Vessel of Tortured Souls) | Passive Интеллект-стак | Вариант из подземелий |
 
 ### Оружие
 
-- **Рейд BiS:** Belo'melorn, The Shattered Talon (MH) + Grimoire of the Eternal Light (OH)
-- **Крафт:** Aln'hara Cane (стафф) с Darkmoon Sigil: Hunt - хорош в начале сезона
+- **Рейд BiS:** Бело'мелорн, Расколотый коготь (Belo'melorn, the Shattered Talon, MH) + Гримуар вечной ночи (Grimoire of the Eternal Light, OH).
+- **Крафт:** Трость Альн'ары (Aln'hara Cane, стафф) с эмбелишментом Символ Новолуния «Охота» (Darkmoon Sigil: Hunt) - хорош в начале сезона.
 
-### Эмбелишменты
+### Эмбелишменты (особые бонусы на крафтовом шмоте)
 
-- **Darkmoon Sigil: Hunt** - на крафт-оружие (ранний сезон)
-- **Arcanoweave Lining** - высший бюджет
-- **Devouring Banding** - альтернатива
+> [!note] Опционально (эндгейм)
+> Крафт и эмбелишменты - поздний фарм. Пока собираешь первый комплект, можно пропустить и вернуться позже.
 
-### Самоцветы и зачарования
+- **Символ Новолуния «Охота»** (Darkmoon Sigil: Hunt) - сильнейший, на крафт-оружие (хороший ранний рывок в силе).
+- **Подкладка из тайной ткани** (Arcanoweave Lining) - на броню, высший бюджет.
+- **Пожирающая окантовка** (Devouring Banding) - альтернатива.
 
-- **Мета-гем:** Indecipherable Eversong Diamond
-- **Остальные:** Quick Garnet (Haste) или Deadly Peridot (Crit)
-- **Оружие:** Acuity of the Ren'dorei
-- **Кольца:** Silvermoon's Alacrity (Haste) / Nature's Wrath (Crit)
-- **Грудь:** Mark of the Worldsoul
-- **Ноги:** Sunfire Silk Spellthread
-
-### Расходники
+### Расходники (бери на каждый серьёзный бой)
 
 | Тип | Название |
 |---|---|
-| Фласк | Flask of the Shattered Sun |
-| Еда | Harandar Celebration / Silvermoon Parade |
-| Зелье | Potion of Recklessness / Light's Potential |
-| Масло | Thalassian Phoenix Oil |
-| Augment Rune | Void-Touched Augment Rune |
+| Фласка | Настой Расколотого Солнца (Flask of the Shattered Sun) |
+| Еда | Парад Луносвета (Silvermoon Parade) |
+| Боевое зелье | Зелье безрассудства (Potion of Recklessness) |
+| Лечебное зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
+| Масло на оружие | Талассийское масло феникса (Thalassian Phoenix Oil) |
+| Augment Rune | Меченная Бездной руна усиления (Void-Touched Augment Rune) |
 
 ---
 
 ## Статы
 
-### Приоритет
+Статы - это вторичные характеристики на шмоте. Для урона они идут в таком порядке:
 
-**Intellect >> Haste > Crit > Mastery > Versatility**
+**Интеллект (главный) >> Скорость > Критический удар > Искусность > Универсальность (наименее ценный)**
 
-> [!note] Статы спорны - сим обязателен
-> Haste и Crit очень близки, и порядок между ними зависит от гира. Сделай сим под свой набор.
+> [!tip] Кратко
+> Скорость и Крит очень близки, и порядок между ними зависит от гира - **сделай сим** под свой набор. Универсальность набирай только если нужно пережить конкретную механику.
 
-Нюансы:
-- **Haste** - снижает GCD, ускоряет Empower-касты, косвенно продлевает [[evoker-glossary#^dragonrage|Ярость дракона]] (больше кастов = больше [[evoker-glossary#^animosity|Враждебности]])
-- **Crit** - скейлится с [[evoker-glossary#^spellweavers-dominance|Превосходством чароплета]] (+230% крит-бонус для Empower). Огромная ценность
-- **[[evoker-glossary#^mastery-giantkiller|Искусность: убийца великанов]]** - урон по целям с высоким HP. Максимальный эффект во время [[evoker-glossary#^dragonrage|Ярости дракона]] ([[evoker-glossary#^tyranny|Тирания]])
-- **Versatility** - плоский бонус урона + [[evoker-glossary#^damage-reduction|DR]]. Наименее ценный для DPS
-- **Item Level > вторичные статы** - более высокий ilvl почти всегда лучше
+Чуть подробнее, что каждый стат делает:
+- **Интеллект** (Intellect) - просто прибавляет урон всему. Растёт сам с уровнем предметов, отдельно гнаться не нужно.
+- **Скорость** (Haste) - снижает GCD и ускоряет Empower-касты, а значит косвенно продлевает [[evoker-glossary#^dragonrage|Ярость дракона]] (больше кастов = больше [[evoker-glossary#^animosity|Враждебности]]).
+- **Критический удар** (Critical Strike) - шанс ударить сильнее; отлично скейлится с [[evoker-glossary#^spellweavers-dominance|Превосходством чароплета]] (крит-бонус для Empower).
+- **Искусность** (Mastery) - через [[evoker-glossary#^mastery-giantkiller|Искусность: убийца великанов]] даёт больше урона по целям с высоким HP; на полную мощность работает в окне [[evoker-glossary#^dragonrage|Ярости дракона]] через [[evoker-glossary#^tyranny|Тиранию]].
+- **Универсальность** (Versatility) - немного урона и немного защиты. Полезен, но в последнюю очередь.
+
+### Раса
+
+- Разница между расами меньше ~1% урона, так что **играй за кого нравится** - на твой уровень игры это не повлияет.
+
+### Энчанты и гемы
+
+- **Мета-гем:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond)
+- **Остальные гемы:** Гранат скорости (Quick Garnet) или Хризолит смерти (Deadly Peridot)
+- **Оружие:** Проницательность рен'дорай (Acuity of the Ren'dorei)
+- **Кольца:** Луносветская расторопность (Silvermoon's Alacrity, Скорость) / Ярость природы (Nature's Wrath, Крит)
+- **Грудь:** Метка души мира (Mark of the Worldsoul)
+- **Ноги:** Чародейская шелковая нить солнечного огня (Sunfire Silk Spellthread)
+
+---
+
+## Частые ошибки
+
+Эти ошибки на старте делают почти все - это нормально и легко правится. Если урон не растёт, загляни в список: что-то наверняка узнаешь за собой.
+
+- **Зажимаешь Empower до Rank 3 в обычной ротации.** Теряешь касты в минуту и продление Ярости дракона. Кастуй на Rank 1.
+- **Жмёшь Ярость дракона "когда вспомнил", без усилителей.** Тринкет, зелье и Смещение равновесия уходят мимо окна - теряешь кучу урона.
+- **Обрываешь Дезинтеграцию на середине.** Полный ченнел даёт максимум снижения КД через Причину и следствие.
+- **Копишь Взрывную сущность и Сущность до потолка.** Лишнее сгорает. Дошёл до максимума - трать спендером.
+- **Бегаешь во время Ярости дракона.** Это твои лучшие секунды - найди спокойное окно и отстой его, кастуя.
+- **Берёшь Растяжение времени с Дракомандиром.** Оно режет твой урон - в DPS-сборке его не место.
+
+---
+
+## Напоследок
+
+Первые бои Ярость дракона будет уходить в молоко, а Empower-касты теряться в беготне. Это нормально: как только окно начнёт совпадать с тринкетом и зельем, а Rank 1 войдёт в привычку, урон прыгнет сам собой. Дай себе несколько пуллов - и дракон расправит крылья.

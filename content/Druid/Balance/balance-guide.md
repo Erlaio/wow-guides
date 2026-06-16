@@ -10,107 +10,126 @@ created: 2026-03-15
 
 Термины и сокращения → [[druid-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
+
+> [!note] Про названия
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (он нужен для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
+
+---
+
+*Ты совоптица под открытым небом: копишь свет звёзд и обрушиваешь его на врага залпами.*
+
+## Главное за минуту
+
+Минимум, чтобы сразу лить урон - тонкости потом:
+
+1. **Держи [[druid-glossary#^moonfire|Лунный огонь]] и [[druid-glossary#^sunfire|Солнечный огонь]] на цели всегда.** Это твои DoT-ы (урон со временем), они тикают сами и подкармливают остальное.
+2. **Жми [[druid-glossary#^eclipse|Затмение]] и оставайся в нём.** Солнечное затмение (через Гнев) - для 1-3 целей, Лунное затмение (через Звездный огонь) - для 4+. Вне Затмения урон проседает, так что выходить из него почти никогда не надо.
+3. **Копи [[druid-glossary#^ap|Астральную мощь]] филлерами, трать [[druid-glossary#^starsurge|Звездным потоком]] (ST) или [[druid-glossary#^starfall|Звездопадом]] (AoE).** Не давай ей переполниться (максимум 100).
+4. **Раз в 2 минуты собирай все КД вместе:** [[druid-glossary#^celestial-alignment|Парад планет]] + [[druid-glossary#^force-of-nature|Сила природы]] + [[druid-glossary#^convoke|Созыв духов]]. Это твоё окно максимального урона - под него уходят тринкет и зелье.
+5. **Двигайся с умом.** На бегу есть что нажать - инстант DoT-ы и проки бесплатных спендеров.
+
+## Как играть за совуха (в двух словах)
+
+Совух (Moonkin) - **дальник, который качает урон через циклы Затмения**. Идея простая: ты постоянно в одном из двух режимов - Солнечном или Лунном - и в нём бьёшь сильнее. Геймплей держится на трёх вещах:
+
+- **Держишь DoT-ы** ([[druid-glossary#^moonfire|Лунный огонь]], [[druid-glossary#^sunfire|Солнечный огонь]]) - они дают фоновый урон и генерируют ресурс через [[druid-glossary#^shooting-stars|Падающие звезды]].
+- **Копишь и тратишь [[druid-glossary#^ap|Астральную мощь]]:** филлеры (Гнев/Звездный огонь) её набивают, спендеры (Звездный поток/Звездопад) тратят.
+- **Раз в 2 минуты выпускаешь все большие КД разом** - это "золотое окно", сюда сливаешь самое мощное.
+
+Поймал этот ритм - и дальше дело за чистотой исполнения.
+
+> [!info] Словарик терминов
+> - **ДД** - наносящий урон (ты). **ST** - урон по одной цели, **AoE** (или **клив**) - по нескольким.
+> - **DoT** - урон со временем (тикает сам, напр. Лунный огонь). **Филлер** - чем заполняешь паузы, когда нет ничего важнее. **Спендер** - способность, тратящая ресурс.
+> - **КД** - кулдаун, перезарядка способности. **GCD** - глобальная перезарядка (~1.5 сек), ограничивает, как часто жмёшь кнопки.
+> - **Бёрст** - всплеск урона за короткое окно. **Прок** - случайное срабатывание бонуса ("прокнуло").
+> - **Кастовать** - применять заклинание, которое требует времени на произнесение.
+> - **Оверкап** - переполнить ресурс, когда он уже на максимуме. Лишнее теряется впустую.
+> - **Рамп** - заранее "разогнать" DoT-ы и КД перед всплеском урона.
+> - **Аптайм** - доля времени, когда эффект активен ("100% аптайм Лунного огня" = он не сходит с цели).
+> - **Симить** - прогнать своего персонажа в калькуляторе [Raidbots](https://www.raidbots.com), чтобы узнать, что лучше **именно для твоего** комплекта шмота.
+> - **BiS** - best in slot, лучший предмет в слот. **ilvl** - уровень предмета (чем выше, тем сильнее).
+> - **Тринкет** - предмет в особом слоте. Бывает **on-use** (активируемый - жмёшь ради всплеска урона в окно КД) и **passive** (работает сам).
+> - **M+ / ключи** - Mythic+, сложные подземелья на 5 человек. **Пак** - группа врагов в подземелье.
 
 ---
 
 ## Что изменилось в Midnight (12.0)
 
-> Balance Druid получил значительную переработку core-механик в Midnight.
+> Можно пропустить, если не играл в прошлых аддонах - этот раздел про изменения.
+
+Ядро Balance заметно переработали - спек стал более "кнопочным".
 
 **Удалено:**
-- **Stellar Flare** - убрана из дерева талантов
-- **Warrior of Elune** - удалена
-- **Nature's Vigil** - заменена на [[druid-glossary#^gift-of-the-wild|Дар дикой природы]]
-- **Renewal** - убрана как кнопка, осталась пассивная Aessina's Renewal
+- **Звездная вспышка** (Stellar Flare) и **Воин Элуны** (Warrior of Elune) - убраны из дерева.
+- **Природная чуткость** (Nature's Vigil) заменена на [[druid-glossary#^gift-of-the-wild|Дар дикой природы]].
+- **Обновление** (Renewal) больше не отдельная кнопка (осталась как пассивный самохил).
 
 **Переработано:**
-- **[[druid-glossary#^eclipse|Затмение]]** - из пассивного бафф (2 каста → Eclipse) в **активную кнопку** на 2 заряда (32с [[druid-glossary#^cd|КД]] каждый). [[druid-glossary#^wrath|Гнев]] → Solar [[druid-glossary#^eclipse|Затмение]], [[druid-glossary#^starfire|Звездный огонь]] → Lunar [[druid-glossary#^eclipse|Затмение]]. Длительность 15 сек. Основная задача - максимизировать [[druid-glossary#^uptime|аптайм]] [[druid-glossary#^eclipse|Затмение]]
-- **[[druid-glossary#^mastery-balance|Искусность: астральные чары]]** - больше не усиливает [[druid-glossary#^moonfire|Лунный огонь]]/[[druid-glossary#^sunfire|Солнечный огонь]] [[druid-glossary#^dot|DoT]]-ы, сконцентрирован на прямом уроне Nature и Arcane заклинаний
-- **[[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]** - переделан в 2-мин [[druid-glossary#^cd|КД]] с разными эффектами по формам: Облик медведя (Bear Form) → +30% макс. HP на 20 сек (сохраняется в любой форме), Human Form → усиленный Буйный рост (Wild Growth) (~15% HP союзников за 8 сек)
+- **[[druid-glossary#^eclipse|Затмение]]** - главное изменение. Раньше это был пассивный бафф от двух кастов, теперь это **активная кнопка** на 2 заряда (32 сек КД каждый). Гнев → Солнечное затмение, Звездный огонь → Лунное затмение. Длительность 15 сек. Вся глубина игры теперь в управлении этими зарядами.
+- **[[druid-glossary#^mastery-balance|Искусность: астральные чары]]** - больше не усиливает DoT-ы, теперь только прямой урон Nature и Arcane заклинаний.
+- **[[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]** - стал 2-мин КД с эффектом по форме (медведь = +30% HP, форма человека = усиленный Буйный рост).
 
 **Добавлено:**
-- **[[druid-glossary#^ascendant-eclipses|Возвышенные затмения]]** (Apex талант) - 4 ранга, все связаны с [[druid-glossary#^eclipse|Затмение]]
-- **[[druid-glossary#^total-eclipse|Полное затмение]]** - 10% шанс получить оба [[druid-glossary#^eclipse|Затмение]] одновременно
-- **[[druid-glossary#^meteor-storm|Метеоритный шторм]]** - [[druid-glossary#^starfall|Звездопад]] наносит полный урон за половину времени
-- **[[druid-glossary#^elunes-challenge|Испытание Элуны]]** - снижение каст-тайма при выходе из [[druid-glossary#^eclipse|Затмение]] с низким [[druid-glossary#^ap|AP]]
-
-**Итог:** спек стал более "кнопочным" - [[druid-glossary#^eclipse|Затмение]] теперь активная способность, а не пассивный цикл. Основная глубина геймплея - в управлении [[druid-glossary#^eclipse|Затмение]]-зарядами и [[druid-glossary#^cd|КД]]-синхронизации.
+- **[[druid-glossary#^ascendant-eclipses|Возвышенные затмения]]** (Apex-талант) - усиливают окно Затмения.
+- **[[druid-glossary#^total-eclipse|Полное затмение]]** - 10% шанс получить оба Затмения сразу.
+- **[[druid-glossary#^meteor-storm|Метеоритный шторм]]** - Звездопад наносит полный урон за половину времени.
+- **[[druid-glossary#^elunes-challenge|Испытание Элуны]]** - ускоряет касты при выходе из Затмения с низким AP.
 
 ---
 
 ## Сильные и слабые стороны
 
-**Сильные:**
-- Хорошая производительность как на [[druid-glossary#^st|ST]], так и на [[druid-glossary#^aoe|AoE]] при правильном таланте
-- Гибкие кулдауны - можно копить для [[druid-glossary#^burst|бёрста]] или тратить стабильно
-- Отличная мобильность: [[druid-glossary#^stampeding-roar|Тревожный рев]], Dash, пассивные таланты движения
-- Простая и понятная ротация, но с глубиной для оптимизации
-- Мощная рейд-утилити: [[druid-glossary#^solar-beam|Столп солнечного света]] (бланкет-сайленс), [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^typhoon|Тайфун]], Знак дикой природы (Mark of the Wild)
+Полезно знать сильные стороны класса и его слабые места - так понятнее, где играть в удовольствие, а где просто быть внимательнее.
 
-**Слабые:**
-- Требуется полная перенастройка талантов для [[druid-glossary#^st|ST]] vs [[druid-glossary#^aoe|AoE]] - гибридные файты самые слабые
-- Босс-файты в M+ - спек не может одновременно талантить под [[druid-glossary#^st|ST]] и [[druid-glossary#^aoe|AoE]]
-- Длительный [[druid-glossary#^st|ST]]-урон слабоват - проигрывает чистым ST-спекам на затяжных боссах
-- [[druid-glossary#^aoe|AoE]] требует рамп-тайм - нужно развесить [[druid-glossary#^dot|DoT]]-ы и войти в [[druid-glossary#^eclipse|Затмение]] перед [[druid-glossary#^burst|бёрстом]]
+**В чём совух хорош:**
+- **Ровно работает и по одной цели, и по куче врагов** (при правильных талантах).
+- **Гибкие кулдауны** - можно копить ради бёрста или тратить стабильно.
+- **Отличная мобильность:** [[druid-glossary#^stampeding-roar|Тревожный рев]], Рывок (Dash), таланты на движение.
+- **Сильнейшая рейд-утилити:** [[druid-glossary#^solar-beam|Столп солнечного света]] (зона-сайленс), [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^typhoon|Тайфун]], Знак дикой природы (Mark of the Wild).
+
+**Слабые места класса:**
+- **Не любит резкую смену ST/AoE.** Под чистый ST и под массовый AoE нужны разные таланты, поэтому гибридные бои (то один, то много врагов) - самые слабые.
+- **AoE требует рамп-тайма:** надо развесить DoT-ы и войти в Затмение перед бёрстом, мгновенного всплеска нет.
+- **Чистый затяжной ST слабоват** - на долгих боссах проигрывает спекам, заточенным только под одну цель.
 
 ---
 
 ## Таланты
 
-### Hero Talent
+Таланты - это твоя "сборка" (какие способности и бонусы прокачаны). Не вникай в каждую кнопку сразу: ниже есть готовые сборки, которые можно просто скопировать в игру.
 
-- **[[druid-glossary#^keeper-of-the-grove|Хранитель рощи]]** - основной выбор для **рейда и M+**
-  - [[druid-glossary#^force-of-nature|Сила природы]] усилены: треанты дают +4% урона заклинаний (Harmony of the Grove)
-  - Dream Surge - следующие 3-4 [[druid-glossary#^wrath|Гнев]]/[[druid-glossary#^starfire|Звездный огонь]] взрываются вокруг цели (доп. Nature-урон)
-  - Лучше на [[druid-glossary#^st|ST]] и [[druid-glossary#^spread|спред]]-[[druid-glossary#^cleave|кливе]]
-  - Гибкий: короткие [[druid-glossary#^burst|бёрст]]-окна с [[druid-glossary#^force-of-nature|Сила природы]], легко стакать с другими [[druid-glossary#^cd|КД]]
+### Героическое древо (главная развилка сборки)
 
-- **[[druid-glossary#^elunes-chosen|Избранник Элуны]]** - альтернатива для **стакнутого AoE**
-  - Фокус на [[druid-glossary#^fury-of-elune|Ярость Элуны]] + [[druid-glossary#^lunation|Лунация]] (касты [[druid-glossary#^starfire|Звездный огонь]] снижают [[druid-glossary#^cd|КД]] [[druid-glossary#^fury-of-elune|Ярость Элуны]])
-  - [[druid-glossary#^atmospheric-exposure|Атмосферные явления]] - увеличивает получаемый урон для целей в зоне [[druid-glossary#^fury-of-elune|Ярость Элуны]]
-  - Сильнее на стакнутом [[druid-glossary#^cleave|кливе]], но сложнее в исполнении
-  - Для высоких ключей со стабильно сгруппированными паками
+> [!note] Итог: бери Хранителя рощи
+> У совуха два героических древа - **[[druid-glossary#^keeper-of-the-grove|Хранитель рощи]]** (Keeper of the Grove) и **[[druid-glossary#^elunes-chosen|Избранник Элуны]]** (Elune's Chosen). Бери **Хранителя рощи** - он лучший и в рейде, и в ключах. Избранник Элуны - нишевый вариант под стабильно собранный в кучу AoE.
 
-> [!note] Что брать
-> **[[druid-glossary#^keeper-of-the-grove|Хранитель рощи]] - лучший выбор для обоих типов контента.** [[druid-glossary#^elunes-chosen|Избранник Элуны]] - нишевый вариант для стакнутого [[druid-glossary#^aoe|AoE]].
+- **[[druid-glossary#^keeper-of-the-grove|Хранитель рощи]]** (Keeper of the Grove) - усиливает [[druid-glossary#^force-of-nature|Силу природы]]: треанты бьют сильнее и добавляют тебе урона заклинаний. Гибкий, легко стакается с другими КД, силён на ST и спред-кливе.
+- **[[druid-glossary#^elunes-chosen|Избранник Элуны]]** (Elune's Chosen) - фокус на [[druid-glossary#^fury-of-elune|Ярости Элуны]] и [[druid-glossary#^lunation|Лунации]] (касты Звездного огня снижают КД Ярости Элуны). Сильнее на плотном AoE, но сложнее в исполнении.
 
 ### Apex талант
 
-- **[[druid-glossary#^ascendant-eclipses|Возвышенные затмения]]** - 4 ранга, все связаны с [[druid-glossary#^eclipse|Затмение]]:
-  - **Rank 1:** при входе в [[druid-glossary#^eclipse|Затмение]] следующие 3 [[druid-glossary#^spender|спендера]] усилены на 20% + следующий [[druid-glossary#^wrath|Гнев]]/[[druid-glossary#^starfire|Звездный огонь]] инстант
-  - **Rank 2 (2 очка):** криты в [[druid-glossary#^eclipse|Затмение]] накладывают стакающийся дебафф - 12% урона крита за 6 сек (Languish)
-  - **Rank 3:** [[druid-glossary#^eclipse|Затмение]] выпускает Solar Bolt ([[druid-glossary#^st|ST]]) или Lunar Bolt ([[druid-glossary#^aoe|AoE]]); [[druid-glossary#^celestial-alignment|Парад планет]]/[[druid-glossary#^incarnation|Воплощение]] или [[druid-glossary#^total-eclipse|Полное затмение]] [[druid-glossary#^proc|прок]] стреляет обоими. Болты гарантированно критят → активируют Rank 2
-  - **Берём всегда, все 4 очка.** Пассивный эффект - не меняет ротацию, но значительно усиливает [[druid-glossary#^burst|бёрст]]-окна
+- **[[druid-glossary#^ascendant-eclipses|Возвышенные затмения]]** (Ascendant Eclipses) - единственный Apex, бери все 4 ранга. Простыми словами: вход в Затмение делает следующий филлер мгновенным и усиливает первые спендеры. Ничего нового жать не надо - просто играешь как обычно, а бёрст-окна бьют заметно больнее.
 
-### Ключевые таланты
+### Провальные таланты
 
-Всегда берём:
-- **[[druid-glossary#^fury-of-elune|Ярость Элуны]]** - предпочтительнее [[druid-glossary#^new-moon|Новолуние]] из-за синергии с [[druid-glossary#^atmospheric-exposure|Атмосферные явления]]
-- **[[druid-glossary#^starweaver|Ткач Звезд]]** - [[druid-glossary#^proc|проки]] бесплатных [[druid-glossary#^starsurge|Звездный поток]]/[[druid-glossary#^starfall|Звездопад]] ([[druid-glossary#^rattle-the-stars|Звездная встряска]] - альтернатива)
-- **[[druid-glossary#^starlord|Звездный лорд]]** - стакающийся бафф хасты от [[druid-glossary#^spender|спендеров]] (3 стака), ключевой для ритма ротации
-- **[[druid-glossary#^shooting-stars|Падающие звезды]]** - генерация [[druid-glossary#^ap|Астральная мощь]] от [[druid-glossary#^dot|DoT]]-ов, особенно сильно на нескольких целях. Усилен тир-сетом
-- **[[druid-glossary#^force-of-nature|Сила природы]]** - треанты, ключевой [[druid-glossary#^cd|КД]] для [[druid-glossary#^keeper-of-the-grove|Хранитель рощи]]
+> [!warning] Не трать очки впустую
+> Чисто защитные класс-узлы (вроде Nurturing Instinct) и situational-таланты не бери в стандартную урон-сборку - они не дают DPS. Опирайся на готовые билды ниже.
 
-Рейд ([[druid-glossary#^keeper-of-the-grove|Хранитель рощи]]):
-- **[[druid-glossary#^convoke|Созыв духов]]** - лучше на [[druid-glossary#^st|ST]] и [[druid-glossary#^burst|бёрст]]-окнах; синхронить с [[druid-glossary#^celestial-alignment|Парад планет]]
-- **[[druid-glossary#^meteor-storm|Метеоритный шторм]]** - [[druid-glossary#^starfall|Звездопад]] наносит полный урон за половину времени
-- Офф-таланты класса: Nurturing Instinct, Lycara's Teachings, Starlight Conduit, Circle of the Heavens, Lore of the Grove
+### Нишевое (необязательно)
 
-M+ ([[druid-glossary#^keeper-of-the-grove|Хранитель рощи]] / [[druid-glossary#^elunes-chosen|Избранник Элуны]]):
-- **[[druid-glossary#^incarnation-balance|Воплощение: избранный Элуны]]** - предпочтительнее [[druid-glossary#^convoke|Созыв духов]] для M+ и каунсил-файтов
-- **Aetherial Kindling** - для продолжительных [[druid-glossary#^aoe|AoE]]-ситуаций
-- **Light of the Sun** - снижение [[druid-glossary#^cd|КД]] [[druid-glossary#^solar-beam|Столп солнечного света]]
-- [[druid-glossary#^typhoon|Тайфун]], [[druid-glossary#^incapacitating-roar|Парализующий рык]] - утилити для контроля мобов
+- **[[druid-glossary#^new-moon|Новолуние]]** вместо [[druid-glossary#^fury-of-elune|Ярости Элуны]] - рабочая альтернатива, но Ярость Элуны обычно лучше из-за синергии с [[druid-glossary#^atmospheric-exposure|Атмосферными явлениями]]. По умолчанию бери Ярость Элуны.
+- **[[druid-glossary#^rattle-the-stars|Звездная встряска]]** вместо [[druid-glossary#^starweaver|Ткача Звезд]] - вариант под другой ритм спендеров. Не стандарт, бери только осознанно.
 
 ---
 
 ## Готовые билды (импорт)
 
-> В игре: открыть таланты (N) → Loadouts → Import Loadout → вставить строку → Import
+> Не хочешь разбираться в талантах - просто скопируй строку и вставь в игре: открой таланты (**N**) → Loadouts → Import Loadout → вставь → Import. ST-строка для боссов, M+/AoE - для пачек врагов.
 
 > [!note]
-> Импорт-строки могут меняться с хотфиксами. Если строка не грузится или хочешь свежий билд - бери на [Method](https://www.method.gg/guides/balance-druid/talents), [Wowhead](https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps) или [Maxroll](https://maxroll.gg/wow/class-guides/balance-druid-mythic-plus-guide).
+> Импорт-строки могут поменяться с хотфиксами. Если строка не грузится - возьми свежую на [Wowhead](https://www.wowhead.com/guide/classes/druid/balance/talent-builds-pve-dps).
 
 ### ST / Рейд (Keeper of the Grove)
 
@@ -134,223 +153,214 @@ CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgZZmlZWMzMWYZmlxMjxG
 
 ## Ключевые правила
 
-> [!important] Eclipse - core-механика Midnight
-> [[druid-glossary#^eclipse|Затмение]] - больше не пассивный бафф от двух кастов. Теперь это **активная кнопка** на 2 заряда (32 сек [[druid-glossary#^cd|КД]] каждый). [[druid-glossary#^wrath|Гнев]] → Solar [[druid-glossary#^eclipse|Затмение]], [[druid-glossary#^starfire|Звездный огонь]] → Lunar [[druid-glossary#^eclipse|Затмение]]. Длительность 15 сек. Вне [[druid-glossary#^eclipse|Затмение]] урон значительно ниже → **максимизировать [[druid-glossary#^uptime|аптайм]] [[druid-glossary#^eclipse|Затмение]]**. Копить [[druid-glossary#^ap|AP]] вне [[druid-glossary#^eclipse|Затмение]], тратить внутри.
+Это то, что превращает хаотичное нажатие кнопок в стабильный урон. Каждое правило - с объяснением, **почему** так.
 
-1. **[[druid-glossary#^ap|Астральная мощь]]** - не [[druid-glossary#^overcap|оверкапить]] (макс 100). Генерация: [[druid-glossary#^wrath|Гнев]] ([[druid-glossary#^st|ST]]), [[druid-glossary#^starfire|Звездный огонь]] ([[druid-glossary#^aoe|AoE]]). Трата: [[druid-glossary#^starsurge|Звездный поток]] ([[druid-glossary#^st|ST]]), [[druid-glossary#^starfall|Звездопад]] ([[druid-glossary#^aoe|AoE]]). Правило "Always Be Casting" - инстант-[[druid-glossary#^spender|спендеры]] на движении
-2. **[[druid-glossary#^dot|DoT]]-менеджмент** - [[druid-glossary#^moonfire|Лунный огонь]] и [[druid-glossary#^sunfire|Солнечный огонь]] держать на всех целях. Обновлять в [[druid-glossary#^pandemic|пандемик]]-окно (последние 30% длительности). Перед [[druid-glossary#^cd|КД]] обновить [[druid-glossary#^dot|DoT]]-ы заранее, чтобы не тратить [[druid-glossary#^gcd|GCD]] в [[druid-glossary#^burst|бёрст]]-окне. [[druid-glossary#^mastery-balance|Искусность: астральные чары]] больше не усиливает [[druid-glossary#^dot|DoT]]-ы - но [[druid-glossary#^dot|DoT]]-ы важны через [[druid-glossary#^shooting-stars|Падающие звезды]]
-3. **[[druid-glossary#^starlord|Звездный лорд]]** - стакающийся бафф хасты от [[druid-glossary#^spender|спендеров]] (3 стака). Входить в [[druid-glossary#^eclipse|Затмение]] когда стаки спадают - оптимальный ритм
-4. **[[druid-glossary#^cd|КД]]-синхронизация** - [[druid-glossary#^force-of-nature|Сила природы]] + [[druid-glossary#^celestial-alignment|Парад планет]] + [[druid-glossary#^convoke|Созыв духов]]/[[druid-glossary#^incarnation|Воплощение]] каждые 2 минуты. Тринкеты и зелья на [[druid-glossary#^burst|бёрст]]-окно
-5. **[[druid-glossary#^total-eclipse|Полное затмение]]** - 10% шанс получить оба [[druid-glossary#^eclipse|Затмение]] одновременно. Не играть вокруг этого - просто бонус
-6. **Движение** - планировать на 10-15 сек вперёд. Инстант-касты ([[druid-glossary#^moonfire|Лунный огонь]], [[druid-glossary#^sunfire|Солнечный огонь]], [[druid-glossary#^starsurge|Звездный поток]]/[[druid-glossary#^starfall|Звездопад]] [[druid-glossary#^proc|проки]] [[druid-glossary#^starweaver|Ткач Звезд]]) на движении
+> [!important] Затмение - сердце спека
+> Вне Затмения урон значительно ниже. Задача - **держать аптайм Затмения близко к 100%**: входишь в нужный режим (Солнечное до 3 целей, Лунное на 4+) и стараешься не выходить впустую. Копишь AP вне Затмения, тратишь внутри.
 
-### Когда переключаться на AoE
-
-- **1-3 цели** - Solar [[druid-glossary#^eclipse|Затмение]], [[druid-glossary#^wrath|Гнев]] как [[druid-glossary#^filler|филлер]], [[druid-glossary#^starsurge|Звездный поток]] как [[druid-glossary#^spender|спендер]]
-- **4+ целей** - Lunar [[druid-glossary#^eclipse|Затмение]], [[druid-glossary#^starfire|Звездный огонь]] как [[druid-glossary#^filler|филлер]] (кливит внутри Lunar [[druid-glossary#^eclipse|Затмение]]), [[druid-glossary#^starfall|Звездопад]] как [[druid-glossary#^spender|спендер]]
+1. **Не давай [[druid-glossary#^ap|Астральной мощи]] переполниться (максимум 100).** Дошёл до потолка - трать спендером, иначе лишнее сгорает зря. Набивают AP Гнев (ST) и Звездный огонь (AoE).
+2. **Держи DoT-ы на 100% аптайма.** [[druid-glossary#^moonfire|Лунный огонь]] и [[druid-glossary#^sunfire|Солнечный огонь]] - на всех целях, обновляй в [[druid-glossary#^pandemic|пандемик]]-окно (последние ~30% длительности). Перед большими КД обнови их заранее, чтобы не тратить на это GCD в бёрсте.
+3. **Следи за стаками [[druid-glossary#^starlord|Звездного лорда]] (бафф хасты от спендеров, до 3).** Заходить в новое Затмение, когда стаки спадают - оптимальный ритм.
+4. **Собирай большие КД вместе раз в 2 минуты:** [[druid-glossary#^force-of-nature|Сила природы]] + [[druid-glossary#^celestial-alignment|Парад планет]] + [[druid-glossary#^convoke|Созыв духов]]/[[druid-glossary#^incarnation|Воплощение]]. Тринкет и зелье - сюда же.
+5. **[[druid-glossary#^total-eclipse|Полное затмение]] - просто приятный бонус.** Не строй вокруг него ротацию, оно срабатывает само.
+6. **Планируй движение на 10-15 сек вперёд.** На бегу есть чем бить: инстант DoT-ы и проки [[druid-glossary#^starweaver|Ткача Звезд]] (бесплатные Звездный поток/Звездопад).
 
 ---
 
-## Opener
+## Опенер (как начинать бой)
 
-### ST Opener (рейд, Keeper of the Grove)
+"Опенер" - это заученная последовательность первых кнопок на пулле. Выучи её один раз, и старт боя будет на автомате.
+
+### Опенер ST (рейд, Keeper of the Grove)
 
 1. [[druid-glossary#^wrath|Гнев]] x2-3 (прекаст за 3-4 сек до пулла)
-2. [[druid-glossary#^moonfire|Лунный огонь]] + [[druid-glossary#^sunfire|Солнечный огонь]] (нанести [[druid-glossary#^dot|DoT]]-ы)
-3. Solar [[druid-glossary#^eclipse|Затмение]] (войти в [[druid-glossary#^eclipse|Затмение]])
-4. Потратить стаки [[druid-glossary#^ascendant-eclipses|Возвышенные затмения]] через [[druid-glossary#^starsurge|Звездный поток]] (3 усиленных [[druid-glossary#^spender|спендера]])
+2. [[druid-glossary#^moonfire|Лунный огонь]] + [[druid-glossary#^sunfire|Солнечный огонь]] (нанести DoT-ы)
+3. [[druid-glossary#^eclipse|Солнечное затмение]] (войти в режим)
+4. [[druid-glossary#^starsurge|Звездный поток]] - слить первые усиленные спендеры от [[druid-glossary#^ascendant-eclipses|Возвышенных затмений]]
 5. [[druid-glossary#^fury-of-elune|Ярость Элуны]]
-6. Обновить [[druid-glossary#^sunfire|Солнечный огонь]] (перед [[druid-glossary#^cd|КД]])
-7. [[druid-glossary#^force-of-nature|Сила природы]]
-8. [[druid-glossary#^celestial-alignment|Парад планет]] + тринкет + зелье
-9. [[druid-glossary#^convoke|Созыв духов]] (если талант)
-10. [[druid-glossary#^starsurge|Звездный поток]] до опустошения [[druid-glossary#^ap|AP]] → обычная ротация
+6. [[druid-glossary#^force-of-nature|Сила природы]]
+7. [[druid-glossary#^celestial-alignment|Парад планет]] + тринкет + зелье
+8. [[druid-glossary#^convoke|Созыв духов]] (если в сборке)
+9. [[druid-glossary#^starsurge|Звездный поток]] до опустошения AP → обычный приоритет
 
-### AoE Opener (M+)
+### Опенер AoE (M+)
 
-1. [[druid-glossary#^moonfire|Лунный огонь]] по целям пока мобы собираются
-2. [[druid-glossary#^sunfire|Солнечный огонь]] когда мобы сгруппированы ([[druid-glossary#^aoe|AoE]])
-3. [[druid-glossary#^eclipse|Затмение]] (Solar до 3 целей, Lunar на 4+)
+1. [[druid-glossary#^moonfire|Лунный огонь]] по целям, пока мобы собираются
+2. [[druid-glossary#^sunfire|Солнечный огонь]], когда мобы сгруппированы
+3. [[druid-glossary#^eclipse|Лунное затмение]] (на 4+ целей)
 4. [[druid-glossary#^force-of-nature|Сила природы]] / [[druid-glossary#^incarnation|Воплощение]]
 5. [[druid-glossary#^fury-of-elune|Ярость Элуны]]
-6. [[druid-glossary#^starfall|Звездопад]] (основной [[druid-glossary#^aoe|AoE]]-[[druid-glossary#^spender|спендер]])
-7. Продолжать [[druid-glossary#^starfire|Звездный огонь]] как [[druid-glossary#^filler|филлер]] → [[druid-glossary#^starfall|Звездопад]] по [[druid-glossary#^cd|КД]]
+6. [[druid-glossary#^starfall|Звездопад]] - основной AoE-спендер
+7. Дальше Звездный огонь как филлер → Звездопад по мере накопления AP
 
 ---
 
-## ST приоритет (рейды)
+## ST приоритет (бой по одной цели)
 
-1. **[[druid-glossary#^moonfire|Лунный огонь]] / [[druid-glossary#^sunfire|Солнечный огонь]]** - поддерживать 100% [[druid-glossary#^uptime|аптайм]], обновлять в [[druid-glossary#^pandemic|пандемик]]-окно
-2. **[[druid-glossary#^force-of-nature|Сила природы]]** - по [[druid-glossary#^cd|КД]], кастовать вне [[druid-glossary#^eclipse|Затмение]] (чтобы войти в [[druid-glossary#^eclipse|Затмение]] с треантами)
-3. **[[druid-glossary#^fury-of-elune|Ярость Элуны]]** - по [[druid-glossary#^cd|КД]], во время [[druid-glossary#^eclipse|Затмение]] или перед [[druid-glossary#^force-of-nature|Сила природы]]
-4. **[[druid-glossary#^convoke|Созыв духов]]** - с активными [[druid-glossary#^celestial-alignment|Парад планет]] + [[druid-glossary#^force-of-nature|Сила природы]]
-5. **[[druid-glossary#^celestial-alignment|Парад планет]]** - по [[druid-glossary#^cd|КД]], синхронить с [[druid-glossary#^force-of-nature|Сила природы]]
-6. **Solar [[druid-glossary#^eclipse|Затмение]]** - входить когда [[druid-glossary#^starlord|Звездный лорд]] спадает и есть [[druid-glossary#^proc|проки]] [[druid-glossary#^starweaver|Ткач Звезд]]
-7. **[[druid-glossary#^starfall|Звездопад]]** - тратить [[druid-glossary#^proc|проки]] [[druid-glossary#^starweaver|Ткач Звезд]] Warp вне стаков [[druid-glossary#^ascendant-eclipses|Возвышенные затмения]]
-8. **[[druid-glossary#^starsurge|Звездный поток]]** - тратить [[druid-glossary#^ap|AP]] чтобы не [[druid-glossary#^overcap|оверкапить]], тратить [[druid-glossary#^starweaver|Ткач Звезд]] Weft [[druid-glossary#^proc|проки]]
-9. **[[druid-glossary#^wrath|Гнев]]** - генерация [[druid-glossary#^ap|AP]] (основной [[druid-glossary#^filler|филлер]])
+"Приоритет" - это список "что жать в первую очередь". Идёшь сверху вниз: верхнее доступно - жмёшь его, нет - спускаешься ниже.
+
+1. **[[druid-glossary#^moonfire|Лунный огонь]] / [[druid-glossary#^sunfire|Солнечный огонь]]** - держать 100% аптайма, обновлять в пандемик.
+2. **[[druid-glossary#^force-of-nature|Сила природы]]** - по КД (кастуй вне Затмения, чтобы войти в режим с треантами).
+3. **[[druid-glossary#^fury-of-elune|Ярость Элуны]]** - по КД, в Затмении или перед Силой природы.
+4. **[[druid-glossary#^celestial-alignment|Парад планет]] + [[druid-glossary#^convoke|Созыв духов]]** - вместе, в бёрст-окно.
+5. **[[druid-glossary#^eclipse|Солнечное затмение]]** - входить, когда [[druid-glossary#^starlord|Звездный лорд]] спадает.
+6. **[[druid-glossary#^starsurge|Звездный поток]]** - тратить AP (не оверкапить) и проки [[druid-glossary#^starweaver|Ткача Звезд]].
+7. **[[druid-glossary#^wrath|Гнев]]** - филлер, генерация AP.
+
+## AoE приоритет (по нескольким целям)
+
+1. **[[druid-glossary#^sunfire|Солнечный огонь]]** - держать на сгруппированных целях (бьёт по площади).
+2. **[[druid-glossary#^moonfire|Лунный огонь]]** - развесить по целям (каждый кормит [[druid-glossary#^shooting-stars|Падающие звезды]]).
+3. **[[druid-glossary#^force-of-nature|Сила природы]] + [[druid-glossary#^incarnation|Воплощение]] / [[druid-glossary#^celestial-alignment|Парад планет]] + [[druid-glossary#^fury-of-elune|Ярость Элуны]]** - по КД, вместе.
+4. **[[druid-glossary#^eclipse|Лунное затмение]]** - оставаться в нём на 4+ целей.
+5. **[[druid-glossary#^starfall|Звездопад]]** - основной AoE-спендер, тратить AP.
+6. **[[druid-glossary#^starfire|Звездный огонь]]** - основной AoE-филлер (внутри Лунного затмения кливит).
+7. **[[druid-glossary#^wrath|Гнев]]** - только на 1-2 целях или для входа в Солнечное затмение.
+
+> Граница простая: **1-3 цели → Солнечное** (Гнев + Звездный поток), **4+ целей → Лунное** (Звездный огонь + Звездопад).
 
 ---
 
-## AoE приоритет (M+)
+## Золотое окно (бёрст раз в 2 минуты)
 
-1. **[[druid-glossary#^sunfire|Солнечный огонь]]** - держать на сгруппированных целях ([[druid-glossary#^aoe|AoE]]-эффект)
-2. **[[druid-glossary#^moonfire|Лунный огонь]]** - развесить по целям (каждый даёт [[druid-glossary#^shooting-stars|Падающие звезды]] [[druid-glossary#^proc|проки]])
-3. **[[druid-glossary#^force-of-nature|Сила природы]]** - по [[druid-glossary#^cd|КД]]
-4. **[[druid-glossary#^incarnation|Воплощение]] / [[druid-glossary#^celestial-alignment|Парад планет]]** - по [[druid-glossary#^cd|КД]]
-5. **[[druid-glossary#^fury-of-elune|Ярость Элуны]]** - по [[druid-glossary#^cd|КД]]
-6. **[[druid-glossary#^eclipse|Затмение]]** - Solar до 3 целей, Lunar на 4+ целей
-7. **[[druid-glossary#^starfall|Звездопад]]** - основной [[druid-glossary#^aoe|AoE]]-[[druid-glossary#^spender|спендер]], тратить [[druid-glossary#^ap|AP]]
-8. **[[druid-glossary#^starsurge|Звездный поток]]** - на приоритетную цель если [[druid-glossary#^starfall|Звездопад]] активен и [[druid-glossary#^ap|AP]] высокий
-9. **[[druid-glossary#^starfire|Звездный огонь]]** - основной [[druid-glossary#^aoe|AoE]]-[[druid-glossary#^filler|филлер]] (внутри Lunar [[druid-glossary#^eclipse|Затмение]] - кливит)
-10. **[[druid-glossary#^wrath|Гнев]]** - только на 1-2 целях или для входа в Solar [[druid-glossary#^eclipse|Затмение]]
+Раз в 2 минуты у тебя сходятся все большие КД - это твой определяющий момент. Всё, что бьёт больно, ты копишь к нему.
 
-### Избранник Элуны (Elune's Chosen) (M+, альтернатива)
+- **Собирай вместе:** [[druid-glossary#^celestial-alignment|Парад планет]] + [[druid-glossary#^force-of-nature|Сила природы]] + [[druid-glossary#^convoke|Созыв духов]] (рейд/ST) или [[druid-glossary#^incarnation|Воплощение]] (M+).
+- **Заранее обнови DoT-ы** перед окном, чтобы не тратить на них GCD внутри бёрста.
+- **Сюда же уходят тринкет и боевое зелье** - строго в окно, а не "когда вспомнил".
+- **Войди в Затмение прямо перед бёрстом** с полным запасом AP, чтобы было что сливать спендерами.
 
-- Оставаться в Lunar [[druid-glossary#^eclipse|Затмение]] и спамить [[druid-glossary#^starfire|Звездный огонь]]
-- [[druid-glossary#^incarnation|Воплощение]] кастовать вне [[druid-glossary#^eclipse|Затмение]] когда [[druid-glossary#^fury-of-elune|Ярость Элуны]] готов
-- [[druid-glossary#^fury-of-elune|Ярость Элуны]] по [[druid-glossary#^cd|КД]] - снижать его через [[druid-glossary#^lunation|Лунация]] (касты [[druid-glossary#^starfire|Звездный огонь]])
-- [[druid-glossary#^starfall|Звездопад]] как основной [[druid-glossary#^spender|спендер]], [[druid-glossary#^starsurge|Звездный поток]] на 1 цель
+> [!tip] Избранник Элуны иначе
+> Если играешь Избранника Элуны: оставайся в Лунном затмении, спамь Звездный огонь, держи [[druid-glossary#^fury-of-elune|Ярость Элуны]] по КД (её перезарядку снижает [[druid-glossary#^lunation|Лунация]]), [[druid-glossary#^incarnation|Воплощение]] кастуй вне Затмения.
 
 ---
 
 ## Дефенсивы и утилити
 
-### Дефенсивы
+Совух неплохо переживает урон - научишься этим пользоваться, и хилеру станет легче.
 
-| Способность | Эффект | КД | Примечание |
-|---|---|---|---|
-| **Дубовая кожа** (Barkskin) | 30% **DR** на 12 сек | 60 сек (45 с талантом) | Основной дефенсив, off-**GCD**! Нет оправданий не жать |
-| **Инстинкты выживания** (Survival Instincts) | 50% **DR** на 6 сек | 3 мин (2 заряда) | Тяжёлый дефенсив для смертельных механик |
-| **Сердце дикой природы** (Heart of the Wild) (Bear Form) | +30% макс. HP на 20 сек | 2 мин | Огромный бафф HP, сохраняется при возврате в Moonkin |
-| **Сердце дикой природы** (Heart of the Wild) (Human Form) | Усиленный Буйный рост (Wild Growth) (~15% HP группы) | 2 мин | Скорая помощь для группы |
-| **Облик медведя** (Bear Form) | +20% HP + армор | - | Экстренный макро для выживания |
+> [!tip] Главное про выживание
+> 1. **[[druid-glossary#^barkskin|Дубовая кожа]] - off-GCD и почти без КД.** Жми её щедро под любой заметный урон, она не стоит тебе ни доли секунды.
+> 2. **Не перекрывай дефенсивы.** Дубовая кожа и Инстинкты выживания складываются мультипликативно - вешать их одновременно = терять пользу. Чередуй.
 
-> [!important] Не перекрывать дефенсивы!
-> [[druid-glossary#^barkskin|Дубовая кожа]] и [[druid-glossary#^survival-instincts|Инстинкты выживания]] стакаются **мультипликативно**, а не аддитивно. Перекрытие = потеря эффективности. Чередуйте их.
+### Дефенсивы (таблица для справки)
 
-### Утилити
+| Способность | Что делает | Когда жать |
+|---|---|---|
+| **[[druid-glossary#^barkskin\|Дубовая кожа]]** (Barkskin) | -30% всего урона, 12 сек, off-GCD | Первая линия. Жать часто, нет причин не нажать |
+| **[[druid-glossary#^survival-instincts\|Инстинкты выживания]]** (Survival Instincts) | -50% урона, 6 сек, 2 заряда | Под смертельные удары. Не перекрывать с Дубовой кожей |
+| **[[druid-glossary#^heart-of-the-wild\|Сердце дикой природы]]** (Bear Form) | +30% макс. HP на 20 сек | Большой запас HP, сохраняется при возврате в Moonkin |
+| **Облик медведя** (Bear Form) | +20% HP + армор | Экстренный макрос на выживание |
 
-- **[[druid-glossary#^solar-beam|Столп солнечного света]]** - [[druid-glossary#^aoe|AoE]] прерывание + сайленс-зона (8 сек). Один из лучших кикков в M+
-- **[[druid-glossary#^typhoon|Тайфун]]** - нокбэк + замедление, контроль пака
-- **[[druid-glossary#^ursols-vortex|Вихрь Урсола]]** - зона затягивания врагов, отличная синергия с [[druid-glossary#^typhoon|Тайфун]]
-- **[[druid-glossary#^incapacitating-roar|Парализующий рык]]** - [[druid-glossary#^aoe|AoE]] инкапаситейт
-- **[[druid-glossary#^stampeding-roar|Тревожный рев]]** - групповой бафф скорости
-- **[[druid-glossary#^innervate|Озарение]]** - 8 сек бесплатных заклинаний для хилера
-- **[[druid-glossary#^soothe|Умиротворение]]** - снятие Enrage (важно в M+)
-- **Remove Corruption** - диспел яда/проклятия
-- **Cyclone** - CC на одну цель (PvP/ситуативно)
-- **Знак дикой природы** (Mark of the Wild) - групповой бафф статов
+### Утилити (полезности для группы)
 
----
-
-## Статы
-
-### Приоритет
-
-**Рейд ([[druid-glossary#^keeper-of-the-grove|Хранитель рощи]]):**
-
-**Intellect >> Mastery > Haste ≈ Crit > Versatility**
-
-**M+ ([[druid-glossary#^keeper-of-the-grove|Хранитель рощи]]):**
-
-**Intellect >> Mastery > Haste > Versatility > Crit**
-
-**M+ ([[druid-glossary#^elunes-chosen|Избранник Элуны]]):**
-
-**Intellect >> Haste ≈ Mastery > Crit > Versatility**
-
-> [!note] Статы: сим обязателен
-> [[druid-glossary#^mastery-balance|Искусность: астральные чары]] (Mastery) - топ-стат для большинства билдов: усиливает урон Nature и Arcane способностей. Haste и Crit близки за ним. Для [[druid-glossary#^elunes-chosen|Избранник Элуны]] Haste ценнее (из-за [[druid-glossary#^lunation|Лунация]] и снижения [[druid-glossary#^cd|КД]] [[druid-glossary#^fury-of-elune|Ярость Элуны]]). Перед заменой камней/зачарований сделай сим.
-
-Нюансы:
-- **[[druid-glossary#^mastery-balance|Искусность: астральные чары]]** - увеличивает урон Nature и Arcane заклинаний. Не усиливает [[druid-glossary#^dot|DoT]]-ы в Midnight (реворк)
-- **Haste** - ускоряет касты, снижает [[druid-glossary#^gcd|GCD]], увеличивает генерацию [[druid-glossary#^ap|AP]]
-- **Crit** - рандомный стат, но синергирует с [[druid-glossary#^ascendant-eclipses|Возвышенные затмения]] Rank 2 (Languish дебафф от критов)
-- **Versatility** - плоский бонус урона + [[druid-glossary#^damage-reduction|DR]]. Наименее ценный для DPS
-- **Item Level > вторичные статы** - более высокий ilvl почти всегда лучше
-- **[[druid-glossary#^dr|DR]] (Diminishing Returns)** - статы начинают деградировать после ~35%
-
-### Самоцветы и зачарования
-
-- **Мета-гем:** Indecipherable Eversong Diamond
-- **Остальные слоты:** Flawless Masterful Garnet (Mastery) или сим для точного подбора
-- **Оружие:** Authority of the Depths (или Artisanal Flourish для Mastery)
-- **Кольца:** Mastery (Beledar's Radiance или аналог)
-- **Грудь:** Mark of the Worldsoul
-- **Ноги:** Sunfire Silk Spellthread
+- **[[druid-glossary#^solar-beam|Столп солнечного света]]** - зона прерывания и сайленса (8 сек). Один из лучших кикков в M+.
+- **[[druid-glossary#^typhoon|Тайфун]] + [[druid-glossary#^ursols-vortex|Вихрь Урсола]]** - нокбэк и зона затягивания, отлично работают в связке для контроля пака.
+- **[[druid-glossary#^incapacitating-roar|Парализующий рык]]** - AoE-инкапаситейт.
+- **[[druid-glossary#^stampeding-roar|Тревожный рев]]** - групповое ускорение.
+- **[[druid-glossary#^innervate|Озарение]]** - 8 сек бесплатных заклинаний для хилера.
+- **[[druid-glossary#^soothe|Умиротворение]]** - снять Enrage с врага (важно в M+).
+- **Знак дикой природы** (Mark of the Wild) - бафф статов всей группе.
 
 ---
 
 ## Гир и тринкеты
 
-### Тир-сет: Midnight Season 1
+Хороший комплект собирается не за один вечер - это долгий фарм по чуть-чуть. Вот короткая шпаргалка на старт, а детали ниже пригодятся, когда будешь добивать слоты.
 
-- **2-Set:** [[druid-glossary#^shooting-stars|Падающие звезды]] наносят на **50% больше урона** и генерируют **3 доп. [[druid-glossary#^ap|AP]]** вне [[druid-glossary#^eclipse|Затмение]]
-- **4-Set:** [[druid-glossary#^starfall|Звездопад]] и [[druid-glossary#^starsurge|Звездный поток]] урон **+5%**, и их каст имеет **40% шанс** ударить цель взрывающейся [[druid-glossary#^shooting-stars|Падающие звезды]] (Astral-урон по ближайшим врагам)
+> [!tip] Кратко про шмот
+> - **Из статов гонись за Искусностью** (подробнее в разделе "Статы").
+> - **Тринкеты:** в рейде хорош Последний взор Ваэлгора (Vaelgor's Final Stare) (on-use) + Взор ясновидца Альн (Gaze of the Alnseer) (passive); в M+ - Тигель беспорядочной энергии (Crucible of Erratic Energies).
+> - **Уровень предмета (ilvl) важнее всего остального** - предмет повыше почти всегда лучше.
 
-> [!note] Влияние тир-сета
-> 2pc ≈ +7% DPS на [[druid-glossary#^st|ST]], 4pc ≈ +14% DPS на [[druid-glossary#^st|ST]]. Тир-сет не меняет геймплей, просто усиливает [[druid-glossary#^shooting-stars|Падающие звезды]] и [[druid-glossary#^spender|спендеры]]. **Приоритет - собрать 4 части ASAP.**
+### Тир-сет (комплектный бонус, Midnight Season 1)
 
-### BiS тринкеты
+- **2 части:** [[druid-glossary#^shooting-stars|Падающие звезды]] бьют сильнее и дают доп. AP вне Затмения.
+- **4 части:** Звездопад и Звездный поток бьют сильнее, и их каст с шансом бьёт цель взрывающейся Падающей звездой.
 
-| Тринкет | Тип | Рейтинг | Источник |
-|---|---|---|---|
-| **Vaelgor's Final Stare** | On-use Mastery (2 мин **КД**) | S | Рейд (синхронить с **CA** + **FoN**) |
-| **Gaze of the Alnseer** | Passive Int стак | S | Рейд |
-| **Locus-Walker's Ribbon** | Passive Int (растёт в бою) | A+ | Рейд |
-| **Emberwing Feather** | On-use Haste (2 мин **КД**) | A | Данж: Windrunner Spire |
-| **Crucible of Erratic Energies** | Passive | A | M+ популярный |
-| **Vessel of Tortured Souls** | Passive Int стак | A | Данж |
+> Тир-сет не меняет геймплей - просто усиливает Падающие звезды и спендеры. Собирай 4 части как можно раньше.
 
-> [!note] Рейд vs M+
-> Рейд: **Vaelgor's Final Stare** + **Gaze of the Alnseer**
-> M+: **Crucible of Erratic Energies** - топовый выбор
+### Тринкеты
 
-### Оружие
+Правило: 1 on-use (с активацией, в бёрст-окно) + 1 passive. Лучшую пару подбирай под контент, а оптимум под свой шмот - **сделай сим**.
 
-- **Рейд BiS:** Brazier of the Dissonant Dirge (Midnight Falls)
-- **Крафт:** Aln'hara Cane (стафф с эмбелишментом) - хорош в начале сезона
-- **MH/OH альтернатива:** Voidglass Spire (MH) + Vagabond's Torch (OH)
-
-### Эмбелишменты
-
-- **Darkmoon Sigil: Hunt** - на крафт-оружие (Aln'hara Cane). Приоритетный эмбелишмент в начале сезона
-- **Arcanoweave Lining** - на низкостатовый слот (запястья, пояс, плащ). Даёт primary stat тебе и союзнику
-- **Devouring Banding** - альтернатива
-
-> [!note] Стратегия крафта
-> Первый крафт: **Aln'hara Cane** + **Darkmoon Sigil: Hunt** (огромный буст DPS без оружия). Второй крафт: **Arcanoweave Lining** на запястья/пояс. По мере прогресса - пересматривать в зависимости от дропа.
-
-### Расходники
-
-| Тип | Название | Примечание |
+| Тринкет | Тип | Заметка |
 |---|---|---|
-| Фласк | Flask of the Magisters | DPS; Flask of the Shattered Sun - альтернатива |
-| Еда | Harandar Celebration | Silvermoon Parade - альтернатива |
-| Боевое зелье | Potion of Recklessness | Light's Potential - альтернатива |
-| Хил-зелье | Silvermoon Health Potion | На экстренный случай |
-| Оружейное масло | Thalassian Phoenix Oil | |
-| Augment Rune | Void-Touched Augment Rune | |
+| **Последний взор Ваэлгора** (Vaelgor's Final Stare) | On-use | Рейд; синхронить с Парадом планет + Силой природы |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive | Рейд; стак Интеллекта |
+| **Лента Странника** (Locus-Walker's Ribbon) | Passive | Рейд; Интеллект растёт по ходу боя |
+| **Тигель беспорядочной энергии** (Crucible of Erratic Energies) | Passive | Топовый в M+ |
+| **Перо Алозар** (Emberwing Feather) | On-use | Альтернатива (Скорость), фармится в M+ |
 
-> [!warning] Спорный момент
-> Flask of the Magisters vs Flask of the Shattered Sun - разница минимальна (~0.1-0.2% DPS), оба валидны. **Сделай сим под свой гир.**
+### Оружие и эмбелишменты
+
+- **Рейд:** Жаровня неблагозвучной панихиды (Brazier of the Dissonant Dirge, Midnight Falls).
+- **Крафт (ранний рывок):** Трость Альн'ары (Aln'hara Cane, стафф, бери Интеллект-версию) с эмбелишментом **Символ Новолуния «Охота» (Darkmoon Sigil: Hunt)** - большой буст без рейдового оружия.
+- **Эмбелишменты:** Символ Новолуния «Охота» (Darkmoon Sigil: Hunt) на крафт-оружие (приоритет), Подкладка из тайной ткани (Arcanoweave Lining) на низкостатовый слот (запястья/пояс/плащ).
+
+> [!note] Опционально (эндгейм): второй эмбелишмент и поздний крафт - на потом. Пока собираешь первый комплект, можно пропустить.
+
+### Расходники (бери на каждый серьёзный бой)
+
+| Тип | Название |
+|---|---|
+| Фласка | Настой магистров (Flask of the Magisters); альтернатива - Настой Расколотого Солнца (Flask of the Shattered Sun) |
+| Еда | Празднество Харандара (Harandar Celebration) |
+| Боевое зелье | Зелье безрассудства (Potion of Recklessness) |
+| Лечебное зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
+| Масло на оружие | Талассийское масло феникса (Thalassian Phoenix Oil) |
+| Augment Rune | Меченная Бездной руна усиления (Void-Touched Augment Rune) |
 
 ---
 
-## Расы
+## Статы
 
-**Оптимальные для M+:**
-- **Night Elf** - **лучший выбор для Druid в M+**. Shadowmeld позволяет сбрасывать мобов и пропускать механики. Единственный логичный выбор для пуша ключей
-- **Tauren** - Громовая поступь (War Stomp) для ситуативного стана
-- **Highmountain Tauren** - Bull Rush + 1% Versatility пассивно
+Статы - это вторичные характеристики на шмоте. Для урона порядок такой:
 
-**Оптимальные для рейда:**
-- **Night Elf** - Shadowmeld полезен и в рейде (сброс боевого состояния)
-- **Tauren** - минимальный DPS-бонус через Brawn (+2% крит-урон)
+**Интеллект (главный) >> Искусность > Скорость ≈ Критический удар > Универсальность (наименее ценный)**
 
-**Универсальные:**
-- **Troll** - Berserking (Haste [[druid-glossary#^cd|КД]]) + slow-резист
+> [!tip] Кратко
+> Гонись за **Искусностью** - она усиливает урон Nature и Arcane заклинаний (твой основной урон). У Избранника Элуны Скорость чуть ценнее (из-за Лунации). А чтобы узнать идеальный набор **под свой** шмот - закинь персонажа на [Raidbots](https://www.raidbots.com).
 
-> [!note] Расы для друида
-> Друид ограничен в выборе рас. Для Alliance: Night Elf или Kul Tiran. Для Horde: Tauren, Highmountain Tauren, Troll, Zandalari Troll. **Night Elf доминирует** из-за Shadowmeld - это не просто DPS бонус, а утилити, спасающая ключи.
+Чуть подробнее, что каждый стат делает:
+- **Интеллект** (Intellect) - просто прибавляет урон всему. Растёт сам с уровнем предметов.
+- **Искусность** (Mastery) ([[druid-glossary#^mastery-balance|Искусность: астральные чары]]) - усиливает прямой урон заклинаний. Топ-стат для большинства билдов. DoT-ы она больше не усиливает (реворк Midnight).
+- **Скорость** (Haste) - ускоряет касты, снижает GCD, поднимает генерацию AP.
+- **Критический удар** (Critical Strike) - шанс ударить вдвое сильнее; синергирует с Возвышенными затмениями.
+- **Универсальность** (Versatility) - немного урона и немного защиты. Полезна в последнюю очередь.
+
+> Item Level почти всегда важнее вторичных статов: предмет повыше лучше, даже если статы "не те".
+
+### Раса
+
+Друид ограничен в выборе рас (Alliance: Night Elf, Kul Tiran; Horde: Tauren, Highmountain Tauren, Troll, Zandalari Troll).
+
+- **Night Elf** - сильнейший выбор, особенно для M+: Shadowmeld даёт сброс боевого состояния и пропуск механик. Это не столько про урон, сколько про утилити, спасающую ключи.
+- Остальные расы рабочие, разница по урону минимальна - **играй за кого нравится**.
+
+### Энчанты и гемы
+
+- **Мета-гем:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond).
+- **Остальные слоты:** Безупречный гранат искусности (Flawless Masterful Garnet) - или сделай сим для точного подбора.
+- **Оружие:** Власть недр (Authority of the Depths); под Искусность - Мастерский росчерк (Artisanal Flourish).
+- **Кольца:** Искусность Зул'джина (Zul'jin's Mastery).
+- **Грудь:** Метка души мира (Mark of the Worldsoul). **Ноги:** Чародейская шелковая нить солнечного огня (Sunfire Silk Spellthread).
+
+---
+
+## Частые ошибки
+
+Эти ошибки на старте делают почти все - это нормально и легко правится. Если урон не растёт, загляни в список.
+
+- **Даёшь Астральной мощи переполниться.** Дошёл до 100 - трать спендером, иначе лишнее в никуда.
+- **Выходишь из Затмения раньше времени.** Вне Затмения урон проседает - старайся держать аптайм почти 100%.
+- **Роняешь DoT-ы.** Лунный огонь и Солнечный огонь должны висеть всегда - они и урон, и топливо для Падающих звезд.
+- **Жмёшь большие КД вразнобой.** Парад планет, Силу природы и Созыв духов собирай вместе, тринкет и зелье - туда же.
+- **Бегаешь молча.** На движении есть что нажать: инстант DoT-ы и проки бесплатных спендеров.
+- **Перекрываешь дефенсивы.** Дубовая кожа и Инстинкты выживания не складываются как два процента - чередуй их.
+
+---
+
+## Напоследок
+
+Первые бои Затмение будет ускользать, а большие КД - расходиться вразнобой. Это нормально: как только окно бёрста начнёт совпадать с тринкетом, зельем и полным запасом AP, урон прыгнет сам собой. Дай себе несколько пуллов - и звёзды лягут как надо.

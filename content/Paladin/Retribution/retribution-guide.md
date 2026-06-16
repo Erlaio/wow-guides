@@ -5,529 +5,433 @@ created: 2026-03-18
 
 Термины и сокращения → [[paladin-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
+
+> [!note] Про названия
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (он нужен для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
 
 ---
 
-## Hotfix - 17 марта 2026
+*Минуту ты копишь Свет, а потом разом обрушиваешь его: крылья за спиной, молот с неба - и пак складывается.*
 
-> [!important] Свежий хотфикс
-> Значительный бафф ST-урона, небольшой нерф AoE. Общий итог - ощутимое усиление спека.
+## Главное за минуту
 
-**Баффы:**
-- [[paladin-glossary#^final-verdict|Окончательный приговор]] - урон **+15%**
-- [[paladin-glossary#^light-within|Свет в душе]] - урон по основной цели **+25%**
-- [[paladin-glossary#^templar-strikes|Резкий удар храмовника / Удар храмовника]] - урон **+25%**
-- Урон автоатак (melee) - **+25%**
-- [[paladin-glossary#^crusading-strikes|Удары Света]] - урон **+25%**, замедление скорости автоатак улучшено с 35% до **20%**
-- **Вердикт верховного лорда** (Highlord's Judgment, Mastery-прок) - урон **+25%**
-- [[paladin-glossary#^dawnlight|Светозар]] (Herald of the Sun) - урон **+25%**
-- [[paladin-glossary#^empyrean-hammer|Небесный молот]] (Templar) - урон **+30%**
-- [[paladin-glossary#^hammer-of-light|Молот Света]] (Templar) - урон **+10%**
+Минимум, чтобы сразу выдавать урон - тонкости потом:
 
-**Нерфы:**
-- [[paladin-glossary#^divine-storm|Божественная буря]] - урон **-12%**
-- [[paladin-glossary#^dawnlight|Светозар]] клив - с 5% на **4%** урона по соседним целям
-- [[paladin-glossary#^wrathful-descent|Гневное падение]] - с 50% на **35%** урона [[paladin-glossary#^empyrean-hammer|Небесный молот]]
-- PvP: урон всех способностей **-15%**
+1. **Героическое древо - [[paladin-glossary#^hammer-of-light|Темплар (Templar)]]** во всём PvE. Оружие - двуручник. Это мета и в рейде, и в ключах.
+2. **Раз в ~30 сек жми [[paladin-glossary#^wake-of-ashes|Испепеляющий след]]** - он даёт 3 Энергии Света и открывает [[paladin-glossary#^hammer-of-light|Молот Света]] (огромный удар по площади за 5 [[paladin-glossary#^holy-power|HoPo]]). Не сиди на нём.
+3. **Не давай [[paladin-glossary#^holy-power|Энергии Света]] переполниться (максимум 5).** Дошёл до 4-5 - трать спендером ([[paladin-glossary#^final-verdict|Окончательный приговор]] по одной цели, [[paladin-glossary#^divine-storm|Божественная буря]] по нескольким).
+4. **[[paladin-glossary#^art-of-war|Искусство войны]] прокнуло - немедленно жми [[paladin-glossary#^blade-of-justice|Клинок справедливости]].** Этот прок - твой главный источник урона, не трать его впустую.
+5. **Бёрст-окно - [[paladin-glossary#^avenging-wrath|Гнев карателя]] + [[paladin-glossary#^execution-sentence|Смертный приговор]] вместе.** Сюда же боевое зелье и активируемый тринкет.
 
-**Багфикс:**
-- [[paladin-glossary#^execution-sentence|Смертный приговор]] - исправлен баг: теперь корректно наносит 20% Holy-урона по цели (было 10%)
+## Как играть за Retribution (в двух словах)
 
-> [!note] Итог
-> Направленность хотфикса: усиление ST, лёгкий нерф AoE. [[paladin-glossary#^crusading-strikes|Удары Света]] стал значительно приятнее (замедление автоатак 20% вместо 35%). Фикс [[paladin-glossary#^execution-sentence|Смертный приговор]] - фактически бафф ×2 для этой способности.
+Ret - простой по входу мили-DPS с мощными бёрст-окнами. Ты копишь ресурс (**Энергия Света**, она же Holy Power) билдерами и сливаешь его в сильные удары-спендеры, а раз в минуту раскрываешь крылья ([[paladin-glossary#^avenging-wrath|Гнев карателя]]) и выдаёшь всплеск. Не вникай в каждую кнопку сразу - сначала поймай ритм.
 
-*Источник: [Blizzard Hotfixes - March 17, 2026](https://news.blizzard.com/en-us/article/24266320/hotfixes-march-17-2026)*
+Мысленная модель такая:
 
-## Hotfix - 26 марта 2026
+- **Билдеры копят [[paladin-glossary#^holy-power|Энергию Света]]** - [[paladin-glossary#^blade-of-justice|Клинок справедливости]], [[paladin-glossary#^judgment|Правосудие]], [[paladin-glossary#^wake-of-ashes|Испепеляющий след]], автоудары ([[paladin-glossary#^crusading-strikes|Удары Света]]).
+- **Спендеры тратят её на урон** - [[paladin-glossary#^final-verdict|Окончательный приговор]] (одна цель), [[paladin-glossary#^divine-storm|Божественная буря]] (несколько), а в Темпларе ещё и [[paladin-glossary#^hammer-of-light|Молот Света]].
+- **[[paladin-glossary#^art-of-war|Искусство войны]] - твой прок:** автоудары случайно сбрасывают КД Клинка справедливости. Прокнуло - сразу жми BoJ.
+- **Раз в минуту - бёрст-окно:** [[paladin-glossary#^avenging-wrath|Гнев карателя]] + [[paladin-glossary#^execution-sentence|Смертный приговор]], сюда сливаешь всё самое мощное.
 
-**Багфикс:**
-- [[paladin-glossary#^hammer-of-light|Молот Света]] - исправлено взаимодействие с Правосудием (Judgment) при наличии Неоспоримого постановления (Undisputed Ruling): теперь корректно получает бонус от дебаффа Правосудия на целях без стаков
+Уложишь в голове эти четыре пункта - костяк ротации твой; чистота исполнения придёт с практикой.
 
-*Источник: [WoW Hotfixes - March 26, 2026](https://www.mmo-champion.com/content/14132-WoW-Hotfixes-March-26-2026)*
+> [!info] Словарик терминов
+> - **ДД** - наносящий урон. **ST** - по одной цели, **AoE** (или **клив**) - по нескольким сразу.
+> - **HoPo** - Энергия Света (Holy Power), твой основной ресурс. Максимум 5.
+> - **Билдер** - копит Энергию Света. **Спендер** - тратит её на удар.
+> - **Прок** - случайное срабатывание бонуса ("прокнуло").
+> - **Оверкап** - переполнить ресурс, когда он уже на максимуме. Лишнее теряется впустую.
+> - **Бёрст** - всплеск урона в короткое окно (под [[paladin-glossary#^avenging-wrath|Гневом карателя]]).
+> - **Стак** - накопленный заряд эффекта; «держать стак» - не давать ему спасть.
+> - **КД** - кулдаун, перезарядка способности. **Опенер** - заученное начало боя.
+> - **Симить** - прогнать персонажа в [Raidbots](https://www.raidbots.com), чтобы узнать, что лучше **именно для твоего** комплекта шмота.
+> - **BiS** - best in slot, лучший предмет в слот. **ilvl** - уровень предмета (чем выше, тем сильнее).
+> - **Тринкет** - предмет в особом слоте. Бывает **on-use** (активируемый - жмёшь ради всплеска) и **passive** (работает сам).
+> - **M+ / ключи** - Mythic+, сложные подземелья на 5 человек.
 
 ---
 
 ## Что изменилось в Midnight (12.0)
 
-**Удалено:**
-- [[paladin-glossary#^crusade|Священная война]] как отдельная способность - объединён с [[paladin-glossary#^avenging-wrath|Гнев карателя]] в виде Capstone-таланта
-- **Searing Light** - убран из дерева талантов *(удалённый талант, RU-имя не сверяем)*
-- **Divine Arbiter** - удалён *(удалённый талант, RU-имя не сверяем)*
-- **Justicar's Vengeance** - удалён *(удалённый талант, RU-имя не сверяем)*
-- **Final Reckoning** - объединён с [[paladin-glossary#^execution-sentence|Смертный приговор]] *(удалённый талант, RU-имя не сверяем)*
+> Можно пропустить, если не возвращаешься из прошлых сезонов. Если играл раньше - кое-что переехало.
+
+Ядро геймплея осталось узнаваемым, но дерево перетряхнули.
+
+**Объединено / убрано из дерева:**
+- **[[paladin-glossary#^execution-sentence|Смертный приговор]]** теперь сам по себе работает и в ST, и в AoE (бывший отдельный талант Final Reckoning встроен в него) - больше не нужно выбирать "ST или AoE".
+- **[[paladin-glossary#^crusade|Священная война]]** теперь не отдельная кнопка, а талант-выбор, который перекраивает [[paladin-glossary#^avenging-wrath|Гнев карателя]] (вместо чистого +урона он стакает Скорость от потраченной Энергии Света).
+- **Опаляющий Свет** (Searing Light), **Небесный арбитр** (Divine Arbiter), **Отмщение вершителя правосудия** (Justicar's Vengeance) убраны из дерева Ret.
 
 **Добавлено / переработано:**
-- **Apex Talent: [[paladin-glossary#^light-within|Свет в душе]]** - 4 ранга, усиливает [[paladin-glossary#^art-of-war|Искусство войны]] проки и спендеры во время [[paladin-glossary#^avenging-wrath|AW]]
-- [[paladin-glossary#^execution-sentence|Смертный приговор]] поглотил Final Reckoning - теперь работает и в AoE, и в ST
-- **Искусность: вердикт верховного лорда** (Mastery: Highlord's Judgment) переработана - [[paladin-glossary#^judgment|Правосудие]] теперь не только баффает спендеры, но и имеет шанс прокнуть дополнительный Holy-урон
-- **Щит возмездия** (Shield of Vengeance) стал апгрейдом Божественной защиты (Divine Protection) (не отдельная кнопка)
-- **Третий гейт** дерева талантов переделан - больше гибкости между ST и AoE
-- Hero Talents ([[paladin-glossary#^hammer-of-light|Templar]] и [[paladin-glossary#^dawnlight|Herald of the Sun]]) доступны с Midnight
+- **Apex-талант [[paladin-glossary#^light-within|Свет в душе]]** - 4 ранга, завязан на [[paladin-glossary#^art-of-war|Искусство войны]] и бёрст-окно: усиливает [[paladin-glossary#^blade-of-justice|Клинок справедливости]] с прока и спендеры под [[paladin-glossary#^avenging-wrath|Гневом карателя]].
+- **[[paladin-glossary#^mastery-ret|Искусность: вердикт верховного лорда]]** переработана - теперь [[paladin-glossary#^judgment|Правосудие]] не только баффает спендер по цели, но и имеет шанс прокнуть дополнительный Holy-урон. Искусность стала заметно вкуснее.
+- **Героические древа [[paladin-glossary#^hammer-of-light|Темплар (Templar)]] и [[paladin-glossary#^dawnlight|Вестник Солнца (Herald of the Sun)]]** доступны с Midnight.
 
-**Суть изменений:** Ret стал более гибким - слияние Смертного приговора (Execution Sentence) с Final Reckoning убрало выбор "ST или AoE", Apex Talent Свет в душе (Light Within) добавил scaling через Искусство войны (Art of War) проки, а переработка Mastery сделала стат значительно привлекательнее. Геймплей остался простым, но потолок skill-expression вырос за счёт правильного менеджмента Искусства войны проков.
+**Суть:** спек стал гибче (Смертный приговор закрыл выбор "ST или AoE"), Apex-талант добавил скейл через прок Искусства войны, а переработка Искусности подняла ценность стата. Геймплей остался простым, но потолок мастерства вырос за счёт аккуратного менеджмента проков и бёрст-окон.
 
 ---
 
 ## Сильные и слабые стороны
 
-**Сильные:**
-- Частые бёрст-окна: ручной [[paladin-glossary#^avenging-wrath|AW]] каждые 60 сек, [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] + [[paladin-glossary#^hammer-of-light|HoL]] каждые 30 сек, полный бёрст с [[paladin-glossary#^divine-toll|Божественный благовест]] каждые 60 сек
-- Сильный funnel-урон (концентрация урона на приоритетную цель через [[paladin-glossary#^execution-sentence|Смертный приговор]] + клив на остальных через [[paladin-glossary#^divine-storm|DS]] / [[paladin-glossary#^hammer-of-light|HoL]])
-- Лучшая утилити среди всех DPS: [[paladin-glossary#^lay-on-hands|LoH]], [[paladin-glossary#^bop|BoP]], [[paladin-glossary#^bos|BoS]], [[paladin-glossary#^bof|BoF]], [[paladin-glossary#^divine-shield|Божественный щит]], боевой рез (Заступничество / Intercession)
-- Сильные дефенсивы ([[paladin-glossary#^divine-shield|Божественный щит]], Божественная защита (Divine Protection) / Щит возмездия (Shield of Vengeance))
-- Увеличенный рейнж ST-спендеров
-- Простой геймплей с низким порогом входа
+Полезно знать заранее: где играть в удовольствие, а где быть внимательнее.
 
-**Слабые:**
-- Ограниченная мобильность (только [[paladin-glossary#^divine-steed|Божественный скакун]])
-- Зависимость от бёрст-окон - вне [[paladin-glossary#^avenging-wrath|AW]] урон проседает
-- Пенальти при свап-таргете (нужно перекладывать [[paladin-glossary#^expurgation|Огонь очищения]])
-- Требует хорошей игры для конкуренции с топ-DPS спеками
+**В чём Retribution хорош:**
+- **Частые бёрст-окна.** [[paladin-glossary#^avenging-wrath|Гнев карателя]] раз в минуту, [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → [[paladin-glossary#^hammer-of-light|Молот Света]] раз в ~30 сек - урон всплесками, но всплески частые.
+- **Сильный фаннел** - умеет слить урон в приоритетную цель ([[paladin-glossary#^execution-sentence|Смертный приговор]]) и параллельно кливать остальных ([[paladin-glossary#^divine-storm|Божественная буря]], [[paladin-glossary#^hammer-of-light|Молот Света]]).
+- **Лучшая утилита среди DPS.** [[paladin-glossary#^lay-on-hands|Возложение рук]], [[paladin-glossary#^bop|BoP]], [[paladin-glossary#^bos|BoS]], [[paladin-glossary#^bof|BoF]], [[paladin-glossary#^divine-shield|Божественный щит]], боевой рез (Заступничество / Intercession).
+- **Крепкие личные дефенсивы** и низкий порог входа - комфортно учить.
+
+**Слабые места:**
+- **Ограниченная мобильность** - только [[paladin-glossary#^divine-steed|Божественный скакун]].
+- **Зависимость от бёрст-окон** - вне [[paladin-glossary#^avenging-wrath|Гнева карателя]] урон ровный, без всплесков.
+- **Пенальти при смене цели** - надо заново накладывать [[paladin-glossary#^expurgation|Огонь очищения]] и дебафф [[paladin-glossary#^judgment|Правосудия]].
 
 > [!note] Тир в мете
-> **A-тир** в М+ (Midnight Season 1). Некоторые ставят его выше за непревзойдённую утилиту, но чистый урон уступает топовым DPS (Demonology Warlock, Unholy DK).
+> Крепкий **A-тир** в M+ (Midnight Season 1). Часто берут за непревзойдённую утилиту; по чистому урону уступает самым топовым DPS, но самодостаточен в любом контенте.
 
 ---
 
 ## Таланты
 
-### Hero Talent: Templar (основной)
+Таланты - это твоя сборка. Не разбирайся в каждом узле сразу: ниже есть готовые строки для копирования.
 
-[[paladin-glossary#^hammer-of-light|Templar]] - доминирующий выбор во **всём контенте**.
+### Героическое древо: Templar (основной)
 
-Ключевые механики:
-- После каста [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] она заменяется на [[paladin-glossary#^hammer-of-light|Молот Света]] на 20 сек
-- [[paladin-glossary#^hammer-of-light|Молот Света]] стоит 5 [[paladin-glossary#^holy-power|HoPo]], наносит огромный AoE-урон и хилит группу
-- [[paladin-glossary#^shake-the-heavens|Сотрясение небес]] - билдеры генерируют стаки для активации [[paladin-glossary#^hammer-of-light|HoL]]
-- [[paladin-glossary#^empyrean-hammer|Небесный молот]] - автоматические молоты с неба при использовании основных способностей
-- [[paladin-glossary#^divine-hammer|Божественный молот]] - после [[paladin-glossary#^divine-toll|Божественный благовест]] призываются вращающиеся молоты вокруг вас
-- [[paladin-glossary#^lights-deliverance|Избавление Света]] - [[paladin-glossary#^hammer-of-light|HoL]] дополнительно хилит группу
+[[paladin-glossary#^hammer-of-light|Темплар (Templar)]] - выбор по умолчанию во **всём PvE** и немного впереди Вестника Солнца. Бери его и в рейд, и в M+.
+
+- **[[paladin-glossary#^hammer-of-light|Молот Света]]** - после [[paladin-glossary#^wake-of-ashes|Испепеляющего следа]] он на 20 сек заменяет его собой; стоит 5 [[paladin-glossary#^holy-power|HoPo]], бьёт огромный AoE и хилит группу.
+- **[[paladin-glossary#^shake-the-heavens|Сотрясение небес]]** - билдеры копят стаки, чтобы активировать [[paladin-glossary#^hammer-of-light|Молот Света]].
+- **[[paladin-glossary#^empyrean-hammer|Небесный молот]]** - молоты падают с неба сами при использовании ключевых способностей.
+- **[[paladin-glossary#^divine-hammer|Божественный молот]]** - после [[paladin-glossary#^divine-toll|Божественного благовеста]] вокруг тебя кружат молоты.
+- **[[paladin-glossary#^lights-deliverance|Избавление Света]]** - [[paladin-glossary#^hammer-of-light|Молот Света]] дополнительно хилит группу.
+
+### Героическое древо: Herald of the Sun (альтернатива)
+
+[[paladin-glossary#^dawnlight|Вестник Солнца (Herald of the Sun)]] - рабочая альтернатива с упором на проки и офф-хил:
+
+- **[[paladin-glossary#^dawnlight|Светозар]]** - [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] оставляет на целях Светозар (HoT/DoT).
+- **[[paladin-glossary#^eternal-flame|Вечное пламя]]** - [[paladin-glossary#^wog|Торжество]] оставляет HoT.
+- **[[paladin-glossary#^second-sunrise|Второй рассвет]]** - шанс повторить способность.
+- **[[paladin-glossary#^suns-avatar|Аватара солнца]]** - усиленная версия [[paladin-glossary#^avenging-wrath|Гнева карателя]].
+
+Главный плюс - больше офф-хила через Светозар (Dawnlight) и Вечное пламя (Eternal Flame). Имеет смысл там, где группе нужна дополнительная живучесть.
 
 > [!note] Что брать
-> **Templar оптимален во всех аспектах игры** и немного опережает Herald of the Sun. Бери его и для рейда, и для M+.
+> Для чистого урона - **Templar** во всех ситуациях. **Herald** бери, если хочешь больше группового хила (или просто по вайбам - он играбелен).
 
-### Hero Talent: Herald of the Sun (альтернатива)
+### Apex: Свет в душе (Light Within)
 
-[[paladin-glossary#^dawnlight|Herald of the Sun]] - жизнеспособная альтернатива с proc-heavy геймплеем:
-
-- [[paladin-glossary#^dawnlight|Светозар]] - [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] оставляет Светозар (Dawnlight) HoT/DoT на целях
-- [[paladin-glossary#^eternal-flame|Вечное пламя]] - [[paladin-glossary#^wog|Торжество]] оставляет HoT
-- [[paladin-glossary#^divine-storm|Божественная буря]] и [[paladin-glossary#^hammer-of-wrath|Молот гнева]] получают +10% крита
-- [[paladin-glossary#^second-sunrise|Второй рассвет]] - шанс повторить способность при сниженной эффективности
-- [[paladin-glossary#^suns-avatar|Аватара солнца]] - усиленная версия [[paladin-glossary#^avenging-wrath|AW]]
-
-Основное преимущество - больше офф-хила через Светозар (Dawnlight) и Вечное пламя (Eternal Flame). Подходит для контента, где нужна дополнительная живучесть группы.
-
-### Apex Talent: Light Within
-
-[[paladin-glossary#^light-within|Свет в душе]] - единственный Apex Talent для Ret. 4 ранга, каждый добавляет новый эффект:
+[[paladin-glossary#^light-within|Свет в душе]] - единственный Apex-талант Ret. 4 ранга, каждый добавляет эффект:
 
 | Ранг | Эффект |
 |------|--------|
-| 1 | [[paladin-glossary#^blade-of-justice\|Клинок справедливости]] наносит на **150% больше урона** при проке [[paladin-glossary#^art-of-war\|Искусство войны]] |
-| 2 | [[paladin-glossary#^final-verdict\|Окончательный приговор]] и [[paladin-glossary#^divine-storm\|Божественная буря]] наносят на **10% больше урона** во время [[paladin-glossary#^avenging-wrath\|AW]] |
-| 3 | [[paladin-glossary#^final-verdict\|Окончательный приговор]] и [[paladin-glossary#^divine-storm\|Божественная буря]] наносят ещё на **10% больше урона** во время [[paladin-glossary#^avenging-wrath\|AW]] (итого 20%) |
-| 4 | [[paladin-glossary#^blade-of-justice\|Клинок справедливости]] при [[paladin-glossary#^art-of-war\|Искусство войны]] проке наносит Holy-урон в конусе между вами и целью |
+| 1 | [[paladin-glossary#^blade-of-justice\|Клинок справедливости]] с прока [[paladin-glossary#^art-of-war\|Искусства войны]] наносит на **150% больше урона** |
+| 2 | [[paladin-glossary#^final-verdict\|Окончательный приговор]] и [[paladin-glossary#^divine-storm\|Божественная буря]] бьют на **10% сильнее** под [[paladin-glossary#^avenging-wrath\|Гневом карателя]] |
+| 3 | Те же спендеры - ещё **+10%** под Гневом карателя (итого 20%) |
+| 4 | [[paladin-glossary#^blade-of-justice\|Клинок справедливости]] с прока бьёт Holy-уроном в конусе между тобой и целью |
 
 > [!important] Ключевой момент
-> Свет в душе (Light Within) делает [[paladin-glossary#^art-of-war|Искусство войны]] проки критически важными. Клинок справедливости (Blade of Justice) с проком наносит на 150% больше урона + AoE конус (Rank 4). Никогда не тратьте Искусство войны прок на другую способность.
+> Свет в душе (Light Within) делает прок [[paladin-glossary#^art-of-war|Искусства войны]] критически важным: с ним [[paladin-glossary#^blade-of-justice|Клинок справедливости]] - твой самый больно бьющий удар. Никогда не «перекрывай» прок другой кнопкой - сразу жми BoJ.
 
-### Ключевые таланты (общие)
+### Провальные / нишевые таланты
 
-- **[[paladin-glossary#^execution-sentence|Смертный приговор]]** - дебафф на цель, накапливает урон и взрывается. 1 мин КД. Работает и в ST, и в AoE (бывший Final Reckoning встроен)
-- **[[paladin-glossary#^radiant-glory|Блистательная слава]]** - [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] автоматически активирует [[paladin-glossary#^avenging-wrath|AW]] на несколько секунд. **Не используется в М+ мете** - ручной AW даёт лучший контроль тайминга бёрста
-- **[[paladin-glossary#^expurgation|Огонь очищения]]** - [[paladin-glossary#^blade-of-justice|Клинок справедливости]] оставляет DoT. Усилен тир-сетом (+20% урона)
-- **[[paladin-glossary#^art-of-war|Искусство войны]]** - автоатаки имеют 15% шанс сбросить КД [[paladin-glossary#^blade-of-justice|BoJ]]; криты дают +10% (итого 25%)
-- **[[paladin-glossary#^divine-toll|Божественный благовест]]** - кастует [[paladin-glossary#^judgment|Правосудие]] по 5 целям. 1 мин КД
-- **Священное пламя** (Holy Flames) - взаимодействие с [[paladin-glossary#^judgment|Правосудие]] и огненным уроном
-- **Судья, прокурор и палач** (Judge, Jury and Executioner) - рефанд [[paladin-glossary#^holy-power|HoPo]] на первом спендере после [[paladin-glossary#^execution-sentence|Смертный приговор]] + пассивные 5% Holy-урона
-- **Правосудие без границ** (Boundless Judgment) - усиливает [[paladin-glossary#^judgment|Правосудие]]
+> [!warning] С чем осторожнее
+> **[[paladin-glossary#^radiant-glory|Блистательная слава]]** - автоматически активирует [[paladin-glossary#^avenging-wrath|Гнев карателя]] от [[paladin-glossary#^wake-of-ashes|Испепеляющего следа]]. Звучит удобно, но **в M+-мете её не берут** - ручной Гнев карателя даёт контроль над таймингом бёрста. Бери её только если тебе тяжело вручную выстраивать окна.
 
-### Рейд vs М+
+> [!note] Священная война - стандарт меты
+> **[[paladin-glossary#^crusade|Священная война]] (Crusade)** перекраивает [[paladin-glossary#^avenging-wrath|Гнев карателя]]: вместо чистого +урона он копит Скорость от потраченной [[paladin-glossary#^holy-power|Энергии Света]]. Это выбор по умолчанию в топе M+ - бери его. Обычный Гнев карателя проще на старте, но Crusade сильнее: переходи на него, освоив тайминги бёрста.
 
-| Аспект | Рейд | М+ |
-|--------|------|-----|
-| Hero Talent | [[paladin-glossary#^hammer-of-light\|Templar]] | [[paladin-glossary#^hammer-of-light\|Templar]] |
-| Спендер | [[paladin-glossary#^final-verdict\|Окончательный приговор]] (ST фокус) | [[paladin-glossary#^divine-storm\|Божественная буря]] (AoE фокус) |
-| Ключевые таланты | Сердце воина Света (Heart of the Crusader) ×2, Правосудие справедливости (Judgment of Justice) | Клинок возмездия (Blade of Vengeance), Благословенный защитник (Blessed Champion), Буря Светоносного (Tempest of the Lightbringer) |
-| [[paladin-glossary#^execution-sentence\|Смертный приговор]] | Всегда берём | Всегда берём |
-| Фокус | ST + funnel | Cleave + AoE бёрст |
+Нишевое, но полезное знать: разница между **ST-** и **AoE-сборкой** в Темпларе - это в основном выбор основного спендера ([[paladin-glossary#^final-verdict|Окончательный приговор]] против [[paladin-glossary#^divine-storm|Божественной бури]]) и пара кливных талантов (Клинок возмездия / Blade of Vengeance, Благословенный защитник / Blessed Champion, Буря Светоносного / Tempest of the Lightbringer). [[paladin-glossary#^execution-sentence|Смертный приговор]] берут всегда.
 
 ---
 
 ## Готовые билды (импорт)
 
+> Не хочешь разбираться - скопируй строку и вставь в игре: открой таланты (**N**) → Loadouts → Import Loadout → вставь → Import. ST-строка для боссов, M+ - для пачек врагов.
+
 ### Templar - Рейд (ST)
 
 ```
-CYEAAAAAAAAAAAAAAAAAAAAAAAAAAMAgRz22MzsMMzYAAAAAAGlZxwMjthZbYmtZMGzMMjN2GGAAyMTbzMbzAA2AMAYMDDMjhNsMDGGDDG
+CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQz22MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGbsNMAAkZm2mZ2mBAsBYAwYGmBzYMbYZGMMmxgB
 ```
 
-> [!note] Фокус
-> ST-билд для рейда. Сердце воина Света (Heart of the Crusader) ×2 и Правосудие справедливости (Judgment of Justice) для максимального ST-урона. Используйте [[paladin-glossary#^final-verdict|Окончательный приговор]] как основной спендер.
-
-### Templar - М+ (AoE)
+### Templar - M+ (AoE)
 
 ```
-CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMGzMAAAAAAmpMLzwMjthZbYmtZMGjhZsxGAAAzMtNzsNDAYDwAYMmZDYmZmZDLzghxwgB
+CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa22mZmlxMzMDAAAAAwMlhhZGbDz2wMbzYMGDzYjNMAAkZm2mZ2mBAsBYAwYGGYmZYDLzghxMGM
 ```
 
-> [!note] Фокус
-> AoE-билд для М+. Ручной AW (без Radiant Glory). Используйте [[paladin-glossary#^divine-storm|Божественная буря]] как основной спендер.
-> *Экспорт из топового лога: Melee, Algeth'ar Academy +17, April 2026 ([[log-analysis-2026-04-02|источник]])*
+### Herald of the Sun - Рейд (ST)
 
-### Herald of the Sun - Рейд
+```
+CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAQzy2MzsMMzAAAAAAwoMmhZGbDz2wMbzYMmZYGLsNMgZZ2mZmtGEAAwCgBAjZYGMjxsAMzMMmxgB
+```
 
-> [!warning] Нет импорт-строки
-> Herald of the Sun используется менее чем 7% игроков. Если хотите играть Herald - возьмите аналогичные ST-таланты из Templar-билда, заменив Hero Talent ветку. Ориентируйтесь на данные murlok.io для актуальных билдов.
+### Herald of the Sun - M+ (AoE)
 
-### Herald of the Sun - М+
+```
+CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAAMa22mZmlxMzMAAAAAAmpMMMzYbY2GmZbGjxYYGLshBMLz2Mzs1gAAAWAMAYMDDMjZmNgZmhxMGM
+```
 
-> [!warning] Нет импорт-строки
-> Аналогично рейду - используйте AoE-таланты из Templar М+ билда с веткой Herald. Обратите внимание на [[paladin-glossary#^dawnlight|Светозар]] и [[paladin-glossary#^eternal-flame|Вечное пламя]] для дополнительного офф-хила.
+> [!note] Свежие билды
+> Под свой контент и актуальные правки патча сверяйся с [Wowhead](https://www.wowhead.com/guide/classes/paladin/retribution/talent-builds-pve-dps), Archon.gg или murlok.io.
 
 ---
 
 ## Ключевые правила
 
-1. **Никогда не оверкапайте [[paladin-glossary#^holy-power|Энергия Света]].** Максимум 5 - тратьте спендером при 4-5 HoPo
-2. **Приоритет билдеров над спендерами** - генерируйте [[paladin-glossary#^holy-power|HoPo]], пока не рискуете оверкапнуть. Больше билдеров = больше [[paladin-glossary#^art-of-war|Искусство войны]] проков
-3. **[[paladin-glossary#^art-of-war|Искусство войны]] прок = немедленный [[paladin-glossary#^blade-of-justice|Клинок справедливости]]** - с [[paladin-glossary#^light-within|Свет в душе]] Rank 1 это +150% урона, с Rank 4 ещё и AoE-конус. Не тратьте прок
-4. **Держите [[paladin-glossary#^expurgation|Огонь очищения]] на цели** - [[paladin-glossary#^blade-of-justice|Клинок справедливости]] накладывает DoT, тир-сет усиливает его на 20%. Обновляйте через BoJ
-5. **Дебафф от [[paladin-glossary#^judgment|Правосудия]] перед спендером** - спендер по цели с дебаффом от Правосудия наносит значительно больше урона
-6. **Не сидите на [[paladin-glossary#^wake-of-ashes|Испепеляющий след]]** - 30 сек КД, генерирует 3 [[paladin-glossary#^holy-power|HoPo]], активирует [[paladin-glossary#^hammer-of-light|Молот Света]]. Каждая секунда задержки = потеря DPS. В М+ используйте WoA → HoL по КД, даже без [[paladin-glossary#^avenging-wrath|AW]]
-7. **[[paladin-glossary#^avenging-wrath|AW]] + [[paladin-glossary#^execution-sentence|Смертный приговор]] рядом** - активируйте обе способности в начале бёрст-окна. Порядок гибкий (можно AW до ES или наоборот). Держите 3 [[paladin-glossary#^holy-power|HoPo]] перед ES
-8. **[[paladin-glossary#^crusading-strikes|Удары Света]]** - заменяет автоатаки на Удар воина Света (Crusader Strike) (больше урона, но на 20% медленнее). Не генерирует [[paladin-glossary#^holy-power|HoPo]] - весь HoPo идёт от билдеров
-9. **В AoE: [[paladin-glossary#^divine-storm|Божественная буря]] вместо [[paladin-glossary#^final-verdict|Окончательный приговор]]** при 2+ целях. 4-Set тир-сета накладывает [[paladin-glossary#^expurgation|Огонь очищения]] на все цели (50% эффективности)
-10. **Утилити = DPS.** Мёртвый хилер/танк = вайп. Используйте [[paladin-glossary#^lay-on-hands|LoH]], [[paladin-glossary#^bop|BoP]], [[paladin-glossary#^wog|WoG]] проактивно - это ваше конкурентное преимущество
+То, что отличает ровный урон от рваного. Каждое - с объяснением, **почему**.
+
+1. **Не оверкапай [[paladin-glossary#^holy-power|Энергию Света]] (максимум 5).** Дошёл до 4-5 - трать спендером. Лишняя генерация сгорает = потерянный урон.
+2. **Билдеры важнее спендеров, пока не рискуешь оверкапнуть.** Больше билдеров = больше проков [[paladin-glossary#^art-of-war|Искусства войны]] = больше бесплатных Клинков справедливости.
+3. **Прокнуло [[paladin-glossary#^art-of-war|Искусство войны]] - сразу [[paladin-glossary#^blade-of-justice|Клинок справедливости]].** С [[paladin-glossary#^light-within|Светом в душе]] это +150% урона (и AoE-конус на Rank 4). Не перекрывай прок.
+4. **Держи [[paladin-glossary#^expurgation|Огонь очищения]] на цели.** [[paladin-glossary#^blade-of-justice|Клинок справедливости]] вешает DoT, тир-сет усиливает его. Обновляй через BoJ.
+5. **Спендер - по цели с дебаффом [[paladin-glossary#^judgment|Правосудия]].** Спендер в это окно бьёт заметно больнее.
+6. **Не сиди на [[paladin-glossary#^wake-of-ashes|Испепеляющем следе]].** 30 сек КД, 3 [[paladin-glossary#^holy-power|HoPo]], открывает [[paladin-glossary#^hammer-of-light|Молот Света]]. Каждая секунда задержки = потеря урона. В M+ жми WoA → HoL по КД даже без [[paladin-glossary#^avenging-wrath|Гнева карателя]].
+7. **[[paladin-glossary#^avenging-wrath|Гнев карателя]] и [[paladin-glossary#^execution-sentence|Смертный приговор]] - вместе.** Активируй обе в начале бёрст-окна (порядок гибкий). Держи 3 [[paladin-glossary#^holy-power|HoPo]] перед Смертным приговором.
+8. **В AoE: [[paladin-glossary#^divine-storm|Божественная буря]] вместо [[paladin-glossary#^final-verdict|Окончательного приговора]]** при 2+ целях.
+9. **Утилита = ДД.** Мёртвый хилер или танк = вайп. [[paladin-glossary#^lay-on-hands|Возложение рук]], [[paladin-glossary#^bop|BoP]], [[paladin-glossary#^wog|Торжество]] - используй проактивно, это твоё конкурентное преимущество.
 
 ---
 
-## Ротация / приоритет
+## Опенер
 
-### Opener - Templar (босс с бёрстом)
+### Templar - босс с готовым бёрстом
 
-AW + ES доступны. Используется когда КД не были потрачены на предыдущий треш.
+Гнев карателя и Смертный приговор доступны (КД не потрачены на предыдущий пак).
 
-1. Prepot (**Potion of Recklessness** / Light's Potential)
-2. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] (apply [[paladin-glossary#^expurgation|Огонь очищения]])
-3. *(опционально)* [[paladin-glossary#^judgment|Правосудие]]
-4. [[paladin-glossary#^avenging-wrath|Гнев карателя]] + [[paladin-glossary#^execution-sentence|Смертный приговор]] (порядок гибкий)
-5. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → получаем [[paladin-glossary#^hammer-of-light|Молот Света]]
-6. [[paladin-glossary#^hammer-of-light|Молот Света]] (5 [[paladin-glossary#^holy-power|HoPo]])
-7. Продолжить по приоритету ST
+1. **Зелье до боя** - Зелье безрассудства (Potion of Recklessness), выпей перед пуллом.
+2. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] (наложить [[paladin-glossary#^expurgation|Огонь очищения]]).
+3. *(опционально)* [[paladin-glossary#^judgment|Правосудие]].
+4. [[paladin-glossary#^avenging-wrath|Гнев карателя]] + [[paladin-glossary#^execution-sentence|Смертный приговор]] (порядок гибкий) + активируемый тринкет.
+5. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → открывается [[paladin-glossary#^hammer-of-light|Молот Света]].
+6. [[paladin-glossary#^hammer-of-light|Молот Света]] (5 [[paladin-glossary#^holy-power|HoPo]]).
+7. Дальше - по приоритету ST.
 
 > [!important] Божественный благовест в опенере
-> [[paladin-glossary#^divine-toll|Божественный благовест]] **не используется** в боссовом опенере - сохраняется для AoE-ситуаций или следующего бёрст-окна.
+> [[paladin-glossary#^divine-toll|Божественный благовест]] в боссовом ST-опенере **придерживают** - он эффективнее в AoE-ситуациях или в следующем бёрст-окне.
 
-### Opener - Templar (босс без бёрста)
+### Templar - босс без бёрста
 
-AW и/или ES на КД. **Доминирующий сценарий в М+** - AW чаще потрачен на предыдущий треш-пак.
+Гнев карателя и/или Смертный приговор на КД - **частый сценарий в M+**, где КД ушли на предыдущий треш.
 
-1. [[paladin-glossary#^blade-of-justice|Клинок справедливости]]
-2. [[paladin-glossary#^judgment|Правосудие]]
-3. [[paladin-glossary#^final-verdict|Окончательный приговор]] / [[paladin-glossary#^divine-storm|Божественная буря]] (по кол-ву целей)
-4. Цикл: билдеры → спендеры по приоритету
-5. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → [[paladin-glossary#^hammer-of-light|Молот Света]] по КД, даже без [[paladin-glossary#^avenging-wrath|AW]]
+1. [[paladin-glossary#^blade-of-justice|Клинок справедливости]].
+2. [[paladin-glossary#^judgment|Правосудие]].
+3. [[paladin-glossary#^final-verdict|Окончательный приговор]] / [[paladin-glossary#^divine-storm|Божественная буря]] (по числу целей).
+4. Цикл: билдеры → спендеры по приоритету.
+5. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → [[paladin-glossary#^hammer-of-light|Молот Света]] по КД, даже без [[paladin-glossary#^avenging-wrath|Гнева карателя]].
 
-> [!note] М+ реальность
-> В М+ **большинство боссов начинаются без бёрста**. Из 8 проверенных боссовых пулов только 3 имели AW в опенере. Топовые игроки не копят КД для босса - AW тратится на треш ([[log-analysis-2026-04-02|анализ логов]]).
+> [!note] Реальность M+
+> В ключах большинство боссов начинаются без бёрста - и это нормально. Не копи Гнев карателя «для босса»: трать его на треш, а WoA → HoL гони по КД.
 
-### Opener - Herald of the Sun
+### Herald of the Sun - опенер
 
-1. Prepot
-2. [[paladin-glossary#^avenging-wrath|Гнев карателя]]
-3. Тринкеты
-4. [[paladin-glossary#^hammer-of-wrath|Молот гнева]]
-5. [[paladin-glossary#^execution-sentence|Смертный приговор]]
-6. [[paladin-glossary#^final-verdict|Окончательный приговор]]
-7. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → Светозар (Dawnlight) проки
-8. [[paladin-glossary#^final-verdict|Окончательный приговор]]
-9. [[paladin-glossary#^divine-toll|Божественный благовест]]
-10. Продолжить по приоритету ST
+1. Зелье до боя.
+2. [[paladin-glossary#^avenging-wrath|Гнев карателя]] + тринкеты.
+3. [[paladin-glossary#^hammer-of-wrath|Молот гнева]].
+4. [[paladin-glossary#^execution-sentence|Смертный приговор]].
+5. [[paladin-glossary#^final-verdict|Окончательный приговор]].
+6. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → проки Светозара (Dawnlight).
+7. [[paladin-glossary#^final-verdict|Окончательный приговор]].
+8. [[paladin-glossary#^divine-toll|Божественный благовест]], дальше по приоритету ST.
 
-### Приоритет ST - Templar
+---
 
-1. [[paladin-glossary#^avenging-wrath|Гнев карателя]] / [[paladin-glossary#^execution-sentence|Смертный приговор]] (по КД)
-2. [[paladin-glossary#^hammer-of-light|Молот Света]] (когда доступен)
-3. [[paladin-glossary#^final-verdict|Окончательный приговор]] при 5 [[paladin-glossary#^holy-power|HoPo]]
-4. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] (по КД)
-5. [[paladin-glossary#^divine-toll|Божественный благовест]] (по КД)
-6. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] при [[paladin-glossary#^art-of-war|Искусство войны]] проке
-7. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] (если нет [[paladin-glossary#^expurgation|Огонь очищения]] на цели)
-8. [[paladin-glossary#^hammer-of-wrath|Молот гнева]] (при [[paladin-glossary#^avenging-wrath|AW]] или цель < 20% HP)
-9. [[paladin-glossary#^judgment|Правосудие]]
-10. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] (филлер)
-11. [[paladin-glossary#^templar-strikes|Резкий удар храмовника / Удар храмовника]] или [[paladin-glossary#^crusading-strikes|Удар воина Света]]
+## Приоритет (ротация)
 
-### Приоритет ST - Herald of the Sun
+Идёшь сверху вниз: верхнее доступно - жмёшь, нет - спускаешься ниже.
 
-1. [[paladin-glossary#^avenging-wrath|Гнев карателя]] / [[paladin-glossary#^execution-sentence|Смертный приговор]]
-2. [[paladin-glossary#^hammer-of-wrath|Молот гнева]] (приоритет выше, чем у Templar)
-3. [[paladin-glossary#^final-verdict|Окончательный приговор]] при 5 [[paladin-glossary#^holy-power|HoPo]]
-4. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → Светозар (Dawnlight) проки
-5. [[paladin-glossary#^divine-toll|Божественный благовест]]
-6. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] при [[paladin-glossary#^art-of-war|Искусство войны]]
-7. [[paladin-glossary#^blade-of-justice|Клинок справедливости]]
-8. [[paladin-glossary#^judgment|Правосудие]]
-9. [[paladin-glossary#^crusading-strikes|Удар воина Света]] / [[paladin-glossary#^templar-strikes|Удары храмовника]]
+### ST - Templar
 
-### AoE-ротация (2+ целей)
+1. [[paladin-glossary#^avenging-wrath|Гнев карателя]] / [[paladin-glossary#^execution-sentence|Смертный приговор]] (по КД).
+2. [[paladin-glossary#^hammer-of-light|Молот Света]] (когда доступен).
+3. [[paladin-glossary#^final-verdict|Окончательный приговор]] при 5 [[paladin-glossary#^holy-power|HoPo]].
+4. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] (по КД).
+5. [[paladin-glossary#^divine-toll|Божественный благовест]] (по КД).
+6. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] при проке [[paladin-glossary#^art-of-war|Искусства войны]].
+7. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] (если нет [[paladin-glossary#^expurgation|Огня очищения]] на цели).
+8. [[paladin-glossary#^hammer-of-wrath|Молот гнева]] (под [[paladin-glossary#^avenging-wrath|Гневом карателя]] или цель < 20% HP).
+9. [[paladin-glossary#^judgment|Правосудие]].
+10. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] (филлер).
+11. [[paladin-glossary#^templar-strikes|Удары храмовника]] / [[paladin-glossary#^crusading-strikes|Удары Света]].
 
-Приоритет аналогичен ST, но с заменами:
-- [[paladin-glossary#^divine-storm|Божественная буря]] вместо [[paladin-glossary#^final-verdict|Окончательный приговор]] как основной спендер
-- [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] приоритетнее (AoE-генерация [[paladin-glossary#^holy-power|HoPo]])
-- [[paladin-glossary#^hammer-of-light|Молот Света]] (Templar) - огромный AoE-урон, приоритет максимальный
+### ST - Herald of the Sun
 
-Полный AoE-приоритет (Templar):
-1. [[paladin-glossary#^divine-storm|Божественная буря]] при 5 [[paladin-glossary#^holy-power|HoPo]]
-2. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] (≤2 [[paladin-glossary#^holy-power|HoPo]])
-3. [[paladin-glossary#^hammer-of-light|Молот Света]]
-4. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] (Огонь очищения / Expurgation + Священное пламя / Holy Flames)
-5. [[paladin-glossary#^divine-toll|Божественный благовест]]
-6. [[paladin-glossary#^judgment|Правосудие]] (HoPo + Святитель / Sanctification стаки)
-7. [[paladin-glossary#^divine-storm|Божественная буря]] при 3+ [[paladin-glossary#^holy-power|HoPo]]
+1. [[paladin-glossary#^avenging-wrath|Гнев карателя]] / [[paladin-glossary#^execution-sentence|Смертный приговор]].
+2. [[paladin-glossary#^hammer-of-wrath|Молот гнева]] (приоритет выше, чем у Templar).
+3. [[paladin-glossary#^final-verdict|Окончательный приговор]] при 5 [[paladin-glossary#^holy-power|HoPo]].
+4. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → проки Светозара (Dawnlight).
+5. [[paladin-glossary#^divine-toll|Божественный благовест]].
+6. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] при проке [[paladin-glossary#^art-of-war|Искусства войны]].
+7. [[paladin-glossary#^blade-of-justice|Клинок справедливости]].
+8. [[paladin-glossary#^judgment|Правосудие]].
+9. [[paladin-glossary#^crusading-strikes|Удары Света]] / [[paladin-glossary#^templar-strikes|Удары храмовника]].
 
-### Holy Power management
+### AoE (2+ цели)
+
+Приоритет тот же, но с заменами:
+
+1. [[paladin-glossary#^divine-storm|Божественная буря]] при 5 [[paladin-glossary#^holy-power|HoPo]] (основной спендер вместо [[paladin-glossary#^final-verdict|Окончательного приговора]]).
+2. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] (приоритетнее - AoE-генерация HoPo).
+3. [[paladin-glossary#^hammer-of-light|Молот Света]] (Темплар) - огромный AoE, максимальный приоритет.
+4. [[paladin-glossary#^blade-of-justice|Клинок справедливости]] ([[paladin-glossary#^expurgation|Огонь очищения]] + Священное пламя (Holy Flames)).
+5. [[paladin-glossary#^divine-toll|Божественный благовест]].
+6. [[paladin-glossary#^judgment|Правосудие]].
+7. [[paladin-glossary#^divine-storm|Божественная буря]] при 3+ [[paladin-glossary#^holy-power|HoPo]].
 
 > [!important] Правило оверкапа
-> Никогда не кастуйте [[paladin-glossary#^builder|билдер]], если это приведёт к потере [[paladin-glossary#^holy-power|HoPo]]. [[paladin-glossary#^crusading-strikes|Удары Света]] НЕ генерирует HoPo - весь ресурс идёт от активных билдеров.
-
-- При 5 [[paladin-glossary#^holy-power|HoPo]] - всегда спендер
-- При 4 [[paladin-glossary#^holy-power|HoPo]] - спендер, если следующий билдер даст 2 HoPo ([[paladin-glossary#^blade-of-justice|BoJ]] с Улучшенным клинком справедливости (Improved Blade of Justice))
-- При 3 [[paladin-glossary#^holy-power|HoPo]] - билдер (но не [[paladin-glossary#^wake-of-ashes|Испепеляющий след]], который даёт +3 → оверкап)
-- [[paladin-glossary#^hammer-of-light|Молот Света]] стоит 5 [[paladin-glossary#^holy-power|HoPo]] - копите перед его окном
+> Не кастуй билдер, если это переполнит [[paladin-glossary#^holy-power|Энергию Света]]. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] даёт +3 - не жми его на 3+ HoPo. [[paladin-glossary#^crusading-strikes|Удары Света]] НЕ генерируют HoPo, весь ресурс идёт от активных билдеров.
 
 ---
 
-## Распределение урона (М+)
+## Урон: бёрст-окно Темплара (Avenging Wrath + Молот Света)
 
-Средний % от общего урона за весь данж. Данные: 10 логов, ключи +15-+18, Season 1 ([[log-analysis-2026-04-02|анализ логов]]).
+Главная урон-механика Темплара - связка **[[paladin-glossary#^avenging-wrath|Гнев карателя]] + [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → [[paladin-glossary#^hammer-of-light|Молот Света]]**. Это твоё «золотое окно»: сюда сливаешь спендеры, зелье и тринкет.
 
-| # | Способность | Avg % | Комментарий |
-|---|-------------|-------|-------------|
-| 1 | [[paladin-glossary#^blade-of-justice\|Клинок справедливости]] | **18.5%** | #1 благодаря [[paladin-glossary#^light-within\|Свет в душе]] + [[paladin-glossary#^expurgation\|Огонь очищения]] |
-| 2 | [[paladin-glossary#^divine-storm\|Божественная буря]] | **12.2%** | Основной AoE-спендер |
-| 3 | [[paladin-glossary#^hammer-of-light\|Молот Света]] | **11.5%** | Стабильный AoE+ST |
-| 4 | [[paladin-glossary#^divine-hammer\|Божественный молот]] | **9.7%** | Пассивный AoE от [[paladin-glossary#^divine-toll\|Божественный благовест]] |
-| 5 | [[paladin-glossary#^crusading-strikes\|Удары Света]] | **9.1%** | Пассивные автоатаки |
-| 6 | [[paladin-glossary#^empyrean-hammer\|Небесный молот]] | **8.3%** | Пассивные молоты (Templar) |
-| 7 | [[paladin-glossary#^execution-sentence\|Смертный приговор]] | **7.6%** | Накопленный урон + DoT |
-| 8 | [[paladin-glossary#^wake-of-ashes\|Испепеляющий след]] | **6.8%** | AoE + триггер [[paladin-glossary#^hammer-of-light\|HoL]] |
-| 9 | [[paladin-glossary#^final-verdict\|Окончательный приговор]] | **3.8%** | ST-спендер на боссах |
-| 10 | [[paladin-glossary#^hammer-of-wrath\|Молот гнева]] | **2.8%** | Экзекьют + доступен при [[paladin-glossary#^avenging-wrath\|AW]] |
+Как оно работает:
 
-> [!note] Босс vs паки
-> На боссах [[paladin-glossary#^final-verdict\|FV]] поднимается до ~5-6%, [[paladin-glossary#^divine-storm\|DS]] падает. На треше [[paladin-glossary#^divine-storm\|DS]] доминирует (до 15%), [[paladin-glossary#^divine-hammer\|Божественный молот]] и [[paladin-glossary#^hammer-of-light\|HoL]] также выше. [[paladin-glossary#^blade-of-justice\|BoJ]] стабильно #1 в обоих сценариях.
+1. **[[paladin-glossary#^wake-of-ashes|Испепеляющий след]]** даёт 3 [[paladin-glossary#^holy-power|HoPo]] и на 20 сек заменяется на **[[paladin-glossary#^hammer-of-light|Молот Света]]** (через стаки [[paladin-glossary#^shake-the-heavens|Сотрясения небес]] от билдеров).
+2. **[[paladin-glossary#^hammer-of-light|Молот Света]]** за 5 [[paladin-glossary#^holy-power|HoPo]] бьёт огромный AoE и хилит группу. Поэтому перед его окном копи HoPo.
+3. **[[paladin-glossary#^empyrean-hammer|Небесный молот]]** и **[[paladin-glossary#^divine-hammer|Божественный молот]]** добавляют фоновый урон молотами с неба и вокруг тебя.
+4. **[[paladin-glossary#^avenging-wrath|Гнев карателя]]** сверху усиливает весь урон и (с [[paladin-glossary#^light-within|Светом в душе]]) добавляет до +20% к спендерам.
+
+Цикл бёрста: [[paladin-glossary#^avenging-wrath|Гнев карателя]] (60 сек) + [[paladin-glossary#^execution-sentence|Смертный приговор]] (60 сек) + [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] (30 сек). Выстраивай их вместе на каждом крупном паке; WoA → HoL гони по КД даже в «холодную». Никогда не сиди на Испепеляющем следе - каждая задержка съедает бёрст.
 
 ---
 
-## Дефенсивы и утилити
+## Дефенсивы и утилита
 
-### Таблица дефенсивов
+> [!tip] Главное про выживание
+> **Божественная защита (Divine Protection) / Щит возмездия (Shield of Vengeance)** - рабочий деф на каждый средний замес (1 мин КД, жми свободно). **[[paladin-glossary#^divine-shield|Божественный щит]]** - последнее средство и способ игнорировать смертельные механики.
 
 | Способность | Эффект | КД | Примечание |
 |-------------|--------|-----|------------|
-| **[[paladin-glossary#^divine-shield\|Божественный щит]]** | Полная иммунность 8 сек | 5 мин | Визитная карточка паладина. Дроп аггро! |
-| **Божественная защита** (Divine Protection) | Снижение урона + щит + увеличение полученного хила | 1 мин | Основной дефенсив, апгрейдится в Щит возмездия |
-| **Щит возмездия** (Shield of Vengeance) | Апгрейд Божественной защиты: абсорб-щит, взрывается при истечении | 1 мин | Активируется через талант |
-| **[[paladin-glossary#^bos\|Жертвенное благословение]]** | Перенаправляет 30% урона союзника на вас, 12 сек | 2 мин | Внешний дефенсив для танка |
+| **[[paladin-glossary#^divine-shield\|Божественный щит]]** | Полная неуязвимость 8 сек | 5 мин | Визитка паладина. Сбрасывает аггро! |
+| **Божественная защита** (Divine Protection) | Снижение урона + щит | 1 мин | Основной деф, апгрейдится в Щит возмездия |
+| **Щит возмездия** (Shield of Vengeance) | Апгрейд: абсорб-щит, взрывается при истечении | 1 мин | Через талант |
+| **[[paladin-glossary#^bos\|Жертвенное благословение]]** | Переносит 30% урона союзника на тебя, 12 сек | 2 мин | Внешний деф на танка |
 | **[[paladin-glossary#^lay-on-hands\|Возложение рук]]** | Мгновенный хил цели на 100% HP | 10 мин | Экстренное спасение |
-| **[[paladin-glossary#^wog\|Торжество]]** | Хил за 3 [[paladin-glossary#^holy-power\|HoPo]] | - | Офф-хил, DPS-потеря но спасает жизни |
-| **Благословение сумерек** (Blessing of Dusk) | Пассивно -10% входящего урона | - | Талант, всегда активен |
+| **[[paladin-glossary#^wog\|Торжество]]** | Хил за 3 [[paladin-glossary#^holy-power\|HoPo]] | - | Офф-хил, потеря урона, но спасает жизни |
 
-### Стратегия ротации дефов
-
-1. **Божественная защита (Divine Protection) / Щит возмездия (Shield of Vengeance)** - на каждый средний урон (1 мин КД, жмите свободно)
-2. **[[paladin-glossary#^bos|Жертвенное благословение]]** - на танка в тяжёлые моменты
-3. **[[paladin-glossary#^wog|Торжество]]** - когда хилер не справляется (DPS-потеря, но лучше, чем вайп)
-4. **[[paladin-glossary#^divine-shield|Божественный щит]]** - последнее средство, или для игнорирования смертельных механик
-5. **[[paladin-glossary#^lay-on-hands|Возложение рук]]** - экстренное спасение танка/хилера
-
-### Утилити
-
-- **[[paladin-glossary#^bop|Благословение защиты]]** - иммунность к физ. урону на союзника, снимает физические дебаффы. 5 мин КД
-- **[[paladin-glossary#^bof|Благословенная свобода]]** - снимает и предотвращает замедления/руты на 8 сек. С талантом: +30% скорости
-- **[[paladin-glossary#^hoj|Молот правосудия]]** - стан на 6 сек. 45 сек КД (30 сек с Кулаком правосудия / Fist of Justice)
-- **[[paladin-glossary#^blinding-light|Слепящий свет]]** - AoE дизориент на 6 сек (талант)
-- **Укор** (Rebuke) - прерывание каста. 15 сек КД
-- **[[paladin-glossary#^cleanse|Очищение от токсинов]]** - диспел яда и болезни
-- **Заступничество** (Intercession) - боевой рез (3 [[paladin-glossary#^holy-power|HoPo]])
-- **[[paladin-glossary#^turn-evil|Изгнание зла]]** - фир на нежить/демонов
-- **[[paladin-glossary#^devotion-aura|Аура благочестия]]** - пассивно -3% урона группе
-- **[[paladin-glossary#^aura-mastery|Владение аурами]]** - усиливает ауру на 6 сек (Аура благочестия = -30% DR рейду)
-
----
-
-## Приоритет для М+
-
-### Бёрст-окна на паках
-
-1. Божественная защита (Divine Protection) на входе в пак (стандарт у топовых игроков)
-2. Строить [[paladin-glossary#^holy-power|HoPo]] через [[paladin-glossary#^judgment|Правосудие]] + [[paladin-glossary#^blade-of-justice|BoJ]] - 2-3 GCD
-3. [[paladin-glossary#^avenging-wrath|AW]] + [[paladin-glossary#^execution-sentence|Смертный приговор]] (порядок гибкий)
-4. [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] → [[paladin-glossary#^hammer-of-light|Молот Света]] (Templar)
-5. [[paladin-glossary#^divine-toll|Божественный благовест]] → спам [[paladin-glossary#^divine-storm|Божественная буря]]
-6. Во время [[paladin-glossary#^avenging-wrath|AW]]: максимизируйте количество спендеров
-
-> [!important] Бёрст-цикл
-> Основные КД: [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] (30 сек) и [[paladin-glossary#^divine-toll|Божественный благовест]] (1 мин, 30 сек с талантом). Без [[paladin-glossary#^execution-sentence|Смертный приговор]] цикл = 30 сек, с ним - 1 мин (подстраивайте бёрст под ES). Старайтесь выстраивать КД вместе на каждом паке. Никогда не сидите на [[paladin-glossary#^wake-of-ashes|Испепеляющий след]] - каждая задержка = потеря бёрста.
-
-### КД-менеджмент в М+
-
-> [!important] Не копите КД для босса
-> Топовые игроки **тратят AW на треш**, не копят для босса. Бой с боссом чаще начинается без бёрста - и это нормально. [[paladin-glossary#^wake-of-ashes|WoA]] → [[paladin-glossary#^hammer-of-light|HoL]] используется по КД даже без AW. Основной бёрст-цикл: AW (60 сек) + ES (60 сек) + WoA (30 сек) - выстраивать вместе на каждом крупном паке.
->
-> Данные: из 8 проверенных боссовых пулов только 3 имели AW в опенере ([[log-analysis-2026-04-02|анализ логов]]).
-
-### Приоритет целей
-
-- **Фокус на приоритетные цели** - Ret отлично фаннелит урон через [[paladin-glossary#^final-verdict|Окончательный приговор]] + [[paladin-glossary#^execution-sentence|Смертный приговор]] даже в AoE-паках
-- **Опасные мобы первыми** - используйте [[paladin-glossary#^execution-sentence|Смертный приговор]] на самом опасном мобе
-- **Боссы** - переключитесь на ST-приоритет, экономьте КД к боссу, если он через 30 сек
-
-### Когда использовать утилити
-
-- **[[paladin-glossary#^bop|BoP]]** - на хилера при случайном аггро, снятие физ. дебаффов с танка
-- **[[paladin-glossary#^bof|BoF]]** - на танка при кайте, на себя/мили при замедлениях
-- **[[paladin-glossary#^hoj|HoJ]]** - прерывание опасных кастов (когда Rebuke на КД)
-- **[[paladin-glossary#^lay-on-hands|LoH]]** - спасение танка в критический момент
-- **[[paladin-glossary#^wog|WoG]]** - офф-хил между паками или в критических ситуациях
-- **[[paladin-glossary#^cleanse|Очищение от токсинов]]** - активно диспельте яды/болезни, это снижает нагрузку на хилера
-- **[[paladin-glossary#^divine-shield|Божественный щит]]** - для игнорирования смертельных механик или ультимативного самоспасения
-
----
-
-## Статы
-
-### Приоритет
-
-**Strength > Mastery ≥ Haste > Crit > Versatility**
-
-> [!important] Симминг обязателен
-> Приоритет статов зависит от вашего текущего гира. Используйте [Raidbots](https://www.raidbots.com/) или SimulationCraft для определения точного приоритета. Все секондари имеют diminishing returns - стакать один стат невыгодно.
-
-> [!note] Спорный момент
-> Порядок вторичных спорный: Mastery ведущий, дальше Haste и Crit очень близки. Разница минимальна - сделай сим.
-
-| Стат | Зачем | Примечание |
-|------|-------|------------|
-| **Strength** | Увеличивает урон всех способностей | Всегда приоритет №1, ilvl > секондари |
-| **Mastery** | Увеличивает весь Holy-урон + шанс прока от Правосудия (Judgment) | Переработан в Midnight, стал значительно сильнее |
-| **Haste** | Скорость автоатак, снижение GCD, КД билдеров | Больше автоатак = больше [[paladin-glossary#^art-of-war\|Искусство войны]] проков |
-| **Crit** | Шанс крита всех способностей | Синергия с Templar (AoE-урон от критов) |
-| **Versatility** | +урон, -получаемый урон | Слабейший стат для Ret |
-
-### Энчанты и камни
-
-**Энчанты:**
-
-| Слот | Рекомендация | Альтернатива |
-|------|-------------|--------------|
-| Голова | Enchant Helm - Empowered Hex of Leeching | Radiant Jewelbinder |
-| Плечи | Enchant Shoulders - Silvermoon's Mending | Amirdrassil's Grace |
-| Грудь | Enchant Chest - Mark of the Worldsoul | Mark of Nalorakk |
-| Запястья | Radiant Jewelbinder | - |
-| Ноги | Forest Hunter's Armor Kit | Blood Knight's Armor Kit |
-| Ботинки | Enchant Boots - Shaladrassil's Roots | Lynx's Dexterity |
-| Кольца | Enchant Ring - Silvermoon's Alacrity (оба) | Eyes of the Eagle |
-| Оружие | Enchant Weapon - Berserker's Rage | Acuity of the Ren'dorei |
-
-**Камни:**
-
-| Тип | Камень | Примечание |
-|-----|--------|------------|
-| Уникальный (1 шт) | **Powerful Eversong Diamond** | Основной стат |
-| Заполнение | **Flawless Deadly Peridot** или **Flawless Quick Amethyst** | Mastery или Haste, зависит от сима |
-
-> [!note] Спорный момент
-> Оба варианта гемов валидны (Indecipherable или Powerful Eversong Diamond + двухстатные камни) - сделай сим.
+**Утилита:**
+- **[[paladin-glossary#^bop|Благословение защиты]]** - неуязвимость к физ. урону + снимает физические дебаффы. 5 мин КД.
+- **[[paladin-glossary#^bof|Благословенная свобода]]** - снимает и предотвращает замедления/руты на 8 сек.
+- **[[paladin-glossary#^hoj|Молот правосудия]]** - стан на 6 сек; **Укор (Rebuke)** - прерывание каста.
+- **[[paladin-glossary#^blinding-light|Слепящий свет]]** - AoE-дизориент (талант); **[[paladin-glossary#^turn-evil|Изгнание зла]]** - фир на нежить/демонов.
+- **[[paladin-glossary#^cleanse|Очищение от токсинов]]** - диспел яда/болезни; **Заступничество (Intercession)** - боевой рез (3 [[paladin-glossary#^holy-power|HoPo]]).
+- **[[paladin-glossary#^devotion-aura|Аура благочестия]]** (-3% урона группе) + **[[paladin-glossary#^aura-mastery|Владение аурами]]** (усиление ауры на 6 сек, до -30% DR рейду).
 
 ---
 
 ## Гир и тринкеты
 
-### Тир-сет: Luminant Verdict's Vestments
+Хороший комплект собирается не за вечер - это долгий фарм. Короткая шпаргалка, таблицы ниже - на потом.
+
+> [!tip] Кратко про шмот
+> - **Тринкеты:** в M+ - Алгет'арская шкатулка с секретом (Algeth'ar Puzzle Box) + Взор ясновидца Альн (Gaze of the Alnseer); в рейде - Gaze + Сердце древнего голода (Heart of Ancient Hunger).
+> - **Главный стат - Сила, ilvl важнее вторичных.**
+> - **Тир-сет** пассивно усиливает [[paladin-glossary#^expurgation|Огонь очищения]] - собирай 4 части по возможности.
+
+### Тир-сет (Midnight Season 1)
 
 | Бонус | Эффект |
 |-------|--------|
 | **2-Set** | [[paladin-glossary#^expurgation\|Огонь очищения]] наносит на **20% больше урона** |
-| **4-Set** | [[paladin-glossary#^templar-verdict\|Вердикт храмовника]] / [[paladin-glossary#^final-verdict\|Окончательный приговор]] накладывает [[paladin-glossary#^expurgation\|Огонь очищения]] на **100%** эффективности; [[paladin-glossary#^divine-storm\|Божественная буря]] - на **50%** |
+| **4-Set** | [[paladin-glossary#^final-verdict\|Окончательный приговор]] накладывает [[paladin-glossary#^expurgation\|Огонь очищения]] на **100%** эффективности; [[paladin-glossary#^divine-storm\|Божественная буря]] - на **50%** |
 
 > [!note] Влияние на геймплей
-> Тир-сет **не меняет ротацию** - он пассивно усиливает [[paladin-glossary#^expurgation|Огонь очищения]]. Приоритет [[paladin-glossary#^blade-of-justice|Клинок справедливости]] и [[paladin-glossary#^art-of-war|Искусство войны]] проков остаётся тем же, даже если Огонь очищения уже на цели.
+> Тир-сет ротацию **не меняет** - пассивно усиливает [[paladin-glossary#^expurgation|Огонь очищения]]. Приоритет [[paladin-glossary#^blade-of-justice|Клинка справедливости]] и проков [[paladin-glossary#^art-of-war|Искусства войны]] остаётся тем же.
 
-**Приоритет частей тир-сета:** Helm, Shoulders, Chest, Legs (основные слоты). Gloves - 5-й слот, если нет лучшей альтернативы.
+Приоритет слотов тир-сета: голова, плечи, грудь, ноги; перчатки - 5-й слот, если нет лучшей альтернативы.
 
 ### Тринкеты
 
+Правило: один сильный пассивный + один под бёрст-окно. Оптимум под свой шмот - **сделай сим**.
+
 | Тринкет | Тир | Источник | Примечание |
 |---------|-----|----------|------------|
-| **Gaze of the Alnseer** | S | Chimaerus (рейд) | Лучший тринкет сезона |
-| **Heart of Ancient Hunger** | S | Vorasius (рейд) | Второй BiS |
-| **Umbral Plume** | A | Belo'ren (рейд) | Сильный пассивный тринкет |
-| **Solarflare Prism** | A | Skyreach (М+) | Лучший М+ тринкет |
-| **Algeth'ar Puzzle Box** | A | Algeth'ar Academy (М+) | Стабильный выбор |
-| **Heart of Wind** | A | М+ | Хорошая альтернатива |
-| **Light Company Guidon** | B | М+ | Бюджетный вариант |
-| **Vessel of Tortured Souls** | B | Различные | - |
+| **Алгет'арская шкатулка с секретом** (Algeth'ar Puzzle Box) | S (M+) | Algeth'ar Academy, M+ | Топ-1 в ключах, в паре с Gaze |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | S | Химерий (Chimaerus), рейд | Топ-тринкет сезона, и в M+, и в рейде |
+| **Сердце древнего голода** (Heart of Ancient Hunger) | S (рейд) | Ненасытникус (Vorasius), рейд | Рейдовый BiS в пару к Gaze |
+| **Темное перо** (Umbral Plume) | A | M+ | Ситуативная M+ альтернатива |
+| **Призма солнечной вспышки** (Solarflare Prism) | B | Skyreach, M+ | Запасной вариант |
+| **Стяг отряда Света** (Light Company Guidon) | B | M+ | Бюджетный активируемый |
 
 ### Оружие
 
-| Оружие | Тип | Источник |
-|--------|-----|----------|
-| **Bellamy's Final Judgement** | 2H Sword | Lightblinded Vanguard (рейд) |
-| **Blood Knight's Mercy** | 2H Sword | Blacksmithing (крафт) |
-
-### Embellishments
-
-| Фаза сезона | Предмет | Embellishment |
-|-------------|---------|---------------|
-| **Ранний сезон** | Blood Knight's Warblade | Darkmoon Sigil: Hunt |
-| **Поздний сезон (BiS)** | Adherent's Silken Shroud (плащ) | Arcanoweave Lining |
-| **Поздний сезон (BiS)** | Spellbreaker's Bracers (запястья) | Arcanoweave Lining |
+- **Окончательный приговор Беллами** (Bellamy's Final Judgement, 2H Sword) - Ослепленный авангард (Lightblinded Vanguard), рейд.
+- **Милосердие рыцаря крови** (Blood Knight's Mercy, 2H Sword) - крафт (Blacksmithing).
 
 > [!note]
-> Крафтовые предметы позволяют кастомизировать статы - выбирайте Mastery/Haste распределение по результатам сима.
+> Точный BiS зависит от ilvl - сверяйся с симом. Оружие - один из крупнейших апгрейдов по урону, апай его в приоритете.
+
+### Эмбелишменты
+
+> [!note] Опционально (эндгейм)
+> Крафт и эмбелишменты - поздний фарм; на старте можно пропустить и вернуться позже.
+
+- Ранний рывок - крафтовый предмет с **Символ Новолуния «Охота»** (Darkmoon Sigil: Hunt).
+- Ближе к BiS - **Подкладка из тайной ткани** (Arcanoweave Lining), на плащ/запястья.
+
+### Расходники
+
+| Тип | Название |
+|-----|----------|
+| Фласка | Настой магистров (Flask of the Magisters) |
+| Еда | Праздник Харандара (Harandar Celebration) |
+| Зелье (бёрст) | Зелье безрассудства (Potion of Recklessness) |
+| Хил-зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
+| Масло на оружие | Талассийское масло феникса (Thalassian Phoenix Oil) |
+| Augment Rune | Меченная Бездной руна усиления (Void-Touched Augment Rune) |
 
 ---
 
-## Расходники
+## Статы
 
-| Тип | Название | Примечание |
-|-----|----------|------------|
-| **Фласка** | Flask of the Magisters | Mastery + Haste баланс |
-| **Альт. фласка** | Flask of the Blood Knights / Flask of the Shattered Sun | Если нужен другой стат-баланс |
-| **Еда** | Harandar Celebration / Rootland Celebration | Основной стат |
-| **Зелье** | Potion of Recklessness / Light's Potential | Бёрст-зелье, использовать с [[paladin-glossary#^avenging-wrath\|AW]] |
-| **Хил-зелье** | Silvermoon Health Potion | На случай экстренного хила |
-| **Масло** | Thalassian Phoenix Oil | Оружейное масло |
-| **Руна** | Void-Touched Augment Rune | Постоянный бафф основного стата |
+Порядок зависит от контента и гира - точный набор узнаёшь через сим.
+
+**Сила > Искусность ≥ Скорость > Критический удар > Универсальность**
+
+> [!tip] Кратко
+> Гонись за **Силой** (ilvl важнее вторичных), дальше **Искусность**, затем баланс Скорость/Крит. У всех вторичных - убывающая отдача, стакать один невыгодно. Точный приоритет под свой шмот - сделай сим в [Raidbots](https://www.raidbots.com).
+
+> [!note] Спорный момент
+> Порядок вторичных не строгий: Искусность ведущий, дальше Скорость и Крит очень близки. Разница минимальна - сделай сим.
+
+- **Сила** (Strength) - главный стат, прибавляет урон всему; всегда первый.
+- **Искусность** (Mastery) - [[paladin-glossary#^mastery-ret|Искусность: вердикт верховного лорда]]: усиливает весь Holy-урон и шанс прока от [[paladin-glossary#^judgment|Правосудия]]. Переработана в Midnight, стала заметно сильнее.
+- **Скорость** (Haste) - скорость автоатак, ниже GCD и КД билдеров. Больше автоатак = больше проков [[paladin-glossary#^art-of-war|Искусства войны]].
+- **Критический удар** (Critical Strike) - криты всех способностей; синергия с Темпларом (AoE-урон от критов).
+- **Универсальность** (Versatility) - +урон / -получаемый урон. Слабейший вторичный для Ret.
+
+### Раса
+
+> [!note] Разница минимальна
+> Между расами < 1% урона. Выбирай по утилите и эстетике, а не по DPS. По чистым цифрам формально впереди Dwarf (Альянс, Stoneform) и Blood Elf (Орда, Arcane Torrent даёт 1 [[paladin-glossary#^holy-power|HoPo]]).
+
+### Энчанты и гемы
+
+**Энчанты:** Усиленный сглаз самоисцеления (Empowered Hex of Leeching, голова), Луносветское исцеление (Silvermoon's Mending, плечи), Метка души мира (Mark of the Worldsoul, грудь), Накладки для доспехов лесного охотника (Forest Hunter's Armor Kit, ноги), Корни Шаладрассила (Shaladrassil's Roots, ботинки), Луносветская расторопность (Silvermoon's Alacrity, кольца), Ярость берсерка (Berserker's Rage, оружие).
+
+**Гемы:** Могучий алмаз Вечной Песни (Powerful Eversong Diamond) - мета-гем, 1 шт + двухстатные камни (Искусность/Скорость) в остальные слоты по результатам сима.
 
 ---
 
-## Расы
+## Частые ошибки
 
-> [!note] Минимальная разница
-> Разница между расами составляет < 1% DPS. Выбирайте по эстетике и утилити, не по цифрам.
+Эти ошибки на старте делают почти все - это нормально и легко правится. Если урон буксует, загляни в список:
 
-### Альянс
+- **Оверкапаешь [[paladin-glossary#^holy-power|Энергию Света]].** Сидишь на 5 HoPo, генерация сгорает. Диагностика: индикатор HoPo подолгу стоит на максимуме - трать спендером раньше.
+- **Перекрываешь прок [[paladin-glossary#^art-of-war|Искусства войны]].** Прокнуло, а ты жмёшь не [[paladin-glossary#^blade-of-justice|Клинок справедливости]], а что-то другое. С [[paladin-glossary#^light-within|Светом в душе]] это самый больной удар - не теряй прок.
+- **Сидишь на [[paladin-glossary#^wake-of-ashes|Испепеляющем следе]].** Он лежит готовый, а ты тянешь. Каждая секунда задержки откладывает [[paladin-glossary#^hammer-of-light|Молот Света]] и бёрст.
+- **Разносишь [[paladin-glossary#^avenging-wrath|Гнев карателя]] и [[paladin-glossary#^execution-sentence|Смертный приговор]] по времени.** Они должны идти вместе - иначе бёрст-окно слабее.
+- **Не держишь дебафф [[paladin-glossary#^judgment|Правосудия]] перед спендером.** Спендер без дебаффа бьёт ощутимо слабее.
+- **Копишь Гнев карателя «для босса» в M+.** Чаще выгоднее тратить КД на текущий пак, чем держать к боссу.
 
-| Раса | Почему |
-|------|--------|
-| **Dwarf** | Stoneform - диспел + 10% физ. DR. Лучшая утилити |
-| **Human** | +2% к секондари, Perception в PvP |
-| **Dark Iron Dwarf** | Fireblood - диспел + бонус стат |
-| **Draenei** | Gift of the Naaru - дополнительный хил |
-| **Earthen** | Новая раса Midnight, гибкие расовые бонусы |
+---
 
-### Орда
+## Напоследок
 
-| Раса | Почему |
-|------|--------|
-| **Tauren** | War Stomp - AoE-стан, Endurance - +бонус HP |
-| **Blood Elf** | Arcane Torrent - AoE-диспел + 1 [[paladin-glossary#^holy-power\|HoPo]]. Лучшая утилити для М+ |
-| **Zandalari Troll (Paku)** | +5% крит на 30 сек. Сильный бёрст-бонус |
-| **Zandalari Troll (Bwonsamdi)** | Бонус к урону по целям < 35% HP |
-| **Earthen** | Гибкие расовые бонусы |
+Ret прощает многое: даже неидеальная ротация выдаёт достойный урон, а утилита вытаскивает группу из ситуаций, где другие DPS бессильны. Но потолок открывается, когда крылья ([[paladin-glossary#^avenging-wrath|Гнев карателя]]), [[paladin-glossary#^execution-sentence|Смертный приговор]] и [[paladin-glossary#^hammer-of-light|Молот Света]] начинают совпадать с зельем и тринкетом. Дай себе несколько пуллов поймать этот ритм - и бёрст-окна заиграют сами.

@@ -10,10 +10,10 @@ created: 2026-06-10
 
 Термины и сокращения → [[deathknight-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
 
 > [!note] Про названия
-> Способности названы по-русски (как в игре), в скобках - оригинал на английском (для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы и расходники - в формате `Русское (English)`; статы (Strength/Mastery/Crit/Haste/Vers) оставлены на английском.
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
 
 ---
 
@@ -56,7 +56,7 @@ Unholy - это **повелитель нежити и болезней**. Ты 
 
 > Можно пропустить, если не играл в прошлых аддонах. Если играл - спек сильно переделали.
 
-- **Удалены Festering Wound (Гнойная язва) и Apocalypse.** Раньше Unholy копил язвы и взрывал их Апокалипсисом - теперь этого нет.
+- **Удалены Гнойная язва (Festering Wound) и Апокалипсис (Apocalypse).** Раньше Unholy копил язвы и взрывал их Апокалипсисом - теперь этого нет.
 - **[[deathknight-glossary#^festering-strike|Удар разложения]]** теперь даёт стаки **[[deathknight-glossary#^lesser-ghoul|Мелкого вурдалака]] на тебя** (а не язвы на враге), которые тратит [[deathknight-glossary#^scourge-strike|Удар Плети]].
 - Новый короткий КД **[[deathknight-glossary#^putrefy|Нагноение]]** (Putrefy) и капстоуны [[deathknight-glossary#^reanimation|Поднятие мертвых]] / [[deathknight-glossary#^outnumber|Численное превосходство]].
 - Новый Apex - **[[deathknight-glossary#^forbidden-knowledge|Запретное знание]]**.
@@ -85,7 +85,7 @@ Unholy - это **повелитель нежити и болезней**. Ты 
 
 Таланты - это твоя "сборка". Не вникай в каждую кнопку сразу: ниже есть готовые сборки для копирования.
 
-### Hero Talent (главная развилка)
+### Героическое древо (главная развилка)
 
 > [!note] Итог: бери Всадника апокалипсиса
 > **[[deathknight-glossary#^rider-of-the-apocalypse|Всадник апокалипсиса]]** (Rider of the Apocalypse) - основной выбор и для рейда, и для M+: призывает всадников-помощников и хорошо бёрстит. **San'layn** - рабочая альтернатива.
@@ -100,7 +100,7 @@ Unholy - это **повелитель нежити и болезней**. Ты 
 ### Ключевые таланты
 
 - **[[deathknight-glossary#^festering-scythe|Гнойная коса]]** - обязательна: бесплатный (без рун) удар снимает нехватку ресурсов. Без неё много простоя.
-- **[[deathknight-glossary#^army-of-the-dead|Войско мертвых]] + Raise Abomination + [[deathknight-glossary#^commander-of-the-dead|Командир мертвых]]** - ядро питомец-бёрста.
+- **[[deathknight-glossary#^army-of-the-dead|Войско мертвых]] + Воскрешение поганища (Raise Abomination) + [[deathknight-glossary#^commander-of-the-dead|Командир мертвых]]** - ядро питомец-бёрста.
 
 ---
 
@@ -206,7 +206,7 @@ CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMDDz2MzMTzmxMzMjBAAAAAAAgZGzYAwyMmZ2MzYMDYzsZYIDMb
 Хороший комплект собирается не за один вечер - это долгий фарм. Вот короткая шпаргалка, таблицы ниже - на потом.
 
 > [!tip] Кратко про шмот
-> - **Главный стат - Strength.** Из вторичных: **Mastery и Crit** (примерно равны) выше **Haste**, Versatility - в конце.
+> - **Главный стат - Сила.** Из вторичных: **Искусность и Крит** (примерно равны) выше **Скорости**, Универсальность - в конце.
 > - **Тринкеты:** Взор ясновидца Альн (Gaze of the Alnseer) + Стяг отряда Света (Light Company Guidon).
 > - **Уровень предмета (ilvl) важнее всего остального.**
 
@@ -241,25 +241,25 @@ CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMDDz2MzMTzmxMzMjBAAAAAAAgZGzYAwyMmZ2MzYMDYzsZYIDMb
 
 | Тринкет | Тип | Заметка |
 |---|---|---|
-| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive | Лучший: огромный Strength за бой |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive | Лучший: огромная Сила за бой |
 | **Стяг отряда Света** (Light Company Guidon) | On-use | Единственный 1.5-мин on-use на силу; идеален под бёрст |
 | **Темное перо** (Umbral Plume) / **Сияющее перо** (Radiant Plume) | Passive | Очень близки; любой из них - и ты в порядке |
-| **Сердце древнего голода** (Heart of Ancient Hunger) | Passive | Стабильный crit-прок |
-| **Алгет'арская шкатулка с секретом** (Algeth'ar Puzzle Box) | On-use | Mastery; КД 2 мин (использовать как 3-минутный) |
+| **Сердце древнего голода** (Heart of Ancient Hunger) | Passive | Стабильный крит-прок |
+| **Алгет'арская шкатулка с секретом** (Algeth'ar Puzzle Box) | On-use | Искусность; КД 2 мин (использовать как 3-минутный) |
 
 ### Эмбелишменты и Voidcores
 
 > [!note] Опционально (эндгейм): крафт, эмбелишменты и Voidcores - поздний фарм; на старте можно пропустить и вернуться позже.
 
-- Лучший эмбелишмент - **Arcanoweave Lining** (ближе к BiS - на плащ и наручи).
-- Если нет mythic-оружия и есть спарки - можно скрафтить 2-ручное оружие с **Darkmoon Sigil: Hunt** (оружие - крупнейший апгрейд по урону).
+- Лучший эмбелишмент - **Подкладка из тайной ткани** (Arcanoweave Lining), ближе к BiS - на плащ и наручи.
+- Если нет mythic-оружия и есть спарки - можно скрафтить 2-ручное оружие с эмбелишментом **Символ Новолуния «Охота»** (Darkmoon Sigil: Hunt); оружие - крупнейший апгрейд по урону.
 - Bonus Rolls тратить по приоритету: оружие → тринкеты → кольца/шея → высокостатные слоты.
 
 ### Расходники
 
 | Тип | Название |
 |---|---|
-| Фласк | Настой Расколотого Солнца (Flask of the Shattered Sun) |
+| Фласка | Настой Расколотого Солнца (Flask of the Shattered Sun) |
 | Еда | Празднество Харандара (Harandar Celebration) / Королевское жаркое (Royal Roast) |
 | Зелье | Зелье безрассудства (Potion of Recklessness) |
 | Хил-зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
@@ -272,16 +272,16 @@ CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMDDz2MzMTzmxMzMjBAAAAAAAgZGzYAwyMmZ2MzYMDYzsZYIDMb
 
 Порядок (и для ST, и для AoE):
 
-**Strength (главный) > Mastery >= Crit > Haste > Versatility**
+**Сила (главный) > Искусность >= Крит > Скорость > Универсальность**
 
 > [!tip] Кратко
-> Гонись за **Strength**, дальше набирай **Mastery и Crit** (они примерно равны). Haste ниже (не ускоряет тики болезней), Versatility - в конце. Точный набор под свой шмот узнаешь через [Raidbots](https://www.raidbots.com).
+> Гонись за **Силой**, дальше набирай **Искусность и Крит** (они примерно равны). Скорость ниже (не ускоряет тики болезней), Универсальность - в конце. Точный набор под свой шмот узнаешь через [Raidbots](https://www.raidbots.com).
 
-- **Strength** - сила атаки, прибавляет урон всему; всегда первый.
-- **[[deathknight-glossary#^mastery-dreadblade|Mastery]]** - усиливает урон питомцев и темной магии (а её у тебя большинство); мощно скейлится в AoE.
-- **Crit** - шанс на двойной урон, есть синергия с Mastery и талантами.
-- **Haste** - больше глобалов и реген рун, но не ускоряет тики болезней - поэтому ниже.
-- **Versatility** - ровный +урон и немного защиты; набирает ценность ближе к концу аддона.
+- **Сила** (Strength) - сила атаки, прибавляет урон всему; всегда первый.
+- **[[deathknight-glossary#^mastery-dreadblade|Искусность]]** (Mastery) - усиливает урон питомцев и темной магии (а её у тебя большинство); мощно скейлится в AoE.
+- **Критический удар** (Critical Strike) - шанс на двойной урон, есть синергия с Искусностью и талантами.
+- **Скорость** (Haste) - больше глобалов и реген рун, но не ускоряет тики болезней - поэтому ниже.
+- **Универсальность** (Versatility) - ровный +урон и немного защиты; набирает ценность ближе к концу аддона.
 
 ### Раса
 
@@ -289,8 +289,8 @@ CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMDDz2MzMTzmxMzMjBAAAAAAAgZGzYAwyMmZ2MzYMDYzsZYIDMb
 
 ### Энчанты и гемы
 
-- **Гемы:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond) / Могучий алмаз Вечной Песни (Powerful Eversong Diamond) + двухстатные гранаты (Crit/Mastery).
-- **Энчанты:** Empowered Blessing of Speed (голова), Flight of the Eagle (плечи), Mark of the Worldsoul (грудь), Farstrider's Hunt (ботинки), Forest Hunter's Armor Kit (ноги), Eyes of the Eagle (кольца), Rune of the Apocalypse (оружие).
+- **Гемы:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond) / Могучий алмаз Вечной Песни (Powerful Eversong Diamond) + двухстатные гранаты (Крит/Искусность).
+- **Энчанты:** Усиленное благословение скорости (Empowered Blessing of Speed, голова), Полет орла (Flight of the Eagle, плечи), Метка души мира (Mark of the Worldsoul, грудь), Охота Странника (Farstrider's Hunt, ботинки), Накладки для доспехов лесного охотника (Forest Hunter's Armor Kit, ноги), Глаза орла (Eyes of the Eagle, кольца), Руна апокалипсиса (Rune of the Apocalypse, оружие).
 
 ---
 

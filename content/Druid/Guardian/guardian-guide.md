@@ -10,96 +10,125 @@ created: 2026-03-15
 
 Термины и сокращения → [[druid-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
+
+> [!note] Про названия
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
+
+---
+
+*Ты медведь, который держит удар бронёй и кровотечениями: чем дольше танкуешь, тем толще шкура.*
+
+## Главное за минуту
+
+Коротко, чтобы сразу держать удар - остальное наберёшь в бою:
+
+1. **[[druid-glossary#^ironfur|Железный мех]] - твоя активная митигация.** Стакай его перед физическим уроном, держи 1-3 стака. Но он НЕ для урона - не спамь его впустую.
+2. **Трать [[druid-glossary#^rage|ярость]] на урон через [[druid-glossary#^maul|Трепку]] (ST) и [[druid-glossary#^raze|Смести]] (AoE).** Ярость - это и угроза, и часть твоего урона.
+3. **Держи [[druid-glossary#^moonfire|Лунный огонь]] и [[druid-glossary#^thrash|Взбучку]] (3+ стака) всегда.** На них завязана пассивная защита.
+4. **[[druid-glossary#^mangle|Увечье]] - высший приоритет генератора ярости.** Жми по КД.
+5. **[[druid-glossary#^barkskin|Дубовая кожа]] - первый дефенсив, жми часто.** Под тяжёлый урон добавляй [[druid-glossary#^survival-instincts|Инстинкты выживания]] (но не одновременно).
+
+## Как играть за медведя (в двух словах)
+
+Guardian - **танк на броне и пассивной защите**. Идея простая: ты гасишь физический урон [[druid-glossary#^ironfur|Железным мехом]], а правильная ротация сама поддерживает кучу защитных эффектов. Геймплей держится на трёх вещах:
+
+- **Держишь [[druid-glossary#^ironfur|Железный мех]]** как базовый слой защиты под физический урон.
+- **Поддерживаешь урон-цикл** ([[druid-glossary#^mangle|Увечье]] → [[druid-glossary#^thrash|Взбучка]] → трата ярости на [[druid-glossary#^maul|Трепку]]/[[druid-glossary#^raze|Смести]]) - это и угроза, и урон, и пассивная защита.
+- **Работаешь кулдаунами по плану** - [[druid-glossary#^barkskin|Дубовая кожа]] часто, [[druid-glossary#^survival-instincts|Инстинкты выживания]] под пики.
+
+Усвоил это - и тело само знает, что делать.
+
+> [!info] Словарик терминов
+> - **Танк** - тот, кто держит врагов на себе и переживает их удары.
+> - **Активная митигация** - снижение урона "руками" (Железный мех), а не пассивно.
+> - **Аггро / угроза (threat)** - кого атакует враг; танк должен быть первым по угрозе.
+> - **Тонт (taunt)** - заставить врага атаковать тебя.
+> - **Кайтинг** - отступать, не давая врагу себя бить (в M+).
+> - **Ярость** - твой ресурс: копится от атак, тратится на урон (Трепка/Смести) и защиту (Железный мех).
+> - **КД** - кулдаун, перезарядка. **GCD** - глобальная перезарядка (~1.5 сек). **Прок** - случайное срабатывание бонуса.
+> - **DR** - снижение получаемого урона (от защитной способности).
+> - **ST** - по одной цели, **AoE** - по нескольким. **Пак** - группа врагов в подземелье.
+> - **Катвивинг** (catweaving) - перешифт в Облик кошки ради урона между танк-действиями (продвинутый приём для M+).
+> - **Симить** - прогнать персонажа в [Raidbots](https://www.raidbots.com) под свой шмот.
+> - **BiS** - лучший предмет в слот; **ilvl** - уровень предмета. **M+ / ключи** - Mythic+ подземелья.
 
 ---
 
 ## Что изменилось в Midnight (12.0)
 
-> Guardian Druid получил серьёзную переработку дерева талантов и философии геймплея.
+> Можно пропустить, если не играл в прошлых аддонах - этот раздел про изменения.
+
+Дерево талантов и философию спека серьёзно переработали.
 
 **Удалено:**
-- **Rage of the Sleeper** - убран
-- **Thorns of Iron** - убран (был причиной токсичного геймплей-лупа с [[druid-glossary#^ironfur|Железный мех]]-спамом для ДПС)
-- **Tooth and Claw** - убран
+- **Ярость Спящего (Rage of the Sleeper), Стальные шипы (Thorns of Iron), Зуб и коготь (Tooth and Claw)** - убраны. Главное последствие: **спам Железного меха ради урона больше не работает** - ярость теперь тратится на Трепку/Смести, а Железный мех остаётся чисто для выживания. APM ниже, геймплей чище.
 
 **Добавлено / переработано:**
-- **[[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]** - переработан в 2-мин [[druid-glossary#^cd|КД]] с мгновенным эффектом по форме (Cat → Дикое бешенство (Feral Frenzy), Moonkin → АоЕ бёрст, Caster → Wild Growth)
-- **[[druid-glossary#^natural-resilience|Природная устойчивость]]** - новый талант (80% оверхила [[druid-glossary#^frenzied-regeneration|Неистовое восстановление]] → абсорб-щит)
-- **[[druid-glossary#^harnessed-rage|Обузданная ярость]]** - новый (2-й заряд [[druid-glossary#^mangle|Увечье]], [[druid-glossary#^gore|Кровавая атака]] при 80+ [[druid-glossary#^rage|rage]])
-- **[[druid-glossary#^killing-blow|Смертельный удар]]** - новый (удвоение урона спендера за +20 [[druid-glossary#^rage|rage]])
-- **[[druid-glossary#^dream-of-cenarius|Сон Кенария]]** - реворк, стакается до 4 раз для усиленных [[druid-glossary#^regrowth|Восстановление]]
-- **[[druid-glossary#^wild-guardian|Дикий хранитель]]** (Apex) - новая система апекс-талантов
-- **[[druid-glossary#^berserk-guardian|Берсерк]]** - сокращён до 1 очка таланта
-- Общая перестройка дерева талантов спеки
-
-**Суть изменений:** [[druid-glossary#^ironfur|Железный мех]]-спам для урона больше не работает. [[druid-glossary#^rage|Ярость]] теперь тратится на [[druid-glossary#^maul|Трепка]]/[[druid-glossary#^raze|Смести]] для урона, [[druid-glossary#^ironfur|Железный мех]] - только для выживания. APM снижен, геймплей стал проще.
+- **[[druid-glossary#^natural-resilience|Природная устойчивость]]** - новый: 80% оверхила [[druid-glossary#^frenzied-regeneration|Неистового восстановления]] превращается в абсорб-щит (очень сильно).
+- **[[druid-glossary#^harnessed-rage|Обузданная ярость]]** - новый: 2-й заряд [[druid-glossary#^mangle|Увечья]], а трата ярости выше 80 чаще прокает [[druid-glossary#^gore|Кровавую атаку]].
+- **[[druid-glossary#^killing-blow|Смертельный удар]]** - новый: удвоение урона спендера за +20 ярости.
+- **[[druid-glossary#^dream-of-cenarius|Сон Кенария]]** - реворк: стакается до 4 раз для усиленных [[druid-glossary#^regrowth|Восстановлений]] (офф-хил группе).
+- **[[druid-glossary#^wild-guardian|Дикий хранитель]]** (Apex) - новая система апекс-талантов.
+- **[[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]** - 2-мин КД с эффектом по форме.
 
 ---
 
 ## Сильные и слабые стороны
 
-**Сильные:**
-- Сильная пассивная [[druid-glossary#^damage-reduction|DR]] через таланты и базовые пассивки
-- Бесконечная стакаемая [[druid-glossary#^active-mitigation|активная митигация]] ([[druid-glossary#^ironfur|Железный мех]]) - 100% [[druid-glossary#^uptime|аптайм]]
-- Короткие [[druid-glossary#^cd|КД]] дефенсивов позволяют сглаживать урон постоянно
-- Отличная выживаемость против физического урона и спайк-дэмеджа
-- [[druid-glossary#^catweaving|Catweaving]] даёт конкурентный [[druid-glossary#^st|ST]]-урон
-- Лучшая утилити среди танков: [[druid-glossary#^stampeding-roar|Тревожный рев]], [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^soothe|Умиротворение]], офф-хил через [[druid-glossary#^dream-of-cenarius|Сон Кенария]]
-- A-тир в M+ (выше Blood DK, VDH, Prot Warrior)
+Полезно знать сильные стороны класса и его слабые места - так понятнее, где играть в удовольствие, а где быть внимательнее.
 
-**Слабые:**
-- Ограниченный контроль (нет стана, кроме [[druid-glossary#^incapacitating-roar|Парализующий рык]])
-- Медленный набор аггро на старте пулла (урон через [[druid-glossary#^dot|DoT]])
-- Нет уникальной утилити, которой бы не было у других друид-спеков
-- Уступает Brewmaster Monk и Prot Paladin (S-тир) в текущем мете
+**В чём медведь хорош:**
+- **Сильная пассивная защита** через таланты и базовые пассивки.
+- **Бесконечная стакаемая [[druid-glossary#^ironfur|активная митигация]]** - 100% аптайм Железного меха.
+- **Короткие КД дефенсивов** позволяют сглаживать урон постоянно.
+- **Отлично держит физический урон и спайки.**
+- **Лучшая утилити среди танков:** [[druid-glossary#^stampeding-roar|Тревожный рев]], [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^soothe|Умиротворение]], офф-хил через [[druid-glossary#^dream-of-cenarius|Сон Кенария]].
+
+**Слабые места класса:**
+- **Ограниченный контроль** - из станов только [[druid-glossary#^incapacitating-roar|Парализующий рык]].
+- **Медленный набор аггро на старте пулла** (урон идёт через DoT-ы).
+- **Нет уникальной утилити**, которой не было бы у других друид-спеков.
 
 ---
 
 ## Таланты
 
-### Hero Talent
+Таланты - это твоя "сборка". Не вникай в каждую кнопку сразу: ниже есть готовые сборки для копирования.
 
-**[[druid-glossary#^druid-of-the-claw-guardian|Друид-хищник]]** - рекомендуется как основной выбор для любого контента (рейд и М+). Фокус на блид-механике: [[druid-glossary#^rake|Глубокая рана]], [[druid-glossary#^rip|Разорвать]] и частые [[druid-glossary#^proc|проки]] [[druid-glossary#^ravage|Терзание]]. Лучший урон в [[druid-glossary#^st|СТ]] и стабильная защита. Ключевые таланты: [[druid-glossary#^ravage|Терзание]], Claw Rampage, Ruthless Aggression, Wildshape Mastery, [[druid-glossary#^fluid-form|Изменчивый облик]].
+### Героическое древо (главная развилка сборки)
 
-**[[druid-glossary#^elunes-chosen-guardian|Избранник Элуны]]** - альтернатива для [[druid-glossary#^aoe|АоЕ]], проще в освоении. Фокус на [[druid-glossary#^moonfire|Лунный огонь]] и [[druid-glossary#^lunar-beam|Лунный луч]]. Жизнеспособна в М+, но [[druid-glossary#^druid-of-the-claw-guardian|Друид-хищник]] оптимальнее в большинстве ситуаций из-за того, что оба билда теперь тратят [[druid-glossary#^rage|rage]] на [[druid-glossary#^raze|Смести]], а DotC делает это эффективнее. Ключевые: Lunar Calling, Star Cascade, Lunar Insight, [[druid-glossary#^twin-moonfire|Раздвоенный лунный огонь]].
+> [!note] Итог: Друид-хищник почти везде
+> У медведя два героических древа - **[[druid-glossary#^druid-of-the-claw-guardian|Друид-хищник]]** (Druid of the Claw) и **[[druid-glossary#^elunes-chosen-guardian|Избранник Элуны]]** (Elune's Chosen). Бери **Друида-хищника** - он лучший и в рейде, и в ключах. Избранник Элуны - вариант попроще или под чистый AoE.
 
-> [!note] Что брать
-> Играть [[druid-glossary#^druid-of-the-claw-guardian|Друид-хищник]] (DotC) везде - это мета-выбор. [[druid-glossary#^elunes-chosen-guardian|Избранник Элуны]] - если хочется проще или чисто [[druid-glossary#^aoe|АоЕ]]-контент.
+- **[[druid-glossary#^druid-of-the-claw-guardian|Друид-хищник]]** (Druid of the Claw) - блид-механика ([[druid-glossary#^rake|Глубокая рана]], [[druid-glossary#^rip|Разорвать]]) и частые проки [[druid-glossary#^ravage|Терзания]]. Лучший ST-урон и стабильная защита. Ключевые узлы: Терзание, Буйство когтей (Claw Rampage), Безжалостная агрессия (Ruthless Aggression), Мастерство дикого облика (Wildshape Mastery), [[druid-glossary#^fluid-form|Изменчивый облик]].
+- **[[druid-glossary#^elunes-chosen-guardian|Избранник Элуны]]** (Elune's Chosen) - фокус на [[druid-glossary#^moonfire|Лунном огне]] и [[druid-glossary#^lunar-beam|Лунном луче]], проще в освоении. Жизнеспособен в M+, но Друид-хищник чаще оптимальнее. Ключевые узлы: Лунный зов (Lunar Calling), Звездный каскад (Star Cascade), Лунное прозрение (Lunar Insight), [[druid-glossary#^twin-moonfire|Раздвоенный лунный огонь]].
 
-### Apex Talent
+### Apex талант
 
-**[[druid-glossary#^wild-guardian|Дикий хранитель]]** - основной апекс-талант. После каста [[druid-glossary#^berserk-guardian|Берсерк]] / [[druid-glossary#^incarnation-guardian|Воплощение: Страж Урсока]] активируется Дикий хранитель (Wild Guardian), который дублирует следующие 2 каста [[druid-glossary#^ironfur|Железный мех]], [[druid-glossary#^maul|Трепка]] и [[druid-glossary#^frenzied-regeneration|Неистовое восстановление]] с 50% эффективностью. По сути добавляет 12-секундный [[druid-glossary#^dot|DoT]] через [[druid-glossary#^maul|Трепка]], который поддерживается кастом [[druid-glossary#^maul|Трепка]] раз в 12 секунд.
+- **[[druid-glossary#^wild-guardian|Дикий хранитель]]** (Wild Guardian) - единственный Apex. После [[druid-glossary#^berserk-guardian|Берсерка]] / [[druid-glossary#^incarnation-guardian|Воплощения]] следующие 2 каста [[druid-glossary#^ironfur|Железного меха]], [[druid-glossary#^maul|Трепки]] и [[druid-glossary#^frenzied-regeneration|Неистового восстановления]] дублируются с 50% эффективностью. По сути добавляет повторяющийся урон/защиту в окно бёрста.
 
-### Ключевые таланты (общие)
+### Провальные таланты
 
-- **[[druid-glossary#^harnessed-rage|Обузданная ярость]]** - даёт 2-й заряд [[druid-glossary#^mangle|Увечье]] и увеличивает шанс [[druid-glossary#^proc|прока]] [[druid-glossary#^gore|Кровавая атака]] при трате [[druid-glossary#^rage|rage]] выше 80
-- **[[druid-glossary#^natural-resilience|Природная устойчивость]]** - 80% оверхила от [[druid-glossary#^frenzied-regeneration|Неистовое восстановление]] конвертируется в абсорб-щит (очень сильно)
-- **[[druid-glossary#^killing-blow|Смертельный удар]]** - удваивает урон спендера за 20 дополнительного [[druid-glossary#^rage|rage]]
-- **[[druid-glossary#^dream-of-cenarius|Сон Кенария]]** - переработан, стакается до 4 раз, позволяя копить усиленные [[druid-glossary#^regrowth|Восстановление]] для лечения
-- **[[druid-glossary#^flashing-claws|Сверкающие когти]]** - талант на урон, можно дропнуть ради выживаемости
-- **[[druid-glossary#^ursocs-fury|Неистовство Урсока]]** - значительно повышает танкоустойчивость в обоих hero-билдах
-- **[[druid-glossary#^rend-and-tear|Яростное разрывание]]** - усиливает [[druid-glossary#^thrash|Взбучка]], must-have для обоих билдов
-- **[[druid-glossary#^scintillating-moonlight|Мерцающий лунный свет]]** - пассивная защита при поддержании [[druid-glossary#^moonfire|Лунный огонь]]
-- **[[druid-glossary#^reinforced-fur|Укрепленный мех]]** - усиливает [[druid-glossary#^ironfur|Железный мех]] для тяжёлых танк-чеков
+> [!warning] Не трать очки вслепую
+> Не бери защитные узлы наугад - многие слабее, чем кажутся. [[druid-glossary#^flashing-claws|Сверкающие когти]] - чисто урон, в рейде их можно дропнуть ради выживаемости. Опирайся на готовые билды ниже.
 
-### Рейд vs М+
+### Что обязательно взять
 
-**Рейд:**
-- [[druid-glossary#^druid-of-the-claw-guardian|Друид-хищник]]
-- Без [[druid-glossary#^catweaving|catweaving]] (преимущества минимальны в рейде)
-- Фокус на [[druid-glossary#^st|СТ]]-выживаемость и утилити (контроль)
-- Больше очков в защиту: [[druid-glossary#^reinforced-fur|Укрепленный мех]], Ursoc's Endurance
-
-**М+:**
-- [[druid-glossary#^druid-of-the-claw-guardian|Друид-хищник]] (или [[druid-glossary#^elunes-chosen-guardian|Избранник Элуны]] для простоты)
-- [[druid-glossary#^catweaving|Catweaving]] через [[druid-glossary#^heart-of-the-wild|Сердце дикой природы]] - [[druid-glossary#^fluid-form|Изменчивый облик]] + Persistence для вхождения в Облик кошки (Cat Form) на бёрсты
-- Больше очков в урон: [[druid-glossary#^flashing-claws|Сверкающие когти]]
-- [[druid-glossary#^twin-moonfire|Раздвоенный лунный огонь]] (если [[druid-glossary#^elunes-chosen-guardian|Избранник Элуны]]) для быстрого спреда урона
+- **[[druid-glossary#^harnessed-rage|Обузданная ярость]]** - 2-й заряд Увечья и больше проков Кровавой атаки при трате 80+ ярости.
+- **[[druid-glossary#^natural-resilience|Природная устойчивость]]** - оверхил Неистового восстановления → щит.
+- **[[druid-glossary#^ursocs-fury|Неистовство Урсока]]** - заметно поднимает танкоустойчивость в обоих билдах.
+- **[[druid-glossary#^rend-and-tear|Яростное разрывание]]** - усиливает Взбучку, нужен обоим билдам.
+- **[[druid-glossary#^scintillating-moonlight|Мерцающий лунный свет]]** - пассивная защита от Лунного огня.
 
 ---
 
 ## Готовые билды (импорт)
+
+> Не хочешь разбираться - скопируй строку и вставь в игре: открой таланты (**N**) → Loadouts → Import Loadout → вставь → Import.
+
+> [!note]
+> Импорт-строки могут поменяться с хотфиксами. Если строка не грузится - возьми свежую на [Wowhead](https://www.wowhead.com/guide/classes/druid/guardian/talent-builds-pve-tank).
 
 ### Рейд - Друид-хищник (Druid of the Claw)
 
@@ -108,262 +137,207 @@ CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsMPwYM2MLzMPgZZZgZDGNRzMzyMzMzYMjZAAAAA
 ```
 
 > [!note] Фокус
-> [[druid-glossary#^st|СТ]]-урон через [[druid-glossary#^mangle|Увечье]] и [[druid-glossary#^maul|Трепка]]. Тратить [[druid-glossary#^rage|rage]] на [[druid-glossary#^maul|Трепка]] оффенсивно, поддерживая 1 стак [[druid-glossary#^ironfur|Железный мех]] по необходимости. [[druid-glossary#^killing-blow|Смертельный удар]], [[druid-glossary#^harnessed-rage|Обузданная ярость]] и [[druid-glossary#^red-moon|Красная луна]] - ядро ротации.
+> ST-урон через [[druid-glossary#^mangle|Увечье]] и [[druid-glossary#^maul|Трепку]]: трать ярость на Трепку оффенсивно, держа 1 стак [[druid-glossary#^ironfur|Железного меха]] по необходимости. [[druid-glossary#^killing-blow|Смертельный удар]], [[druid-glossary#^harnessed-rage|Обузданная ярость]] и [[druid-glossary#^red-moon|Красная луна]] - ядро ротации.
 
-### М+ - Избранник Элуны (Elune's Chosen) (рекомендуемый)
+### M+ - Избранник Элуны (Elune's Chosen)
 
 ```
 CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZmlZGjxiZh5BmZZZgZzwoJamZWmZmZmlxMAAAAAAMsMDYZbmBjZZAMFAAAYzYmHAYxMYwgltBYmBwA
 ```
 
 > [!note] Фокус
-> [[druid-glossary#^aoe|АоЕ]]-урон. [[druid-glossary#^twin-moonfire|Раздвоенный лунный огонь]] для спреда [[druid-glossary#^moonfire|Лунный огонь]]. [[druid-glossary#^ursocs-fury|Неистовство Урсока]] и Elune's Favored для выживаемости - адаптировать под комфорт.
+> AoE-урон: [[druid-glossary#^twin-moonfire|Раздвоенный лунный огонь]] для спреда Лунного огня. [[druid-glossary#^ursocs-fury|Неистовство Урсока]] под выживаемость - адаптируй под комфорт.
 
-### М+ - Друид-хищник (Druid of the Claw) (catweaving)
+### M+ - Друид-хищник (catweaving)
 
-> [!warning] Нет импорт-строки
-> Используйте рейдовый билд DotC как базу, заменив дефенсивные таланты (Ursoc's Endurance) на [[druid-glossary#^flashing-claws|Сверкающие когти]] и Изменчивый облик (Fluid Form) + Persistence для [[druid-glossary#^catweaving|catweaving]].
+> [!warning] Нет готовой строки
+> Возьми рейдовый билд Друида-хищника как базу: замени дефенсивные узлы (Выносливость Урсока, Ursoc's Endurance) на [[druid-glossary#^flashing-claws|Сверкающие когти]] и добавь [[druid-glossary#^fluid-form|Изменчивый облик]] + Упорство (Persistence) для катвивинга.
 
 ---
 
 ## Ключевые правила
 
-1. **[[druid-glossary#^ironfur|Железный мех]] ≠ DPS.** Не спамить [[druid-glossary#^ironfur|Железный мех]] без необходимости. Тратить [[druid-glossary#^rage|rage]] на [[druid-glossary#^maul|Трепка]]/[[druid-glossary#^raze|Смести]] для урона
-2. **[[druid-glossary#^rage|Ярость]] 80+** - идеальная точка для трат с [[druid-glossary#^harnessed-rage|Обузданная ярость]] (больше [[druid-glossary#^proc|проков]] [[druid-glossary#^gore|Кровавая атака]] → больше [[druid-glossary#^mangle|Увечье]])
-3. **Не перекрывать [[druid-glossary#^barkskin|Дубовая кожа]] и [[druid-glossary#^survival-instincts|Инстинкты выживания]]** - чередовать (стакаются мультипликативно, перекрытие = потеря общей [[druid-glossary#^dr|DR]])
-4. **[[druid-glossary#^catweaving|Catweaving]]:** сбрасывать [[druid-glossary#^rage|rage]] ниже 25 перед шифтом в Облик кошки (Cat Form)
-5. **[[druid-glossary#^moonfire|Лунный огонь]] и [[druid-glossary#^thrash|Взбучка]]** - поддерживать всегда, это основа пассивной защиты через [[druid-glossary#^scintillating-moonlight|Мерцающий лунный свет]] и [[druid-glossary#^rend-and-tear|Яростное разрывание]]
-6. **Правильная ротация = защита.** Многие дефенсивные таланты работают пассивно при корректном выполнении ротации
-7. **[[druid-glossary#^maul|Трепка]] в [[druid-glossary#^st|СТ]], [[druid-glossary#^raze|Смести]] в [[druid-glossary#^aoe|АоЕ]]** - основное правило трат [[druid-glossary#^rage|rage]]
+То, что отличает крепкого танка от того, кто проседает. Каждое - с объяснением, **почему**.
+
+1. **[[druid-glossary#^ironfur|Железный мех]] - это не урон.** Не спамь его без необходимости - это серьёзная потеря DPS. Ярость трать на [[druid-glossary#^maul|Трепку]]/[[druid-glossary#^raze|Смести]], а Железный мех держи 1-3 стака под физический урон.
+2. **Трать ярость при 80+** (с [[druid-glossary#^harnessed-rage|Обузданной яростью]]) - так больше проков [[druid-glossary#^gore|Кровавой атаки]], а значит, больше [[druid-glossary#^mangle|Увечий]].
+3. **Не перекрывай [[druid-glossary#^barkskin|Дубовую кожу]] и [[druid-glossary#^survival-instincts|Инстинкты выживания]].** Они складываются мультипликативно - вешать одновременно значит терять общий DR. Чередуй.
+4. **Держи [[druid-glossary#^moonfire|Лунный огонь]] и 3+ стака [[druid-glossary#^thrash|Взбучки]] всегда** - на них держится пассивная защита через [[druid-glossary#^scintillating-moonlight|Мерцающий лунный свет]] и [[druid-glossary#^rend-and-tear|Яростное разрывание]].
+5. **Правильная ротация = защита.** Многие дефенсивные таланты работают пассивно, если ты просто чисто крутишь ротацию.
+6. **[[druid-glossary#^maul|Трепка]] в ST, [[druid-glossary#^raze|Смести]] в AoE** - базовое правило трат ярости.
 
 ---
 
-## Ротация / приоритет урона
+## Опенер (как начинать бой)
 
-### Общий приоритет (Druid of the Claw)
+"Опенер" - заученная последовательность первых кнопок на пулле.
 
-1. Поддерживать [[druid-glossary#^moonfire|Лунный огонь]] на цели
-2. Поддерживать 3+ стаков [[druid-glossary#^thrash|Взбучка]]
-3. [[druid-glossary#^red-moon|Красная луна]] по [[druid-glossary#^cd|кд]] (если взят)
-4. [[druid-glossary#^mangle|Увечье]] по [[druid-glossary#^cd|кд]] (высший приоритет генератора)
-5. [[druid-glossary#^thrash|Взбучка]] по [[druid-glossary#^cd|кд]]
-6. Тратить [[druid-glossary#^rage|rage]] (60+) на [[druid-glossary#^maul|Трепка]] / [[druid-glossary#^raze|Смести]] / [[druid-glossary#^ravage|Терзание]]
-7. [[druid-glossary#^frenzied-regeneration|Неистовое восстановление]] при просадке здоровья
-8. [[druid-glossary#^moonfire|Лунный огонь]] по [[druid-glossary#^proc|проку]] [[druid-glossary#^galactic-guardian|Галактический страж]]
-9. [[druid-glossary#^swipe|Размах]] как филлер
+**Рейд:**
+1. [[druid-glossary#^moonfire|Лунный огонь]] на подходе (даёт ранний аггро и DoT)
+2. [[druid-glossary#^thrash|Взбучка]] (стаки + угроза)
+3. [[druid-glossary#^mangle|Увечье]]
+4. [[druid-glossary#^ironfur|Железный мех]] перед первым ударом
+5. [[druid-glossary#^maul|Трепка]] при 60+ ярости → дальше обычный приоритет
 
-> [!important] Rage management
-> Тратить [[druid-glossary#^rage|rage]] при 80+ для максимизации [[druid-glossary#^proc|проков]] [[druid-glossary#^gore|Кровавая атака]] с [[druid-glossary#^harnessed-rage|Обузданная ярость]]. Нажимать [[druid-glossary#^ironfur|Железный мех]] без дефенсивной необходимости - серьёзная потеря DPS.
-
-### Приоритет Избранник Элуны (Elune's Chosen)
-
-1. [[druid-glossary#^moonfire|Лунный огонь]] на цели
-2. 3+ стаков [[druid-glossary#^thrash|Взбучка]]
-3. [[druid-glossary#^lunar-beam|Лунный луч]] почти по [[druid-glossary#^cd|кд]] (получает CDR от Lunar Calling и [[druid-glossary#^thrash|Взбучка]])
-4. Тратить [[druid-glossary#^rage|rage]] (80+) на [[druid-glossary#^maul|Трепка]] / [[druid-glossary#^raze|Смести]]
-5. [[druid-glossary#^mangle|Увечье]] по [[druid-glossary#^cd|кд]]
-6. [[druid-glossary#^thrash|Взбучка]] по [[druid-glossary#^cd|кд]]
-7. [[druid-glossary#^moonfire|Лунный огонь]] (но не в ущерб [[druid-glossary#^mangle|Увечье]])
-
-> [!note] АоЕ ротация
-> [[druid-glossary#^aoe|АоЕ]] и [[druid-glossary#^st|СТ]] ротация Guardian практически идентичны. Приоритеты не меняются, что упрощает геймплей.
-
-### [[druid-glossary#^catweaving|Catweaving]] (Druid of the Claw, М+)
-
-[[druid-glossary#^catweaving|Catweaving]] - переключение между Bear и Облик кошки (Cat Form) для повышения урона. Даёт значительный прирост [[druid-glossary#^st|ST]] DPS, но требует аккуратного исполнения. Wildshape Mastery сохраняет 80% брони медведя на 6 сек после трансформации.
-
-1. Поддержать [[druid-glossary#^moonfire|Лунный огонь]] и 3+ стаков [[druid-glossary#^thrash|Взбучка]]
-2. При 80+ [[druid-glossary#^rage|rage]] - [[druid-glossary#^maul|Трепка]]/[[druid-glossary#^raze|Смести]]/[[druid-glossary#^ravage|Терзание]] в Облик медведя (Bear Form)
-3. [[druid-glossary#^rip|Разорвать]] с 6+ комбо-поинтами если не висит
-4. [[druid-glossary#^ferocious-bite|Свирепый укус]] с 2+ комбо-поинтами при активном [[druid-glossary#^rip|Разорвать]]
-5. Bear-генераторы: [[druid-glossary#^mangle|Увечье]], [[druid-glossary#^thrash|Взбучка]], [[druid-glossary#^galactic-guardian|Галактический страж]] [[druid-glossary#^moonfire|Лунный огонь]]
-6. Сбросить [[druid-glossary#^rage|rage]] ниже 25 перед шифтом в Cat ([[druid-glossary#^rage|rage]] сбрасывается до 25 при возврате в Bear)
-7. Cat DPS: [[druid-glossary#^rake|Глубокая рана]] → [[druid-glossary#^shred|Полоснуть]], [[druid-glossary#^swipe|Размах]] если небезопасно
-
-> [!warning] Catweaving - только когда безопасно
-> Не переключаться в Облик кошки (Cat Form) при активном танковании тяжёлого урона. Использовать между паками или когда off-tank держит босса.
-
-### Rage Management
-
-- **Стандартная ротация:** тратить [[druid-glossary#^rage|rage]] на 60+
-- **С [[druid-glossary#^harnessed-rage|Обузданная ярость]]:** стараться тратить при 80+ [[druid-glossary#^rage|rage]] для повышения шанса [[druid-glossary#^gore|Кровавая атака]]
-- **[[druid-glossary#^catweaving|Catweaving]]:** сбросить [[druid-glossary#^rage|rage]] ниже 25 перед переходом в Облик кошки (Cat Form) ([[druid-glossary#^rage|rage]] ресетится до 25 при возврате)
-- **Приоритет трат:** [[druid-glossary#^maul|Трепка]] ([[druid-glossary#^st|СТ]]) / [[druid-glossary#^raze|Смести]] ([[druid-glossary#^aoe|АоЕ]]) > [[druid-glossary#^ironfur|Железный мех]] (по необходимости) > [[druid-glossary#^frenzied-regeneration|Неистовое восстановление]]
-- **Не спамить [[druid-glossary#^ironfur|Железный мех]] без нужды** - это огромная потеря DPS. Держать 1-3 стака в зависимости от входящего урона
+**M+:** [[druid-glossary#^moonfire|Лунный огонь]] на подходе для аггро → [[druid-glossary#^thrash|Взбучка]] сразу в паке → [[druid-glossary#^mangle|Увечье]] → [[druid-glossary#^ironfur|Железный мех]] + [[druid-glossary#^barkskin|Дубовая кожа]] на первом большом пулле → [[druid-glossary#^raze|Смести]] для AoE при 60+ ярости.
 
 ---
 
-## Дефенсивы
+## Приоритет урона (ротация)
 
-### Таблица дефенсивов
+Цель ротации - **держать защитные эффекты, тратить ярость на урон и не простаивать**. AoE и ST почти идентичны - приоритеты те же, что упрощает игру.
 
-| Способность | Эффект | КД | Примечание |
-|---|---|---|---|
-| **Железный мех** (Ironfur) | Стакаемый бафф брони, off-**GCD** | нет (стоит **rage**) | Основная **активная митигация**. 1-3 стака постоянно. Не спамить для DPS |
-| **Дубовая кожа** (Barkskin) | 20% **DR** всего урона, 12 сек | ~60 сек | Первый деф в ротации **КД**. Жать часто. С Brambles наносит урон |
-| **Инстинкты выживания** (Survival Instincts) | 50-60% **DR**, 6 сек | длинный **КД** | Для опасных фаз и больших ударов. **Не перекрывать с Barkskin** |
-| **Неистовое восстановление** (Frenzied Regeneration) | Самохил % макс. HP | короткий | С **Природная устойчивость** (Natural Resilience): 80% оверхила → абсорб. Использовать проактивно |
-| **Воплощение** (Incarnation) / **Берсерк** (Berserk) | Офф + деф **КД**, активирует **Дикий хранитель** (Wild Guardian) | 3 мин | Максимизировать **Взбучка** (Thrash) и **Увечье** (Mangle), не допускать переполнения **rage** |
-| **Лунный луч** (Lunar Beam) | Урон + хил зона | ~1 мин | В Elune's - ключевой **КД**, жать по кд |
-| **Сердце дикой природы** (Heart of the Wild) | Эффект по форме | 2 мин | Cat = Дикое бешенство (Feral Frenzy), Moonkin = **АоЕ** бёрст, Caster = Буйный рост (Wild Growth) |
+### Друид-хищник
 
-### Стратегия ротации дефов
+1. **[[druid-glossary#^moonfire|Лунный огонь]]** - держать на цели.
+2. **[[druid-glossary#^thrash|Взбучка]]** - держать 3+ стака.
+3. **[[druid-glossary#^red-moon|Красная луна]]** - по КД (если взята).
+4. **[[druid-glossary#^mangle|Увечье]]** - по КД, высший приоритет генератора ярости.
+5. **[[druid-glossary#^thrash|Взбучка]]** - по КД.
+6. **Трата ярости (80+)** на [[druid-glossary#^maul|Трепку]] / [[druid-glossary#^raze|Смести]] / [[druid-glossary#^ravage|Терзание]].
+7. **[[druid-glossary#^frenzied-regeneration|Неистовое восстановление]]** - при просадке HP.
+8. **[[druid-glossary#^moonfire|Лунный огонь]]** по проку [[druid-glossary#^galactic-guardian|Галактического стража]].
+9. **[[druid-glossary#^swipe|Размах]]** - филлер.
 
-[[druid-glossary#^barkskin|Дубовая кожа]] → (перерыв) → [[druid-glossary#^survival-instincts|Инстинкты выживания]] → (перерыв) → [[druid-glossary#^barkskin|Дубовая кожа]]. Не перекрывать. [[druid-glossary#^ironfur|Железный мех]] держать постоянно как базовый слой. [[druid-glossary#^frenzied-regeneration|Неистовое восстановление]] - реактивно или проактивно под большой урон.
+### Избранник Элуны
 
----
+1. **[[druid-glossary#^moonfire|Лунный огонь]]** на цели.
+2. **3+ стака [[druid-glossary#^thrash|Взбучки]]**.
+3. **[[druid-glossary#^lunar-beam|Лунный луч]]** - почти по КД (получает CDR от Lunar Calling и Взбучки).
+4. **Трата ярости (80+)** на [[druid-glossary#^maul|Трепку]] / [[druid-glossary#^raze|Смести]].
+5. **[[druid-glossary#^mangle|Увечье]]** по КД.
+6. **[[druid-glossary#^thrash|Взбучка]]** по КД.
+7. **[[druid-glossary#^moonfire|Лунный огонь]]** (но не в ущерб Увечью).
 
-## Приоритет для М+
-
-### Пулл
-
-1. [[druid-glossary#^moonfire|Лунный огонь]] на подходе для аггро
-2. [[druid-glossary#^thrash|Взбучка]] сразу в паке для стаков и аггро
-3. [[druid-glossary#^mangle|Увечье]] по [[druid-glossary#^cd|кд]]
-4. [[druid-glossary#^ironfur|Железный мех]] перед входящим уроном (1-2 стака)
-5. [[druid-glossary#^barkskin|Дубовая кожа]] на первом большом пулле
-6. [[druid-glossary#^raze|Смести]] для [[druid-glossary#^aoe|АоЕ]] урона при 60+ [[druid-glossary#^rage|rage]]
-7. [[druid-glossary#^lunar-beam|Лунный луч]] (Elune's) или [[druid-glossary#^incarnation-guardian|Воплощение: Страж Урсока]] на сложных паках
-
-### Стратегия паков
-
-- **Маленькие паки (3-5 мобов):** [[druid-glossary#^barkskin|Дубовая кожа]] + [[druid-glossary#^ironfur|Железный мех]] достаточно. [[druid-glossary#^catweaving|Catweave]] между паками
-- **Большие паки (6+ мобов):** [[druid-glossary#^incarnation-guardian|Воплощение: Страж Урсока]]/[[druid-glossary#^berserk-guardian|Берсерк]] + [[druid-glossary#^barkskin|Дубовая кожа]]. Спамить [[druid-glossary#^thrash|Взбучка]] + [[druid-glossary#^raze|Смести]]
-- **Опасные паки / тиранические боссы:** [[druid-glossary#^survival-instincts|Инстинкты выживания]] + [[druid-glossary#^ironfur|Железный мех]] стаки. Не [[druid-glossary#^catweaving|catweave]]
-- **Кайтинг:** [[druid-glossary#^typhoon|Тайфун]] + [[druid-glossary#^ursols-vortex|Вихрь Урсола]] → отбежать → [[druid-glossary#^moonfire|Лунный огонь]] спред для поддержания аггро
-
-### Между паками
-
-- Восполнить HP через [[druid-glossary#^frenzied-regeneration|Неистовое восстановление]]
-- Сбросить [[druid-glossary#^ironfur|Железный мех]] если не нужен
-- [[druid-glossary#^catweaving|Catweave]] для урона если безопасно
-
-### Приоритет урона в М+
-
-- [[druid-glossary#^aoe|АоЕ]] ротация та же, что и [[druid-glossary#^st|СТ]] - приоритеты не меняются
-- [[druid-glossary#^thrash|Взбучка]] и [[druid-glossary#^raze|Смести]] - основные [[druid-glossary#^aoe|АоЕ]]-источники урона
-- [[druid-glossary#^moonfire|Лунный огонь]] спред через [[druid-glossary#^twin-moonfire|Раздвоенный лунный огонь]] ([[druid-glossary#^elunes-chosen-guardian|Избранник Элуны]])
-- [[druid-glossary#^heart-of-the-wild|Сердце дикой природы]] в Облик лунного совуха (Moonkin Form) для [[druid-glossary#^aoe|АоЕ]] бёрстов
-
-### Утилити
-
-- [[druid-glossary#^typhoon|Тайфун]] / [[druid-glossary#^ursols-vortex|Вихрь Урсола]] для кайтинга
-- [[druid-glossary#^soothe|Умиротворение]] для снятия enrage
-- [[druid-glossary#^stampeding-roar|Тревожный рев]] для группового спида
-- Знак дикой природы (Mark of the Wild) - бафф группе
-- [[druid-glossary#^regrowth|Восстановление]] с [[druid-glossary#^dream-of-cenarius|Сон Кенария]] - офф-хил группе
-- [[druid-glossary#^incapacitating-roar|Парализующий рык]] - [[druid-glossary#^aoe|АоЕ]] стан на 3 сек
+> [!tip] Катвивинг (Druid of the Claw, M+) - только когда безопасно
+> Продвинутый приём: между паками или когда босса держит напарник, сбрось ярость ниже 25 и перешифтись в Облик кошки на короткий бёрст ([[druid-glossary#^rake|Глубокая рана]] → [[druid-glossary#^shred|Полоснуть]], [[druid-glossary#^rip|Разорвать]]/[[druid-glossary#^ferocious-bite|Свирепый укус]] по очкам комбо). Мастерство дикого облика (Wildshape Mastery) держит 80% брони медведя 6 сек после перехода. Не катвивь под тяжёлым танкованием.
 
 ---
 
-## Статы
+## Активная митигация и дефенсивы
 
-**Приоритет:** Item Level > Agility > Haste > Versatility >= Critical Strike >= [[druid-glossary#^mastery-guardian|Искусность: Страж природы]]
+Главное умение медведя - **гасить урон вовремя и правильным слоем защиты**.
 
-> [!important] Все статы близки по ценности
-> Все вторичные статы у Guardian крайне близки по силе. Нет брейкпоинтов или целевых значений. Лучше балансировать равномерно, чтобы не попасть в diminishing returns. При сомнениях - **симить персонажа** через Raidbots.
+- **[[druid-glossary#^ironfur|Железный мех]] - базовый слой под физический урон.** Держи 1-3 стака в зависимости от того, как сильно по тебе бьют. Это off-GCD, ничего не стоит по времени - только ярость.
+- **[[druid-glossary#^frenzied-regeneration|Неистовое восстановление]] - самохил.** С [[druid-glossary#^natural-resilience|Природной устойчивостью]] оверхил превращается в щит, так что жать его можно и проактивно под входящий урон.
+- **Под тяжёлые окна заранее** ставь [[druid-glossary#^barkskin|Дубовую кожу]], а под смертельные удары - [[druid-glossary#^survival-instincts|Инстинкты выживания]].
 
-| Стат | Зачем | Примечание |
+> [!tip] Главное про дефенсивы
+> Чередуй: **[[druid-glossary#^barkskin|Дубовая кожа]] → (пауза) → [[druid-glossary#^survival-instincts|Инстинкты выживания]] → (пауза) → Дубовая кожа.** Не перекрывай их, и ставь **до** удара, а не после.
+
+| Способность | Что делает | Когда жать |
 |---|---|---|
-| **Item Level** | Всегда приоритет | Вторичные важны только при одинаковом ilvl |
-| **Agility** | Основной стат, скейлит всё | Всегда берём, не выбираем |
-| **Haste** | Снижает **ГКД**, **кд** **Увечье** (Mangle)/**Взбучка** (Thrash)/**FR**, ускоряет тики **DoT** | Лучший "на ощущения" стат |
-| **Versatility** | Плоская **DR** + бонус к урону и хилу | Лучший стат для чистой выживаемости |
-| **Critical Strike** | Шанс уклонения через пассивку + бонус к урону | Офф + деф ценность |
-| **Mastery** (Nature's Guardian) | Увеличивает макс. HP и получаемое лечение | Полезно, но слабее остальных |
+| **[[druid-glossary#^ironfur\|Железный мех]]** (Ironfur) | Стакаемый физ. DR, off-GCD | Базовый слой, держать постоянно. Не спамить для DPS |
+| **[[druid-glossary#^barkskin\|Дубовая кожа]]** (Barkskin) | -20% всего урона, 12 сек | Первый деф, жать часто. С Острыми колючками (Brambles) ещё и бьёт |
+| **[[druid-glossary#^survival-instincts\|Инстинкты выживания]]** (Survival Instincts) | -50% урона, 6 сек | Под опасные удары. Не перекрывать с Дубовой кожей |
+| **[[druid-glossary#^frenzied-regeneration\|Неистовое восстановление]]** (Frenzied Regeneration) | Самохил % HP | С Природной устойчивостью оверхил → щит. Проактивно |
+| **[[druid-glossary#^incarnation-guardian\|Воплощение]] / [[druid-glossary#^berserk-guardian\|Берсерк]]** | Офф + деф КД, активирует Дикого хранителя | На больших паках/танк-чеках |
+| **[[druid-glossary#^lunar-beam\|Лунный луч]]** (Lunar Beam) | Урон + хил-зона | У Избранника Элуны - ключевой КД, жать по КД |
 
-### Энчанты и камни
+---
 
-| Слот | Рекомендация |
-|---|---|
-| **Оружие** | Berserker's Rage |
-| **Голова** | Empowered Blessing of Speed |
-| **Плечи** | Akil'zon's Swiftness |
-| **Грудь** | Mark of the Worldsoul |
-| **Ноги** | Forest Hunter's Armor Kit |
-| **Ботинки** | Farstrider's Hunt |
-| **Кольца** | Silvermoon's Alacrity (Haste) |
-| **Камни** | Flawless Versatile Peridot (все сокеты) |
-| **Основной камень** | Indecipherable Eversong Diamond |
+## Угроза и кайтинг (M+)
+
+- **Угроза:** на заходе в пак [[druid-glossary#^moonfire|Лунный огонь]] на подходе + [[druid-glossary#^thrash|Взбучка]] сразу - враги быстро липнут.
+- **Стратегия паков:** маленькие (3-5) - [[druid-glossary#^barkskin|Дубовая кожа]] + [[druid-glossary#^ironfur|Железный мех]] хватает; большие (6+) - [[druid-glossary#^incarnation-guardian|Воплощение]]/[[druid-glossary#^berserk-guardian|Берсерк]] + Дубовая кожа, спамь Взбучку и Смести; опасные - [[druid-glossary#^survival-instincts|Инстинкты выживания]] и не катвивь.
+- **Кайтинг:** [[druid-glossary#^typhoon|Тайфун]] + [[druid-glossary#^ursols-vortex|Вихрь Урсола]] → отбежать → спред [[druid-glossary#^moonfire|Лунного огня]] для удержания аггро.
+- **[[druid-glossary#^soothe|Умиротворение]]** - снять Enrage. **[[druid-glossary#^incapacitating-roar|Парализующий рык]]** - AoE-стан на 3 сек.
 
 ---
 
 ## Гир и тринкеты
 
-### Тир-сет: Sprouts of the Luminous Bloom
+Хороший комплект собирается не за один вечер - это долгий фарм. Таблицы ниже - на потом.
 
-- **2-Set:** [[druid-glossary#^maul|Трепка]]/[[druid-glossary#^raze|Смести]] и [[druid-glossary#^ravage|Терзание]] урон **+10%**. [[druid-glossary#^moonfire|Лунный огонь]] урон **+10%**
-- **4-Set:** [[druid-glossary#^maul|Трепка]]/[[druid-glossary#^raze|Смести]] и [[druid-glossary#^ravage|Терзание]] имеют доп. **5% шанс** активировать [[druid-glossary#^galactic-guardian|Галактический страж]]. Периодический урон [[druid-glossary#^moonfire|Лунный огонь]] имеет шанс сделать следующий [[druid-glossary#^maul|Трепка]]/[[druid-glossary#^raze|Смести]] или [[druid-glossary#^ravage|Терзание]] ударом дважды на **100% эффективности**
+> [!tip] Кратко про шмот
+> - **Все вторичные статы у медведя крайне близки** - балансируй равномерно, не загоняйся.
+> - **Тринкеты:** Взор ясновидца Альн (Gaze of the Alnseer, passive) + Алгет'арская шкатулка с секретом (Algeth'ar Puzzle Box, on-use); в M+ хорош Тигель беспорядочной энергии (Crucible of Erratic Energies).
+> - **Уровень предмета (ilvl) важнее всего остального.**
 
-> Тир-сет усиливает основной цикл урона (Maul/Raze + Moonfire) и добавляет больше [[druid-glossary#^gore|Кровавая атака]]-подобных проков. Не меняет приоритеты ротации. **Приоритет - собрать 4 части ASAP.**
+### Тир-сет (комплектный бонус, Midnight Season 1)
 
-Части сета: голова (Branches), грудь (Trunk), плечи (Seedpods), перчатки (Arbortenders), ноги (Phloemwraps). Оффсет-части выбирать по ilvl.
+- **2 части:** урон [[druid-glossary#^maul|Трепки]]/[[druid-glossary#^raze|Смести]]/[[druid-glossary#^ravage|Терзания]] +10%, урон [[druid-glossary#^moonfire|Лунного огня]] +10%.
+- **4 части:** Трепка/Смести/Терзание чаще прокают [[druid-glossary#^galactic-guardian|Галактического стража]], а тик Лунного огня иногда удваивает следующий спендер.
+
+> Тир-сет усиливает основной цикл урона и добавляет больше проков. Приоритеты ротации не меняет. Собирай 4 части как можно раньше. Слоты: голова, грудь, плечи, перчатки, ноги.
 
 ### Тринкеты
 
-| Тринкет | Тип | Источник | Примечание |
-|---|---|---|---|
-| **Crucible of Erratic Energies** | Пассив | ? | Лучший M+ тринкет |
-| **Gaze of the Alnseer** | Пассив | Chimaerus | Лучший пассивный тринкет по гайдам |
-| **The Eternal Egg** | Пассив | Belo'ren | Хорошая альтернатива |
-| **Algeth'ar Puzzle Box** | On-use | Algeth'ar Academy | Лучший on-use тринкет |
-| **Undreamt God's Oozing Vestige** | Пассив | ? | Дефенсивная альтернатива |
+Для прогрессии рейда бери 1 дефенсивный + 1 урон-тринкет. В M+ на комфортных ключах - 2 урон-тринкета. Оптимум под свой шмот - **сделай сим**.
 
-> [!note] Танк-тринкеты
-> Для прогрессии рейда берите 1 дефенсивный + 1 офф тринкет. В М+ на комфортных ключах - 2 офф тринкета.
-
-### Оружие
-
-| Оружие | Тип | Источник |
+| Тринкет | Тип | Заметка |
 |---|---|---|
-| **Alnscorned Spire** | Staff | Рейд |
-| **Preyseeker's Spear** | Polearm | M+ |
-| **Splinterthorn Spear** | Polearm | M+ |
-| **Inescapable Reach** | Polearm | ? |
+| **Тигель беспорядочной энергии** (Crucible of Erratic Energies) | Passive | Сильнейший в M+ |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive | Лучший пассивный по урону |
+| **Вечное яйцо** (The Eternal Egg) | Passive | Хорошая альтернатива |
+| **Алгет'арская шкатулка с секретом** (Algeth'ar Puzzle Box) | On-use | Лучший on-use |
+| **Сочащийся рудимент Неприснившегося Бога** (Undreamt God's Oozing Vestige) | Passive | Дефенсивная альтернатива |
 
-> [!note] Выбор оружия
-> Всегда берите оружие с наивысшим ilvl. При одинаковом ilvl - предпочтение Haste/Vers.
+### Оружие и эмбелишменты
 
-### Embellishments
+- **Оружие:** всегда бери с наивысшим ilvl. При равном ilvl - предпочтение Скорости/Универсальности. Варианты: Отверженный шпиль Альн (Alnscorned Spire, рейд, staff), Копье охотника (Preyseeker's Spear) / Копье из расколотого шипа (Splinterthorn Spear) (M+, polearm).
 
-> [!warning] Нужна верификация
-> По эмбелишментам для Guardian устойчивой рекомендации пока нет - сверяйся с актуальными гайдами (Wowhead/Icy Veins).
+> [!note] Эмбелишменты
+> Устоявшейся меты по эмбелишментам для Guardian пока нет - подбирай под свой комплект по актуальным гайдам (Wowhead/Icy Veins).
+
+### Расходники (бери на каждый серьёзный бой)
+
+| Тип | Название |
+|---|---|
+| Фласка | Настой рыцарей крови (Flask of the Blood Knights) (статы близки, альтернативы тоже работают) |
+| Еда | Парад Луносвета (Silvermoon Parade); альтернатива - Празднество Харандара (Harandar Celebration) |
+| Боевое зелье | Настой полного отрешения (Draught of Rampant Abandon); ситуативно - Потенциал Света (Light's Potential) |
+| Лечебное зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
+| Масло на оружие | Талассийское масло феникса (Thalassian Phoenix Oil) |
+| Augment Rune | Меченная Бездной руна усиления (Void-Touched Augment Rune) |
 
 ---
 
-## Расходники
+## Статы
 
-| Тип | Название | Примечание |
-|---|---|---|
-| **Фласка** | Flask of the Blood Knights | Haste. Все статы близки - альтернативы тоже работают |
-| **Еда** | Silvermoon Parade | Основной стат (agility) - всегда лучший выбор |
-| **Еда (альт.)** | Harandar Celebration | Если нет Silvermoon Parade |
-| **Боевое зелье** | Draught of Rampant Abandon | Основной выбор |
-| **Зелье (альт.)** | Light's Potential | Ситуативно по механикам |
-| **Хил-пот** | Silvermoon Health Potion | - |
-| **Масло на оружие** | Thalassian Phoenix Oil | Crit/Haste бафф |
-| **Augment Rune** | Void-Touched Augment Rune | - |
+Статы - это вторичные характеристики на шмоте. У медведя порядок мягкий:
+
+**Item Level > Ловкость > Скорость > Универсальность ≈ Критический удар ≈ Искусность**
+
+> [!important] Все вторичные статы близки
+> У Guardian нет жёстких порогов или целевых значений. Лучше балансировать равномерно, чтобы не упереться в diminishing returns. При сомнениях - **сделай сим** через [Raidbots](https://www.raidbots.com).
+
+- **Ловкость** (Agility) - основной стат, скейлит всё. Берётся всегда.
+- **Скорость** (Haste) - снижает GCD и КД Увечья/Взбучки/Неистового восстановления, ускоряет тики DoT. Лучшая "на ощущения".
+- **Универсальность** (Versatility) - плоский DR + бонус к урону/хилу. Лучший стат для чистой выживаемости.
+- **Критический удар** (Critical Strike) - даёт шанс уклонения через пассивку + бонус к урону.
+- **Искусность** (Mastery) ([[druid-glossary#^mastery-guardian|Искусность: Страж природы]]) - +макс. HP и получаемое лечение. Полезно, но слабее остальных.
+
+> Item Level почти всегда важнее вторичек: предмет повыше лучше, даже если статы "не те".
+
+### Раса
+
+Друид ограничен в выборе рас. Разница между ними незначительна - **выбирай по удобству**.
+
+- **Horde:** Highmountain Tauren (пассивный DR, Bull Rush, +Универсальность - формально лучший для танка); Tauren (War Stomp); Troll (Berserking ускоряет ротацию).
+- **Alliance:** Kul Tiran (Haymaker-стан, пассивный DR, самохил - формально лучший); Night Elf (Shadowmeld для сброса аггро в M+).
+
+### Энчанты и гемы
+
+- **Гемы:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond) + Безупречный хризолит универсальности (Flawless Versatile Peridot) во все сокеты.
+- **Оружие:** Ярость берсерка (Berserker's Rage). **Голова:** Усиленное благословение скорости (Empowered Blessing of Speed). **Плечи:** Стремительность Акил'зон (Akil'zon's Swiftness).
+- **Грудь:** Метка души мира (Mark of the Worldsoul). **Ноги:** Накладки для доспехов лесного охотника (Forest Hunter's Armor Kit). **Ботинки:** Охота Странника (Farstrider's Hunt). **Кольца:** Луносветская расторопность (Silvermoon's Alacrity, Скорость).
 
 ---
 
-## Расы
+## Частые ошибки
 
-### Орда
+Эти ошибки на старте делают почти все - это нормально и легко правится. Если буксуешь, загляни в список.
 
-| Раса | Почему |
-|---|---|
-| **Highmountain Tauren** | Пассивная **DR**, Bull Rush (доп. стан), бонус Versatility. Лучший выбор для танка |
-| **Troll** | Berserking (+Haste **КД**) - отличный для **бёрста** и ускорения ротации |
-| **Tauren** | Громовая поступь (War Stomp) (**АоЕ** стан) + бонусный Stamina. Солидный выбор |
-| **Zandalari Troll** | Embrace выбирается раз и навсегда. Pa'ku (+Crit) или Bwonsamdi (хил при низком HP) |
+- **Спамишь Железный мех ради урона.** Он не даёт DPS - ярость трать на Трепку/Смести, а Железный мех держи 1-3 стака под физический урон.
+- **Роняешь Лунный огонь или стаки Взбучки.** На них завязана пассивная защита - держи их всегда.
+- **Перекрываешь Дубовую кожу и Инстинкты выживания.** Они не складываются как два процента - чередуй.
+- **Ставишь дефенсивы после удара.** Защиту вешай до урона.
+- **Тратишь все дефенсивы разом.** Разноси их - так покрываешь больше опасных моментов.
+- **Берёшь "защитные" таланты вслепую.** Многие слабее, чем кажутся - опирайся на готовые билды.
 
-### Альянс
+---
 
-| Раса | Почему |
-|---|---|
-| **Kul Tiran** | Haymaker (стан), пассивная **DR** Frost/Nature, Versatility самохил. Лучший для танка |
-| **Night Elf** | Shadowmeld (сброс боя/аггро в М+), +Haste. Утилити-выбор |
-| **Worgen** | Darkflight (доп. спид), +Crit. Хороший баланс |
+## Напоследок
 
-> [!note] Расы - минимальная разница
-> Разница между расами незначительна. Выбирайте по эстетике и удобству. Highmountain Tauren и Kul Tiran - формально лучшие для танка.
+Сначала будет казаться, что урон копится медленно, а ярость девать некуда. Потом поймаешь ритм: Увечье крутит ротацию, ярость уходит в Трепку, Железный мех гасит удары - и ты вдруг замечаешь, что держишь паки, после которых другие танки уже лежат. Дай себе пару вечеров - и медведь освоится.

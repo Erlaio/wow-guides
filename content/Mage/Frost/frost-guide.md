@@ -10,340 +10,377 @@ created: 2026-03-17
 
 Термины и сокращения → [[mage-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
+
+> [!note] Про названия
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (он нужен для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
+
+---
+
+*Ты не выдаёшь урон - ты замораживаешь цель в кристалл, а потом раскалываешь его вдребезги.*
+
+## Главное за минуту
+
+Минимум, чтобы сразу ддшить - тонкости потом:
+
+1. **Копи [[mage-glossary#^freezing|Замерзание]] и раскалывай его.** [[mage-glossary#^frostbolt|Ледяная стрела]] и [[mage-glossary#^flurry|Шквал]] вешают стаки Замерзания на цель, а [[mage-glossary#^ice-lance|Ледяное копьё]] раскалывает их в основной урон. Это весь смысл спека.
+2. **Героическое древо - [[mage-glossary#^splinter|Spellslinger]]**, бери его и в рейд, и в ключи.
+3. **Не давай прокам пропасть.** Прокнула [[mage-glossary#^bf|Заморозка мозгов]] - сразу жми Шквал; прокнули [[mage-glossary#^fof|Ледяные пальцы]] - сразу Ледяное копьё. Стаков Замерзания максимум 20 - не доводи до потолка.
+4. **[[mage-glossary#^frozen-orb|Ледяной шар]] и [[mage-glossary#^glacial-spike|Ледовый шип]] - по КД.** Это твои стабильные источники урона и проков.
+5. **[[mage-glossary#^ray-of-frost|Морозный луч]] - стоя на месте.** Это очередь на 4 секунды; сдвинулся - оборвал.
+
+## Как играть за Frost (в двух словах)
+
+Весь геймплей крутится вокруг одной петли: **заморозил - раскалываешь**. Думай об этом так:
+
+- **Билдишь стаки [[mage-glossary#^freezing|Замерзания]]** на цели - Ледяной стрелой, Шквалом, Морозным лучом. Каждый стак это будущий урон.
+- **Раскалываешь стаки** через [[mage-glossary#^ice-lance|Ледяное копьё]] (по одной цели) и [[mage-glossary#^comet-storm|Кометную бурю]] (по площади). Раскалывание - твой главный источник урона.
+- **Ловишь проки.** [[mage-glossary#^bf|Заморозка мозгов]] делает Шквал мгновенным, [[mage-glossary#^fof|Ледяные пальцы]] позволяют раскалывать без набора стаков. Оба - в дело сразу.
+
+Всё остальное в ротации - обслуживание этой петли: держать проки, не переполнять стаки, жать КД вовремя. Уложишь это в голове - костяк собран.
+
+> [!info] Словарик терминов
+> - **ДД** - наносящий урон. **ST** - по одной цели, **AoE** (или **клив**) - по нескольким.
+> - **КД** - кулдаун, перезарядка способности. **Опенер** - заученное начало боя. **Приоритет** - что жать первым.
+> - **Кастовать** - применять заклинание, которое требует времени на произнесение.
+> - **Прок** - случайное срабатывание бонуса ("прокнуло").
+> - **Стак** - накопленный заряд эффекта (напр. 12 стаков Замерзания на цели).
+> - **Оверкап** - переполнить ресурс/стаки, когда они уже на максимуме. Лишнее теряется впустую.
+> - **Бёрст** - всплеск урона в короткое окно.
+> - **Спендер** - способность, которая тратит ресурс (Ледяное копьё тратит стаки Замерзания). **Филлер** - чем заполняешь паузы.
+> - **Замерзание** (Freezing) - стакающийся дебафф на цели (макс 20), фундамент всего урона.
+> - **Раскалывание** (Shatter) - трата стаков Замерзания ради урона.
+> - **FoF** - Ледяные пальцы (Fingers of Frost). **BF** - Заморозка мозгов (Brain Freeze). Два главных прока.
+> - **Ледяной обломок** (Splinter) - снаряд Spellslinger, бьёт сам по себе.
+> - **Симить** - прогнать персонажа в калькуляторе [Raidbots](https://www.raidbots.com), чтобы узнать, что лучше **именно для твоего** комплекта шмота.
+> - **BiS** - best in slot, лучший предмет в слот. **ilvl** - уровень предмета (чем выше, тем сильнее).
+> - **Тринкет** - предмет в особом слоте. Бывает **on-use** (активируемый - жмёшь ради всплеска урона) и **passive** (работает сам).
+> - **M+ / ключи** - Mythic+, сложные подземелья на 5 человек.
 
 ---
 
 ## Что изменилось в Midnight (12.0)
 
-> Frost Mage получил крупнейшую переработку за всю историю спека.
+> Можно пропустить, если не играл в прошлых аддонах - этот раздел про изменения.
+
+Frost получил крупнейшую переработку за всю историю спека.
 
 **Удалено:**
-- **Icy Veins** (способность) - заменена на [[mage-glossary#^ray-of-frost|Морозный луч]]
-- **Mass Barrier** - удалена
-- **Shifting Power** - удалена у всех спеков мага
-- **Temporal Shield** - удалена
-- **Coldest Snap** - удалена (есть [[mage-glossary#^cold-snap|Холодная хватка]] на чойс-ноде)
+- **Icy Veins** (способность) - её роль главного бёрст-КД забрал [[mage-glossary#^ray-of-frost|Морозный луч]].
+- **Массовая преграда** (Mass Barrier), **Переходящая сила** (Shifting Power), **Барьер времени** (Temporal Shield), **Ледяная хватка** (Coldest Snap) - удалены (роль сброса дефенсивов осталась за [[mage-glossary#^cold-snap|Холодной хваткой]] на чойс-ноде).
 
 **Урезано (не удалено):**
-- **[[mage-glossary#^mirror-image|Зеркальное изображение]]** и **[[mage-glossary#^greater-invis|Великая невидимость]]** остались как таланты класс-дерева, но потеряли дефенсивную ценность: Зеркальное изображение (3 копии, ~15 сек) больше не снижает урон, Великая невидимость (инвиз 20 сек) - без прежней защиты. Теперь это утилити, а не дефенсивы.
+- **[[mage-glossary#^mirror-image|Зеркальное изображение]]** и **[[mage-glossary#^greater-invis|Великая невидимость]]** остались как таланты класс-дерева, но потеряли дефенсивную ценность: Зеркальное изображение больше не снижает урон, Великая невидимость - без прежней защиты. Теперь это утилити, а не дефенсивы.
 
-**Добавлено/переработано:**
-- **[[mage-glossary#^freezing|Замерзание]]** - новый стакающийся дебафф (до 20), накладывается [[mage-glossary#^frostbolt|Ледяной стрелой]], [[mage-glossary#^flurry|Шквалом]], [[mage-glossary#^ray-of-frost|Морозным лучом]]. Потребляется через [[mage-glossary#^ice-lance|Ледяное копьё]] или [[mage-glossary#^comet-storm|Кометную бурю]], вызывая [[mage-glossary#^shatter|Раскалывание]] - основной источник урона
-- **[[mage-glossary#^shatter|Раскалывание]] переработано** - больше не бонус к криту. Теперь это потребление стаков [[mage-glossary#^freezing|Замерзания]], каждый стак = урон
-- **[[mage-glossary#^ray-of-frost|Морозный луч]]** - новый основной бёрст-КД (до 2 зарядов), ченнел, билдит 8 стаков [[mage-glossary#^freezing|Замерзания]]
-- **[[mage-glossary#^glacial-bulwark|Ледниковый бастион]]** - новый пассив: доп. заряд [[mage-glossary#^ice-block|Ледяной глыбы]] + [[mage-glossary#^ice-barrier|Ледяной преграды]]
-- **Apex Talents** - новая система из 4 очков талантов
-- **[[mage-glossary#^comet-storm|Кометная буря]]** заменяет [[mage-glossary#^ray-of-frost|Морозный луч]] на панели после ченнела
-- **[[mage-glossary#^glacial-spike|Ледовый шип]]** заменяет [[mage-glossary#^frostbolt|Ледяную стрелу]] при 5 [[mage-glossary#^icicles|Кристаллах льда]]
-- Крит больше не имеет "Shatter cap" - обычный стат наравне с другими
+**Добавлено и переработано:**
+- **[[mage-glossary#^freezing|Замерзание]]** - новый стакающийся дебафф (до 20), который накладывают [[mage-glossary#^frostbolt|Ледяная стрела]], [[mage-glossary#^flurry|Шквал]], [[mage-glossary#^ray-of-frost|Морозный луч]] и Кристаллы льда. Тратится через [[mage-glossary#^ice-lance|Ледяное копьё]] или [[mage-glossary#^comet-storm|Кометную бурю]] - это новая основа урона.
+- **[[mage-glossary#^shatter|Раскалывание]]** переработано - больше не бонус к криту, а трата стаков Замерзания (каждый стак = урон).
+- **[[mage-glossary#^ray-of-frost|Морозный луч]]** - новый основной бёрст-КД (до 2 зарядов с Apex), очередь на 4 сек, накладывает 8 стаков Замерзания.
+- **[[mage-glossary#^glacial-bulwark|Ледниковый бастион]]** - новый талант: доп. заряд [[mage-glossary#^ice-block|Ледяной глыбы]] и [[mage-glossary#^ice-barrier|Ледяной преграды]].
+- **Apex-таланты** - новая система capstone-узлов (у Frost это [[mage-glossary#^hand-of-frost|Леденящая длань]], все 4 очка).
+- Крит больше не имеет "Shatter cap" - обычный стат наравне с другими.
 
-**Итог:** спек стал проще механически (меньше баффов отслеживать), но новая система [[mage-glossary#^freezing|Замерзания]] добавляет свою глубину.
+**Итог:** спек стал проще механически (меньше баффов отслеживать), но петля Замерзание -> Раскалывание добавляет свою глубину.
 
 ---
 
 ## Сильные и слабые стороны
 
-**Сильные:**
-- Лучший 2-target клив в игре (Ледяные осколки)
-- Мощный on-demand AoE бёрст ([[mage-glossary#^ray-of-frost|Морозный луч]] + [[mage-glossary#^comet-storm|Кометная буря]])
-- Отличный контроль передвижения врагов (замедления, руты)
-- С [[mage-glossary#^glacial-bulwark|Ледниковым бастионом]] - один из самых живучих спеков
-- Простой для изучения (система [[mage-glossary#^freezing|Замерзания]] интуитивна)
+Полезно знать заранее: где играть в удовольствие, а где быть внимательнее.
 
-**Слабые:**
-- Урезаны дефенсивы: Mass Barrier удалён, а [[mage-glossary#^mirror-image|Зеркальное изображение]] и [[mage-glossary#^greater-invis|Великая невидимость]] остались, но без дефенсивной ценности (теперь утилити)
-- Без [[mage-glossary#^glacial-bulwark|Ледникового бастиона]] - очень хрупкий ("aggressively squishy")
-- [[mage-glossary#^ray-of-frost|Морозный луч]] требует стоять на месте
-- Менее гибкий, чем Fire/Arcane, на некоторых боссах с высокой мобильностью
+**В чём Frost хорош:**
+- **Лучший клив по 2 целям в игре** - [[mage-glossary#^splitting-ice|Ледяные осколки]] кливают вторую цель почти бесплатно.
+- **Мощный AoE-бёрст по кнопке** - [[mage-glossary#^ray-of-frost|Морозный луч]] + [[mage-glossary#^comet-storm|Кометная буря]] на стакнутом паке.
+- **Сильный контроль передвижения** - замедления и руты.
+- **Очень живучий с [[mage-glossary#^glacial-bulwark|Ледниковым бастионом]]** - один из самых стойких спеков.
+- **Низкий порог входа** - петля Замерзание -> Раскалывание интуитивна.
+
+**Слабые места:**
+- **Урезаны дефенсивы.** Массовая преграда (Mass Barrier) удалена, а [[mage-glossary#^mirror-image|Зеркальное изображение]] и [[mage-glossary#^greater-invis|Великая невидимость]] теперь просто утилити. Без [[mage-glossary#^glacial-bulwark|Ледникового бастиона]] спек очень хрупкий.
+- **[[mage-glossary#^ray-of-frost|Морозный луч]] требует стоять на месте** - на мобильных боссах часть урона проседает.
+- **Менее гибкий, чем Fire/Arcane**, когда механика гонит бегать.
 
 ---
 
 ## Таланты
 
-### Hero Talent
+Таланты - это твоя сборка. Не вникай в каждый узел сразу: ниже есть готовые строки, которые можно просто скопировать в игру.
 
-- **Spellslinger** - основной выбор для ST и AoE
-  - Frost Splinter - пассивные снаряды, наносят урон автоматически
-  - Потребление [[mage-glossary#^freezing|Замерзания]] при **6+ стаках**
-  - Ключевые таланты: Shifting Shards, Reactive Barrier, Slippery Slinging
+### Героическое древо (главная развилка сборки)
 
-- **Frostfire** - ситуативный выбор, уступает по DPS
-  - Frostfire Bolt заменяет [[mage-glossary#^frostbolt|Ледяную стрелу]], добавляет Ignite
-  - Потребление [[mage-glossary#^freezing|Замерзания]] при **10+ стаках**
-  - Isothermic Core - [[mage-glossary#^comet-storm|Кометная буря]] вызывает дополнительные метеоры
-  - Может быть "fun choice", но не оптимален для парсинга
+> [!note] Итог: бери Spellslinger
+> У Frost два героических древа - **Spellslinger** и **Frostfire**. **Spellslinger - лучший выбор для обоих типов контента**, бери его. Frostfire рассматривают разве что под чистый рейд-ST, но и там Spellslinger обычно впереди - оставь Frostfire на потом, "по вайбам".
 
-> [!note] Что брать
-> **Spellslinger - лучший выбор для обоих типов контента.** Frostfire рассматривают разве что под чистый рейд ST, но и там Spellslinger обычно впереди.
+- **Spellslinger** - основное древо для ST и AoE. Суть - [[mage-glossary#^splinter|ледяные обломки]] (Frost Splinter): [[mage-glossary#^frostbolt|Ледяная стрела]] и [[mage-glossary#^flurry|Шквал]] плодят острые осколки, которые бьют сами по себе, а потом выстреливают залпом через [[mage-glossary#^splinterstorm|Ураган обломков]]. Стаки Замерзания тратятся при **6+**. Следить за обломками руками не надо - просто продолжай ротацию, аддон вроде WeakAuras покажет залп.
+- **Frostfire** - ситуативный выбор, обычно уступает по урону. [[mage-glossary#^frostbolt|Ледяную стрелу]] заменяет Стрела ледяного огня (Frostfire Bolt), добавляющая огненный урон; стаки Замерзания тратятся при **10+**. Изотермическое ядро (Isothermic Core) заставляет [[mage-glossary#^comet-storm|Кометную бурю]] вызывать ещё и Метеор. Приятный вариант, но по урону обычно позади Spellslinger.
 
 ### Apex талант
 
-- **[[mage-glossary#^hand-of-frost|Леденящая длань]]** (Hand of Frost) - единственный Apex талант для Frost
-  - **Rank 1:** шанс призвать Леденящую длань при [[mage-glossary#^shatter|Раскалывании]], наносит Frost-урон + стаки [[mage-glossary#^freezing|Замерзания]]
-  - **Rank 2:** повышает шанс + бонус к урону заклинаний
-  - **Rank 3:** [[mage-glossary#^ray-of-frost|Морозный луч]] получает **дополнительный заряд** + усиленный урон + призывает 4 Леденящих длани во время ченнела
-  - Rank 3 = ~+25% общего урона. **Берём всегда, все 4 очка.**
+- **[[mage-glossary#^hand-of-frost|Леденящая длань]]** (Hand of Frost) - единственный Apex у Frost, бери все 4 очка. При [[mage-glossary#^shatter|Раскалывании]] с шансом призывает длань, которая добивает цель и вешает стак Замерзания. На последнем ранге [[mage-glossary#^ray-of-frost|Морозный луч]] получает доп. заряд, +25% урона и призывает 4 длани за очередь - это около четверти всего твоего урона. Берётся всегда.
 
 ### Ключевые таланты
 
 Всегда берём:
-- **[[mage-glossary#^glacial-bulwark|Ледниковый бастион]]** - доп. заряд [[mage-glossary#^ice-block|Ледяной глыбы]] + [[mage-glossary#^ice-barrier|Ледяной преграды]]. Один из сильнейших дефенсивов в игре
-- **Ледяные осколки** (Splitting Ice) - [[mage-glossary#^flurry|Шквал]] и [[mage-glossary#^frostbolt|Ледяная стрела]] бьют 1 доп. цель на 80%
-- **[[mage-glossary#^lonely-winter|Одиночная зима]]** (Lonely Winter) - убирает Water Elemental, +урон заклинаниям
-- **[[mage-glossary#^comet-storm|Кометная буря]]** - AoE бёрст, потребляет стаки [[mage-glossary#^freezing|Замерзания]]
-- **[[mage-glossary#^thermal-void|Ледяная Бездна]]** (Thermal Void) - при проке [[mage-glossary#^bf|Заморозки мозгов]] даёт бафф, усиливающий следующее [[mage-glossary#^ice-lance|Ледяное копьё]] (бонус к урону [[mage-glossary#^shatter|Раскалывания]]). Пока бафф активен - [[mage-glossary#^ice-lance|Ледяное копьё]] в приоритете
-- **[[mage-glossary#^icicles|Кристаллы льда]]** (Icicles) - талант; при 5 Кристаллах льда следующая [[mage-glossary#^frostbolt|Ледяная стрела]] превращается в [[mage-glossary#^glacial-spike|Ледовый шип]] (мощный каст). Отдельным талантом Ледовый шип не берётся
-- **[[mage-glossary#^ray-of-frost|Морозный луч]]** - основной бёрст-КД
-- **[[mage-glossary#^frozen-orb|Ледяной шар]]** - по КД всегда
-- **Improved [[mage-glossary#^flurry|Шквал]]** (Improved Flurry) - must-have
-- **[[mage-glossary#^fof|Ледяные пальцы]]** (Fingers of Frost) - основной прок
-- **[[mage-glossary#^bf|Заморозка мозгов]]** (Brain Freeze) - основной прок
+- **[[mage-glossary#^glacial-bulwark|Ледниковый бастион]]** - доп. заряд [[mage-glossary#^ice-block|Ледяной глыбы]] и [[mage-glossary#^ice-barrier|Ледяной преграды]]. Один из сильнейших дефенсивов в игре.
+- **[[mage-glossary#^splitting-ice|Ледяные осколки]]** (Splitting Ice) - [[mage-glossary#^flurry|Шквал]] и [[mage-glossary#^frostbolt|Ледяная стрела]] бьют доп. цель на 80%. Это и есть твой бесплатный 2-target клив.
+- **[[mage-glossary#^lonely-winter|Одинокая зима]]** (Lonely Winter) - убирает элементаля воды, взамен +урон заклинаниям.
+- **[[mage-glossary#^comet-storm|Кометная буря]]** - AoE-бёрст, раскалывает стаки Замерзания по площади.
+- **[[mage-glossary#^thermal-void|Ледяная Бездна]]** (Thermal Void) - трата [[mage-glossary#^bf|Заморозки мозгов]] усиливает следующее [[mage-glossary#^ice-lance|Ледяное копьё]] (оно раскалывает +4 стака). Пока эффект активен - Ледяное копьё в приоритете.
+- **[[mage-glossary#^icicles|Кристаллы льда]]** (Icicles) - при 5 кристаллах следующая [[mage-glossary#^frostbolt|Ледяная стрела]] превращается в [[mage-glossary#^glacial-spike|Ледовый шип]]. Отдельным талантом Ледовый шип не берётся.
+- **[[mage-glossary#^ray-of-frost|Морозный луч]]**, **[[mage-glossary#^frozen-orb|Ледяной шар]]**, **Улучшенный шквал** (Improved Flurry), **[[mage-glossary#^fof|Ледяные пальцы]]**, **[[mage-glossary#^bf|Заморозка мозгов]]** - база, без них спек не работает.
 
 Класс-таланты (универсальные):
-- **[[mage-glossary#^ice-barrier|Ледяная преграда]], [[mage-glossary#^alter-time|Манипуляции со временем]], [[mage-glossary#^ice-block|Ледяная глыба]]** - базовые дефенсивы
-- **[[mage-glossary#^spatial-manipulation|Власть над пространством]]** (Spatial Manipulation) - доп. заряд [[mage-glossary#^shimmer|Мерцания]]. Всегда выбирать вместо Reflection
-- **Flow of Time, [[mage-glossary#^ice-block|Ледяной холод]]** (Ice Cold) - must-have
-- **Improved [[mage-glossary#^counterspell|Антимагия]]** (Improved Counterspell) - must-have для M+
+- **[[mage-glossary#^ice-barrier|Ледяная преграда]], [[mage-glossary#^alter-time|Манипуляции со временем]], [[mage-glossary#^ice-block|Ледяная глыба]]** - базовые дефенсивы.
+- **[[mage-glossary#^spatial-manipulation|Власть над пространством]]** - доп. заряд [[mage-glossary#^shimmer|Мерцания]]. Всегда вместо Отражения (Reflection).
+- **Поток времени** (Flow of Time), **[[mage-glossary#^ice-block|Ледяной холод]]** (Ice Cold), **Улучшенная антимагия** (Improved Counterspell, must-have для M+).
 
-Рейд (ST-ориентированные):
-- **Wintertide** - бонус к ST-урону
-- **Piercing Cold**
-- **Deep [[mage-glossary#^shatter|Раскалывание]]** (Deep Shatter) - для ST
+Рейд (ST-уклон): **Наступление зимы** (Wintertide), **Пронизывающий холод** (Piercing Cold), **Глубокий раскол** (Deep Shatter).
+M+ (AoE-уклон): **Раскалывающий холод** (Fractured Frost), **Отлетающие льдины** (Hailstones), **Заклинатель инея** (Rimecaster), **[[mage-glossary#^freezing-rain|Леденящий дождь]]** (Freezing Rain).
 
-M+ (AoE-ориентированные):
-- **Fractured Frost** - усиление AoE
-- **Hailstones**
-- **Rimecaster**
-- **[[mage-glossary#^freezing-rain|Леденящий дождь]]** (Freezing Rain) - усиливает [[mage-glossary#^blizzard|Снежную бурю]] в AoE
-
-> [!note] Water Elemental vs Одиночная зима
-> Water Elemental вернулся в Midnight как опция. [[mage-glossary#^lonely-winter|Одиночная зима]] доминирует в обоих типах контента. Пет проигрывает на мультитаргете и не лечит через Leech. Elemental - вариант только для open world/соло.
+> [!note] Элементаль воды vs Одинокая зима
+> Элементаль воды (Water Elemental) вернулся в Midnight как опция, но [[mage-glossary#^lonely-winter|Одинокая зима]] доминирует в обоих типах контента: пет проигрывает на мультитаргете. Элементаль - вариант только под соло и open world.
 
 ---
 
 ## Готовые билды (импорт)
 
-> В игре: открыть таланты (N) → Loadouts → Import Loadout → вставить строку → Import
+> Не хочешь разбираться - просто скопируй строку Spellslinger и вставь в игре: открой таланты (**N**) → Loadouts → Import Loadout → вставь → Import.
 
-### ST / Рейд / M+ боссы (Spellslinger)
-
-```
-CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmlxMzEzwYMjZWMzMzMjZAAAgZmZWWmZaDAA2AAAA2AYbZMzMDml5BMmhFAAAmZBYmMGwMYA
-```
-
-### M+ / AoE (Spellslinger)
+### Spellslinger - ST / Рейд
 
 ```
-CAEAAAAAAAAAAAAAAAAAAAAAAMzwMLzMzsMMzEzwMzMzMziZmhZMDAAAMzMzyyMTbAAwGAAAwCAbLjZmZwsNMmZsAAAwMbAzkxAmBD
+CAEAAAAAAAAAAAAAAAAAAAAAAYGGLzMzswMzEzMzMzMzMziZmZMjZAAAgZmZWWmZaDAAAAAAsBw22YmZGMbDjZYDAAgZ2AmJjBMDGA
 ```
+
+### Spellslinger - M+ / AoE
+
+```
+CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFmZmYGmZmZmZWMzMMjZAAAgZmZWWmZaDAAWAAAAWAYbbMzMDmthxMjNAAAmZDYmMGwMYA
+```
+
+> [!note] Свежие билды
+> Под свой контент и актуальные правки патча сверяйся с [Wowhead](https://www.wowhead.com/guide/classes/mage/frost/talent-builds-pve-dps) или Archon.gg.
 
 ---
 
 ## Ключевые правила
 
-1. **Не оверкапить [[mage-glossary#^freezing|Замерзание]] на 20** - потерянные стаки = потерянный урон
-2. **Тратить [[mage-glossary#^fof|FoF]] и [[mage-glossary#^bf|BF]] проки немедленно** - не допускать оверкап (2 заряда [[mage-glossary#^fof|Ледяных пальцев]] макс)
-3. **[[mage-glossary#^frozen-orb|Ледяной шар]] и [[mage-glossary#^glacial-spike|Ледовый шип]] - по КД**
-4. **[[mage-glossary#^ray-of-frost|Морозный луч]] - низкий приоритет** в ротации, ибо он билдер стаков. Сначала потратить стаки, потом билдить
-5. **Порог [[mage-glossary#^ice-lance|Ледяного копья]]:** 6+ стаков (Spellslinger) или 10+ стаков (Frostfire)
-6. **ST ротация используется и на 2-target клив** - не переключаться на AoE при 2 целях
-7. **Не двигаться во время [[mage-glossary#^ray-of-frost|Морозного луча]]** - это ченнел
-8. **Бафф [[mage-glossary#^thermal-void|Ледяной Бездны]] - приоритет [[mage-glossary#^ice-lance|Ледяного копья]]**, когда он активен
-9. **[[mage-glossary#^frozen-orb|Ледяной шар]] не кастовать при активной [[mage-glossary#^bf|Заморозке мозгов]]** - сначала потратить [[mage-glossary#^bf|BF]]
-10. **[[mage-glossary#^alter-time|Манипуляции со временем]]** - использовать проактивно (снапшотить ДО урона), не реактивно
+То, что отличает ровный урон от рваного. Каждое - с объяснением, **почему**.
+
+1. **Не оверкапь [[mage-glossary#^freezing|Замерзание]] на 20.** Стаки сверху потолка просто пропадают - это потерянный урон. Дошёл близко к 20 - раскалывай.
+2. **Трать проки сразу.** Прокнула [[mage-glossary#^bf|Заморозка мозгов]] - жми [[mage-glossary#^flurry|Шквал]]; прокнули [[mage-glossary#^fof|Ледяные пальцы]] - жми [[mage-glossary#^ice-lance|Ледяное копьё]]. Ледяных пальцев максимум 2 заряда, не давай оверкапиться.
+3. **[[mage-glossary#^frozen-orb|Ледяной шар]] и [[mage-glossary#^glacial-spike|Ледовый шип]] - по КД.** Простаивающий КД = потерянный урон.
+4. **[[mage-glossary#^ray-of-frost|Морозный луч]] стоит низко в приоритете** - он **генератор** стаков. Сначала потрать накопленные стаки, потом билди новые лучом.
+5. **Порог [[mage-glossary#^ice-lance|Ледяного копья]]:** 6+ стаков Замерзания на Spellslinger (10+ на Frostfire).
+6. **На 2 цели играешь ST-ротацию.** [[mage-glossary#^splitting-ice|Ледяные осколки]] и так кливают вторую цель - переходить на AoE при 2 целях это потеря урона.
+7. **Не двигайся во время [[mage-glossary#^ray-of-frost|Морозного луча]]** - это очередь на 4 сек, шаг в сторону её обрывает.
+8. **Активна [[mage-glossary#^thermal-void|Ледяная Бездна]] - [[mage-glossary#^ice-lance|Ледяное копьё]] в приоритет.**
+9. **[[mage-glossary#^alter-time|Манипуляции со временем]] - проактивно.** Снапшоть позицию и HP **до** урона, а не после.
 
 ### Когда переключаться на AoE
 
-- **1-2 цели** - ST ротация. Ледяные осколки и так кливают вторую цель
-- **3+ целей** - переход на AoE: [[mage-glossary#^frozen-orb|Ледяной шар]] в пак, [[mage-glossary#^comet-storm|Кометная буря]], [[mage-glossary#^blizzard|Снежная буря]] (с [[mage-glossary#^freezing-rain|Леденящим дождём]]), [[mage-glossary#^glacial-spike|Ледовый шип]]
-- **Важно:** при 2 целях AoE-ротация - потеря урона. Ледяные осколки делают ST-ротацию лучшим выбором для клива
+- **1-2 цели** - ST-ротация (Ледяные осколки кливают вторую цель).
+- **3+ целей** - переход на AoE: [[mage-glossary#^frozen-orb|Ледяной шар]] в пак, [[mage-glossary#^comet-storm|Кометная буря]], [[mage-glossary#^blizzard|Снежная буря]] (с [[mage-glossary#^freezing-rain|Леденящим дождём]]), [[mage-glossary#^glacial-spike|Ледовый шип]].
 
 ---
 
 ## Опенер
 
-### ST Опенер (рейд / M+ боссы)
+### ST (рейд / M+ боссы)
 
-1. Summon Water Elemental (если выбран) или подготовка
-2. **Pre-cast [[mage-glossary#^frostbolt|Ледяная стрела]]** (Ледовый шип до пулла недоступен - Кристаллы льда копятся только в бою)
-3. Trinket (on-use, напр. Vaelgor's Final Stare)
-4. **[[mage-glossary#^flurry|Шквал]]** сразу на пулле
-5. **[[mage-glossary#^frozen-orb|Ледяной шар]]** (если [[mage-glossary#^bf|Заморозка мозгов]] не активна)
-6. **[[mage-glossary#^ray-of-frost|Морозный луч]]** (не двигаться!)
-7. При проке **[[mage-glossary#^bf|Заморозки мозгов]]** - комбо [[mage-glossary#^shatter|Раскалывания]]: **[[mage-glossary#^frostbolt|Ледяная стрела]] → [[mage-glossary#^flurry|Шквал]] → [[mage-glossary#^ice-lance|Ледяное копьё]]** (кастовать именно в этом порядке: [[mage-glossary#^flurry|Шквал]] летит быстрее и догоняет [[mage-glossary#^frostbolt|Ледяную стрелу]], накладывая стаки [[mage-glossary#^freezing|Замерзания]] до попадания [[mage-glossary#^ice-lance|Ледяного копья]])
-8. При проке **[[mage-glossary#^fof|Ледяных пальцев]]** - сразу **[[mage-glossary#^ice-lance|Ледяное копьё]]** ([[mage-glossary#^fof|FoF]] позволяет шаттерить без набора стаков)
-9. **[[mage-glossary#^comet-storm|Кометная буря]]** по КД
+1. **Pre-cast [[mage-glossary#^frostbolt|Ледяная стрела]]** (Ледовый шип до пулла недоступен - Кристаллы льда копятся только в бою).
+2. Активируемый (on-use) тринкет и боевое зелье.
+3. **[[mage-glossary#^flurry|Шквал]]** сразу на пулле.
+4. **[[mage-glossary#^frozen-orb|Ледяной шар]]** (если [[mage-glossary#^bf|Заморозка мозгов]] не активна).
+5. **[[mage-glossary#^ray-of-frost|Морозный луч]]** (не двигайся!).
+6. При проке **[[mage-glossary#^bf|Заморозки мозгов]]** - связка Раскалывания: **[[mage-glossary#^frostbolt|Ледяная стрела]] → [[mage-glossary#^flurry|Шквал]] → [[mage-glossary#^ice-lance|Ледяное копьё]]** (именно в этом порядке: Шквал летит быстрее, догоняет стрелу и накладывает стаки Замерзания до попадания копья).
+7. При проке **[[mage-glossary#^fof|Ледяных пальцев]]** - сразу **[[mage-glossary#^ice-lance|Ледяное копьё]]** (раскалывает без набора стаков).
+8. **[[mage-glossary#^comet-storm|Кометная буря]]** по КД.
 
-### AoE Опенер (M+ треш)
+### AoE (M+ треш)
 
-1. **[[mage-glossary#^frozen-orb|Ледяной шар]]** в пак
-2. **[[mage-glossary#^comet-storm|Кометная буря]]** по стакнутым целям
-3. **[[mage-glossary#^ray-of-frost|Морозный луч]]** (если цели стоят)
-4. **[[mage-glossary#^blizzard|Снежная буря]]** (с [[mage-glossary#^freezing-rain|Леденящим дождём]])
-5. **[[mage-glossary#^glacial-spike|Ледовый шип]]** по КД
-6. **[[mage-glossary#^ice-lance|Ледяное копьё]]** при 6+ [[mage-glossary#^freezing|Замерзания]] или при проке [[mage-glossary#^fof|FoF]]
-7. Филлить [[mage-glossary#^frostbolt|Ледяной стрелой]]
+1. **[[mage-glossary#^frozen-orb|Ледяной шар]]** в пак.
+2. **[[mage-glossary#^comet-storm|Кометная буря]]** по стакнутым целям.
+3. **[[mage-glossary#^ray-of-frost|Морозный луч]]** (если цели стоят).
+4. **[[mage-glossary#^blizzard|Снежная буря]]** (с [[mage-glossary#^freezing-rain|Леденящим дождём]]).
+5. **[[mage-glossary#^glacial-spike|Ледовый шип]]** по КД.
+6. **[[mage-glossary#^ice-lance|Ледяное копьё]]** при 6+ стаках [[mage-glossary#^freezing|Замерзания]] или проке [[mage-glossary#^fof|FoF]].
+7. Филлер - [[mage-glossary#^frostbolt|Ледяная стрела]].
 
 ---
 
 ## ST приоритет (рейды) - Spellslinger
 
-1. **[[mage-glossary#^comet-storm|Кометная буря]]** - по КД (если талант)
-2. **[[mage-glossary#^flurry|Шквал]]** - если [[mage-glossary#^bf|Заморозка мозгов]] активна И [[mage-glossary#^thermal-void|Ледяная Бездна]] **не** активна
-3. **[[mage-glossary#^frozen-orb|Ледяной шар]]** - по КД (если [[mage-glossary#^bf|Заморозка мозгов]] не активна)
-4. **[[mage-glossary#^glacial-spike|Ледовый шип]]** - по КД (доступен при 5 [[mage-glossary#^icicles|Кристаллах льда]])
-5. **[[mage-glossary#^ice-lance|Ледяное копьё]]** - при баффе [[mage-glossary#^thermal-void|Ледяной Бездны]]
-6. **[[mage-glossary#^ice-lance|Ледяное копьё]]** - при 6+ стаках [[mage-glossary#^freezing|Замерзания]] ИЛИ проке [[mage-glossary#^fof|Ледяных пальцев]]
-7. **[[mage-glossary#^flurry|Шквал]]** - филлер без прока [[mage-glossary#^bf|BF]] (кастовать для накопления [[mage-glossary#^freezing|Замерзания]], когда остальные приоритеты закрыты)
-8. **[[mage-glossary#^ray-of-frost|Морозный луч]]** - билдер [[mage-glossary#^freezing|Замерзания]] (низкий приоритет, ибо генерирует стаки - использовать когда [[mage-glossary#^freezing|Замерзание]] < порога)
-9. **[[mage-glossary#^frostbolt|Ледяная стрела]]** - основной филлер
+Идёшь сверху вниз: верхнее доступно - жмёшь, нет - спускаешься ниже.
+
+1. **[[mage-glossary#^comet-storm|Кометная буря]]** - по КД.
+2. **[[mage-glossary#^flurry|Шквал]]** - если [[mage-glossary#^bf|Заморозка мозгов]] активна И [[mage-glossary#^thermal-void|Ледяная Бездна]] **не** активна.
+3. **[[mage-glossary#^frozen-orb|Ледяной шар]]** - по КД (если [[mage-glossary#^bf|Заморозка мозгов]] не активна).
+4. **[[mage-glossary#^glacial-spike|Ледовый шип]]** - по КД (доступен при 5 [[mage-glossary#^icicles|Кристаллах льда]]).
+5. **[[mage-glossary#^ice-lance|Ледяное копьё]]** - при баффе [[mage-glossary#^thermal-void|Ледяной Бездны]].
+6. **[[mage-glossary#^ice-lance|Ледяное копьё]]** - при 6+ стаках [[mage-glossary#^freezing|Замерзания]] ИЛИ проке [[mage-glossary#^fof|Ледяных пальцев]].
+7. **[[mage-glossary#^flurry|Шквал]]** - филлер без прока (копит [[mage-glossary#^freezing|Замерзание]], когда остальное закрыто).
+8. **[[mage-glossary#^ray-of-frost|Морозный луч]]** - билдер [[mage-glossary#^freezing|Замерзания]] (низкий приоритет, использовать когда стаков меньше порога).
+9. **[[mage-glossary#^frostbolt|Ледяная стрела]]** - основной филлер.
 
 > [!important] Ключевое правило
-> [[mage-glossary#^ray-of-frost|Морозный луч]] стоит низко не потому, что слабый, а потому, что он **генератор** стаков. Лучше сначала потратить накопленные стаки, потом билдить новые через [[mage-glossary#^ray-of-frost|Морозный луч]].
+> [[mage-glossary#^ray-of-frost|Морозный луч]] стоит низко не потому, что слабый, а потому, что он **генератор** стаков. Сначала трать накопленные, потом билди новые.
 
 ---
 
 ## AoE приоритет (M+) - Spellslinger
 
-1. **[[mage-glossary#^comet-storm|Кометная буря]]** - по КД на стакнутых целях
-2. **[[mage-glossary#^blizzard|Снежная буря]]** - с баффом [[mage-glossary#^freezing-rain|Леденящего дождя]] (приоритет)
-3. **[[mage-glossary#^flurry|Шквал]]** - если [[mage-glossary#^bf|Заморозка мозгов]] активна И [[mage-glossary#^thermal-void|Ледяная Бездна]] не активна
-4. **[[mage-glossary#^frozen-orb|Ледяной шар]]** - по КД, ловить несколько целей
-5. **[[mage-glossary#^glacial-spike|Ледовый шип]]** - скейлится с количеством врагов
-6. **[[mage-glossary#^blizzard|Снежная буря]]** - если Splinterstorm не активен
-7. **[[mage-glossary#^ice-lance|Ледяное копьё]]** - при 6+ [[mage-glossary#^freezing|Замерзания]] или при проке [[mage-glossary#^fof|FoF]]
-8. **[[mage-glossary#^flurry|Шквал]]** - филлер
-9. **[[mage-glossary#^ray-of-frost|Морозный луч]]** - генерация стаков
-10. **[[mage-glossary#^frostbolt|Ледяная стрела]]** - филлер
+1. **[[mage-glossary#^comet-storm|Кометная буря]]** - по КД на стакнутых целях.
+2. **[[mage-glossary#^blizzard|Снежная буря]]** - с баффом [[mage-glossary#^freezing-rain|Леденящего дождя]].
+3. **[[mage-glossary#^flurry|Шквал]]** - если [[mage-glossary#^bf|Заморозка мозгов]] активна И [[mage-glossary#^thermal-void|Ледяная Бездна]] не активна.
+4. **[[mage-glossary#^frozen-orb|Ледяной шар]]** - по КД, ловить несколько целей.
+5. **[[mage-glossary#^glacial-spike|Ледовый шип]]** - скейлится с количеством врагов.
+6. **[[mage-glossary#^ice-lance|Ледяное копьё]]** - при 6+ стаках [[mage-glossary#^freezing|Замерзания]] или проке [[mage-glossary#^fof|FoF]].
+7. **[[mage-glossary#^flurry|Шквал]]** - филлер.
+8. **[[mage-glossary#^ray-of-frost|Морозный луч]]** - генерация стаков.
+9. **[[mage-glossary#^frostbolt|Ледяная стрела]]** - филлер.
 
 ---
 
-## Вариант Frostfire (если выбран)
+## Урон: петля Замерзание -> Раскалывание (Spellslinger)
 
-- [[mage-glossary#^frostbolt|Ледяная стрела]] заменена на **Frostfire Bolt** (Frost + Fire урон, накладывает Ignite)
-- Порог потребления [[mage-glossary#^freezing|Замерзания]]: **10+ стаков** (вместо 6)
-- **Isothermic Core** - [[mage-glossary#^comet-storm|Кометная буря]] вызывает Meteor дополнительно
-- Приоритет аналогичен, но [[mage-glossary#^comet-storm|Кометная буря]] ещё важнее из-за Meteor бонуса
-- Frostfire Bolt в качестве филлера вместо [[mage-glossary#^frostbolt|Ледяной стрелы]]
+Главная урон-механика Frost - это **петля стаков**. Всё, что ты жмёшь, либо вешает Замерзание, либо его раскалывает:
+
+| Шаг | Чем | Что происходит |
+|---|---|---|
+| **Билд** | [[mage-glossary#^frostbolt\|Ледяная стрела]], [[mage-glossary#^flurry\|Шквал]], [[mage-glossary#^ray-of-frost\|Морозный луч]] | Вешают стаки [[mage-glossary#^freezing\|Замерзания]] на цель (до 20) |
+| **Раскол** | [[mage-glossary#^ice-lance\|Ледяное копьё]] (по цели), [[mage-glossary#^comet-storm\|Кометная буря]] (по площади) | Тратят стаки, нанося урон за каждый |
+| **Усилитель** | [[mage-glossary#^thermal-void\|Ледяная Бездна]] | Прок [[mage-glossary#^bf\|BF]] даёт копью раскалывать +4 стака |
+| **Apex** | [[mage-glossary#^hand-of-frost\|Леденящая длань]] | Раскалывание призывает длань, добивающую цель (~25% урона) |
+
+У Spellslinger поверх этой петли работают **[[mage-glossary#^splinter|ледяные обломки]]**: [[mage-glossary#^frostbolt|Ледяная стрела]] и [[mage-glossary#^flurry|Шквал]] плодят острые осколки, которые бьют сами, а накопившись - выстреливают залпом через **[[mage-glossary#^splinterstorm|Ураган обломков]]**. Управлять ими руками не нужно: держи обычную ротацию, и обломки набегут сами. Главное правило петли неизменно: **сначала потрать стаки, потом билди новые** - не давай Замерзанию упереться в потолок 20.
 
 ---
 
 ## Дефенсивы и утилити
 
-### Дефенсивы
+> [!tip] Главное про выживание
+> 1. **[[mage-glossary#^ice-block|Ледяной холод]]** (Ice Cold) - 70% снижение урона, при этом можешь кастовать. Твой главный аварийный деф.
+> 2. **[[mage-glossary#^alter-time|Манипуляции со временем]] ставь ДО урона.** Снапшоть HP и позицию заранее, потом откатишься назад целым.
+> 3. **[[mage-glossary#^glacial-bulwark|Ледниковый бастион]]** даёт лишний заряд [[mage-glossary#^ice-block|глыбы]] и [[mage-glossary#^ice-barrier|преграды]] - это и есть твоя живучесть, бери всегда.
+
+### Дефенсивы (таблица для справки)
 
 | Способность | Эффект | КД | Примечание |
 |---|---|---|---|
-| **[[mage-glossary#^ice-block\|Ледяной холод]] (Ice Cold)** | 70% DR на 6 сек, можно кастовать | ~5 мин | Основной дефенсив |
-| **[[mage-glossary#^ice-barrier\|Ледяная преграда]]** (Ice Barrier) | Щит ~22% HP + замедление врагов | 30 сек (25 с талантом) | Использовать по КД |
-| **[[mage-glossary#^glacial-bulwark\|Ледниковый бастион]]** (Glacial Bulwark) | +1 заряд Ледяной глыбы И Ледяной преграды | пассив | **Must-have талант** |
-| **[[mage-glossary#^alter-time\|Манипуляции со временем]]** (Alter Time) | Снапшот позиции + HP, телепорт назад | 1 мин | Лучший дефенсив против предсказуемого урона |
-| **[[mage-glossary#^cold-snap\|Холодная хватка]]** (Cold Snap) | Сброс КД барьера/блока/новы | 5 мин | Чойс-нода с Ледниковым бастионом |
+| **[[mage-glossary#^ice-block\|Ледяной холод]]** (Ice Cold) | 70% DR на несколько секунд, можно кастовать | ~5 мин | Основной аварийный деф |
+| **[[mage-glossary#^ice-barrier\|Ледяная преграда]]** (Ice Barrier) | Щит + замедление врагов | 30 сек | Жать по КД |
+| **[[mage-glossary#^glacial-bulwark\|Ледниковый бастион]]** (Glacial Bulwark) | +1 заряд глыбы И преграды | пассив | **Must-have талант** |
+| **[[mage-glossary#^alter-time\|Манипуляции со временем]]** (Alter Time) | Снапшот позиции и HP, телепорт назад | 1 мин | Лучший деф против предсказуемого урона |
+| **[[mage-glossary#^cold-snap\|Холодная хватка]]** (Cold Snap) | Сброс КД преграды, новы, глыбы | 5 мин | Чойс-нода с Ледниковым бастионом |
 
-> [!warning] Спорный момент: [[mage-glossary#^glacial-bulwark|Ледниковый бастион]] vs [[mage-glossary#^cold-snap|Холодная хватка]]
-> [[mage-glossary#^glacial-bulwark|Ледниковый бастион]] (доп. заряд) vs [[mage-glossary#^cold-snap|Холодная хватка]] (полный сброс КД). Большинство гайдов рекомендуют [[mage-glossary#^glacial-bulwark|Ледниковый бастион]] для общего использования. [[mage-glossary#^cold-snap|Холодная хватка]] может быть лучше на специфичных рейд-боссах с редким, но смертельным уроном.
+> [!note] Ледниковый бастион vs Холодная хватка
+> По умолчанию бери **[[mage-glossary#^glacial-bulwark|Ледниковый бастион]]** (доп. заряд) - универсальнее. **[[mage-glossary#^cold-snap|Холодная хватка]]** (полный сброс) может выигрывать на конкретных боссах с редким, но смертельным уроном.
 
 ### Утилити
 
-- **[[mage-glossary#^counterspell|Антимагия]]** - прерывание (must-have в M+)
-- **[[mage-glossary#^shimmer|Мерцание]]** - блинк без прерывания каста, 2 заряда с [[mage-glossary#^spatial-manipulation|Властью над пространством]]
-- **[[mage-glossary#^frost-nova|Кольцо льда]]** - AoE рут
-- **Polymorph** - CC на одну цель
-- **Remove Curse** - снятие проклятия
-- **Spellsteal** - кража баффа с врага
-- **Time Warp** - Bloodlust/Heroism
-
-**Изменено в Midnight:** Mass Barrier удалён; [[mage-glossary#^mirror-image|Зеркальное изображение]] и [[mage-glossary#^greater-invis|Великая невидимость]] остались как таланты, но потеряли дефенсивную ценность (спек стал "aggressively squishy" по мнению сообщества).
-
----
-
-## Статы
-
-### Приоритет
-
-**Intellect >> Mastery >= Haste > Crit > Versatility**
-
-> [!note] Статы зависят от текущего набора
-> Mastery - ведущий стат, Haste и Crit близки за ним. Точный порядок плавает от гира - сделай сим (Raidbots Stat Weights).
-
-Важные нюансы:
-- **Shatter cap не существует** - Crit обычный стат
-- **Haste soft cap** на 100% - недостижим, не париться
-- **[[mage-glossary#^dr|DR]] (Diminishing Returns)** - ускоряются после ~35% Haste
-- **Третичные:** Avoidance > Leech > Speed (Leech не лечит через пета)
+- **[[mage-glossary#^counterspell|Антимагия]]** - прерывание (must-have в M+).
+- **[[mage-glossary#^shimmer|Мерцание]]** - блинк без прерывания каста, 2 заряда с [[mage-glossary#^spatial-manipulation|Властью над пространством]].
+- **[[mage-glossary#^frost-nova|Кольцо льда]]** - AoE рут.
+- **Polymorph** - CC на одну цель. **Remove Curse** - снятие проклятия. **Spellsteal** - кража баффа. **Time Warp** - Bloodlust/Heroism.
 
 ---
 
 ## Гир и тринкеты
 
-### Тир-сет: Midnight Season 1
+Хороший комплект собирается не за вечер - это долгий фарм. Короткая шпаргалка, таблицы ниже - на потом.
 
-- **2-Set:** [[mage-glossary#^flurry|Шквал]] damage +10%, [[mage-glossary#^flurry|Шквал]] имеет 10% шанс дать [[mage-glossary#^fof|Ледяные пальцы]]
-- **4-Set:** [[mage-glossary#^fof|Ледяные пальцы]] увеличивает урон [[mage-glossary#^shatter|Раскалывания]] на 15%
+> [!tip] Кратко про шмот
+> - **Тринкеты:** Последний взор Ваэлгора (Vaelgor's Final Stare, on-use) + Взор ясновидца Альн (Gaze of the Alnseer, passive) в рейде; Тигель беспорядочной энергии (Crucible of Erratic Energies) хорош в M+.
+> - **Из статов** Искусность ведущий, Скорость и Крит близко за ним - точный порядок узнаёшь через сим.
+> - **ilvl важнее всего** - предмет повыше почти всегда лучше, даже если статы "не те".
 
-> Тир-сет не меняет геймплей - просто усиливает существующие проки. Но приоритет - собрать 4 части ASAP.
+### Тир-сет (Midnight Season 1)
 
-Приоритет частей: Шлем, Грудь, Перчатки, Ноги (основные), Плечи для добивания бонуса.
+- **2 части:** урон [[mage-glossary#^flurry|Шквала]] +10%, и Шквал с шансом 10% даёт [[mage-glossary#^fof|Ледяные пальцы]].
+- **4 части:** [[mage-glossary#^fof|Ледяные пальцы]] увеличивают урон [[mage-glossary#^shatter|Раскалывания]] на 15%.
 
-### BiS тринкеты
+> Бонус не меняет геймплей - просто усиливает существующие проки. Но 4 части собирай в приоритете.
 
-| Тринкет | Тип | Рейтинг | Источник |
-|---|---|---|---|
-| **Vaelgor's Final Stare** | On-use Mastery (1.5 мин КД) | S | Рейд (Vaelgor/Ezzorak) |
-| **Gaze of the Alnseer** | Passive Intellect proc | S | Рейд (Chimaerus) |
-| **Locus-Walker's Ribbon** | Passive Int (растёт в бою) | A+ | Рейд |
-| **Emberwing Feather** | On-use Haste (2 мин КД) | A | Данж: Windrunner Spire |
-| **Crucible of Erratic Energies** | Passive | A | M+ популярный |
-| **Vessel of Tortured Souls** | Passive | A | Данж |
+### Тринкеты
 
-> [!note] Рейд vs M+
-> Для рейда: Vaelgor's Final Stare + Gaze of the Alnseer
-> Для M+: Crucible of Erratic Energies - топовый выбор
+Правило: 1 on-use (с активацией) + 1 passive (работает сам). Оптимум под свой шмот - **сделай сим**.
+
+| Тринкет | Тип | Примечание |
+|---|---|---|
+| **Последний взор Ваэлгора** (Vaelgor's Final Stare) | On-use Искусность | BiS рейд (под бёрст-окно) |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive Интеллект | BiS рейд |
+| **Лента Странника** (Locus-Walker's Ribbon) | Passive Интеллект | Альтернатива (растёт в бою) |
+| **Тигель беспорядочной энергии** (Crucible of Erratic Energies) | Passive | Топ в M+ |
+| **Перо Алозар** (Emberwing Feather) | On-use Скорость | Хорош, фармится в M+ |
 
 ### Оружие
 
-- **Рейд BiS:** Umbral Spire of Zuraal
-- **Крафт альтернатива:** Aln'hara Cane (стафф с эмбелишментом) - хорош в начале сезона
+- **Рейд:** Теневой шпиль Зураала (Umbral Spire of Zuraal).
+- **Крафт-альтернатива на старте:** Трость Альн'ары (Aln'hara Cane, стафф) с эмбелишментом Символ Новолуния «Охота» (Darkmoon Sigil: Hunt).
 
 ### Эмбелишменты
 
-- **Darkmoon Sigil: Hunt** - на крафт-оружие (Aln'hara Cane). Приоритетный эмбелишмент в начале сезона
-- **Prismatic Focusing Iris** - на шею/кольца
-- **Stabilizing Gemstone Bandolier** - на запястья/пояс/ботинки
-- **Arcanoweave Lining** - альтернатива на низкобюджетные слоты (плащ, запястья)
+> [!note] Опционально (эндгейм)
+> Эмбелишменты - поздний фарм; на старте можно пропустить и вернуться позже.
 
-### Самоцветы и зачарования
+- **Символ Новолуния «Охота»** (Darkmoon Sigil: Hunt) - сильнейший сейчас, на крафт-оружие (Трость Альн'ары, Aln'hara Cane). Хороший ранний рывок в силе.
+- **Подкладка из тайной ткани** (Arcanoweave Lining) - на броню (плащ, запястья).
 
-- **Мета-гем:** Indecipherable Eversong Diamond (макс Intellect)
-- **Остальные слоты:** Flawless Masterful Garnet (Mastery)
-- **Оружие:** Acuity of the Ren'dorei
-- **Кольца:** Eyes of the Eagle
+### Расходники (бери на каждый серьёзный бой)
 
-### Расходники
-
-| Тип | Название | Примечание |
-|---|---|---|
-| Фласк | Flask of the Shattered Sun | DPS |
-| Еда | Harandar Celebration | |
-| Боевое зелье | Potion of Recklessness | |
-| Хил-зелье | Silvermoon Health Potion | На экстренный случай |
-| Оружейное масло | Thalassian Phoenix Oil | |
-| Augment Rune | Void-Touched Augment Rune | |
+| Тип | Название |
+|---|---|
+| Фласка | Настой Расколотого Солнца (Flask of the Shattered Sun) |
+| Еда | Празднество Харандара (Harandar Celebration) |
+| Боевое зелье | Зелье безрассудства (Potion of Recklessness) |
+| Лечебное зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
+| Масло на оружие | Талассийское масло феникса (Thalassian Phoenix Oil) |
+| Augment Rune | Меченная Бездной руна усиления (Void-Touched Augment Rune) |
 
 ---
 
-## Расы
+## Статы
 
-**Оптимальные для M+:**
-- **Dwarf** - Stoneform (снятие дебаффов + 10% физ [[mage-glossary#^damage-reduction|DR]]). Самая популярная раса среди топ-игроков
-- **Night Elf** - Shadowmeld для сброса мобов и пропуска механик
+**Интеллект (главный) >> Искусность >= Скорость > Крит > Универсальность**
 
-**Оптимальные для рейда:**
-- **Mechagnome** - пассивный DPS бонус
-- **Pandaren** - бонус от еды
+> [!tip] Кратко
+> Искусность ведущий, Скорость и Крит идут вплотную за ним, точный порядок плавает от гира. Чтобы узнать идеальный набор **под свой** шмот - закинь персонажа на [Raidbots](https://www.raidbots.com): он посчитает за тебя.
 
-**Сильные универсальные:**
-- **Void Elf** - без пуш-бэка при касте
-- **Orc** - Blood Fury + стан-резист
-- **Troll** - Berserking + slow-резист
+Чуть подробнее:
+- **Интеллект** (Intellect) - прибавляет урон всему. Растёт с ilvl, отдельно гнаться не нужно.
+- **Искусность** (Mastery) - усиливает урон Раскалывания, твой главный вторичный.
+- **Скорость** (Haste) - ускоряет касты и реген. У вторичных убывающая отдача, особенно после ~35% Скорости.
+- **Критический удар** (Critical Strike) - обычный стат (никакого "Shatter cap" больше нет).
+- **Универсальность** (Versatility) - немного урона и защиты, набирай в последнюю очередь.
+- **Третичные:** Avoidance > Leech > Speed.
+
+### Раса
+
+- **Орк** - формально лучшая раса (Blood Fury + стан-резист). Но разница между лучшей и худшей всего пара процентов, так что **играй за кого нравится**.
+- Прочие сильные: **Night Elf** (Shadowmeld для пропуска механик), **Void Elf** (без пуш-бэка при касте), **Troll** (Berserking).
+
+### Энчанты и гемы
+
+- **Мета-гем:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond, Интеллект).
+- **Остальные слоты:** Безупречный гранат искусности (Flawless Masterful Garnet).
+- **Оружие:** Проницательность рен'дорай (Acuity of the Ren'dorei). **Кольца:** Глаза орла (Eyes of the Eagle).
+
+---
+
+## Частые ошибки
+
+Эти ошибки на старте делают почти все - это нормально и легко правится. Если урон буксует, загляни в список:
+
+- **Оверкапишь [[mage-glossary#^freezing|Замерзание]] на 20.** Стаки сверху потолка сгорают. Диагностика: дебафф висит на 20, а ты всё ещё билдишь.
+- **Копишь проки.** [[mage-glossary#^fof|Ледяные пальцы]] на 2 зарядах или [[mage-glossary#^bf|Заморозка мозгов]] висит без дела - трать их сразу.
+- **Билдишь [[mage-glossary#^ray-of-frost|Морозным лучом]] раньше времени.** Он генератор стаков - сначала потрать накопленные, иначе упрёшься в потолок.
+- **Переходишь на AoE при 2 целях.** [[mage-glossary#^splitting-ice|Ледяные осколки]] и так кливают вторую - ST-ротация тут сильнее.
+- **Двигаешься во время [[mage-glossary#^ray-of-frost|Морозного луча]].** Шаг в сторону обрывает очередь - теряешь стаки и урон.
+- **Жмёшь [[mage-glossary#^alter-time|Манипуляции со временем]] уже получив по лицу.** Снапшот ставь **до** удара.
+
+---
+
+## Напоследок
+
+Первые бои стаки будут то переполняться, то кончаться невовремя, а связка Раскалывания путаться в пальцах. Это нормально: как только петля "заморозил - раскалываешь" ляжет в руку, урон пойдёт сам собой. Дай себе несколько пуллов - и лёд начнёт колоться ровно.

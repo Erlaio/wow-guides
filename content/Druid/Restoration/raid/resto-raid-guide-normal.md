@@ -5,7 +5,7 @@ created: 2026-03-22
 
 ## Resto Druid Raid Healing Guide - Normal
 
-Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализа топовых логов
+Patch 12.0.5 Midnight | Рейд: VS / DR / MQD
 
 > **Два билда:** Incarnation: Tree of Life или Convoke the Spirits - оба работают. На нормале разницы почти нет, бери что нравится.
 

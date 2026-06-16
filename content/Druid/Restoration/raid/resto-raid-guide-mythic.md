@@ -5,9 +5,9 @@ created: 2026-03-22
 
 ## Resto Druid Raid Healing Guide - Mythic
 
-Patch 12.0.1 Midnight | Рейд: VS / DR / MQD | На основе анализа топовых логов (99+ парсы)
+Patch 12.0.5 Midnight | Рейд: VS / DR / MQD
 
-> **Критически важно:** топ-1 игроки **меняют билд под каждого босса**. Не играй один билд на всём рейде.
+> **Критически важно:** на мифике билд **меняют под каждого босса**. Не играй один билд на всём рейде.
 
 ---
 
@@ -159,17 +159,17 @@ SM жми каждые 12 сек без пропусков.
 
 ### Боссы Mythic: CD тайминги
 
-Детальные CD планы на каждого босса:
+Боссы рейда и рекомендуемый билд:
 
-| Босс | Билд | Заметка |
-|---|---|---|
-| Imperator Averzian | Incarnation | [[imperator-averzian]] |
-| Vorasius | Incarnation | [[vorasius]] |
-| Fallen-King Salhadaar | Convoke | [[fallen-king-salhadaar]] |
-| Vaelgor & Ezzorak | Incarnation | [[vaelgor-ezzorak]] |
-| Lightblinded Vanguard | Convoke | [[lightblinded-vanguard]] |
-| Crown of the Cosmos | Incarnation | [[crown-of-the-cosmos]] |
-| Chimaerus | Convoke | [[chimaerus-the-undreamt-god]] |
+| Босс | Билд |
+|---|---|
+| Imperator Averzian | Incarnation |
+| Vorasius | Incarnation |
+| Fallen-King Salhadaar | Convoke |
+| Vaelgor & Ezzorak | Incarnation |
+| Lightblinded Vanguard | Convoke |
+| Crown of the Cosmos | Incarnation |
+| Chimaerus | Convoke |
 
 ---
 
@@ -188,12 +188,3 @@ SM жми каждые 12 сек без пропусков.
 - [[resto-raid-guide-heroic]] - героик гайд
 - [[resto-raid-guide-normal]] - нормал гайд
 - [[resto-guide]] - подробный гайд по способностям
-
-
-
-
-у нас такая задача, нужно проанализировать логи 
-https://www.warcraftlogs.com/zone/rankings/47?leaderboards=1&class=Paladin&spec=Retribution&region=-1 - мы ищем        
-retribution паладинов, нужны логи из высоких ключей, анализируем ветки талантов, как они наносят урон, опенер, что за чем нажимают, на босса/паки  
-по приоритету урон - ветка талантов. Нам нужно понять как сейчас играет и дамажит паладин изучив как играют топовые 
- игроки. У нас уже есть retribution-guide нужно будет исправить то что в нем неправильно относительно меты. Используй плагин superpower и давай устроим брейншторм

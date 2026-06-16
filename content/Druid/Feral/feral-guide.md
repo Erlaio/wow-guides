@@ -10,383 +10,368 @@ created: 2026-03-15
 
 Термины и сокращения → [[druid-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
+
+> [!note] Про названия
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (он нужен для аддонов, симулятора и Wowhead). Гир, тринкеты, гемы, расходники, статы и энчанты - в формате `Русское (English)`.
+
+---
+
+*Ты кот из засады: подкрался, развесил кровотечения и догрызаешь жертву, пока она истекает.*
+
+## Главное за минуту
+
+Минимум, чтобы сразу кусать врага - тонкости потом:
+
+1. **Держи кровотечения (блиды) на цели:** [[druid-glossary#^rake|Глубокую рану]] и [[druid-glossary#^rip|Разорвать]]. Это твой основной урон, он капает сам.
+2. **Копи [[druid-glossary#^cp|очки комбо]] билдерами** ([[druid-glossary#^shred|Полоснуть]] по одной цели, [[druid-glossary#^swipe|Размах]] по нескольким) **и трать на финишеры** при 5 очках.
+3. **[[druid-glossary#^tigers-fury|Тигриное неистовство]] - часто и при низкой энергии.** Оно и энергию вернёт, и усилит блиды, наложенные под ним.
+4. **Раз в 2 минуты - большое окно:** [[druid-glossary#^berserk-feral|Берсерк]] + [[druid-glossary#^convoke|Созыв духов]] вместе с Тигриным неистовством. Сюда уходят тринкет и зелье.
+5. **Начинай из стелса.** [[druid-glossary#^prowl|Крадущийся зверь]] усиливает первую Глубокую рану - так старт боя сильнее.
+
+## Как играть за кота (в двух словах)
+
+Кот (Feral) - **мили-ДД, который строит урон вокруг кровотечений и финишеров**. Идея простая: подготовил жертву блидами - и поддерживаешь их, пока добиваешь. Геймплей держится на трёх вещах:
+
+- **Держишь блиды:** [[druid-glossary#^rake|Глубокая рана]] и [[druid-glossary#^rip|Разорвать]] не должны сходить с цели - это львиная доля урона.
+- **Крутишь цикл "билдер → финишер":** копишь очки комбо ([[druid-glossary#^shred|Полоснуть]]/[[druid-glossary#^swipe|Размах]]) и тратишь их ([[druid-glossary#^ferocious-bite|Свирепый укус]], [[druid-glossary#^rip|Разорвать]], [[druid-glossary#^primal-wrath|Первобытный гнев]]).
+- **Раз в 2 минуты сливаешь всё в окно [[druid-glossary#^berserk-feral|Берсерка]]** - это твой главный всплеск.
+
+Поймал этот ритм - и дальше дело за чистотой блидов.
+
+> [!info] Словарик терминов
+> - **ДД** - наносящий урон (ты). **ST** - урон по одной цели, **AoE** (или **клив**) - по нескольким.
+> - **Блид** - физический DoT-кровотечение (Глубокая рана, Разорвать), не снимается диспелом.
+> - **Билдер** - копит очки комбо. **Финишер** - тратит их (тем сильнее, чем больше очков).
+> - **КД** - кулдаун, перезарядка способности. **GCD** - глобальная перезарядка (~1.5 сек).
+> - **Бёрст** - всплеск урона за короткое окно. **Прок** - случайное срабатывание бонуса ("прокнуло").
+> - **Энергия** - твой ресурс, восстанавливается сам; на ней работают билдеры.
+> - **Оверкап** - переполнить ресурс (энергию), когда он на максимуме. Лишнее теряется.
+> - **Снапшот** - блид "запоминает" бонусы (Тигриное неистовство, стелс) на момент наложения и держит их всю длительность.
+> - **Пандемик** - окно безопасного обновления блида: остаток старого (до 30%) добавляется к новому.
+> - **Аптайм** - доля времени, когда блид активен ("100% аптайм Разорвать" = он не сходит с цели).
+> - **Симить** - прогнать персонажа в [Raidbots](https://www.raidbots.com), чтобы узнать, что лучше **под твой** шмот.
+> - **BiS** - лучший предмет в слот. **ilvl** - уровень предмета. **Тринкет** - предмет в особом слоте (on-use = жмётся, passive = сам).
+> - **M+ / ключи** - Mythic+, подземелья на 5 человек. **Пак** - группа врагов в подземелье.
 
 ---
 
 ## Что изменилось в Midnight (12.0)
 
-Blizzard провели масштабное упрощение спека. Основные изменения:
+> Можно пропустить, если не играл в прошлых аддонах - этот раздел про изменения.
+
+Спек сильно упростили: меньше кнопок и блидов для отслеживания, ротация стала чище.
 
 **Удалено:**
-- [[druid-glossary#^bleed|Bloodtalons]] - больше нет окна "3 разных билдера за 4 сек"
-- Жестокий удар когтями (Brutal Slash) - заменён на [[druid-glossary#^swipe|Размах]] как основной AoE-[[druid-glossary#^builder|билдер]]
-- Thrash - убран полностью, меньше [[druid-glossary#^dot|DoT]]-ов для трекинга
-- Adaptive Swarm - убран
-- Berserk: Frenzy - убран
+- **Кровавые когти** (Bloodtalons) - больше нет окна "три разных билдера за 4 секунды".
+- **Жестокий удар когтями** (Brutal Slash) - заменён на [[druid-glossary#^swipe|Размах]] как основной AoE-билдер.
+- **Феральная Взбучка (Thrash), Адаптивный рой (Adaptive Swarm), Берсерк: бешенство (Berserk: Frenzy)** - убраны.
 
 **Добавлено:**
-- [[druid-glossary#^chomp|Быстрый укус]] - мощная атака без затрат [[druid-glossary#^energy|энергии]] (20с [[druid-glossary#^cd|КД]]), доступна при энергии <30% (+ 2с окно после). Тройной урон при крите. Усиливается [[druid-glossary#^tear-down-the-mighty|Низвержение сильных]] (+25%)
-- [[druid-glossary#^unseen-predator|Незримый хищник]] - новый Apex-талант (см. ниже)
-- Frantic Frenzy - AoE-версия [[druid-glossary#^feral-frenzy|Дикое бешенство]]
-- Hunger for Battle - улучшенная генерация [[druid-glossary#^energy|энергии]] и урон
+- **[[druid-glossary#^chomp|Быстрый укус]]** (Chomp) - мощная атака без затрат энергии (20 сек КД), доступна при энергии ниже 30% (плюс 2 сек окно после). Тройной урон при крите.
+- **[[druid-glossary#^unseen-predator|Незримый хищник]]** - новый Apex-талант (см. ниже).
+- **Бурное бешенство** (Frantic Frenzy) - AoE-версия [[druid-glossary#^feral-frenzy|Дикого бешенства]].
 
 **Изменения механик:**
-- [[druid-glossary#^snapshotting|Снапшоттинг]] упрощён - теперь снапшотят только [[druid-glossary#^tigers-fury|Тигриное неистовство]] и [[druid-glossary#^prowl|Крадущийся зверь]]
-- Аддоны ограничены в бою - трекинг снапшотов стал сложнее без аддонов
-- Claw Rampage нерфнут до одного [[druid-glossary#^proc|прока]] за каст (не за цель)
-- [[druid-glossary#^sudden-ambush|Внезапное нападение]] reworked - больше не снапшотит [[druid-glossary#^rake|Глубокая рана]]
-- Все атаки получили +8% урона; [[druid-glossary#^swipe|Размах]] +20%
+- **[[druid-glossary#^snapshotting|Снапшоттинг]] упрощён** - теперь блиды снапшотят только [[druid-glossary#^tigers-fury|Тигриное неистовство]] и [[druid-glossary#^prowl|Крадущийся зверь]].
+- **[[druid-glossary#^sudden-ambush|Внезапное нападение]] переработан** - больше не снапшотит Глубокую рану; теперь усиливает следующий Полоснуть/Глубокую рану/Размах (+50% урона и гарантированный крит).
+- Почти все атаки получили +8% урона, Размах +20%.
 
 > [!note] Итог
-> Спек стал значительно проще - меньше [[druid-glossary#^builder|билдеров]] и [[druid-glossary#^dot|DoT]]-ов, основной фокус на [[druid-glossary#^shred|Полоснуть]]/[[druid-glossary#^swipe|Размах]] + [[druid-glossary#^finisher|финишеры]]. Меньше кнопок, но ротация остаётся узнаваемой.
+> Кнопок меньше, фокус сместился на [[druid-glossary#^shred|Полоснуть]]/[[druid-glossary#^swipe|Размах]] + финишеры. Ротация осталась узнаваемой, но входить в спек теперь проще.
 
 ---
 
 ## Сильные и слабые стороны
 
-### Сильные стороны
+Полезно знать сильные стороны класса и его слабые места - так понятнее, где играть в удовольствие, а где быть внимательнее.
 
-- **Мощный [[druid-glossary#^burst|бёрст]]** - [[druid-glossary#^berserk-feral|Берсерк]] + [[druid-glossary#^convoke|Созыв духов]] на 2-мин цикле, плюс [[druid-glossary#^feral-frenzy|Дикое бешенство]] на коротком [[druid-glossary#^cd|КД]]
-- **Сильный [[druid-glossary#^st|ST]] урон** - [[druid-glossary#^wildstalker-feral|Следопыт]]-билд показывает отличные цифры на боссах
-- **Хороший [[druid-glossary#^aoe|AoE]]** - [[druid-glossary#^primal-wrath|Первобытный гнев]] безлимитный, усиленный [[druid-glossary#^unseen-predator|Незримый хищник]]
-- **Утилити** - Знак дикой природы (Mark of the Wild), Rebirth, [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^stampeding-roar|Тревожный рев]]
-- **Мобильность** - Dash/Рывок тигра (Tiger Dash), Стремительный рывок (Wild Charge), [[druid-glossary#^stampeding-roar|Тревожный рев]]
-- **Упрощённая ротация** - проще входить в спек после Midnight-изменений
+**В чём кот хорош:**
+- **Мощный бёрст** - [[druid-glossary#^berserk-feral|Берсерк]] + [[druid-glossary#^convoke|Созыв духов]] на 2-мин цикле, плюс [[druid-glossary#^feral-frenzy|Дикое бешенство]] на коротком КД.
+- **Сильный ST-урон** через блид-билд (Следопыт) - хорошие цифры на боссах.
+- **Хороший AoE** - [[druid-glossary#^primal-wrath|Первобытный гнев]] раздаёт Разорвать на всех.
+- **Утилити и мобильность:** Rebirth (боевое воскрешение), [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^stampeding-roar|Тревожный рев]], рывки.
 
-### Слабые стороны
-
-- **Упрощение "убило" часть фана** - многие уникальные геймплей-петли удалены или урезаны
-- **Ограничения аддонов** - [[druid-glossary#^snapshotting|снапшоттинг]] стал труднее отслеживать без боевых аддонов
-- **Медленный геймплей** - бывают пустые [[druid-glossary#^gcd|GCD]], медленнее многих мили-спеков
-- **Зависимость от рампа** - нужно время на развёртывание [[druid-glossary#^bleed|блидов]], слабый урон в первые секунды боя
+**Слабые места класса:**
+- **Зависит от рампа:** надо время на развёртывание блидов, в первые секунды боя урон слабый.
+- **Медленнее многих мили:** бывают пустые GCD, если энергии не хватает.
+- **Снапшоты сложнее отслеживать** без боевых аддонов - нужно держать тайминги Тигриного неистовства в голове.
 
 ---
 
 ## Таланты
 
-### Hero Talent
+Таланты - это твоя "сборка". Не вникай в каждую кнопку сразу: ниже есть готовые сборки, которые можно просто скопировать в игру.
 
-- **Рейд ([[druid-glossary#^st|ST]]):** [[druid-glossary#^wildstalker-feral|Следопыт]] - упор на [[druid-glossary#^bleed|блиды]] и устойчивый урон по одной цели. Bloodseeker Vines и Thriving Growth усиливают [[druid-glossary#^dot|DoT]]-урон
-- **M+ ([[druid-glossary#^aoe|AoE]]):** [[druid-glossary#^druid-of-the-claw-feral|Друид-хищник]] - лучшие AoE инструменты, дефенсивы и [[druid-glossary#^ravage|Терзание]]-[[druid-glossary#^proc|прок]]. Даёт Неистовое восстановление (Frenzied Regeneration) в Облик кошки (Cat Form) через Empowered Shapeshifting
+### Героическое древо (главная развилка сборки)
 
-> [!warning] Нюанс
-> В высоких ключах, где мобы живут дольше и [[druid-glossary#^bleed|блиды]] успевают отработать, [[druid-glossary#^wildstalker-feral|Следопыт]] может быть лучше. [[druid-glossary#^druid-of-the-claw-feral|Друид-хищник]] - для низких/средних ключей с быстрым AoE.
+> [!note] Итог: Следопыт в рейд, Друид-хищник в M+
+> У кота два героических древа - **[[druid-glossary#^wildstalker-feral|Следопыт]]** (Wildstalker) и **[[druid-glossary#^druid-of-the-claw-feral|Друид-хищник]]** (Druid of the Claw). В рейде на одну цель бери **Следопыта** (упор на блиды), в ключах - **Друида-хищника** (AoE-инструменты и дефенсивы). Оба полностью рабочие.
+
+- **[[druid-glossary#^wildstalker-feral|Следопыт]]** (Wildstalker) - усиливает блиды и даёт устойчивый ST-урон (через дополнительные кровотечения от Глубокой раны/Разорвать). Лучший в рейде и на затяжных целях.
+- **[[druid-glossary#^druid-of-the-claw-feral|Друид-хищник]]** (Druid of the Claw) - лучшие AoE-инструменты, проки [[druid-glossary#^ravage|Терзания]] и доступ к Неистовому восстановлению в Облике кошки. Для быстрого AoE в низких/средних ключах.
+
+> [!tip] Нюанс по высоким ключам
+> В высоких ключах, где мобы живут дольше и блиды успевают отработать, Следопыт тоже может вырваться вперёд. Друид-хищник - в первую очередь про быстрый AoE.
 
 ### Apex талант
 
-- **[[druid-glossary#^unseen-predator|Незримый хищник]]** - [[druid-glossary#^ferocious-bite|Свирепый укус]] имеет 15% шанс за каждый потраченный [[druid-glossary#^cp|CP]] вызвать Unseen Slash ([[druid-glossary#^st|ST]]) или Unseen Swipe ([[druid-glossary#^aoe|AoE]]). При [[druid-glossary#^proc|проке]] - +7.5% ко всему урону на 5 сек (стакается). [[druid-glossary#^tigers-fury|Тигриное неистовство]] заставляет следующие 2 [[druid-glossary#^builder|билдера]] триггерить Unseen Attack. Берём всегда.
+- **[[druid-glossary#^unseen-predator|Незримый хищник]]** (Unseen Predator) - единственный Apex, бери всегда. Простыми словами: [[druid-glossary#^ferocious-bite|Свирепый укус]] с шансом вызывает скрытую атаку (Unseen Slash по одной цели / Unseen Swipe по площади) и стакает бафф урона. [[druid-glossary#^tigers-fury|Тигриное неистовство]] заставляет следующие билдеры тоже триггерить эту атаку. Ничего нового жать не надо.
 
-### Ключевые таланты
+### Провальные таланты
 
-Всегда берём:
-- **[[druid-glossary#^feral-frenzy|Дикое бешенство]]** - [[druid-glossary#^st|ST]] [[druid-glossary#^burst|бёрст]] с коротким [[druid-glossary#^cd|КД]]; выбор ноды: Focused Frenzy (30с КД, ST) или Frantic Frenzy (AoE версия)
-- **[[druid-glossary#^chomp|Быстрый укус]]** - мощная атака без затрат [[druid-glossary#^energy|энергии]] (20с КД), доступна при энергии <30% (+ 2с окно после). Тройной урон при крите. Усиливается [[druid-glossary#^tear-down-the-mighty|Низвержение сильных]] (+25%)
-- **[[druid-glossary#^convoke|Созыв духов]]** - мощный [[druid-glossary#^burst|бёрст]], синхронить с [[druid-glossary#^berserk-feral|Берсерк]] + [[druid-glossary#^tigers-fury|Тигриное неистовство]]
-- **[[druid-glossary#^berserk-feral|Берсерк]]** - основной [[druid-glossary#^burst|бёрст]]-кулдаун
-- **[[druid-glossary#^predator|Хищник]]** - сброс [[druid-glossary#^tigers-fury|Тигриное неистовство]] при смерти цели
-- **[[druid-glossary#^moment-of-clarity|Момент ясности]]** - бесплатные усиленные [[druid-glossary#^builder|билдеры]] (синергия с тир-сетом)
-- **[[druid-glossary#^soul-of-the-forest-feral|Душа леса]]** - больше [[druid-glossary#^energy|энергии]] и урона от [[druid-glossary#^finisher|финишеров]]
-- **[[druid-glossary#^apex-predators-craving|Жажда сверххищника]]** - бесплатные [[druid-glossary#^ferocious-bite|Свирепый укус]] от тиков [[druid-glossary#^rip|Разорвать]]
+> [!warning] Не трать очки впустую
+> Чисто защитные класс-узлы в урон-сборку не бери - они не дают DPS. Опирайся на готовые билды ниже.
 
-Рейд ([[druid-glossary#^wildstalker-feral|Следопыт]]):
-- Focused Frenzy - укороченный КД [[druid-glossary#^feral-frenzy|Дикое бешенство]] для [[druid-glossary#^st|ST]]
-- [[druid-glossary#^lunar-inspiration|Лунное вдохновение]] - [[druid-glossary#^moonfire|Лунный огонь]] как дополнительный [[druid-glossary#^builder|билдер]]
-- [[druid-glossary#^sudden-ambush|Внезапное нападение]] - усиленные [[druid-glossary#^shred|Полоснуть]] (reworked в Midnight - больше не снапшотит [[druid-glossary#^rake|Глубокая рана]])
-- [[druid-glossary#^panthers-guile|Хитрость пантеры]] - бонус урона в [[druid-glossary#^st|ST]]
-- [[druid-glossary#^circle-of-life-and-death|Круг жизни и смерти]] - ускоренные тики [[druid-glossary#^bleed|блидов]]
+### Нишевое (необязательно)
 
-M+ ([[druid-glossary#^druid-of-the-claw-feral|Друид-хищник]]):
-- Frantic Frenzy - AoE-версия [[druid-glossary#^feral-frenzy|Дикое бешенство]]
-- [[druid-glossary#^primal-wrath|Первобытный гнев]] - AoE-[[druid-glossary#^finisher|финишер]], [[druid-glossary#^spread|распространяет]] [[druid-glossary#^rip|Разорвать]]
-- [[druid-glossary#^rampant-ferocity|Свирепое буйство]] - [[druid-glossary#^ferocious-bite|Свирепый укус]] наносит [[druid-glossary#^aoe|AoE]]
-- [[druid-glossary#^double-clawed-rake|Раздвоенные когти]] - [[druid-glossary#^rake|Глубокая рана]] бьёт второго таргета
-- [[druid-glossary#^apex-predators-craving|Жажда сверххищника]] - обязателен для M+
+- **[[druid-glossary#^lunar-inspiration|Лунное вдохновение]]** - добавляет [[druid-glossary#^moonfire|Лунный огонь]] как ещё один билдер. Берётся в рейдовой ST-сборке, в AoE не нужен.
+- **[[druid-glossary#^double-clawed-rake|Раздвоенные когти]]** - Глубокая рана бьёт вторую цель. Полезен в AoE-сборке Друида-хищника, в чистом ST бесполезен.
 
 ---
 
 ## Готовые билды (импорт)
 
-### [[druid-glossary#^druid-of-the-claw-feral|Друид-хищник]]
+> Не хочешь разбираться в талантах - просто скопируй строку и вставь в игре: открой таланты (**N**) → Loadouts → Import Loadout → вставь → Import. ST-строка для боссов, M+/AoE - для пачек врагов.
 
-**Рейд ([[druid-glossary#^st|ST]]):**
+> [!note]
+> Импорт-строки могут поменяться с хотфиксами. Если строка не грузится - возьми свежую на [Wowhead](https://www.wowhead.com/guide/classes/druid/feral/talent-builds-pve-dps).
+
+### Друид-хищник (Druid of the Claw) - Рейд / ST
+
 ```
 CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAghZ2YmZmZGzmx2MbzMzMmZAAAAYJYWMGmZUzYWMzMzsMmZAAAAAAwADAAAgmZZ2mZmBEYBMzAswgBAAwMbYA
 ```
 
-**M+ ([[druid-glossary#^aoe|AoE]]):**
+### Друид-хищник (Druid of the Claw) - M+ / AoE
+
 ```
 CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZYmZmZMzsZsNz2MzMzDMzAAAAwSwsYMMzomxsYmZmZZMzAAAAAAgBAAAAoZWmtZmZABWAzMALMYAAAMzGG
 ```
 
-### [[druid-glossary#^wildstalker-feral|Следопыт]]
+### Следопыт (Wildstalker) - Рейд / ST
 
-**Рейд ([[druid-glossary#^st|ST]]):**
 ```
 CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMzMzMmtlxyMbzYGzMDAAAALBzihxMjaGziZmZGjZYAAAAAAMwAAAAIAYWmZpZbmlNwMDwiZwAAYmBAD
 ```
 
-**M+ ([[druid-glossary#^aoe|AoE]]):**
+### Следопыт (Wildstalker) - M+ / AoE
+
 ```
 CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZYmZmZMmNjtZ2mZmZegZGAAAAWCmFjhZG1MmFzMzMGzMGAAAAAADMAAAACAmlZ2aWmZZDMzAswgBAwMDAG
 ```
-
-> [!note] Импорт
-> В игре: таланты (N) → Loadouts → Import Loadout → вставь строку → Import.
 
 ---
 
 ## Ключевые правила
 
-### [[druid-glossary#^snapshotting|Снапшоттинг]] (упрощён в Midnight)
+Это то, что превращает хаотичное нажатие кнопок в стабильный урон. Каждое правило - с объяснением, **почему** так.
 
-Теперь снапшотят только [[druid-glossary#^tigers-fury|Тигриное неистовство]] и [[druid-glossary#^prowl|Крадущийся зверь]]. Bloodtalons удалён. [[druid-glossary#^rip|Разорвать]] и [[druid-glossary#^rake|Глубокая рана]], наложенные во время TF, сохраняют бонус урона на всю длительность.
-
-> [!important] Не перезаписывай TF-снапшот
-> Если [[druid-glossary#^rake|Глубокая рана]]/[[druid-glossary#^rip|Разорвать]] наложены с [[druid-glossary#^tigers-fury|Тигриное неистовство]], не обновляй их без активного TF - это даунгрейд урона. Лучше подождать следующий TF или дать [[druid-glossary#^dot|DoT]]-у истечь.
-
-### [[druid-glossary#^pandemic|Пандемик]]-окна
-
-Безопасный рефреш без потери длительности:
-- [[druid-glossary#^rip|Разорвать]]: последние **5.8с**
-- [[druid-glossary#^rake|Глубокая рана]]: последние **3.6с**
-- [[druid-glossary#^moonfire|Лунный огонь]]: последние **4.3с**
-
-### [[druid-glossary#^energy|Энергия]]
-
-- Не [[druid-glossary#^overcap|оверкапить]]. Юзать [[druid-glossary#^tigers-fury|Тигриное неистовство]] при низкой энергии
-- Не спамить [[druid-glossary#^shred|Полоснуть]] вхолостую - следить за [[druid-glossary#^panthers-guile|Хитрость пантеры]]/[[druid-glossary#^moment-of-clarity|Момент ясности]] [[druid-glossary#^proc|проками]]
-- Перед [[druid-glossary#^chomp|Быстрый укус]] - слить [[druid-glossary#^energy|энергию]] ниже 30%. Есть 2с окно после достижения порога
-
-### [[druid-glossary#^finisher|Финишеры]]
-
-- Всегда кастовать при 5 [[druid-glossary#^cp|CP]]
-- Главная цель - максимизировать количество [[druid-glossary#^ferocious-bite|Свирепый укус]] без потери [[druid-glossary#^uptime|аптайма]] [[druid-glossary#^bleed|блидов]]
-- [[druid-glossary#^apex-predators-craving|Жажда сверххищника]] [[druid-glossary#^proc|проки]] - тратить сразу, не копить
-
-### [[druid-glossary#^chomp|Быстрый укус]] тайминг
-
-- Можно использовать [[druid-glossary#^tigers-fury|Тигриное неистовство]] → [[druid-glossary#^chomp|Быстрый укус]] сразу (2с grace period позволяет)
-- Идеально: слить [[druid-glossary#^energy|энергию]] [[druid-glossary#^shred|Полоснуть]]-ами → TF → [[druid-glossary#^chomp|Быстрый укус]]
-
-### [[druid-glossary#^rake|Глубокая рана]] vs [[druid-glossary#^swipe|Размах]] (AoE)
-
-- С [[druid-glossary#^double-clawed-rake|Раздвоенные когти]] - приоритет [[druid-glossary#^rake|Глубокая рана]] на максимум целей
-- Без него - [[druid-glossary#^rake|Глубокая рана]] на 4 и меньше целей, дальше [[druid-glossary#^swipe|Размах]]
-- [[druid-glossary#^swipe|Размах]] только когда все цели под [[druid-glossary#^rake|Глубокая рана]]
-
-### [[druid-glossary#^sudden-ambush|Внезапное нападение]] (reworked)
-
-- Приоритет использования на [[druid-glossary#^shred|Полоснуть]] ([[druid-glossary#^st|ST]]) или [[druid-glossary#^swipe|Размах]] ([[druid-glossary#^aoe|AoE]])
-- Больше **не** снапшотит [[druid-glossary#^rake|Глубокая рана]] - не тратить на рейк
+1. **Блиды держи всегда.** [[druid-glossary#^rake|Глубокая рана]] и [[druid-glossary#^rip|Разорвать]] - основа урона. Обновляй их в [[druid-glossary#^pandemic|пандемик]]-окно (Разорвать - последние 5.8 сек, Глубокая рана - 3.6 сек, Лунный огонь - 4.3 сек).
+2. **Не оверкапь энергию.** Дошла под потолок - значит, простаиваешь. Жми [[druid-glossary#^tigers-fury|Тигриное неистовство]] именно при низкой энергии, чтобы не выплеснуть возврат впустую.
+3. **Финишер - всегда при 5 очках комбо.** Цель: сделать как можно больше [[druid-glossary#^ferocious-bite|Свирепых укусов]], не уронив при этом аптайм блидов.
+4. **Не перезаписывай снапшот Тигриного неистовства.** Если блид наложен под Тигриным неистовством, не обновляй его без активного Тигриного неистовства - это даунгрейд. Лучше подожди следующее Тигриное неистовство или дай блиду истечь.
+5. **[[druid-glossary#^apex-predators-craving|Жажду сверххищника]] трать сразу.** Бесплатные Свирепые укусы не копи - используй, как прокнуло.
+6. **[[druid-glossary#^chomp|Быстрый укус]] жми, слив энергию ниже 30%.** Есть 2 сек окно после порога. Связка Тигриное неистовство → Быстрый укус работает (2 сек дают).
 
 ---
 
-## Opener
+## Опенер (как начинать бой)
 
-### [[druid-glossary#^st|ST]] Opener (рейд)
+"Опенер" - это заученная последовательность первых кнопок на пулле.
 
-1. [[druid-glossary#^prowl|Крадущийся зверь]]
-2. [[druid-glossary#^rake|Глубокая рана]] (из стелса)
-3. [[druid-glossary#^shred|Полоснуть]] + [[druid-glossary#^moonfire|Лунный огонь]] → набрать 5 [[druid-glossary#^cp|CP]]
+### Опенер ST (рейд)
+
+1. [[druid-glossary#^prowl|Крадущийся зверь]] (до пулла)
+2. [[druid-glossary#^rake|Глубокая рана]] (из стелса - усиленная)
+3. [[druid-glossary#^shred|Полоснуть]] (+ [[druid-glossary#^moonfire|Лунный огонь]], если в сборке) → набрать 5 очков комбо
 4. [[druid-glossary#^tigers-fury|Тигриное неистовство]]
-5. [[druid-glossary#^rip|Разорвать]] ([[druid-glossary#^snapshotting|снапшотит]] TF)
-6. [[druid-glossary#^berserk-feral|Берсерк]]
+5. [[druid-glossary#^rip|Разорвать]] (снапшотит Тигриное неистовство)
+6. [[druid-glossary#^berserk-feral|Берсерк]] + тринкет + зелье
 7. [[druid-glossary#^feral-frenzy|Дикое бешенство]] → [[druid-glossary#^ferocious-bite|Свирепый укус]]
 8. [[druid-glossary#^convoke|Созыв духов]]
 
-> [!note] Продвинутый [[druid-glossary#^chomp|Быстрый укус]] Opener
-> Перед пулом слить [[druid-glossary#^energy|энергию]] через [[druid-glossary#^swipe|Размах]], затем:
-> [[druid-glossary#^prowl|Крадущийся зверь]] → [[druid-glossary#^rake|Глубокая рана]] → [[druid-glossary#^tigers-fury|Тигриное неистовство]] + [[druid-glossary#^berserk-feral|Берсерк]] → [[druid-glossary#^chomp|Быстрый укус]] → [[druid-glossary#^feral-frenzy|Дикое бешенство]] → [[druid-glossary#^rip|Разорвать]] → [[druid-glossary#^convoke|Созыв духов]]
-
-### [[druid-glossary#^aoe|AoE]] Opener (M+)
+### Опенер AoE (M+)
 
 1. [[druid-glossary#^prowl|Крадущийся зверь]]
 2. [[druid-glossary#^rake|Глубокая рана]] (из стелса)
-3. [[druid-glossary#^rake|Глубокая рана]]/[[druid-glossary#^swipe|Размах]] → набрать 5 [[druid-glossary#^cp|CP]] (с [[druid-glossary#^double-clawed-rake|Раздвоенные когти]] - приоритет [[druid-glossary#^rake|Глубокая рана]] по нескольким целям)
+3. [[druid-glossary#^rake|Глубокая рана]] / [[druid-glossary#^swipe|Размах]] → набрать 5 очков комбо
 4. [[druid-glossary#^tigers-fury|Тигриное неистовство]]
-5. [[druid-glossary#^primal-wrath|Первобытный гнев]]
-6. [[druid-glossary#^berserk-feral|Берсерк]]
+5. [[druid-glossary#^primal-wrath|Первобытный гнев]] (раздать Разорвать)
+6. [[druid-glossary#^berserk-feral|Берсерк]] + тринкет
 7. [[druid-glossary#^feral-frenzy|Дикое бешенство]] → [[druid-glossary#^ferocious-bite|Свирепый укус]]
-8. [[druid-glossary#^convoke|Созыв духов]]
-9. [[druid-glossary#^primal-wrath|Первобытный гнев]] (обновить [[druid-glossary#^rip|Разорвать]])
+8. [[druid-glossary#^convoke|Созыв духов]] → обновлять Первобытным гневом
 
 ---
 
-## [[druid-glossary#^st|ST]] приоритет (рейды)
+## ST приоритет (бой по одной цели)
 
-1. **[[druid-glossary#^berserk-feral|Берсерк]]** - по [[druid-glossary#^cd|КД]], синхронить с [[druid-glossary#^tigers-fury|Тигриное неистовство]]
-2. **[[druid-glossary#^tigers-fury|Тигриное неистовство]]** - по КД при низкой [[druid-glossary#^energy|энергии]] (не [[druid-glossary#^overcap|оверкапить]])
-3. **[[druid-glossary#^convoke|Созыв духов]]** - с активными [[druid-glossary#^berserk-feral|Берсерк]] + [[druid-glossary#^tigers-fury|Тигриное неистовство]]
-4. **[[druid-glossary#^feral-frenzy|Дикое бешенство]]** - при низких [[druid-glossary#^cp|CP]]
-5. **[[druid-glossary#^chomp|Быстрый укус]]** - по КД, слить [[druid-glossary#^energy|энергию]] до <30% перед использованием, идеально во время TF
-6. **[[druid-glossary#^rake|Глубокая рана]]** - держать, обновлять в [[druid-glossary#^pandemic|пандемик]] (<3.6с), приоритет рефреша при TF (апгрейд [[druid-glossary#^snapshotting|снапшота]])
-7. **[[druid-glossary#^rip|Разорвать]]** - держать на цели (5 [[druid-glossary#^cp|CP]]), рефрешить в [[druid-glossary#^pandemic|пандемик]] (<5.8с) если [[druid-glossary#^tigers-fury|Тигриное неистовство]] активен
-8. **[[druid-glossary#^ferocious-bite|Свирепый укус]]** - при 5 [[druid-glossary#^cp|CP]] если [[druid-glossary#^rip|Разорвать]] не в [[druid-glossary#^pandemic|пандемике]] или рефреш даунгрейднет (нет TF)
-9. **[[druid-glossary#^moonfire|Лунный огонь]]** - держать (если [[druid-glossary#^lunar-inspiration|Лунное вдохновение]])
-10. **[[druid-glossary#^shred|Полоснуть]]** - генерация [[druid-glossary#^cp|CP]], следить за [[druid-glossary#^panthers-guile|Хитрость пантеры]] [[druid-glossary#^proc|проками]], не спамить вслепую
+"Приоритет" - это список "что жать в первую очередь". Идёшь сверху вниз.
+
+1. **[[druid-glossary#^berserk-feral|Берсерк]]** - по КД, вместе с Тигриным неистовством.
+2. **[[druid-glossary#^tigers-fury|Тигриное неистовство]]** - по КД при низкой энергии (не оверкапить).
+3. **[[druid-glossary#^convoke|Созыв духов]]** - с активными Берсерком и Тигриным неистовством.
+4. **[[druid-glossary#^feral-frenzy|Дикое бешенство]]** - при низких очках комбо.
+5. **[[druid-glossary#^chomp|Быстрый укус]]** - по КД, слив энергию ниже 30%, идеально под Тигриным неистовством.
+6. **[[druid-glossary#^rake|Глубокая рана]]** - держать, обновлять в пандемик, приоритет обновления под Тигриным неистовством (апгрейд снапшота).
+7. **[[druid-glossary#^rip|Разорвать]]** - держать (5 очков), обновлять в пандемик, если активно Тигриное неистовство.
+8. **[[druid-glossary#^ferocious-bite|Свирепый укус]]** - при 5 очках, если Разорвать здоровое и обновление было бы даунгрейдом снапшота.
+9. **[[druid-glossary#^moonfire|Лунный огонь]]** - держать (если взято [[druid-glossary#^lunar-inspiration|Лунное вдохновение]]).
+10. **[[druid-glossary#^shred|Полоснуть]]** - билдер, не спамить вслепую (следи за проками).
+
+## AoE приоритет (M+)
+
+1. **[[druid-glossary#^berserk-feral|Берсерк]]** - по КД, с Тигриным неистовством.
+2. **[[druid-glossary#^tigers-fury|Тигриное неистовство]]** - по КД при низкой энергии.
+3. **[[druid-glossary#^convoke|Созыв духов]]** - с Берсерком и Тигриным неистовством (убедись, что Разорвать доживёт ченнел).
+4. **Бурное бешенство** (Frantic Frenzy) - AoE-версия Дикого бешенства, при низких очках.
+5. **[[druid-glossary#^chomp|Быстрый укус]]** - по КД, слив энергию ниже 30%.
+6. **[[druid-glossary#^primal-wrath|Первобытный гнев]]** - держать Разорвать на всех целях, обновлять в пандемик, снапшотить Тигриное неистовство.
+7. **[[druid-glossary#^ferocious-bite|Свирепый укус]]** - при 5 очках, если Разорвать здоровое (триггерит [[druid-glossary#^rampant-ferocity|Свирепое буйство]]).
+8. **[[druid-glossary#^apex-predators-craving|Жажда сверххищника]]** проки - тратить сразу.
+9. **[[druid-glossary#^rake|Глубокая рана]]** - по приоритетным целям ([[druid-glossary#^double-clawed-rake|Раздвоенные когти]] упрощают).
+10. **[[druid-glossary#^swipe|Размах]]** - билдер, когда все цели уже под Глубокой раной.
 
 ---
 
-## [[druid-glossary#^aoe|AoE]] приоритет (M+)
+## Окно зверя (бёрст и снапшоты)
 
-1. **[[druid-glossary#^berserk-feral|Берсерк]]** - по [[druid-glossary#^cd|КД]], синхронить с [[druid-glossary#^tigers-fury|Тигриное неистовство]]
-2. **[[druid-glossary#^tigers-fury|Тигриное неистовство]]** - по КД при низкой [[druid-glossary#^energy|энергии]]
-3. **[[druid-glossary#^convoke|Созыв духов]]** - с [[druid-glossary#^berserk-feral|Берсерк]] + TF, убедиться что [[druid-glossary#^rip|Разорвать]] доживёт весь ченнел
-4. **Frantic Frenzy** - при низких [[druid-glossary#^cp|CP]]
-5. **[[druid-glossary#^chomp|Быстрый укус]]** - по КД, слить [[druid-glossary#^energy|энергию]] до <30% перед использованием
-6. **[[druid-glossary#^primal-wrath|Первобытный гнев]]** - держать [[druid-glossary#^rip|Разорвать]] на всех целях, рефрешить в [[druid-glossary#^pandemic|пандемик]], [[druid-glossary#^snapshotting|снапшотить]] TF
-7. **[[druid-glossary#^ferocious-bite|Свирепый укус]]** - при 5 [[druid-glossary#^cp|CP]] если [[druid-glossary#^rip|Разорвать]] здоровый (5+ сек), триггерит [[druid-glossary#^rampant-ferocity|Свирепое буйство]]
-8. **[[druid-glossary#^apex-predators-craving|Жажда сверххищника]]** [[druid-glossary#^proc|проки]] - тратить сразу
-9. **[[druid-glossary#^rake|Глубокая рана]]** - по приоритетным целям ([[druid-glossary#^double-clawed-rake|Раздвоенные когти]] упрощает)
-10. **[[druid-glossary#^swipe|Размах]]** - генерация [[druid-glossary#^cp|CP]] когда все цели под [[druid-glossary#^rake|Глубокая рана]]
-11. **[[druid-glossary#^moonfire|Лунный огонь]]** - на приоритетные цели (если талант)
+Главное умение кота - **наложить блиды под усилением и не испортить их**.
+
+- **[[druid-glossary#^berserk-feral|Берсерк]] раз в 2 минуты - твоё определяющее окно.** Туда собираешь [[druid-glossary#^convoke|Созыв духов]] и [[druid-glossary#^feral-frenzy|Дикое бешенство]], тринкет и зелье.
+- **Снапшот - твой главный рычаг.** Блиды, наложенные под [[druid-glossary#^tigers-fury|Тигриным неистовством]] (и из стелса под [[druid-glossary#^prowl|Крадущимся зверем]]), бьют сильнее всю свою длительность. Поэтому Разорвать и Глубокую рану старайся накладывать/обновлять именно под Тигриным неистовством.
+- **Не перезаписывай хороший снапшот слабым.** Если блид уже усилен, а Тигриное неистовство сейчас неактивно - не трогай его, дай доработать.
+
+> [!tip] Идеальная связка
+> Слить энергию Полоснутами → [[druid-glossary#^tigers-fury|Тигриное неистовство]] → [[druid-glossary#^chomp|Быстрый укус]] → обновить блиды под усилением. Так и снапшот свежий, и Быстрый укус бьёт в полную силу.
 
 ---
 
 ## Дефенсивы и утилити
 
-### Дефенсивы
+Кот не самый живучий, но дефенсивы есть - главное жать их вовремя и не разом.
 
-| Способность | Эффект | **КД** |
+> [!tip] Главное про выживание
+> Слои защиты, а не всё сразу: **[[druid-glossary#^barkskin|Дубовая кожа]] → [[druid-glossary#^survival-instincts|Инстинкты выживания]] → Облик медведя + [[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]**. Ставь защиту **до** удара, а не после.
+
+### Дефенсивы (таблица для справки)
+
+| Способность | Что делает | Когда жать |
 |---|---|---|
-| **Дубовая кожа** (Barkskin) | **DR** 20%, можно кастовать в любой форме | 60с |
-| **Инстинкты выживания** (Survival Instincts) | **DR** 50%, 2 заряда | 2 мин |
-| Облик медведя (Bear Form) | Дополнительное HP + armor, использовать если дефы на **КД** | - |
-| **Сердце дикой природы** (Heart of the Wild) | Усиленная Облик медведя (Bear Form) для экстренных ситуаций | 5 мин |
-| Неистовое восстановление (Frenzied Regeneration) | Доступна в Облик кошки (Cat Form) через Empowered Shapeshifting (**DotC**) | - |
+| **[[druid-glossary#^barkskin\|Дубовая кожа]]** (Barkskin) | -20% урона, в любой форме | Первая линия, жать часто |
+| **[[druid-glossary#^survival-instincts\|Инстинкты выживания]]** (Survival Instincts) | -50% урона, 2 заряда | Под тяжёлый урон |
+| **Облик медведя** (Bear Form) | +HP и армор | Если дефы на КД |
+| **[[druid-glossary#^heart-of-the-wild\|Сердце дикой природы]]** (Heart of the Wild) | Усиление в экстренной ситуации | Длинный КД, на крайний случай |
 
-> [!note] Лейеринг
-> [[druid-glossary#^barkskin|Дубовая кожа]] → [[druid-glossary#^survival-instincts|Инстинкты выживания]] → Облик медведя (Bear Form) + [[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]. Не стакать дефы без нужды.
+> С Друидом-хищником доступно Неистовое восстановление (самохил) прямо в Облике кошки - удобно подлечиться, не выходя из формы.
 
-### Утилити
+### Утилити (полезности для группы)
 
-| Способность | Назначение |
-|---|---|
-| Лобовая атака (Skull Bash) | Интеррапт + мини-чардж |
-| **Тревожный рев** (Stampeding Roar) | Групповой спринт |
-| **Озарение** (Innervate) | Экстернал для хилера |
-| Rebirth | Боевое воскрешение |
-| **Умиротворение** (Soothe) | Снятие Enrage с врагов |
-| **Тайфун** (Typhoon) | Нокбэк |
-| **Вихрь Урсола** (Ursol's Vortex) | Контроль мобов, стягивание |
-| **Парализующий рык** (Incapacitating Roar) | AoE-инкапаситейт |
-| Знак дикой природы (Mark of the Wild) | Рейд-бафф |
-
----
-
-## Статы
-
-### Приоритет
-
-**Рейд ([[druid-glossary#^st|ST]]):** Agility > [[druid-glossary#^mastery-feral|Искусность: когти-лезвия]] > Crit > Haste > Versatility
-
-**M+ ([[druid-glossary#^aoe|AoE]]):** Agility > [[druid-glossary#^mastery-feral|Искусность: когти-лезвия]] ≈ Haste > Crit > Versatility
-
-> [!note] Статы спорны
-> Mastery - топ-стат в обоих режимах; за ним порядок Crit/Haste плавает от гира и контента. Сделай сим под свой набор.
-
-### Что даёт каждый стат
-
-- **[[druid-glossary#^mastery-feral|Искусность: когти-лезвия]] (Razor Claws)** - увеличивает урон [[druid-glossary#^bleed|блидов]] И [[druid-glossary#^finisher|финишеров]]. Топ-стат для большинства билдов
-- **Crit** - Primal Fury даёт 2 [[druid-glossary#^cp|CP]] при крите, ускоряет ротацию
-- **Haste** - ускоряет генерацию [[druid-glossary#^energy|энергии]] и тики [[druid-glossary#^bleed|блидов]]
-- **Versatility** - плоский бонус к урону и хилу + [[druid-glossary#^damage-reduction|DR]]
-
-### Третичные статы
-
-- **Avoidance** - снижает AoE-урон (очень ценно в M+)
-- **Leech** - пассивный самохил от урона
-- **Speed** - нишево, но полезно на некоторых боссах
-
-### Энчанты и камни
-
-| Слот | Энчант |
-|---|---|
-| Оружие | Enchant Weapon - Acuity of the Ren'dorei |
-| Голова | Enchant Helm - Empowered Rune of Avoidance |
-| Плечи | Enchant Shoulders - Amirdrassil's Grace |
-| Грудь | Enchant Chest - Mark of the Worldsoul |
-| Ноги | Forest Hunter's Armor Kit |
-| Ботинки | Enchant Boots - Lynx's Dexterity |
-| Кольца | Enchant Ring - Zul'jin's Mastery |
-
-**Камни:**
-- Основной: Powerful Eversong Diamond
-- Остальные: Flawless Masterful Garnet / Flawless Masterful Peridot / Flawless Masterful Lapis (по одному каждого цвета)
+- **Лобовая атака** (Skull Bash) - прерывание + мини-рывок.
+- **[[druid-glossary#^stampeding-roar|Тревожный рев]]** - групповое ускорение.
+- **[[druid-glossary#^innervate|Озарение]]** - 8 сек бесплатных заклинаний для хилера.
+- **Rebirth** - боевое воскрешение союзника.
+- **[[druid-glossary#^soothe|Умиротворение]]** - снять Enrage с врага.
+- **[[druid-glossary#^typhoon|Тайфун]] / [[druid-glossary#^ursols-vortex|Вихрь Урсола]] / [[druid-glossary#^incapacitating-roar|Парализующий рык]]** - контроль и стягивание пака.
+- **Знак дикой природы** (Mark of the Wild) - бафф статов группе.
 
 ---
 
 ## Гир и тринкеты
 
-### Тир-сет (Midnight Season 1 - Luminous Bloom)
+Хороший комплект собирается не за один вечер - это долгий фарм по чуть-чуть.
 
-- **2-set:** Получение Ясности мысли (Clearcasting) от Omen of Clarity увеличивает шанс крита на 5% на 4 сек
-- **4-set:** Урон [[druid-glossary#^rake|Глубокая рана]] +20%. Ясность мысли (Clearcasting) увеличивает урон [[druid-glossary#^shred|Полоснуть]] или [[druid-glossary#^swipe|Размах]] на 15%
+> [!tip] Кратко про шмот
+> - **Из статов гонись за Искусностью** (подробнее в "Статы").
+> - **Тринкеты:** Алгет'арская шкатулка с секретом (Algeth'ar Puzzle Box, on-use) + Взор ясновидца Альн (Gaze of the Alnseer, passive) - сильная пара. On-use синхронить с Берсерком.
+> - **Уровень предмета (ilvl) важнее всего остального.**
 
-> [!note] Синергия
-> Берите [[druid-glossary#^moment-of-clarity|Момент ясности]] - больше [[druid-glossary#^proc|проков]] Ясности мысли (Clearcasting) = больше [[druid-glossary#^uptime|аптайм]] бонусов тир-сета.
+### Тир-сет (комплектный бонус, Midnight Season 1)
 
-### Оружие
+- **2 части:** прок Ясности мысли (Clearcasting) даёт +5% крита на 4 сек.
+- **4 части:** Глубокая рана бьёт сильнее, а Ясность мысли усиливает следующий Полоснуть/Размах.
 
-| Предмет | Источник | Контекст |
-|---|---|---|
-| Roostwarden's Bough | Windrunner Spire (данж) | M+ BiS |
-| Inescapable Reach | Vorasius (рейд) | Рейд BiS |
+> Берёшь [[druid-glossary#^moment-of-clarity|Момент ясности]] - больше проков Ясности мысли, значит, больше аптайма бонусов тир-сета. Собирай 4 части как можно раньше.
 
 ### Тринкеты
 
-**S-тир (рейд и M+):**
-- **Algeth'ar Puzzle Box** - on-use stat тринкет, синхронить с [[druid-glossary#^berserk-feral|Берсерк]]
-- **Gaze of the Alnseer** - пассивный stat stick (рейд, Chimaerus)
-- **Radiant Plume** - пассивный, сильный в обоих контекстах
+Правило: 1 on-use (синхронить с Берсерком + Тигриным неистовством) + 1 passive. Оптимум под свой шмот - **сделай сим**.
 
-**A-тир:**
-- Umbral Plume - stat stick для M+
-- Sealed Chaos Urn
-- Heart of Wind
-- Emberwing Feather
-- Vaelgor's Final Stare
+| Тринкет | Тип | Заметка |
+|---|---|---|
+| **Алгет'арская шкатулка с секретом** (Algeth'ar Puzzle Box) | On-use | Сильна в рейде и M+; жать в бёрст-окно |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive | Рейд; стак статов |
+| **Сияющее перо** (Radiant Plume) | Passive | Хорош в обоих контентах |
+| **Темное перо** (Umbral Plume) | Passive | Вариант под M+ |
+| **Перо Алозар** (Emberwing Feather) | On-use | Альтернатива |
 
-> [!important] Правило тринкетов
-> Всегда носить 1 on-use тринкет (Puzzle Box) + 1 пассивный. On-use синхронить с [[druid-glossary#^berserk-feral|Берсерк]] + [[druid-glossary#^tigers-fury|Тигриное неистовство]].
+### Оружие и эмбелишменты
 
-### Эмбеллишменты
+- **Рейд:** Неотвратимый взмах (Inescapable Reach, Vorasius). **M+:** Ветвь стража гнезда (Roostwarden's Bough, Windrunner Spire).
+- **Эмбелишменты (ранний рывок):** Импульс рыцаря крови (Blood Knight's Impetus) + Символ Новолуния «Охота» (Darkmoon Sigil: Hunt); Подкладка из тайной ткани (Arcanoweave Lining) на не-тир слоты. Носить можно только 2 эмбелишмент-предмета.
 
-**Ранний сезон:**
-- Blood Knight's Impetus + Darkmoon Sigil: Hunt
-- Arcanoweave Lining на не-тир слоты
+> [!note] Опционально (эндгейм): поздние BiS-эмбелишменты - на потом. На старте хватит ранней пары.
 
-**Поздний сезон (BiS):**
-- Masterwork Sin'dorei Band + Prismatic Focusing Iris
-- Silvermoon Agent's Deflectors + Stabilizing Gemstone Bandolier
-- Adherent's Silken Shroud (плащ) + Arcanoweave Lining
+### Расходники (бери на каждый серьёзный бой)
 
-### Консюмы
-
-| Тип | Предмет |
+| Тип | Название |
 |---|---|
-| Фласка | Flask of the Blood Knights (максимум DPS) / Flask of the Magisters (альтернатива) |
-| Еда | Silvermoon Parade / Harandar Celebration (пир) / Crimson Calamari (личная) |
-| Боевое зелье | Potion of Recklessness / Draught of Rampant Abandon (осторожно: войд-лужа сайленсит) |
-| Хил-зелье | Silvermoon Health Potion |
-| Масло на оружие | Thalassian Phoenix Oil |
-| Аугмент руна | Void-Touched Augment Rune |
+| Фласка | Настой рыцарей крови (Flask of the Blood Knights); альтернатива - Настой магистров (Flask of the Magisters) |
+| Еда | Празднество Харандара (Harandar Celebration, пир) / Багровый кальмар (Crimson Calamari, личная) |
+| Боевое зелье | Зелье безрассудства (Potion of Recklessness) |
+| Лечебное зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
+| Масло на оружие | Талассийское масло феникса (Thalassian Phoenix Oil) |
+| Augment Rune | Меченная Бездной руна усиления (Void-Touched Augment Rune) |
 
 ---
 
-## Расы
+## Статы
 
-### Alliance
+Статы - это вторичные характеристики на шмоте. Для урона порядок такой:
 
-**Night Elf** (лучший выбор) - Shadowmeld даёт:
-- Ре-стелс в бою → усиленный [[druid-glossary#^rake|Глубокая рана]] ([[druid-glossary#^prowl|Крадущийся зверь]]-[[druid-glossary#^snapshotting|снапшот]])
-- Дроп таргета в M+ (избежание опасных механик)
-- Значимый DPS-прирост по сравнению с другими расами
+**Ловкость (главный) > Искусность > Критический удар ≈ Скорость > Универсальность**
 
-### Horde
+> [!tip] Кратко
+> Гонись за **Искусностью** - она усиливает урон блидов и финишеров (твоя основа). Дальше Критический удар и Скорость идут близко и плавают от гира. Точный набор **под свой** шмот узнаешь через [Raidbots](https://www.raidbots.com).
 
-**Tauren** (лучший выбор) - Громовая поступь (War Stomp) даёт AoE-стан, полезно в M+ для контроля. Урон немного уступает Night Elf, но разница небольшая.
+Чуть подробнее, что каждый стат делает:
+- **Ловкость** (Agility) - прибавляет урон всему, растёт сам с уровнем предметов.
+- **Искусность** (Mastery) ([[druid-glossary#^mastery-feral|Искусность: когти-лезвия]]) - усиливает блиды И способности Облика кошки. Топ-стат.
+- **Критический удар** (Critical Strike) - при крите Изначальное неистовство (Primal Fury) даёт 2 очка комбо, ускоряет ротацию.
+- **Скорость** (Haste) - быстрее генерация энергии и тики блидов.
+- **Универсальность** (Versatility) - немного урона и защиты, в последнюю очередь.
 
-> [!note] Практический совет
-> Разница между расами минимальна (<1% DPS). Night Elf имеет преимущество за счёт Shadowmeld-утилити, но выбирайте что нравится - это не сломает вам рейтинг.
+> Третичные статы: Avoidance (снижает AoE-урон, ценно в M+), Leech (пассивный самохил), Speed (нишево).
+
+### Раса
+
+Друид ограничен в выборе рас.
+
+- **Night Elf** (Alliance) - сильнейший выбор: Shadowmeld даёт ре-стелс в бою (усиленная Глубокая рана через снапшот стелса) и сброс таргета в M+.
+- **Tauren** (Horde) - Громовая поступь (War Stomp) даёт AoE-стан, полезный в ключах.
+- Разница по урону между расами минимальна - **играй за кого нравится**.
+
+### Энчанты и гемы
+
+- **Гемы:** Могучий алмаз Вечной Песни (Powerful Eversong Diamond) + Безупречный гранат искусности (Flawless Masterful Garnet) / хризолит (Flawless Masterful Peridot) / лазурит (Flawless Masterful Lapis) - по одному каждого цвета.
+- **Оружие:** Проницательность рен'дорай (Acuity of the Ren'dorei). **Голова:** Усиленная руна избежания (Empowered Rune of Avoidance). **Плечи:** Милость Амирдрассила (Amirdrassil's Grace).
+- **Грудь:** Метка души мира (Mark of the Worldsoul). **Ноги:** Накладки для доспехов лесного охотника (Forest Hunter's Armor Kit). **Ботинки:** Рысья стремительность (Lynx's Dexterity). **Кольца:** Искусность Зул'джина (Zul'jin's Mastery).
+
+---
+
+## Частые ошибки
+
+Эти ошибки на старте делают почти все - это нормально и легко правится. Если урон не растёт, загляни в список.
+
+- **Роняешь блиды.** Глубокая рана и Разорвать - львиная доля урона, держи их аптайм близко к 100%.
+- **Перезаписываешь хороший снапшот слабым.** Не обновляй усиленный блид без активного Тигриного неистовства - это даунгрейд.
+- **Оверкапишь энергию.** Дошла под потолок - простаиваешь. Жми Тигриное неистовство при низкой энергии.
+- **Копишь проки Жажды сверххищника.** Бесплатные Свирепые укусы трать сразу.
+- **Жмёшь Берсерк "когда вспомнил".** Тринкет, зелье, Созыв духов и Дикое бешенство уходят в окно Берсерка, а не вразнобой.
+- **Ставишь дефенсивы после удара.** Защиту вешай до урона, и не всё разом - слоями.
+
+---
+
+## Напоследок
+
+Сначала будет казаться, что урон капает медленно, а снапшоты ускользают. Это нормально: как только блиды начнут ложиться под Тигриным неистовством, а окно Берсерка - совпадать с тринкетом и зельем, цифры подскочат. Дай себе несколько пуллов - и зверь разойдётся.

@@ -10,110 +10,132 @@ created: 2026-03-15
 
 Термины и сокращения → [[druid-glossary|Глоссарий]]
 
-> **Patch:** 12.0.5 (Midnight Season 1)
+> **Patch:** 12.0.7 (Midnight Season 1)
+
+> [!note] Про названия
+> Способности названы по-русски (как в игре), в скобках - оригинал на английском (он нужен для аддонов, симулятора и Wowhead). Названия гира, тринкетов, гемов, расходников, статов и энчантов даны как `Русское (English)`.
+
+> Под рейд есть отдельные разборы по сложностям: [[resto-raid-guide-normal|нормал]], [[resto-raid-guide-heroic|героик]], [[resto-raid-guide-mythic|мифик]].
+
+---
+
+*Друид-древо: ты заранее оплетаешь группу ростками лечения, и к удару они уже расцветают.*
+
+## Главное за минуту
+
+Костяк, чтобы группа сразу жила - нюансы придут с игрой:
+
+1. **Держи [[druid-glossary#^lifebloom|Жизнецвет]] на танке постоянно.** Это твой главный одиночный HoT и основа [[druid-glossary#^everbloom|Вечного цветения]]. Рефреши в последние ~4.5 сек, чтобы сработал блум.
+2. **Держи [[druid-glossary#^efflorescence|Период цветения]] под группой** - бесплатный фоновый AoE-хил, 100% аптайма.
+3. **Лечи проактивно (рамп).** Заранее раскидай [[druid-glossary#^rejuvenation|Омоложения]] и подними кулдаун ДО входящего урона - это сильнее, чем тушить по факту.
+4. **[[druid-glossary#^swiftmend|Быстрое восстановление]] - по КД.** Это не просто хил, а спусковой крючок для [[druid-glossary#^soul-of-the-forest-resto|Души леса]], [[druid-glossary#^grove-guardians|Стражей рощи]] и блумов.
+5. **Следи за маной.** Её главный лимит хилера: не спамь дорогие заклинания впустую, в затишьях кастуй [[druid-glossary#^wrath|Гнев]] для регенерации маны.
+
+## Как играть за рестора (в двух словах)
+
+Рестор друид - **проактивный HoT-хилер**: ты не столько тушишь пожары, сколько заранее оплетаешь группу лечением со временем. Геймплей держится на трёх вещах:
+
+- **Поддерживаешь HoT-ы:** [[druid-glossary#^lifebloom|Жизнецвет]] на танке, [[druid-glossary#^efflorescence|Период цветения]] под группой, [[druid-glossary#^rejuvenation|Омоложения]] на тех, кто берёт урон.
+- **Рампишь под урон:** заранее разгоняешь HoT-ы и поднимаешь большой КД, чтобы встретить всплеск на максимуме хила.
+- **Бережёшь ману** - кончится, и лечить будет нечем.
+
+Поймал этот ритм - и дальше руки сами.
+
+> [!info] Словарик терминов
+> - **Хилер** - тот, кто лечит группу. **Throughput** - сколько хила в секунду ты выдаёшь.
+> - **HoT** (heal over time) - лечение со временем, тикает само (напр. Омоложение).
+> - **Спот-хил** - точечное лечение одной цели; **групповой хил** - на всех сразу.
+> - **Рамп** - заранее "разогнать" HoT-ы и баффы перед входящим уроном.
+> - **Оверхил** - лечение сверх макс. HP (уходит впустую).
+> - **Мана** - ресурс хилера, тратится на заклинания; кончится - лечить нечем.
+> - **КД** - кулдаун (перезарядка). **GCD** - глобальная перезарядка (~1.5 сек). **Прок** - случайное срабатывание бонуса.
+> - **Кастовать** - применять заклинание (которое "кастуется"). **Аптайм** - доля времени, когда эффект активен.
+> - **Катвивинг** (cat-weaving) - перешифт в Облик кошки ради урона, когда лечить никого не надо (важно в M+).
+> - **ST** - по одной цели, **AoE** - по нескольким. **Пак** - группа врагов в подземелье.
+> - **Симить** - прогнать персонажа в [Raidbots](https://www.raidbots.com), чтобы узнать, что лучше для твоего шмота.
+> - **BiS** - лучший предмет в слот; **ilvl** - уровень предмета. **M+ / ключи** - Mythic+ подземелья.
 
 ---
 
 ## Что изменилось в Midnight (12.0)
 
-> [!important] Midnight - крупнейшая переработка Resto Druid за несколько дополнений
-> Спек стал проще: меньше кнопок, меньше активных [[druid-glossary#^cd|КД]], фокус на [[druid-glossary#^hot|HoT]]-менеджменте и [[druid-glossary#^ramp|рампах]].
+> Можно пропустить, если не играл в прошлых аддонах - этот раздел про изменения.
 
-### Удалённые способности
-- Cenarion Ward, Overgrowth, Spring Blossoms, Renewal, Nature's Vigil, Flash of Clarity
-- **Nourish** - возвращён в переработанном виде (талант, ~4-5% хила в M+ у топ-игроков)
+Крупнейшая переработка рестора за несколько дополнений: меньше кнопок, меньше активных КД, фокус на HoT-менеджменте и рампах.
 
-### Переработанные механики
-- **[[druid-glossary#^flourish|Расцвет]]** - слит в [[druid-glossary#^tranquility|Спокойствие]] (пассивный эффект, продлевает все [[druid-glossary#^hot|HoT]] на 10 сек при касте Tranquility). Мощнее, но реже доступен.
-- **[[druid-glossary#^grove-guardians|Стражи рощи]]** - стали пассивными: спавнятся автоматически от [[druid-glossary#^swiftmend|Быстрое восстановление]] и [[druid-glossary#^wild-growth|Буйный рост]] вместо активного каста
-- **[[druid-glossary#^soul-of-the-forest-resto|Душа леса]]** - теперь баффает только [[druid-glossary#^rejuvenation|Омоложение]] и [[druid-glossary#^regrowth|Восстановление]] (убрана синергия с [[druid-glossary#^wild-growth|Буйный рост]])
-- **[[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]** - стал инстант-абилкой на основе текущей формы
-- **[[druid-glossary#^efflorescence|Период цветения]]** - может привязываться к цели [[druid-glossary#^lifebloom|Жизнецвет]] через талант Lifetreading
-- **Cultivation** - переработан: триггерит дополнительный хил, когда цель падает ниже 60% HP
+**Удалено:**
+- Щит Кенария (Cenarion Ward), Буйство природы (Overgrowth), Весенние цветы (Spring Blossoms), Обновление (Renewal), Природная чуткость (Nature's Vigil), Вспышка ясности (Flash of Clarity) - убраны.
 
-### Новое
-- **[[druid-glossary#^everbloom|Вечное цветение]]** (Apex-талант) - кардинально усиливает [[druid-glossary#^lifebloom|Жизнецвет]] (подробности ниже)
-- **[[druid-glossary#^power-of-the-archdruid|Сила верховного друида]]** - переработан: привязан к [[druid-glossary#^soul-of-the-forest-resto|Душа леса]], 100% шанс, 2 доп. хила
-- **[[druid-glossary#^natures-bounty|Щедрость природы]]** - 20% хила [[druid-glossary#^regrowth|Восстановление]] сплэшится на других союзников с активным Regrowth
-- **[[druid-glossary#^mastery-resto|Искусность: гармония]]** - усилен: 9% за [[druid-glossary#^hot|HoT]] (вместо 6%), макс 5 HoT-ов = до +45%
+**Переработано:**
+- **[[druid-glossary#^flourish|Расцвет]]** - слит в [[druid-glossary#^tranquility|Спокойствие]]: теперь Спокойствие само продлевает все HoT-ы на 10 сек. Мощнее, но реже доступно.
+- **[[druid-glossary#^grove-guardians|Стражи рощи]]** - стали пассивными: спавнятся сами от [[druid-glossary#^swiftmend|Быстрого восстановления]] и [[druid-glossary#^wild-growth|Буйного роста]].
+- **[[druid-glossary#^soul-of-the-forest-resto|Душа леса]]** - теперь баффает только Омоложение и Восстановление.
+- **[[druid-glossary#^heart-of-the-wild|Сердце дикой природы]]** - стал инстант-абилкой с эффектом по форме.
 
-### Изменения Hero Talents
-- **[[druid-glossary#^keeper-of-the-grove-resto|Хранитель рощи]]:** Dream Surge нерфнут (2 лепестка вместо 3), добавлены Cenarius' Might (+20% [[druid-glossary#^swiftmend|Быстрое восстановление]]), Sylvan Beckoning, Spirit of the Thicket
-- **[[druid-glossary#^wildstalker-resto|Следопыт]]:** Strategic Infusion (+4% крит [[druid-glossary#^hot|HoT]]), Patient Custodian (+6% эффективность HoT), Rampancy (новая механика [[druid-glossary#^symbiotic-bloom|Симбиотический цветок]])
+**Добавлено / усилено:**
+- **[[druid-glossary#^everbloom|Вечное цветение]]** (Apex) - кардинально усиливает [[druid-glossary#^lifebloom|Жизнецвет]] (подробнее ниже).
+- **[[druid-glossary#^power-of-the-archdruid|Сила верховного друида]]** - привязана к Душе леса, 100% шанс, 2 доп. хила.
+- **[[druid-glossary#^natures-bounty|Щедрость природы]]** - часть хила Восстановления сплэшится на других с активным Восстановлением.
+- **[[druid-glossary#^mastery-resto|Искусность: гармония]]** - усилена: 9% за каждый HoT на цели (до 5 = +45%).
 
 ---
 
 ## Сильные и слабые стороны
 
-### Сильные стороны
-- Множество мощных [[druid-glossary#^cd|кулдаунов]] для бёрст-хила
-- Отличная мобильность - большинство заклинаний можно кастовать на ходу ([[druid-glossary#^hot|HoT]]-ы инстант)
-- Сильный проактивный хил через [[druid-glossary#^ramp|рамп]]-механику
-- Концентрированный [[druid-glossary#^st|ST]] хил через [[druid-glossary#^lifebloom|Жизнецвет]] + [[druid-glossary#^everbloom|Вечное цветение]]
-- Высокая выживаемость для хилера ([[druid-glossary#^barkskin|Дубовая кожа]], [[druid-glossary#^survival-instincts|Инстинкты выживания]], [[druid-glossary#^protective-growth|Защитный рост]])
-- Полезная утилити: [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^stampeding-roar|Тревожный рев]], [[druid-glossary#^soothe|Умиротворение]], [[druid-glossary#^typhoon|Тайфун]]
+Полезно знать сильные стороны класса и его слабые места - так понятнее, где играть в удовольствие, а где быть внимательнее.
 
-### Слабые стороны
-- Требует точного тайминга [[druid-glossary#^cd|КД]] и подготовки [[druid-glossary#^ramp|рампов]]
-- Слабый реактивный хил на непредсказуемый [[druid-glossary#^burst|бёрст]]-урон
-- Сравнительно низкий урон в рейде (в M+ компенсируется мощным [[druid-glossary#^catweaving|cat-weaving]] - топ-друиды делают конкурентный DPS)
-- [[druid-glossary#^mana|Мана]]-зависимость - неэффективный спам быстро опустошает ману
+**В чём рестор хорош:**
+- **Много мощных кулдаунов** для бёрст-хила.
+- **Отличная мобильность** - HoT-ы инстант, почти всё можно кастовать на ходу.
+- **Сильный проактивный хил** через рамп-механику.
+- **Концентрированный одиночный хил** через [[druid-glossary#^lifebloom|Жизнецвет]] + [[druid-glossary#^everbloom|Вечное цветение]] (в данжах делает танка очень живучим).
+- **Высокая живучесть для хилера** ([[druid-glossary#^barkskin|Дубовая кожа]], [[druid-glossary#^survival-instincts|Инстинкты выживания]], [[druid-glossary#^protective-growth|Защитный рост]]).
+- **Полезная утилити:** [[druid-glossary#^innervate|Озарение]], [[druid-glossary#^stampeding-roar|Тревожный рев]], [[druid-glossary#^soothe|Умиротворение]], [[druid-glossary#^typhoon|Тайфун]].
+
+**Слабые места класса:**
+- **Требует точного тайминга КД и подготовки рампов** - реактивная игра ему даётся хуже.
+- **Слабоват против непредсказуемого резкого урона** - когда нет времени разогнать HoT-ы.
+- **Завязан на мане** - неаккуратный спам быстро её опустошает.
 
 ---
 
 ## Таланты
 
-### Hero Talent
+Таланты - это твоя "сборка". Не вникай в каждую кнопку сразу: ниже есть готовые сборки, которые можно просто скопировать в игру.
 
-- **Рейд: [[druid-glossary#^keeper-of-the-grove-resto|Хранитель рощи]]** - [[druid-glossary#^grove-guardians|Стражи рощи]] спавнятся пассивно при касте [[druid-glossary#^swiftmend|Быстрое восстановление]] и [[druid-glossary#^wild-growth|Буйный рост]], дают [[druid-glossary#^burst|бёрст]]-хил и дефенсив [[druid-glossary#^protective-growth|Защитный рост]] (−8% урона при активном [[druid-glossary#^regrowth|Восстановление]]). Лучший выбор для рейдового контента.
-- **M+: [[druid-glossary#^wildstalker-resto|Следопыт]]** - [[druid-glossary#^symbiotic-bloom|Симбиотический цветок]] (уникальный [[druid-glossary#^hot|HoT]]) усиливает хил на цели и добавляет стак [[druid-glossary#^mastery-resto|Искусность: гармония]]. Абсолютно доминирует в M+. Синергия с [[druid-glossary#^catweaving|cat-weaving]]: Bloodseeker Vines и Bursting Growth дают значительный пассивный урон.
-- **M+ альтернатива: [[druid-glossary#^keeper-of-the-grove-resto|Хранитель рощи]]** - играбелен на ключах 11-13. Больше Caster DPS (Moonfire/Wrath) вместо catweaving. DPS-профиль: Moonfire ~50%, Дикое бешенство (Feral Frenzy) ~20%, Wrath ~18%. Проще в исполнении, но потолок урона ниже.
+### Героическое древо (главная развилка сборки)
 
-### Apex-талант
+> [!note] Итог: Хранитель рощи в рейд, Следопыт в M+
+> У рестора два героических древа - **[[druid-glossary#^keeper-of-the-grove-resto|Хранитель рощи]]** (Keeper of the Grove) и **[[druid-glossary#^wildstalker-resto|Следопыт]]** (Wildstalker). В рейде бери **Хранителя рощи**, в ключах - **Следопыта**. Оба полностью рабочие.
 
-- **[[druid-glossary#^everbloom|Вечное цветение]]** (новинка Midnight) - усиливает [[druid-glossary#^lifebloom|Жизнецвет]]:
-  - Ранг 1: [[druid-glossary#^lifebloom|Жизнецвет]] автоматически стакается до 3 раз (каждые 5 сек)
-  - Ранг 2-3: 15/30% хила [[druid-glossary#^lifebloom|Жизнецвет]] сплэшится на 2 ближайших союзников
-  - Ранг 4: при потреблении [[druid-glossary#^soul-of-the-forest-resto|Душа леса]] - [[druid-glossary#^lifebloom|Жизнецвет]] блумится 5 раз подряд
-  - В данжах делает танка практически бессмертным. Берём всегда.
+- **[[druid-glossary#^keeper-of-the-grove-resto|Хранитель рощи]]** (Keeper of the Grove) - [[druid-glossary#^grove-guardians|Стражи рощи]] спавнятся пассивно от [[druid-glossary#^swiftmend|Быстрого восстановления]] и [[druid-glossary#^wild-growth|Буйного роста]], дают бёрст-хил и дефенсив [[druid-glossary#^protective-growth|Защитный рост]]. Лучший в рейде.
+- **[[druid-glossary#^wildstalker-resto|Следопыт]]** (Wildstalker) - [[druid-glossary#^symbiotic-bloom|Симбиотический цветок]] усиливает хил на цели и стакает Искусность. Доминирует в M+ и отлично сочетается с катвивингом (твои блиды дают заметный пассивный урон).
 
-### Ключевые таланты
+> [!tip] Хранитель рощи в M+
+> Хранителя можно играть и в ключах - он проще: больше урона заклинаниями (Лунный огонь/Гнев) вместо катвивинга. Потолок урона ниже, но порог входа мягче.
 
-Всегда берём:
-- **[[druid-glossary#^soul-of-the-forest-resto|Душа леса]]** - [[druid-glossary#^swiftmend|Быстрое восстановление]] усиливает следующий [[druid-glossary#^regrowth|Восстановление]] или [[druid-glossary#^rejuvenation|Омоложение]] на 60%, применяется к нескольким союзникам через [[druid-glossary#^power-of-the-archdruid|Сила верховного друида]]
-- **[[druid-glossary#^power-of-the-archdruid|Сила верховного друида]]** - после потребления [[druid-glossary#^soul-of-the-forest-resto|Душа леса]] применяет 2 дополнительных целевых хила (100% шанс)
-- **[[druid-glossary#^wild-growth|Буйный рост]]** - основной [[druid-glossary#^aoe|AoE]] [[druid-glossary#^hot|HoT]], триггерит [[druid-glossary#^grove-guardians|Стражи рощи]] (Keeper)
-- **[[druid-glossary#^swiftmend|Быстрое восстановление]]** - ключевой [[druid-glossary#^cd|КД]], триггерит [[druid-glossary#^soul-of-the-forest-resto|Душа леса]] и [[druid-glossary#^grove-guardians|Стражи рощи]]
-- **[[druid-glossary#^lifebloom|Жизнецвет]]** - должен быть активен постоянно, основа [[druid-glossary#^everbloom|Вечное цветение]]
-- **[[druid-glossary#^efflorescence|Период цветения]]** - 100% [[druid-glossary#^uptime|аптайм]] на группе/рейде
-- **[[druid-glossary#^innervate|Озарение]]** - 8 сек бесплатных заклинаний, юзать во время [[druid-glossary#^ramp|рампа]]
+### Apex талант
 
-Рейд ([[druid-glossary#^keeper-of-the-grove-resto|Хранитель рощи]]):
-- **[[druid-glossary#^incarnation-resto|Воплощение: древо жизни]]** - основной [[druid-glossary#^burst|бёрст]]-кулдаун (~1:40 [[druid-glossary#^cd|КД]]): +10% хила, +40% [[druid-glossary#^rejuvenation|Омоложение]], −30% маны на Rejuv, инстант [[druid-glossary#^regrowth|Восстановление]]. Менее требователен к таймингу чем [[druid-glossary#^convoke|Созыв духов]]. Активировать за 10-12 сек до бёрст-урона.
-- **[[druid-glossary#^abundance|Изобилие]]** - каждый активный [[druid-glossary#^rejuvenation|Омоложение]] даёт 8% крита [[druid-glossary#^regrowth|Восстановление]] (при 10-12 Rejuv = почти 100% крит)
-- **[[druid-glossary#^tranquility|Спокойствие]]** - автоматически применяет [[druid-glossary#^flourish|Расцвет]] (продлевает все [[druid-glossary#^hot|HoT]] на 10 сек). ~2.5 мин [[druid-glossary#^cd|КД]].
-- **[[druid-glossary#^natures-bounty|Щедрость природы]]** - 20% хила [[druid-glossary#^regrowth|Восстановление]] сплэшится на других союзников с активным Regrowth
-- **[[druid-glossary#^master-shapeshifter|Ловкий оборотень]]** - генерация [[druid-glossary#^mana|маны]] через [[druid-glossary#^wrath|Гнев]]/[[druid-glossary#^starfire|Звездный огонь]] в даунтайме
+- **[[druid-glossary#^everbloom|Вечное цветение]]** (Everbloom) - единственный Apex, бери всегда. Усиливает [[druid-glossary#^lifebloom|Жизнецвет]]: он сам стакается до 3 раз, сплэшит хил на соседей, а при трате [[druid-glossary#^soul-of-the-forest-resto|Души леса]] блумится несколько раз подряд. В данжах делает танка очень живучим.
 
-M+ ([[druid-glossary#^wildstalker-resto|Следопыт]]):
-- **[[druid-glossary#^convoke|Созыв духов]]** - [[druid-glossary#^burst|бёрст]]-хил (~1 мин [[druid-glossary#^cd|КД]]), кастует 12-16 случайных способностей друида, ~50% шанс мини-Flourish, можно кастовать в Облик кошки (Cat Form)
-- **[[druid-glossary#^symbiotic-relationship|Симбиотическая связь]]** - ставить на танка перед пулом
-- **Nourish** - талант, ~4-5% общего хила, заметный вклад в M+
-- **[[druid-glossary#^catweaving|Cat-weaving]]** - **ключевая** часть геймплея M+, не опциональная. Топ-игроки проводят значительное время в Облик кошки (Cat Form):
-  - **Дикое бешенство** (Feral Frenzy) - главный DPS-кулдаун (17-25% общего урона)
-  - **Разорвать** (Rip) - основной DoT (12-19% урона)
-  - **Глубокая рана** (Rake) - DoT + opener (8-14% урона)
-  - **Полоснуть** (Shred) - филлер в Облик кошки (Cat Form)
-  - **Sunfire/Moonfire/Thrash** - AoE DoT-ы (на больших пулах)
-  - **Bloodseeker Vines** - пассивный урон Wildstalker (5-8%)
-- **[[druid-glossary#^ursols-vortex|Вихрь Урсола]] / [[druid-glossary#^typhoon|Тайфун]] / [[druid-glossary#^incapacitating-roar|Парализующий рык]]** - утилити для контроля без потери хила
+### Провальные таланты
+
+> [!warning] Не трать очки вслепую
+> Не бери узлы наугад - опирайся на готовые билды ниже. Чисто урон-узлы класс-дерева в чистый хил-билд не нужны.
+
+### Что обязательно взять
+
+- **[[druid-glossary#^soul-of-the-forest-resto|Душа леса]]** + **[[druid-glossary#^power-of-the-archdruid|Сила верховного друида]]** - связка, которая раздаёт усиленные хилы после Быстрого восстановления.
+- **[[druid-glossary#^abundance|Изобилие]]** (рейд) - каждое активное Омоложение поднимает крит Восстановления; при 10-12 Омоложениях Восстановление критует почти всегда.
 
 ---
 
 ## Готовые билды (импорт)
 
-> [!note] Импорт строки для Patch 12.0.5 (Midnight Season 1)
-> Скопируйте строку и вставьте в окно талантов в игре (кнопка "Импорт").
+> Не хочешь разбираться - скопируй строку и вставь в игре: открой таланты (**N**) → Loadouts → Import Loadout → вставь → Import.
+
+> [!note]
+> Импорт-строки могут поменяться с хотфиксами. Если строка не грузится - возьми свежую на [Wowhead](https://www.wowhead.com/guide/classes/druid/restoration/talent-builds-pve-healer).
 
 ### Рейд (Keeper of the Grove)
 
@@ -121,17 +143,11 @@ M+ ([[druid-glossary#^wildstalker-resto|Следопыт]]):
 CkGAAAAAAAAAAAAAAAAAAAAAAMjxMbz2MmZGzywDMmxmxCzAAAAAAAAAAgtBNbMmmhxMmlZmZmhhZGAAAAAAAAstM2w0MzyAAAEwCjZGMzA0MAYmBAMA
 ```
 
-> [!note] Почему Incarnation вместо Convoke?
-> [[druid-glossary#^incarnation-resto|Воплощение: древо жизни]] требует значительно меньше тайминга и освобождает [[druid-glossary#^mana|ману]] для использования тир-сета Season 1.
-
 ### M+ (Wildstalker)
 
 ```
 CkGA8cL7tpvige+kkmGM9zUPWPMmZZMjZmxsNMMmFmNbzAAAAAAAAAAglBNbzw0MjhHwsYmZGmhHYGAAAAADAwMALjFMNzsAAwsNzWzyML2YMDMzsYQzAAzMzAwA
 ```
-
-> [!important] Cat-weaving - неотъемлемая часть M+ меты
-> Билд включает полную [[druid-glossary#^catweaving|cat-weaving]] ротацию (Feral Frenzy, Rip, Rake, Shred). Топ-игроки тратят значительное время в Облик кошки (Cat Form) между хилом. Это **не опционально** для высоких ключей - catweaving даёт 40-60% общего урона друида.
 
 ### Delves (Wildstalker)
 
@@ -143,271 +159,178 @@ CkGAAAAAAAAAAAAAAAAAAAAAAMMmxYGzMjZbmZYYhZx2MAAAAAAAAAAYbQzmhpZMzYMLmZmZWmhxAAAA
 
 ## Ключевые правила
 
-**[[druid-glossary#^ramp|Рамп]]-хилер** - Рестор друид это проактивный хилер. Предварительное наложение [[druid-glossary#^hot|HoT]]-ов до входящего урона значительно эффективнее реактивного хила. Планировать [[druid-glossary#^ramp|рампы]] под опасные фазы босса.
+То, что превращает хаотичное лечение в стабильный хил. Каждое правило - с объяснением, **почему** так.
 
-**[[druid-glossary#^lifebloom|Жизнецвет]] - главный приоритет** - с [[druid-glossary#^everbloom|Вечное цветение]] стакается до 3 раз и сплэшит хил. Никогда не дропать. Рефрешить в последние 4.5 сек для блума + обновления.
-
-**[[druid-glossary#^abundance|Изобилие]]-механика (рейд)** - каждый активный [[druid-glossary#^rejuvenation|Омоложение]] = +8% крита на [[druid-glossary#^regrowth|Восстановление]]. При 10-12 активных Rejuv Regrowth критует почти всегда. Крит как стат поэтому слабый - он уже встроен в геймплей.
-
-**[[druid-glossary#^swiftmend|Быстрое восстановление]] - ключевое заклинание** - не просто хил, а триггер для [[druid-glossary#^soul-of-the-forest-resto|Душа леса]], [[druid-glossary#^power-of-the-archdruid|Сила верховного друида]], [[druid-glossary#^grove-guardians|Стражи рощи]] (Keeper) и [[druid-glossary#^everbloom|Вечное цветение]] блума. Юзать строго по [[druid-glossary#^cd|КД]].
-
-**Управление [[druid-glossary#^mana|маной]]:**
-- Не спамить [[druid-glossary#^regrowth|Восстановление]] с низкими стаками [[druid-glossary#^abundance|Изобилие]] - это главная причина слива маны
-- В даунтайме кастовать [[druid-glossary#^wrath|Гнев]] для реген маны через [[druid-glossary#^master-shapeshifter|Ловкий оборотень]]
-- [[druid-glossary#^innervate|Озарение]] юзать рано и часто - первый каст при ~80% маны, во время [[druid-glossary#^ramp|рампов]]
-- Непрерывный кастинг: любой простой = потерянные касты [[druid-glossary#^wrath|Гнев]] для реген маны
-- С [[druid-glossary#^master-shapeshifter|Ловкий оборотень]] спек никогда полностью не теряет ману, но эффективность критически важна
-
-**[[druid-glossary#^cd|Кулдауны]]:**
-- [[druid-glossary#^tranquility|Спокойствие]] (~2.5 мин) - автоматически применяет [[druid-glossary#^flourish|Расцвет]], самый мощный рейд-[[druid-glossary#^cd|КД]]. Комбинировать с [[druid-glossary#^incarnation-resto|Воплощение: древо жизни]] для макс. эффекта.
-- [[druid-glossary#^incarnation-resto|Воплощение: древо жизни]] (~1:40) - активировать за 10-12 сек до урона для максимума скидки на [[druid-glossary#^rejuvenation|Омоложение]]
-- [[druid-glossary#^convoke|Созыв духов]] (~1 мин) - в рейде кастовать в Caster Form, в M+ можно из Облик кошки (Cat Form) для DPS
-- [[druid-glossary#^natures-swiftness|Природная стремительность]] + [[druid-glossary#^regrowth|Восстановление]] = экстренный мгновенный хил
+1. **[[druid-glossary#^lifebloom|Жизнецвет]] - главный приоритет.** Держи его постоянно (обычно на танке), рефреши в последние ~4.5 сек, чтобы сработал блум. На нём держится [[druid-glossary#^everbloom|Вечное цветение]].
+2. **Рамп - твоя сила.** Заранее раскидай 10-12 [[druid-glossary#^rejuvenation|Омоложений]] и подними большой КД ДО урона - это заметно эффективнее, чем тушить по факту.
+3. **[[druid-glossary#^swiftmend|Быстрое восстановление]] - строго по КД.** Это спусковой крючок для [[druid-glossary#^soul-of-the-forest-resto|Души леса]], [[druid-glossary#^power-of-the-archdruid|Силы верховного друида]], [[druid-glossary#^grove-guardians|Стражей рощи]] и блумов Вечного цветения.
+4. **[[druid-glossary#^abundance|Изобилие]] встроено в геймплей (рейд).** Каждое активное Омоложение поднимает крит Восстановления, поэтому Критический удар как стат слабый - он уже "в кармане".
+5. **Не спамь [[druid-glossary#^regrowth|Восстановление]] с низкими стаками Изобилия** - это главная причина слива маны. Кастуй его на проках Ясности мысли и при высоких стаках Изобилия.
+6. **Не простаивай.** В затишьях кастуй [[druid-glossary#^wrath|Гнев]] для регена маны (через [[druid-glossary#^master-shapeshifter|Ловкого оборотня]]) или бей врага из Облика кошки. [[druid-glossary#^innervate|Озарение]] жми рано и часто.
 
 ---
 
-## Приоритет исцеления (рейды)
+## Окно кулдаунов (как раскрывать большие КД)
 
-### [[druid-glossary#^ramp|Рамп]] (10-15 сек перед [[druid-glossary#^burst|бёрстом]] урона)
+Главные кулдауны - твои "ульты": их готовят под заранее известный тяжёлый урон. Активируй за 10-12 сек до всплеска.
 
-1. Раскидать 10-12 [[druid-glossary#^rejuvenation|Омоложение]] по рейду (набрать стаки [[druid-glossary#^abundance|Изобилие]])
-2. [[druid-glossary#^swiftmend|Быстрое восстановление]] → [[druid-glossary#^soul-of-the-forest-resto|Душа леса]] распространяет усиленные хилы через [[druid-glossary#^power-of-the-archdruid|Сила верховного друида]]
-3. [[druid-glossary#^wild-growth|Буйный рост]] по [[druid-glossary#^cd|КД]]
-4. Основной кулдаун: [[druid-glossary#^incarnation-resto|Воплощение: древо жизни]] или [[druid-glossary#^tranquility|Спокойствие]] (с автоматическим [[druid-glossary#^flourish|Расцвет]])
-5. Спам [[druid-glossary#^regrowth|Восстановление]] при высоких стаках [[druid-glossary#^abundance|Изобилие]] (почти 100% крит, низкая стоимость [[druid-glossary#^mana|маны]])
+**В рейде** - [[druid-glossary#^incarnation-resto|Воплощение: древо жизни]]. Базовая логика:
+1. [[druid-glossary#^innervate|Озарение]] (под рамп, освободит ману)
+2. Раскидать 10-12 [[druid-glossary#^rejuvenation|Омоложений]] по рейду (набрать стаки [[druid-glossary#^abundance|Изобилия]])
+3. [[druid-glossary#^swiftmend|Быстрое восстановление]] → [[druid-glossary#^soul-of-the-forest-resto|Душа леса]] раздаёт усиленные хилы через [[druid-glossary#^power-of-the-archdruid|Силу верховного друида]]
+4. [[druid-glossary#^wild-growth|Буйный рост]] по КД
+5. [[druid-glossary#^incarnation-resto|Воплощение: древо жизни]] (или [[druid-glossary#^tranquility|Спокойствие]] с автоматическим [[druid-glossary#^flourish|Расцветом]])
+6. Спам [[druid-glossary#^regrowth|Восстановления]] на высоких стаках Изобилия (почти 100% крит, дёшево по мане)
 
-### Поддержание
+> [!tip] Воплощение vs Созыв духов в рейде
+> Бери [[druid-glossary#^incarnation-resto|Воплощение]]: оно требует меньше тайминга, экономит ману и лучше синергирует с тир-сетом (больше Буйного роста за окно). [[druid-glossary#^tranquility|Спокойствие]] - самый мощный рейд-КД, комбинируй его с Воплощением.
 
-1. **[[druid-glossary#^lifebloom|Жизнецвет]]** - держать постоянно, рефрешить в последние 4.5 сек (чтобы сработал блум)
-2. **[[druid-glossary#^efflorescence|Период цветения]]** - 100% [[druid-glossary#^uptime|аптайм]] на стакнутой группе (обычно мили)
-3. **[[druid-glossary#^wild-growth|Буйный рост]]** - по [[druid-glossary#^cd|КД]] при групповом уроне
-4. **[[druid-glossary#^swiftmend|Быстрое восстановление]]** - по [[druid-glossary#^cd|КД]], ключевой для [[druid-glossary#^soul-of-the-forest-resto|Душа леса]] + [[druid-glossary#^everbloom|Вечное цветение]]
-5. **[[druid-glossary#^regrowth|Восстановление]]** - приоритет на [[druid-glossary#^clearcasting|Ясность мысли]] [[druid-glossary#^proc|проках]] и при высоких стаках [[druid-glossary#^abundance|Изобилие]]
-6. **[[druid-glossary#^rejuvenation|Омоложение]]** - поддерживать на целях, получающих урон
-
-### Даунтайм
-
-- **[[druid-glossary#^wrath|Гнев]]** - генерация [[druid-glossary#^mana|маны]] через [[druid-glossary#^master-shapeshifter|Ловкий оборотень]]
-- **[[druid-glossary#^moonfire|Лунный огонь]]** - поддерживать [[druid-glossary#^dot|DoT]] на боссе
-- Не спамить [[druid-glossary#^regrowth|Восстановление]] без [[druid-glossary#^abundance|Изобилие]] стаков - тратит много маны
+**В M+** - [[druid-glossary#^convoke|Созыв духов]]: бёрст-хил на коротком КД, можно кастовать из Облика кошки ради урона. Между бёрстами держишь HoT-ы и катвивишь.
 
 ---
 
-## Приоритет исцеления (M+)
+## Приоритет хила
 
-### Перед пулом
+"Приоритет" - что лить в первую очередь. Под ситуацию, но общая логика такая:
 
-1. [[druid-glossary#^symbiotic-relationship|Симбиотическая связь]] на танка ([[druid-glossary#^wildstalker-resto|Следопыт]])
-2. [[druid-glossary#^gift-of-the-wild|Дар дикой природы]] на группу (+3% Versatility)
+1. **Кто-то вот-вот умрёт** → [[druid-glossary#^swiftmend|Быстрое восстановление]] + [[druid-glossary#^regrowth|Восстановление]], либо [[druid-glossary#^natures-swiftness|Природная стремительность]] + Восстановление (мгновенный экстренный хил).
+2. **Поддержание:** [[druid-glossary#^lifebloom|Жизнецвет]] (постоянно на танке) и [[druid-glossary#^efflorescence|Период цветения]] (100% аптайм под группой) не должны сходить.
+3. **Готовится групповой урон** → рамп: раскинь HoT-ы и подними кулдаун заранее.
+4. **Идёт групповой урон** → [[druid-glossary#^wild-growth|Буйный рост]] и [[druid-glossary#^swiftmend|Быстрое восстановление]] по КД, [[druid-glossary#^rejuvenation|Омоложения]] на раненых.
+5. **Всё под контролем** → бей врага (катвивинг) или кастуй [[druid-glossary#^wrath|Гнев]] для маны - не простаивай.
 
-### Во время пула
+---
 
-1. Прехотить [[druid-glossary#^rejuvenation|Омоложение]] 5-6 сек до входящего урона
-2. [[druid-glossary#^swiftmend|Быстрое восстановление]] + [[druid-glossary#^wild-growth|Буйный рост]] когда урон начинается
-3. [[druid-glossary#^regrowth|Восстановление]] на критически низких союзников
-4. [[druid-glossary#^efflorescence|Период цветения]] на максимальное покрытие группы
-5. [[druid-glossary#^innervate|Озарение]] рано и часто на тяжёлых пулах
+## Throughput и мана
 
-### Спот-хил (приоритет)
+Главный лимит рестора - **мана**: закончится, и лечить будет нечем. А весь твой объём хила (throughput) идёт через дешёвый фон + точечные дорогие касты по нужде.
 
-1. [[druid-glossary#^swiftmend|Быстрое восстановление]] + [[druid-glossary#^regrowth|Восстановление]] - на низкого союзника
-2. [[druid-glossary#^natures-swiftness|Природная стремительность]] + [[druid-glossary#^regrowth|Восстановление]] - мгновенный экстренный хил
-3. Обычный [[druid-glossary#^regrowth|Восстановление]] - если остальное на [[druid-glossary#^cd|КД]]
+- **Фон держи дёшево:** HoT-ы ([[druid-glossary#^rejuvenation|Омоложение]], [[druid-glossary#^lifebloom|Жизнецвет]], [[druid-glossary#^efflorescence|Период цветения]]) и катвивинг почти не едят ману.
+- **Дорогие касты - точечно.** [[druid-glossary#^regrowth|Восстановление]] спамь только на проках Ясности мысли и при высоких стаках [[druid-glossary#^abundance|Изобилия]] (тогда оно дёшево и критует).
+- **Не простаивай:** в затишьях кастуй [[druid-glossary#^wrath|Гнев]] - с [[druid-glossary#^master-shapeshifter|Ловким оборотнем]] он возвращает ману. Любой простой = потерянный реген.
+- **[[druid-glossary#^innervate|Озарение]] жми рано** (первый каст при ~80% маны, под рамп) и щедро.
+- Если приходится много лить - значит, группа берёт лишний урон; иногда дешевле подсказать, чем перелечивать.
 
-### Поддержание
-
-1. **[[druid-glossary#^lifebloom|Жизнецвет]]** - постоянно на танке (рефреш в последние 4.5 сек)
-2. **[[druid-glossary#^efflorescence|Период цветения]]** - 100% [[druid-glossary#^uptime|аптайм]] (через Lifetreading привязывается к [[druid-glossary#^lifebloom|Жизнецвет]]; +Verdancy ~3-5% хила)
-3. **[[druid-glossary#^swiftmend|Быстрое восстановление]]** и **[[druid-glossary#^wild-growth|Буйный рост]]** - юзать по [[druid-glossary#^cd|КД]]
-4. **[[druid-glossary#^rejuvenation|Омоложение]]** - на целях с [[druid-glossary#^symbiotic-bloom|Симбиотический цветок]] (триггерит Bursting Growth)
-
-### Healing Breakdown
-
-> [!note] Типичное распределение хила (Wildstalker)
-
-| Способность | Доля хила | Заметки |
-|---|---|---|
-| **Восстановление** (Regrowth) | 16-23% | Основной прямой хил |
-| **Омоложение** (Rejuvenation) (total) | 10-17% | Включая Germination и Thriving Vegetation |
-| **Жизнецвет** (Lifebloom) (total) | 10-13% | Тики + блумы + Everbloom splash |
-| **Буйный рост** (Wild Growth) | 7-9% | AoE HoT |
-| **Период цветения** (Efflorescence) + Verdancy | 7-9% | Пассивный AoE хил |
-| **Вечное цветение** (Everbloom) | 6-8% | Splash от Lifebloom |
-| **Стражи рощи** (Grove Guardians) | 5-7% | Пассивные от Swiftmend/WG |
-| **Симбиотический цветок** (Symbiotic Blooms) | 5-6% | Wildstalker HoT |
-| **Быстрое восстановление** (Swiftmend) | 5-7% | Прямой хил + триггер SotF |
-| **Nourish** | 4-5% | Талант, заметный вклад |
-| **Спокойствие** (Tranquility) | 2-4% | Бёрст-КД |
-| **Симбиотическая связь** (Symbiotic Relationship) | 3-4% | Хил на привязанной цели |
-| **Bursting Growth** | 2-3% | Пассивный хил Wildstalker |
-| **Щедрость природы** (Nature's Bounty) | 2-3% | Splash от Regrowth |
-
-### DPS-фаза ([[druid-glossary#^catweaving|cat-weaving]])
-
-> [!important] Cat-weaving - ключевая механика M+ друида
-> Catweaving даёт 40-60% общего урона друида - это не опциональное дополнение, а основная DPS-ротация между хилом.
-
-**Приоритет урона:**
-
-1. **[[druid-glossary#^sunfire|Солнечный огонь]]** / **[[druid-glossary#^moonfire|Лунный огонь]]** - поддерживать DoT-ы на мобах из Caster Form
-2. → переход в **Облик кошки** (Cat Form)
-3. **Дикое бешенство** (Feral Frenzy) - по [[druid-glossary#^cd|КД]], главный DPS-кулдаун (17-25% общего урона)
-4. **Глубокая рана** (Rake) - DoT на основную цель
-5. **Разорвать** (Rip) - DoT на основную цель (12-19% урона)
-6. **Взбучка** (Thrash) - AoE на больших пулах
-7. **Полоснуть** (Shred) - филлер для генерации комбо-поинтов
-8. **Свирепый укус** (Ferocious Bite) - при 5 комбо-поинтах и активных DoT-ах
-9. → обратно в **Caster Form** когда нужен хил
-
-**Пассивный урон (Wildstalker):**
-- **Bloodseeker Vines** - 5-8% урона, срабатывает от [[druid-glossary#^hot|HoT]]-ов
-- **Bursting Growth** - 9-19% урона, срабатывает при истечении [[druid-glossary#^symbiotic-bloom|Симбиотический цветок]]
-
-> [!note] Реальный healing/damage split
-> Топ-друиды на ключах 17-18: ~50% хила группы + значительный DPS. Ключ к успеху - минимизация простоя: всегда либо хилишь, либо наносишь урон.
+> [!tip] Катвивинг в M+ - часть работы, а не баловство
+> Когда лечить никого не надо, переходи в Облик кошки и бей: [[druid-glossary#^feral-frenzy|Дикое бешенство]] по КД, [[druid-glossary#^rake|Глубокая рана]] и [[druid-glossary#^rip|Разорвать]] на цель, [[druid-glossary#^shred|Полоснуть]] как филлер. На больших пулах добавляй Солнечный/Лунный огонь из Caster Form. Возвращайся в форму друида, как только группе нужен хил. Это и есть стиль рестора в высоких ключах.
 
 ---
 
 ## Дефенсивы и утилити
 
-### Личные дефенсивы
+Рестор живуч для хилера - научишься этим пользоваться, и сам будешь меньше отвлекать других.
 
-| Способность | Эффект | **КД** |
+> [!tip] Главное про выживание
+> **[[druid-glossary#^barkskin|Дубовая кожа]]** - твой основной личный дефенсив: off-GCD, жми **до** тяжёлого удара, а не после. Не перекрывай её с Инстинктами выживания.
+
+| Способность | Что делает | Когда жать |
 |---|---|---|
-| **Дубовая кожа** (Barkskin) | −20% входящего урона, 12 сек | 1 мин |
-| **Инстинкты выживания** (Survival Instincts) | −50% входящего урона, 6 сек | 3 мин (2 заряда) |
-| **Защитный рост** (Protective Growth) (Keeper) | −8% урона при активном **Восстановление** (Regrowth) | пассивно |
-| Облик медведя (Bear Form) | +25% HP, +200% броня (экстренный shift) | - |
+| **[[druid-glossary#^barkskin\|Дубовая кожа]]** (Barkskin) | -20% урона, 12 сек, off-GCD | Первая линия, жать часто |
+| **[[druid-glossary#^survival-instincts\|Инстинкты выживания]]** (Survival Instincts) | -50% урона, 6 сек, 2 заряда | Под тяжёлый урон, не перекрывать |
+| **[[druid-glossary#^protective-growth\|Защитный рост]]** (Keeper) | -8% урона при активном Восстановлении | Пассивно, ничего не жать |
+| **Облик медведя** (Bear Form) | +HP и броня | Экстренный перешифт |
 
-### Утилити
+### Утилити (полезности для группы)
 
-| Способность | Эффект |
-|---|---|
-| **Озарение** (Innervate) | 8 сек бесплатных заклинаний (можно дать другому хилеру) |
-| **Тревожный рев** (Stampeding Roar) | +60% скорости передвижения для рейда, 8 сек |
-| **Тайфун** (Typhoon) | **AoE** нокбэк + замедление |
-| **Вихрь Урсола** (Ursol's Vortex) | **AoE** притягивание + замедление |
-| **Парализующий рык** (Incapacitating Roar) | **AoE** инкап на 3 сек |
-| **Умиротворение** (Soothe) | снятие Enrage с врага |
-| **Столп солнечного света** (Solar Beam) | **AoE** сайленс |
-| **Крадущийся зверь** (Prowl) | стелс (скип мобов, саппинг) |
-
-> [!warning] В M+ утилити = хил
-> Грамотное использование [[druid-glossary#^typhoon|Тайфун]], [[druid-glossary#^ursols-vortex|Вихрь Урсола]] и [[druid-glossary#^incapacitating-roar|Парализующий рык]] предотвращает больше урона, чем лишний каст [[druid-glossary#^regrowth|Восстановление]].
-
----
-
-## Статы
-
-**Рейд:** Item Level > Haste > Mastery > Versatility > Crit
-
-**M+:** Item Level > Haste ≈ Mastery > Versatility > Crit
-
-> [!note] Item Level почти всегда важнее вторичных статов
-> Прирост Intellect от более высокого ilvl перевешивает оптимизацию вторичек. Для точной настройки используйте QE Live.
-
-### Подробности
-
-| Стат | Значение |
-|---|---|
-| **Haste** | Топ-стат: ускоряет **GCD**, увеличивает частоту тиков **HoT**-ов. Нет брейкпоинтов в современной игре. Следить за порогом diminishing returns. |
-| **Mastery (Harmony)** | +9% доп. хила за каждый активный **HoT** на цели (до 5 стаков = +45%). Усилен в Midnight. Особенно хорош в M+ где меньше целей. |
-| **Versatility** | В M+ ценнее крита: бонус к урону + **снижение входящего урона**. |
-| **Crit** | Наименее ценный стат - **Восстановление** (Regrowth) уже получает ~100% крита через **Изобилие** (Abundance). |
+- **[[druid-glossary#^innervate|Озарение]]** - 8 сек бесплатных заклинаний (можно дать другому хилеру).
+- **[[druid-glossary#^stampeding-roar|Тревожный рев]]** - групповое ускорение.
+- **[[druid-glossary#^typhoon|Тайфун]] / [[druid-glossary#^ursols-vortex|Вихрь Урсола]] / [[druid-glossary#^incapacitating-roar|Парализующий рык]]** - контроль и стягивание пака. В M+ грамотный контроль предотвращает больше урона, чем лишний хил.
+- **[[druid-glossary#^soothe|Умиротворение]]** - снять Enrage. **[[druid-glossary#^solar-beam|Столп солнечного света]]** - зона-сайленс.
+- **[[druid-glossary#^prowl|Крадущийся зверь]]** - стелс (скип мобов).
 
 ---
 
 ## Гир и тринкеты
 
-### Тир-сет (Midnight Season 1) - Sprouts of the Luminous Bloom
+Хороший комплект собирается не за один вечер - это долгий фарм по чуть-чуть.
 
-- **2-Set:** [[druid-glossary#^wild-growth|Буйный рост]] healing increased by **25%**
-- **4-Set:** [[druid-glossary#^wild-growth|Буйный рост]] cooldown reduced by **2 сек**, mana cost reduced by **10%**
+> [!tip] Кратко про шмот
+> - **Из статов гонись за Скоростью** (подробнее в "Статы").
+> - **Тринкеты:** Взор ясновидца Альн (Gaze of the Alnseer, passive) - лучший пассивный; в M+ хорош Тигель беспорядочной энергии (Crucible of Erratic Energies).
+> - **Уровень предмета (ilvl) важнее всего остального** - прирост Интеллекта почти всегда перевешивает оптимизацию вторичек.
 
-> Тир-сет усиливает основное AoE-заклинание. Не меняет геймплей - просто делает [[druid-glossary#^wild-growth|Буйный рост]] мощнее, чаще и дешевле. **Приоритет - собрать 4 части ASAP.**
+### Тир-сет (комплектный бонус, Midnight Season 1)
 
-> [!important] Приоритет #1 - экипировать 4 части тир-сета
-> Слоты: голова, плечи, перчатки, ноги. Альтернатива: грудь вместо головы + Mask of Darkest Intent (лич-хелм), но это слабее и сложнее собрать.
+- **2 части:** хил [[druid-glossary#^wild-growth|Буйного роста]] +25%.
+- **4 части:** КД Буйного роста -2 сек, стоимость маны -10%.
 
-| Часть | Название |
-|---|---|
-| Голова | Branches of the Luminous Bloom |
-| Плечи | Seedpods of the Luminous Bloom |
-| Перчатки | Arbortenders of the Luminous Bloom |
-| Ноги | Phloemwraps of the Luminous Bloom |
-
-> [!note] Бонус тир-сета поддерживает [[druid-glossary#^ramp|рамп]]-стиль игры
-> [[druid-glossary#^incarnation-resto|Воплощение: древо жизни]] предпочтительнее [[druid-glossary#^convoke|Созыв духов]] в рейде - экономит [[druid-glossary#^mana|ману]] и лучше синергирует с тир-сетом (больше [[druid-glossary#^wild-growth|Буйный рост]] кастов за окно).
+> Тир-сет усиливает твоё основное AoE-заклинание - делает Буйный рост мощнее, чаще и дешевле. Геймплей не меняет. Собирай 4 части как можно раньше (слоты: голова, плечи, перчатки, ноги).
 
 ### Тринкеты
 
-**Throughput (рейд + M+):**
+Правило: throughput-пара под контент, оптимум под свой шмот - **сделай сим** (для хила удобно сравнивать через QE Live).
 
-| Тринкет                      | Источник                   | Описание                               |
-| ---------------------------- | -------------------------- | -------------------------------------- |
-| Gaze of the Alnseer          | Chimaerus (рейд)           | Лучший пассивный тринкет в игре        |
-| Locus-Walker's Ribbon        | Crown of the Cosmos (рейд) | Топ-тир альтернатива                   |
-| Crucible of Erratic Energies | данж                       | Самый популярный в M+ |
-
-**Лучшие тринкеты:**
-
-| Тринкет | Источник | Описание |
+| Тринкет | Тип | Заметка |
 |---|---|---|
-| **Emberwing Feather** | данж | Топовый выбор (266 ilvl) |
-| **Heart of Wind** | Windrunner Spire (данж) | Топовый выбор (266 ilvl) |
+| **Взор ясновидца Альн** (Gaze of the Alnseer) | Passive | Лучший пассивный, стак Интеллекта |
+| **Лента Странника** (Locus-Walker's Ribbon) | Passive | Топ-тир альтернатива |
+| **Тигель беспорядочной энергии** (Crucible of Erratic Energies) | Passive | Самый популярный в M+ |
+| **Перо Алозар** (Emberwing Feather) | On-use | Топовый в M+ |
+| **Сердце ветра** (Heart of Wind) | Passive | Топовый в M+ |
 
-**Ситуативные:**
+### Оружие и эмбелишменты
 
-| Тринкет | Источник | Описание |
-|---|---|---|
-| Crucible of Erratic Energies | данж | Популярный выбор |
-| Gift of Light | данж | Альтернатива |
+- **Оружие:** Трость Альн'ары (Aln'hara Cane, крафт, стафф - лучший вариант); Прощание магистра (Magister's Valediction, крафт, 2H мейс - альтернатива).
+- **Ранний рывок:** скрафти Трость Альн'ары (Aln'hara Cane) с эмбелишментом **Символ Новолуния «Охота» (Darkmoon Sigil: Hunt)**, перекрафти до mythic, когда будут Myth Crests. Высокоинтеллектный не-тир слот - с **Подкладкой из тайной ткани (Arcanoweave Lining)**.
 
-### Оружие
-
-| Оружие | Источник |
-|---|---|
-| **Aln'hara Cane** | крафт (Inscription) - стафф, лучший вариант |
-| Magister's Valediction | крафт (Blacksmithing) - 2H мейс, альтернатива |
-
-> [!note] Проверяйте актуальные рейтинги
-> Тринкеты и оружие могут меняться с хотфиксами. Используйте QE Live для точного сравнения.
+> [!note] Опционально (эндгейм): поздний крафт и Voidcores - на потом. Пока собираешь первый комплект, можно пропустить.
 
 ### Расходники и зачарования
 
-| Слот | Предмет |
+| Тип | Название |
 |---|---|
-| Фласка | Flask of the Blood Knights |
-| Еда (пир) | Harandar Celebration |
-| Еда (личная) | Royal Roast |
-| Боевой пот | Potion of Recklessness (основной) / Lightfused Mana Potion (мана) |
-| Хил-пот | Silvermoon Health Potion |
-| Масло на оружие | Thalassian Phoenix Oil |
-| Augment Rune | Void-Touched Augment Rune (дорогой, опционально) |
-| Мета-гем | Indecipherable Eversong Diamond (Intellect) |
-| Гемы | Flawless Masterful Peridot (Mastery) |
+| Фласка | Настой рыцарей крови (Flask of the Blood Knights) |
+| Еда | Празднество Харандара (Harandar Celebration, пир) / Королевское жаркое (Royal Roast, личная) |
+| Боевое зелье | Зелье безрассудства (Potion of Recklessness); под ману - Светотворное зелье маны (Lightfused Mana Potion) |
+| Лечебное зелье | Луносветское лечебное зелье (Silvermoon Health Potion) |
+| Масло на оружие | Талассийское масло феникса (Thalassian Phoenix Oil) |
+| Augment Rune | Меченная Бездной руна усиления (Void-Touched Augment Rune) |
 
-| Зачарование | Слот |
-|---|---|
-| Acuity of the Ren'dorei | Оружие |
-| Empowered Hex of Leeching | Шлем |
-| Mark of the Worldsoul | Нагрудник |
-| Shaladrassil's Roots | Ботинки |
-| Silvermoon's Alacrity | Кольца |
+- **Гемы:** Непостижимый алмаз Вечной Песни (Indecipherable Eversong Diamond, мета) + Безупречный хризолит искусности (Flawless Masterful Peridot).
+- **Энчанты:** Проницательность рен'дорай (Acuity of the Ren'dorei, оружие), Усиленный сглаз самоисцеления (Empowered Hex of Leeching, шлем), Метка души мира (Mark of the Worldsoul, грудь), Корни Шаладрассила (Shaladrassil's Roots, ботинки), Луносветская расторопность (Silvermoon's Alacrity, кольца).
 
 ---
 
-## Расы
+## Статы
 
-> [!note] Выбор расы минимально влияет на производительность
-> Разница между лучшей и худшей расой составляет <1% хила. Играйте что нравится.
+Статы - это вторичные характеристики на шмоте. Для хила порядок такой:
 
-### Топ-расы для Resto Druid
+**Интеллект (главный) > Скорость > Искусность > Универсальность > Критический удар**
 
-| Раса | Преимущество |
-|---|---|
-| **Night Elf** | Доминирует в M+. Shadowmeld = дроп аггро + стелс-рез, +1% Haste (ночью) / +1% Crit (днём). Quickness: +2% скорости. |
-| **Tauren** | Громовая поступь (War Stomp) - **AoE** стан 2 сек (доп. контроль). Endurance: +бонус HP. |
-| **Troll** | Berserking - +10% Haste на 12 сек (отличный для **рампа**). |
-| **Highmountain Tauren** | Bull Rush - дополнительный **AoE** стан. Rugged Tenacity: +**DR**. |
-| **Zandalari Troll** | Embrace of Bwonsamdi - доп. хил при низком HP. Гибкий выбор Loa. |
+> [!tip] Кратко
+> Гонись за **Скоростью** - она ускоряет GCD и тики HoT-ов, под которые построен весь спек. **Критический удар** у рестора слабый: Восстановление и так критует через [[druid-glossary#^abundance|Изобилие]]. Точный набор под свой шмот сравнивай через QE Live.
+
+- **Интеллект** (Intellect) - больше хила и урона всему; растёт сам с уровнем предметов.
+- **Скорость** (Haste) - быстрее касты и чаще тики HoT-ов; лучший вторичный стат, жёстких порогов нет.
+- **Искусность** (Mastery) ([[druid-glossary#^mastery-resto|Искусность: гармония]]) - +9% хила за каждый HoT на цели (до 5 = +45%). Особенно хороша в M+, где целей меньше.
+- **Универсальность** (Versatility) - +хил/урон и -получаемый урон; в M+ ценнее крита.
+- **Критический удар** (Critical Strike) - наименее ценный: Восстановление уже получает ~100% крита через Изобилие.
+
+> Item Level почти всегда важнее вторичек: прирост Интеллекта перевешивает.
+
+### Раса
+
+Друид ограничен в выборе рас. Разница между ними меньше 1% хила - **играй за кого нравится**.
+
+- **Night Elf** - доминирует в M+: Shadowmeld даёт сброс аггро и стелс-рез, плюс мелкий бонус к статам.
+- **Tauren / Highmountain Tauren** - War Stomp / Bull Rush дают AoE-стан (доп. контроль).
+- **Troll** - Berserking (+Скорость на 12 сек) хорош под рамп.
+
+---
+
+## Частые ошибки
+
+Эти ошибки на старте делают почти все - это нормально и легко правится. Если хил буксует, загляни в список.
+
+- **Жизнецвет сходит с танка.** Это фундамент Вечного цветения - держи его постоянно и рефреши в последние ~4.5 сек.
+- **Лечишь реактивно вместо рампа.** Раскидай HoT-ы и подними КД ДО урона - так эффективнее.
+- **Жмёшь Быстрое восстановление не по КД.** Это спусковой крючок для половины твоих эффектов - не копи его.
+- **Сливаешь ману на спам Восстановления.** Кастуй его на проках Ясности мысли и высоких стаках Изобилия, а не вслепую.
+- **Простаиваешь, когда лечить некого.** Бей врага (катвивинг) или кастуй Гнев для маны.
+- **Жмёшь дефенсивы после удара или разом.** Дубовую кожу ставь до урона и не перекрывай с Инстинктами выживания.
+
+---
+
+## Напоследок
+
+Сначала непривычно лечить наперёд, оплетая группу HoT-ами до того, как кого-то ударили. Но через пару каток ты поймаешь тот самый ритм - заранее разогнал, встретил удар на максимуме хила, а в затишье ушёл бить врага. В этом весь рестор: не тушишь пожары, а не даёшь им разгореться.

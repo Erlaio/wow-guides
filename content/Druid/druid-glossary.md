@@ -21,7 +21,7 @@ created: 2026-03-15
 - **Финишер** (Finisher) - спендер на комбо-поинтах (Feral): Свирепый укус, Разорвать, Первобытный гнев ^finisher
 - **Филлер** (Filler) - способность-заполнитель, когда нечего больше нажать. Примеры: Полоснуть, Гнев, Размах ^filler
 - **КД** (Cooldown) - способность с перезарядкой. Также "кулдаун" как время перезарядки ^cd
-- **GCD** (Global Cooldown) - глобальная перезарядка (~1.5 сек), ограничивает частоту кастов. Снижается Haste ^gcd
+- **GCD** (Global Cooldown) - глобальная перезарядка (~1.5 сек), ограничивает частоту кастов. Снижается Скоростью ^gcd
 
 ## Эффекты по времени
 
@@ -73,18 +73,18 @@ created: 2026-03-15
 - **Буйный рост** (Wild Growth) - AoE HoT на нескольких союзников ^wild-growth
 - **Быстрое восстановление** (Swiftmend) - мгновенный хил, потребляет HoT ^swiftmend
 - **Сердце дикой природы** (Heart of the Wild) - 2-мин КД, эффект зависит от текущей формы (реворкнут в Midnight) ^heart-of-the-wild
-- **Дар дикой природы** (Gift of the Wild) - замена Nature's Vigil в Midnight ^gift-of-the-wild
+- **Дар дикой природы** (Gift of the Wild) - замена Природной чуткости (Nature's Vigil) в Midnight ^gift-of-the-wild
 - **Созыв духов** (Convoke the Spirits) - ченнел, кастует ~16 случайных способностей за 4 сек. Мощный бёрст ^convoke
 - **Сила природы** (Force of Nature) - призыв треантов, ключевой КД для Хранителя рощи ^force-of-nature
 - **Парад планет** (Celestial Alignment) - бёрст-КД: усиливает все Eclipse-заклинания одновременно ^celestial-alignment
 - **Воплощение** (Incarnation) - усиленная версия Парада планет / Берсерка. Варианты по спекам ^incarnation
-- **Затмение** (Eclipse) - активная способность Balance (реворкнута в Midnight): Solar Eclipse (Гнев) или Lunar Eclipse (Звездный огонь). 2 заряда, 32с КД ^eclipse
+- **Затмение** (Eclipse) - активная способность Balance (реворкнута в Midnight): Солнечное затмение (Solar Eclipse, Гнев) или Лунное затмение (Lunar Eclipse, Звездный огонь). 2 заряда, 32с КД ^eclipse
 - **Столп солнечного света** (Solar Beam) - AoE прерывание + сайленс-зона ^solar-beam
 
 ## Balance
 
-- **Гнев** (Wrath) - основной ST-филлер, генерирует AP. Входит в Solar Eclipse ^wrath
-- **Звездный огонь** (Starfire) - AoE-филлер, генерирует AP. Входит в Lunar Eclipse, кливит внутри Lunar Eclipse ^starfire
+- **Гнев** (Wrath) - основной ST-филлер, генерирует AP. Входит в Солнечное затмение (Solar Eclipse) ^wrath
+- **Звездный огонь** (Starfire) - AoE-филлер, генерирует AP. Входит в Лунное затмение (Lunar Eclipse), кливит внутри затмения ^starfire
 - **Звездный поток** (Starsurge) - ST-спендер AP. Усилен внутри Eclipse ^starsurge
 - **Звездопад** (Starfall) - AoE-спендер AP. Основной AoE-расход ^starfall
 - **Ярость Элуны** (Fury of Elune) - AoE-урон по КД. Синергия с Атмосферными явлениями ^fury-of-elune
@@ -97,8 +97,8 @@ created: 2026-03-15
 - **Метеоритный шторм** (Meteor Storm) - Звездопад наносит полный урон за половину времени ^meteor-storm
 - **Испытание Элуны** (Elune's Challenge) - снижение каст-тайма при выходе из Eclipse с низким AP ^elunes-challenge
 - **Искусность: астральные чары** (Mastery: Astral Invocation) - увеличивает урон Nature и Arcane заклинаний (реворкнута в Midnight - больше не усиливает DoT) ^mastery-balance
-- **Хранитель рощи** (Keeper of the Grove) - Hero Talent: бёрст через Силу природы, лучше на ST и спред-кливе ^keeper-of-the-grove
-- **Избранник Элуны** (Elune's Chosen) - Hero Talent: фокус на Ярости Элуны + Лунация, сильнее в длинном AoE ^elunes-chosen
+- **Хранитель рощи** (Keeper of the Grove) - Героическое древо: бёрст через Силу природы, лучше на ST и спред-кливе ^keeper-of-the-grove
+- **Избранник Элуны** (Elune's Chosen) - Героическое древо: фокус на Ярости Элуны + Лунация, сильнее в длинном AoE ^elunes-chosen
 - **Атмосферные явления** (Atmospheric Exposure) - дебафф от Ярости Элуны, увеличивает получаемый урон ^atmospheric-exposure
 - **Лунация** (Lunation) - касты Звездного огня снижают КД Ярости Элуны ^lunation
 - **Новолуние** (New Moon) - альтернатива Ярости Элуны, серия лунных ударов с нарастающим уроном ^new-moon
@@ -114,15 +114,15 @@ created: 2026-03-15
 - **Тигриное неистовство** (Tiger's Fury) - бафф урона + восстановление энергии. Блиды снапшотят бонус ^tigers-fury
 - **Берсерк** (Berserk) - основной бёрст-КД Feral: снижает стоимость энергии ^berserk-feral
 - **Хищник** (Predator) - сброс КД Тигриного неистовства при смерти цели с блидом ^predator
-- **Дикое бешенство** (Feral Frenzy) - ST бёрст с коротким КД. Focused Frenzy (ST) или Frantic Frenzy (AoE) ^feral-frenzy
+- **Дикое бешенство** (Feral Frenzy) - ST бёрст с коротким КД. Сосредоточенная ярость (Focused Frenzy, ST) или Бурное бешенство (Frantic Frenzy, AoE) ^feral-frenzy
 - **Быстрый укус** (Chomp) - мощная атака без затрат энергии (20с КД), доступна при энергии <30%. Тройной урон при крите ^chomp
 - **Первобытный гнев** (Primal Wrath) - AoE-финишер, распространяет Разорвать на все цели ^primal-wrath
 - **Момент ясности** (Moment of Clarity) - проки бесплатных усиленных билдеров (Clearcasting) ^moment-of-clarity
 - **Душа леса** (Soul of the Forest) - финишеры дают больше энергии ^soul-of-the-forest-feral
 - **Жажда сверххищника** (Apex Predator's Craving) - проки бесплатных Свирепых укусов ^apex-predators-craving
-- **Незримый хищник** (Unseen Predator) - Apex талант: Свирепый укус вызывает Unseen Slash/Swipe + бафф урона ^unseen-predator
-- **Следопыт** (Wildstalker) - Hero Talent (Feral): упор на блиды и устойчивый ST-урон ^wildstalker-feral
-- **Друид-хищник** (Druid of the Claw) - Hero Talent: AoE инструменты, дефенсивы и прок Терзания ^druid-of-the-claw-feral
+- **Незримый хищник** (Unseen Predator) - Apex талант: Свирепый укус вызывает Незримый удар сплеча (Unseen Slash) / Незримый размах (Unseen Swipe) + бафф урона ^unseen-predator
+- **Следопыт** (Wildstalker) - Героическое древо (Feral): упор на блиды и устойчивый ST-урон ^wildstalker-feral
+- **Друид-хищник** (Druid of the Claw) - Героическое древо: AoE инструменты, дефенсивы и прок Терзания ^druid-of-the-claw-feral
 - **Терзание** (Ravage) - прок от Друида-хищника, мощная атака ^ravage
 - **Лунное вдохновение** (Lunar Inspiration) - Лунный огонь как дополнительный билдер CP ^lunar-inspiration
 - **Внезапное нападение** (Sudden Ambush) - усиленные Глубокая рана/Полоснуть (реворкнут в Midnight) ^sudden-ambush
@@ -153,10 +153,10 @@ created: 2026-03-15
 - **Сон Кенария** (Dream of Cenarius) - стакается до 4 раз, усиленные Восстановления ^dream-of-cenarius
 - **Сверкающие когти** (Flashing Claws) - пассивный урон от Взбучки ^flashing-claws
 - **Неистовство Урсока** (Ursoc's Fury) - усиление танкоустойчивости ^ursocs-fury
-- **Друид-хищник** (Druid of the Claw) - Hero Talent: блид-механика, проки Терзания ^druid-of-the-claw-guardian
-- **Избранник Элуны** (Elune's Chosen) - Hero Talent: Лунный огонь + Лунный луч фокус ^elunes-chosen-guardian
+- **Друид-хищник** (Druid of the Claw) - Героическое древо: блид-механика, проки Терзания ^druid-of-the-claw-guardian
+- **Избранник Элуны** (Elune's Chosen) - Героическое древо: Лунный огонь + Лунный луч фокус ^elunes-chosen-guardian
 - **Раздвоенный лунный огонь** (Twin Moonfire) - Лунный огонь бьёт вторую цель (Избранник Элуны) ^twin-moonfire
-- **Изменчивый облик** (Fluid Form) - позволяет использовать Полоснуть, Глубокую рану и Skull Bash из любой формы, при необходимости автоматически перекидывая в Облик кошки. Облегчает катвивинг - не нужен ручной перешифт ^fluid-form
+- **Изменчивый облик** (Fluid Form) - позволяет использовать Полоснуть, Глубокую рану и Лобовую атаку (Skull Bash) из любой формы, при необходимости автоматически перекидывая в Облик кошки. Облегчает катвивинг - не нужен ручной перешифт ^fluid-form
 - **Искусность: Страж природы** (Mastery: Nature's Guardian) - увеличивает макс. HP и получаемое лечение ^mastery-guardian
 - **Красная луна** (Red Moon) - мощный удар по КД ^red-moon
 - **Мерцающий лунный свет** (Scintillating Moonlight) - Лунный огонь даёт пассивную защиту ^scintillating-moonlight
@@ -175,11 +175,11 @@ created: 2026-03-15
 - **Щедрость природы** (Nature's Bounty) - 20% хила Восстановления сплэшится на других с активным Восстановлением ^natures-bounty
 - **Воплощение: древо жизни** (Incarnation: Tree of Life) - основной бёрст-КД для рейда ^incarnation-resto
 - **Вечное цветение** (Everbloom) - Apex талант: Жизнецвет стакается до 3, сплэшит хил, блумится 5 раз с Душой леса ^everbloom
-- **Хранитель рощи** (Keeper of the Grove) - Hero Talent: Стражи рощи пассивно при Быстром восстановлении/Буйном росте ^keeper-of-the-grove-resto
-- **Следопыт** (Wildstalker) - Hero Talent: Симбиотический цветок, доминирует в M+ ^wildstalker-resto
+- **Хранитель рощи** (Keeper of the Grove) - Героическое древо: Стражи рощи пассивно при Быстром восстановлении/Буйном росте ^keeper-of-the-grove-resto
+- **Следопыт** (Wildstalker) - Героическое древо: Симбиотический цветок, доминирует в M+ ^wildstalker-resto
 - **Стражи рощи** (Grove Guardians) - пассивные треанты от Быстрого восстановления/Буйного роста (Хранитель). Дают бёрст-хил + Защитный рост ^grove-guardians
-- **Симбиотический цветок** (Symbiotic Bloom) - уникальный HoT от Следопыта, усиливает хил на цели + стак Mastery ^symbiotic-bloom
-- **Симбиотическая связь** (Symbiotic Relationship) - ставить на танка перед пулом для Симбиотического цветка ^symbiotic-relationship
+- **Симбиотический цветок** (Symbiotic Bloom) - HoT от таланта Следопыта «Изобильный рост» (Thriving Growth): твои Буйный рост/Восстановление/Период цветения с шансом вешают его на цель. Усиливает хил по ней и даёт стак Искусности ^symbiotic-bloom
+- **Симбиотическая связь** (Symbiotic Relationship) - связывает тебя с союзником: твой самохил лечит и его (на 10% от суммы), а входящий хил по тебе +8%. Ставить на танка перед пулом ^symbiotic-relationship
 - **Ясность мысли** (Clearcasting) - прок бесплатного Восстановления ^clearcasting
 - **Ловкий оборотень** (Master Shapeshifter) - генерация маны через Гнев/Звездный огонь в даунтайме ^master-shapeshifter
 - **Защитный рост** (Protective Growth) - дефенсив от Стражей рощи (Хранитель) ^protective-growth
