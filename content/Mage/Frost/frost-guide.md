@@ -134,8 +134,8 @@ Frost получил крупнейшую переработку за всю и�
 - **[[mage-glossary#^spatial-manipulation|Власть над пространством]]** - доп. заряд [[mage-glossary#^shimmer|Мерцания]]. Всегда вместо Отражения (Reflection).
 - **Поток времени** (Flow of Time), **[[mage-glossary#^ice-block|Ледяной холод]]** (Ice Cold), **Улучшенная антимагия** (Improved Counterspell, must-have для M+).
 
-Рейд (ST-уклон): **Наступление зимы** (Wintertide), **Пронизывающий холод** (Piercing Cold), **Глубокий раскол** (Deep Shatter).
-M+ (AoE-уклон): **Раскалывающий холод** (Fractured Frost), **Отлетающие льдины** (Hailstones), **Заклинатель инея** (Rimecaster), **[[mage-glossary#^freezing-rain|Леденящий дождь]]** (Freezing Rain).
+- Рейд (ST-уклон): **Наступление зимы** (Wintertide), **Пронизывающий холод** (Piercing Cold), **Глубокий раскол** (Deep Shatter).
+- M+ (AoE-уклон): **Раскалывающий холод** (Fractured Frost), **Отлетающие льдины** (Hailstones), **Заклинатель инея** (Rimecaster), **[[mage-glossary#^freezing-rain|Леденящий дождь]]** (Freezing Rain).
 
 > [!note] Элементаль воды vs Одинокая зима
 > Элементаль воды (Water Elemental) вернулся в Midnight как опция, но [[mage-glossary#^lonely-winter|Одинокая зима]] доминирует в обоих типах контента: пет проигрывает на мультитаргете. Элементаль - вариант только под соло и open world.
